@@ -3,9 +3,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "download": "node scripts/download.mjs",
-    "index": "node scripts/build-index.mjs && node scripts/build-topology.mjs",
-    "index-topology": "node scripts/build-topology.mjs",
     "test": "node --test tests/*.test.mjs",
     "dev": "vite",
     "build": "tsc && vite build",

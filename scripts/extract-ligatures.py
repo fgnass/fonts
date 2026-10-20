@@ -1,6 +1,12 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "fonttools>=4.60",
+# ]
+# ///
 """Extracts the ligatures of every font.
 
-Usage: python3 scripts/extract-ligatures.py
+Usage: uv run scripts/extract-ligatures.py
 
 Reads the GSUB ligature lookups of the default ligature features (liga, clig,
 rlig) and of discretionary ligatures (dlig) from data/fonts/ and writes

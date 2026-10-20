@@ -1,4 +1,5 @@
-// Measures visual properties of every font and writes public/data/metrics.json.
+// Measures visual properties of every font and writes the metric part
+// data/metrics/base.json (see metrics.mjs).
 //
 // Usage: node scripts/measure.mjs
 //
@@ -16,13 +17,15 @@
 //   ends:     share of stroke ends in a-z that are sharp (0 = all round, 1 = all square or pointed)
 //
 // With --keep-variants, the per-variant values are taken from the existing
-// metrics.json (only the family values are measured again).
+// base.json (only the family values are measured again).
 //
 // Output: [{ x, h, s, r, w, c, e, v: { "<variant>": [weight, slant] } }, ...] in manifest order.
 import fs from 'node:fs';
 import { createCanvas, Path2D } from '@napi-rs/canvas';
 import { thin } from '../src/shape.js';
 import { loadGlyphs, pathData } from './glyph.mjs';
+import { readPart, writePart } from './metrics.mjs';
+import { progress, progressDone } from './progress.mjs';
 
 const K = 0.25; // pixels per font unit (the em is 1000 units)
 const LETTERS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -367,7 +370,7 @@ function endsOf(font) {
 
 const round = (v, d = 3) => (v == null ? null : +v.toFixed(d));
 const manifest = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8'));
-const previous = process.argv.includes('--keep-variants') ? JSON.parse(fs.readFileSync('public/data/metrics.json', 'utf8')) : null;
+const previous = process.argv.includes('--keep-variants') ? readPart('base') : null;
 const out = manifest.map((m, i) => {
   const font = loadGlyphs(`data/fonts/${m.file}`);
   const entry = { v: {} };
@@ -385,15 +388,15 @@ const out = manifest.map((m, i) => {
   }
   if (previous) {
     entry.v = previous[i].v;
-    process.stdout.write(`\r${i + 1}/${manifest.length}`);
+    progress(`${i + 1}/${manifest.length}`);
     return entry;
   }
   for (const v of m.variants) {
     const vf = loadGlyphs(`data/fonts-v/${m.file.replace('.ttf', '')}-${v}.ttf`);
     if (vf) entry.v[v] = [round(weightOf(vf)), slantOf(vf)];
   }
-  process.stdout.write(`\r${i + 1}/${manifest.length}`);
+  progress(`${i + 1}/${manifest.length}`);
   return entry;
 });
-process.stdout.write('\n');
-fs.writeFileSync('public/data/metrics.json', JSON.stringify(out));
+progressDone();
+writePart('base', out);

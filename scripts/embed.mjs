@@ -18,6 +18,7 @@ import { createCanvas, Path2D } from '@napi-rs/canvas';
 import { AutoModel, Tensor } from '@huggingface/transformers';
 import { thin } from '../src/shape.js';
 import { loadGlyphs, pathData } from './glyph.mjs';
+import { progress, progressDone } from './progress.mjs';
 
 const args = process.argv.slice(2);
 const SKELETON = args.includes('--skeleton');
@@ -147,9 +148,9 @@ async function embedAll(fonts, ch, label) {
         for (let d = 0; d < DIM; d++) rows[o + d] += data[src + d] / (per * per);
       }
     });
-    process.stdout.write(`\r${label} ${ch}: ${Math.min(start + BATCH, fonts.length)}/${fonts.length}`);
+    progress(`${label} ${ch}: ${Math.min(start + BATCH, fonts.length)}/${fonts.length}`);
   }
-  process.stdout.write('\n');
+  progressDone();
   return rows;
 }
 

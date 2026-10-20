@@ -1,6 +1,12 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "numpy>=2",
+# ]
+# ///
 """Packs the style embeddings for the browser.
 
-Usage: python3 scripts/pack-style.py
+Usage: uv run scripts/pack-style.py
 
 Reads data/emb-style.f32 (rows of [CLS, mean patch] x 384 floats),
 L2-normalizes both parts, concatenates them, reduces them with PCA to DIMS

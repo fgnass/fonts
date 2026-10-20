@@ -1,16 +1,24 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "fonttools>=4.60",
+#     "brotli>=1.1",
+# ]
+# ///
 """Measures the real width along the wdth axis of variable fonts.
 
-Usage: python3 scripts/measure-width.py
+Usage: uv run scripts/measure-width.py
 
 For every family with a wdth axis, downloads the variable font (default
 weight and style, the full wdth range, a few letters) as WOFF2 into
 data/fonts-wdth/, makes static instances at some points of the axis and
 measures the width there as measure.mjs does (mean aspect ratio of
-"HONDRBE" to the cap height and of "nohaduebpq" to the x-height). Adds
-`wd: [[wdth, width], ...]` to the entries in public/data/metrics.json.
+"HONDRBE" to the cap height and of "nohaduebpq" to the x-height). Writes
+`wd: [[wdth, width], ...]` into the metric part data/metrics/width.json
+(see metrics.mjs).
 
 The CSS API sends variable WOFF2 only to browsers, so the request uses a
-browser User-Agent. Needs fontTools and brotli.
+browser User-Agent.
 """
 import io
 import json
@@ -31,7 +39,6 @@ POINTS = 5  # instances along the axis
 
 os.makedirs(OUT, exist_ok=True)
 manifest = json.load(open('data/manifest.json'))
-metrics = json.load(open('public/data/metrics.json'))
 
 
 def get(url):
@@ -87,16 +94,18 @@ def measure(i):
     return i, out
 
 
+rows = [{} for _ in manifest]
 todo = [i for i, m in enumerate(manifest) if m.get('axes', {}).get('wdth')]
 with ThreadPoolExecutor(8) as pool:
     for future in [pool.submit(measure, i) for i in todo]:
         try:
             i, wd = future.result()
-            metrics[i]['wd'] = wd
+            rows[i]['wd'] = wd
         except Exception as e:  # noqa: BLE001
             print('failed:', e)
-json.dump(metrics, open('public/data/metrics.json', 'w'), separators=(',', ':'))
+os.makedirs('data/metrics', exist_ok=True)
+json.dump(rows, open('data/metrics/width.json', 'w'), separators=(',', ':'))
 
 for family in ['Roboto', 'Roboto Flex', 'Google Sans Flex', 'Inconsolata', 'Saira', 'Open Sans', 'Archivo']:
     i = next(i for i, m in enumerate(manifest) if m['family'] == family)
-    print(family, metrics[i].get('w'), metrics[i].get('wd'))
+    print(family, rows[i].get('wd'))

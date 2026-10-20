@@ -1,5 +1,5 @@
-// Measures letter-form properties of every font and writes them into
-// public/data/metrics.json (run it after measure.mjs, which rewrites the file).
+// Measures letter-form properties of every font and writes them into the
+// metric part data/metrics/form.json (needs the serif values `s` of measure.mjs).
 //
 // Usage: node scripts/form.mjs [family ...]   (with families: only print their values)
 //
@@ -11,11 +11,11 @@
 //   sb: serif thickness divided by the stem width (thin hairlines to slabs,
 //       at most 1.2); null without clear serifs (s < 0.04)
 //   mo: coefficient of variation of the advance widths of a–z (0 = monospaced)
-//   hf: hollow-stroke score, from cross-sections of normally solid stems
 import fs from 'node:fs';
 import { createCanvas, Path2D } from '@napi-rs/canvas';
 import { loadGlyphs, pathData } from './glyph.mjs';
-import { strokeFillOf } from './stroke-fill.mjs';
+import { readPart, writePart } from './metrics.mjs';
+import { progress, progressDone } from './progress.mjs';
 
 const K = 0.5; // pixels per font unit
 const PAD = 4;
@@ -187,7 +187,6 @@ const measure = (font) => ({
   ex: round(extendersOf(font)),
   sb: round(serifTypeOf(font)),
   mo: round(monoOf(font)),
-  hf: round(strokeFillOf(font)),
 });
 
 const manifest = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8'));
@@ -200,17 +199,17 @@ if (names.length) {
     console.log(name.padEnd(22), JSON.stringify(font && measure(font)));
   }
 } else {
-  const metrics = JSON.parse(fs.readFileSync('public/data/metrics.json', 'utf8'));
-  manifest.forEach((m, i) => {
+  const base = readPart('base');
+  const rows = manifest.map((m, i) => {
     const font = loadGlyphs(`data/fonts/${m.file}`);
-    if (!font || !metrics[i]) return;
+    progress(`${i + 1}/${manifest.length}`);
+    if (!font) return {};
     const v = measure(font);
     // The serif type needs clear serifs: below 0.04, small spurs of handwriting fonts count as serifs.
-    if (!(metrics[i].s >= 0.04)) v.sb = null;
+    if (!(base[i].s >= 0.04)) v.sb = null;
     else v.sb = Math.min(v.sb, 1.2);
-    for (const [k, x] of Object.entries(v)) x == null ? delete metrics[i][k] : (metrics[i][k] = x);
-    process.stdout.write(`\r${i + 1}/${manifest.length}`);
+    return Object.fromEntries(Object.entries(v).filter(([, x]) => x != null));
   });
-  process.stdout.write('\n');
-  fs.writeFileSync('public/data/metrics.json', JSON.stringify(metrics));
+  progressDone();
+  writePart('form', rows);
 }

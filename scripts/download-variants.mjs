@@ -4,6 +4,7 @@
 // data/fonts-v/<slug>-wdth<value>.ttf. The subsets are used to measure the
 // visual weight, slant and width (scripts/measure.mjs).
 import fs from 'node:fs/promises';
+import { progress, progressDone } from './progress.mjs';
 
 export const VARIANT_CHARS = 'HIOabdehlnopqux';
 const OUT = 'data/fonts-v';
@@ -46,7 +47,7 @@ await Promise.all(
         failed++;
         console.warn(`\n${item.m.family} ${item.v ?? `wdth ${item.wdth}`}: ${e.message}`);
       }
-      process.stdout.write(`\r${++done}/${total}`);
+      progress(`${++done}/${total}`);
     }
   })
 );

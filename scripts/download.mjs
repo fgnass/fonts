@@ -7,6 +7,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { CHARS } from '../src/chars.js';
+import { progress, progressDone } from './progress.mjs';
 
 const OUT = 'data/fonts';
 const CONCURRENCY = 16;
@@ -85,7 +86,7 @@ await Promise.all(
         failed.push(f.family);
         console.warn(`\n${f.family}: ${e.message}`);
       }
-      process.stdout.write(`\r${++done}/${families.length}`);
+      progress(`${++done}/${families.length}`);
     }
   })
 );

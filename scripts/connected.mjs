@@ -1,5 +1,6 @@
 // Measures how connected the lowercase letters of every font are (script
-// fonts join their letters) and writes `cn` into public/data/metrics.json.
+// fonts join their letters) and writes `cn` into the metric part
+// data/metrics/connected.json (needs `lc` of caps.mjs).
 //
 // Usage: node scripts/connected.mjs [family ...]   (with families: only print their values)
 //
@@ -13,6 +14,8 @@
 import fs from 'node:fs';
 import { createCanvas, Path2D } from '@napi-rs/canvas';
 import { loadGlyphs, pathData } from './glyph.mjs';
+import { entry, readPart, writePart } from './metrics.mjs';
+import { progress, progressDone } from './progress.mjs';
 
 const PAIRS = ['an', 'no', 'ou', 'ne', 'in', 'ad', 'er', 'on', 'un', 'ma', 'es', 'li'];
 const K = 0.12; // pixels per font unit: 120 px per em
@@ -92,15 +95,13 @@ if (names.length) {
     console.log(name.padEnd(22), font && connectedOf(font));
   }
 } else {
-  const metrics = JSON.parse(fs.readFileSync('public/data/metrics.json', 'utf8'));
-  manifest.forEach((m, i) => {
-    if (!metrics[i]) return;
+  const caps = readPart('caps');
+  const rows = manifest.map((m, i) => {
     // Fonts without real lowercase letters would show capitals, which never join.
-    const font = metrics[i].lc === 0 ? null : loadGlyphs(`data/fonts/${m.file}`);
-    const v = font && connectedOf(font);
-    v == null ? delete metrics[i].cn : (metrics[i].cn = v);
-    process.stdout.write(`\r${i + 1}/${manifest.length}`);
+    const font = caps[i].lc === 0 ? null : loadGlyphs(`data/fonts/${m.file}`);
+    progress(`${i + 1}/${manifest.length}`);
+    return entry('cn', font && connectedOf(font));
   });
-  process.stdout.write('\n');
-  fs.writeFileSync('public/data/metrics.json', JSON.stringify(metrics));
+  progressDone();
+  writePart('connected', rows);
 }

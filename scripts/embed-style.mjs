@@ -12,6 +12,7 @@ import fs from 'node:fs';
 import { createCanvas, Path2D } from '@napi-rs/canvas';
 import { AutoModel, Tensor } from '@huggingface/transformers';
 import { loadGlyphs, pathData } from './glyph.mjs';
+import { progress, progressDone } from './progress.mjs';
 
 const LINES = ['RAGE', 'hang'];
 const SIZE = 224;
@@ -104,7 +105,7 @@ for (let start = 0; start < fonts.length; start += BATCH) {
       for (let d = 0; d < DIM; d++) rows[row + DIM + d] += h.data[base + t * DIM + d] / (T - 1);
     }
   });
-  process.stdout.write(`\r${Math.min(start + BATCH, fonts.length)}/${fonts.length}`);
+  progress(`${Math.min(start + BATCH, fonts.length)}/${fonts.length}`);
 }
-process.stdout.write('\n');
+progressDone();
 fs.writeFileSync('data/emb-style.f32', rows);

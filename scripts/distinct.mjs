@@ -1,5 +1,6 @@
 // Measures how distinct the letters of each font are from one another and
-// writes `dx` into public/data/metrics.json (run it after build-index.mjs).
+// writes `dx` into the metric part data/metrics/distinct.json (run it after
+// build-index.mjs).
 //
 // In a placeholder font (Flow, Redacted), a knitting-pattern font or a
 // keyboard font, every letter has the same shape; in a barcode, texture or
@@ -12,6 +13,7 @@
 // Usage: node scripts/distinct.mjs [family ...]   (with families: only print their values)
 import fs from 'node:fs';
 import { chamfer, decodeLines, distanceField, GRID, linePoints } from '../src/shape.js';
+import { entry, writePart } from './metrics.mjs';
 
 const LETTERS = 'aenosbdgMRwk';
 const MIN_LETTERS = 6;
@@ -60,12 +62,7 @@ if (names.length) {
     console.log(name.padEnd(28), i < 0 ? 'not found' : dx[i]);
   }
 } else {
-  const metrics = JSON.parse(fs.readFileSync('public/data/metrics.json', 'utf8'));
-  dx.forEach((d, i) => {
-    if (!metrics[i]) return;
-    d == null ? delete metrics[i].dx : (metrics[i].dx = d);
-  });
-  fs.writeFileSync('public/data/metrics.json', JSON.stringify(metrics));
+  writePart('distinct', dx.map((d) => entry('dx', d)));
   const below = (t) => dx.filter((d) => d != null && d < t).length;
   console.log(`median ${median.toFixed(2)} · ${below(0.2)} fonts below 0.2 (no letterforms) · ${below(0.5)} below 0.5 (kept out of the shape search)`);
 }

@@ -3,6 +3,7 @@
 // embedding space, so that it can be projected out.
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { progress, progressDone } from './progress.mjs';
 
 const CHARS = process.argv[2] || 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 const WEIGHTS = [300, 700];
@@ -35,7 +36,7 @@ await Promise.all(
       } catch (e) {
         console.warn(`\n${f.family} ${w}: ${e.message}`);
       }
-      process.stdout.write(`\r${++done}/${families.length * WEIGHTS.length}`);
+      progress(`${++done}/${families.length * WEIGHTS.length}`);
     }
   })
 );

@@ -2,9 +2,10 @@
 // whose lowercase letters are small capitals): for letters whose lowercase
 // form differs from the capital in normal fonts, compares the skeletons of
 // both forms (public/data/g) with the chamfer distance. Writes `lc: 0` into
-// the entries of public/data/metrics.json when most of them match.
+// the metric part data/metrics/caps.json when most of them match.
 import fs from 'node:fs';
 import { chamfer, decodeLines, distanceField, linePoints } from '../src/shape.js';
+import { writePart } from './metrics.mjs';
 
 const LETTERS = 'abdeghnqr';
 
@@ -23,7 +24,6 @@ function load(ch) {
 }
 
 const fonts = JSON.parse(fs.readFileSync('public/data/fonts.json', 'utf8'));
-const metrics = JSON.parse(fs.readFileSync('public/data/metrics.json', 'utf8'));
 // Even in caps-only fonts, the two forms seldom differ more than this (noisy and textured fonts).
 const OWN_MAX = 2.5;
 const pairs = [...LETTERS].map((ch) => [load(ch), load(ch.toUpperCase())]);
@@ -50,17 +50,9 @@ const votes = fonts.map((_, i) => {
   return n ? caps / n : 0;
 });
 
-let n = 0;
-votes.forEach((v, i) => {
-  const flag = v > 0.5;
-  if (metrics[i]) {
-    if (flag) metrics[i].lc = 0;
-    else delete metrics[i].lc;
-  }
-  n += flag;
-});
-if (!process.argv.includes('--dry')) fs.writeFileSync('public/data/metrics.json', JSON.stringify(metrics));
-console.log(`${n} of ${fonts.length} fonts without real lowercase`);
+const flags = votes.map((v) => v > 0.5);
+if (!process.argv.includes('--dry')) writePart('caps', flags.map((flag) => (flag ? { lc: 0 } : {})));
+console.log(`${flags.filter(Boolean).length} of ${fonts.length} fonts without real lowercase`);
 for (const name of process.argv.slice(2).filter((a) => !a.startsWith('--'))) {
   const i = fonts.findIndex((f) => f.family === name);
   if (i >= 0) console.log(name, votes[i].toFixed(2));

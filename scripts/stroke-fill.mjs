@@ -1,11 +1,12 @@
 // Measures hollow strokes, including broken outlines, from cross-sections of normally solid stems.
 // Usage: node scripts/stroke-fill.mjs [family ...]
-// No arguments: update hf in metrics.json. Named families: print measurements only.
+// No arguments: write hf into the metric part data/metrics/stroke-fill.json. Named families: print measurements only.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createCanvas, Path2D } from '@napi-rs/canvas';
 import { loadGlyphs, pathData } from './glyph.mjs';
+import { entry, writePart } from './metrics.mjs';
 
 const LETTERS = 'IlEFLT';
 const HEIGHT = 240, PAD = 3;
@@ -78,13 +79,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       if ((i + 1) % 100 === 0) console.log(`${i + 1}/${manifest.length}`);
       return value;
     });
-    const metrics = JSON.parse(fs.readFileSync('public/data/metrics.json', 'utf8'));
-    values.forEach((v, i) => {
-      if (!metrics[i]) return;
-      if (v == null) delete metrics[i].hf;
-      else metrics[i].hf = +v.toFixed(3);
-    });
-    fs.writeFileSync('public/data/metrics.json', JSON.stringify(metrics));
+    writePart('stroke-fill', values.map((v) => entry('hf', v == null ? null : +v.toFixed(3))));
     console.log(`${manifest.length} families measured.`);
   }
 }

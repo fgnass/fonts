@@ -1,6 +1,12 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "fonttools>=4.60",
+# ]
+# ///
 """Technical statistics of every family, from the full font files.
 
-Usage: python3 scripts/tech.py [family ...]   (with families: only print their values)
+Usage: uv run scripts/tech.py [family ...]   (with families: only print their values)
 
 The files in data/fonts/ are subsets, which lack most OpenType features, so
 this script reads the full file of each family from Google Fonts: the one
@@ -147,6 +153,7 @@ with ThreadPoolExecutor(16) as pool:
         except Exception as e:  # noqa: BLE001
             failed += 1
             print(f'\nfailed: {manifest[i_of[future]]["family"]}: {e!r}')
-        print(f'\r{n + 1}/{len(manifest)}', end='', flush=True)
+        if sys.stdout.isatty():
+            print(f'\r{n + 1}/{len(manifest)}', end='', flush=True)
 json.dump(out, open('public/data/tech.json', 'w'), separators=(',', ':'))
 print(f'\n{len(manifest) - failed} families, {failed} failed')

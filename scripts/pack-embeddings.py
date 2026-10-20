@@ -1,6 +1,12 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "numpy>=2",
+# ]
+# ///
 """Packs the skeleton embeddings for the browser.
 
-Usage: python3 scripts/pack-embeddings.py [chars]
+Usage: uv run scripts/pack-embeddings.py [chars]
 
 Reads data/emb-skel/<charCode>.f32 (rows of [CLS, 4x4 grid] x 384 floats),
 uses the 4x4 grid (each cell L2-normalized), reduces it with PCA to DIMS

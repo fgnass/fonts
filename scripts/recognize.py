@@ -1,10 +1,16 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "numpy>=2",
+# ]
+# ///
 """Measure letter recognition from the raw DINOv2 skeleton embeddings.
 
-Usage: python3 scripts/recognize.py [--dry] [family ...]
+Usage: uv run scripts/recognize.py [--dry] [family ...]
 
-Writes `lr` (0..1) into public/data/metrics.json. Named families only print
-scores; --dry prints the excluded families without writing. Requires NumPy
-and data/emb-skel/ from embed.mjs --skeleton. Run after measure.mjs and
+Writes `lr` (0..1) into the metric part data/metrics/recognize.json. Named
+families only print scores; --dry prints the excluded families without
+writing. Requires data/emb-skel/ from embed.mjs --skeleton and `dx` from
 distinct.mjs. Unlike public/data/e/, these embeddings share a coordinate
 system across characters (the packed files have a separate PCA per letter).
 
@@ -70,10 +76,9 @@ def main():
     parser.add_argument('families', nargs='*')
     args = parser.parse_args()
     fonts = json.loads(Path('public/data/fonts.json').read_text())
-    path = Path('public/data/metrics.json')
-    metrics = json.loads(path.read_text())
-    if len(fonts) != len(metrics):
-        raise ValueError('Font and metric row counts differ; rebuild the index first.')
+    distinct = json.loads(Path('data/metrics/distinct.json').read_text())
+    if len(fonts) != len(distinct):
+        raise ValueError('Font and metric row counts differ; rebuild the index and run distinct.mjs first.')
     rows = []
     for ch in CHARS:
         raw = np.fromfile(f'data/emb-skel/{ord(ch)}.f32', dtype=np.float32)
@@ -81,20 +86,18 @@ def main():
             raise ValueError(f'{ch}: invalid embedding data; rebuild skeleton embeddings first.')
         rows.append(raw.reshape(len(fonts), 17, 384)[:, 1:].reshape(len(fonts), -1))
     features = np.stack(rows)
-    references = np.array([i for i in range(min(300, len(fonts))) if metrics[i].get('dx', 0) >= 0.8])
+    references = np.array([i for i in range(min(300, len(fonts))) if distinct[i].get('dx', 0) >= 0.8])
     if len(references) < 6:
         raise ValueError('Too few references; run distinct.mjs first.')
     scores = recognition(features, references)
-    for font, metric, score in zip(fonts, metrics, scores):
+    rows = []
+    for font, score in zip(fonts, scores):
         score = round(float(score), 3) if np.isfinite(score) else None
-        if score is None:
-            metric.pop('lr', None)
-        else:
-            metric['lr'] = score
+        rows.append({} if score is None else {'lr': score})
         if font['family'] in args.families or (args.dry and score is not None and score < THRESHOLD):
             print(f"{font['family']:<36} {score}")
     if not args.dry and not args.families:
-        path.write_text(json.dumps(metrics, separators=(',', ':')))
+        Path('data/metrics/recognize.json').write_text(json.dumps(rows, separators=(',', ':')))
     print(f'{np.sum(scores < THRESHOLD)} of {len(fonts)} below {THRESHOLD}; '
           f'{np.sum(~np.isfinite(scores))} unknown')
 
