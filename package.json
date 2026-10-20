@@ -1,0 +1,29 @@
+{
+  "name": "fonts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "download": "node scripts/download.mjs",
+    "index": "node scripts/build-index.mjs && node scripts/build-topology.mjs",
+    "index-topology": "node scripts/build-topology.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "check": "tsc"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@huggingface/transformers": "^4.3.1",
+    "@napi-rs/canvas": "^1.0.10",
+    "@preact/preset-vite": "^2.10.6",
+    "harfbuzzjs": "^1.6.3",
+    "opentype.js": "^2.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  },
+  "dependencies": {
+    "@preact/signals": "^2.11.3",
+    "delaunator": "^5.1.0",
+    "preact": "^10.29.8"
+  }
+}
