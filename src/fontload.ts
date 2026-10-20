@@ -9,10 +9,14 @@ interface Entry {
   refs: number;
   /** Last use, for eviction (see evict). */
   used: number;
+  /** When the face was loaded: a fresh face is not evicted before its consumers could retain it. */
+  loadedAt: number;
 }
 
 /** Loaded faces beyond this many are evicted when nothing shows them any more. */
 const MAX_FACES = 400;
+/** How long a freshly loaded face is safe from eviction, ms. */
+const GRACE = 2000;
 
 const entries = new Map<string, Entry>(); // alias -> loading or loaded font
 let clock = 0;
@@ -63,7 +67,7 @@ export function loadFont(font: Pick<Font, 'family' | 'axes'>, style: Style, text
   const { alias, chars, spec } = request(font, style, text);
   let entry = entries.get(alias);
   if (!entry) {
-    const e: Entry = { refs: 0, used: ++clock, promise: Promise.resolve(false) };
+    const e: Entry = { refs: 0, used: ++clock, loadedAt: 0, promise: Promise.resolve(false) };
     e.promise = fetch(`https://fonts.googleapis.com/css2?family=${encodeURIComponent(spec)}&text=${encodeURIComponent(chars)}`)
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`))))
       .then((css) => {
@@ -78,7 +82,8 @@ export function loadFont(font: Pick<Font, 'family' | 'axes'>, style: Style, text
           document.fonts.add(face);
           e.face = face;
           e.used = ++clock;
-          evict();
+          e.loadedAt = performance.now();
+          scheduleEviction();
           return true;
         },
         () => {
@@ -109,12 +114,28 @@ export function retain(alias: string) {
   };
 }
 
-/** Removes the least recently used fonts that nothing shows, down to MAX_FACES. */
+let eviction: ReturnType<typeof setTimeout> | undefined;
+/** Runs evict once the freshly loaded faces have had their grace period. */
+function scheduleEviction() {
+  if (eviction) return;
+  eviction = setTimeout(() => {
+    eviction = undefined;
+    evict();
+  }, GRACE);
+}
+
+/**
+ * Removes the least recently used fonts that nothing shows, down to
+ * MAX_FACES. Faces loaded within the grace period stay: their consumers get
+ * the loaded promise first and retain them in an effect afterwards. When
+ * everything is shown or fresh, the cap is exceeded for the time being.
+ */
 function evict() {
   let loaded = 0;
   for (const e of entries.values()) if (e.face) loaded++;
   if (loaded <= MAX_FACES) return;
-  const idle = [...entries].filter(([, e]) => e.face && e.refs <= 0).sort(([, a], [, b]) => a.used - b.used);
+  const now = performance.now();
+  const idle = [...entries].filter(([, e]) => e.face && e.refs <= 0 && now - e.loadedAt >= GRACE).sort(([, a], [, b]) => a.used - b.used);
   for (const [alias, e] of idle) {
     if (loaded <= MAX_FACES) break;
     document.fonts.delete(e.face!);

@@ -102,16 +102,19 @@ async function searchAll(pts: Uint8Array, allowed: (i: number) => boolean, noLow
 }
 
 /**
- * The distance of every allowed font to one query letter (null where the
- * font has no glyph): AI features for a font query when they exist for the
- * character, else the chamfer distance of the skeletons.
+ * The rank of every allowed font for one query letter (null where the font
+ * has no glyph): by AI features for a font query when they exist for the
+ * character, else by the chamfer distance of the skeletons. The AI features
+ * can be incomplete: a zero row for the query glyph gives no distances at
+ * all, and a zero row for another font would drop it although it has a
+ * skeleton. Such fonts get their skeleton rank instead.
  */
-async function distances(part: SearchRequest['parts'][number], list: Glyph[], allowed: (i: number) => boolean) {
+async function letterRanks(part: SearchRequest['parts'][number], list: Glyph[], allowed: (i: number) => boolean) {
+  const has = (i: number) => allowed(i) && list[i].pts.length > 0;
   const E = part.fontIndex != null ? await loadEmbeddings(part.ch) : null;
-  if (E && part.fontIndex != null) {
-    const dist = embeddingDistances(E, part.fontIndex).map((d, i) => (d != null && allowed(i) && list[i].pts.length ? d : null));
-    return { dist, ai: true };
-  }
+  const ai = E && part.fontIndex != null ? embeddingDistances(E, part.fontIndex).map((d, i) => (d != null && has(i) ? d : null)) : null;
+  const aiRank = ai?.some((d) => d != null) ? ranks(ai) : null;
+  if (aiRank && !aiRank.some((r, i) => r == null && has(i))) return { rank: aiRank, ai: true };
   const pts = part.fontIndex != null ? list[part.fontIndex].pts : part.pts;
   const dist: (number | null)[] = new Array(list.length).fill(null);
   if (pts?.length) {
@@ -119,10 +122,12 @@ async function distances(part: SearchRequest['parts'][number], list: Glyph[], al
     const ends = part.fontIndex == null ? strokeEnds(pts) : null;
     const dt = new Uint16Array(GRID * GRID);
     list.forEach((g, i) => {
-      if (g.pts.length && allowed(i)) dist[i] = chamfer(pts, sketchDt, g.pts, distanceField(g.pts, dt)) + (ends ? strokeEndDistance(ends, g.ends) : 0);
+      if (has(i)) dist[i] = chamfer(pts, sketchDt, g.pts, distanceField(g.pts, dt)) + (ends ? strokeEndDistance(ends, g.ends) : 0);
     });
   }
-  return { dist, ai: false };
+  const rank = ranks(dist);
+  if (!aiRank) return { rank, ai: false };
+  return { rank: aiRank.map((r, i) => r ?? rank[i]), ai: true };
 }
 
 /** Maps distances to ranks from 0 (best) to 1 (worst), so that letters compared by different measures weigh the same. */
@@ -164,10 +169,10 @@ onmessage = async ({ data }: MessageEvent<SearchRequest>) => {
   for (const [k, part] of parts.entries()) {
     const lower = part.ch >= 'a' && part.ch <= 'z';
     const allowed = (i: number) => allowedSet[i] === 1 && !(lower && noLower[i]);
-    const { dist, ai } = await distances(part, lists[k], allowed);
+    const { rank, ai } = await letterRanks(part, lists[k], allowed);
     if (!ai && part.fontIndex != null) usedChamfer.push(part.ch);
     const weight = part.fontIndex == null ? sketchWeight : exampleWeight;
-    ranks(dist).forEach((r, i) => (r == null ? (have[i] = 0) : (sum[i] += r * weight)));
+    rank.forEach((r, i) => (r == null ? (have[i] = 0) : (sum[i] += r * weight)));
   }
   const hits: SearchHit[] = [];
   for (let i = 0; i < list.length; i++) {
