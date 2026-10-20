@@ -54,6 +54,7 @@ export function SketchPad() {
   return (
     <canvas
       id="pad"
+      class="aspect-square w-full cursor-crosshair touch-none rounded-[10px] border border-line bg-tile text-bright dot-grid"
       ref={canvas}
       width={640}
       height={640}

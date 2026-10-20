@@ -31,7 +31,7 @@ export type Corridor = [lo: number, hi: number];
 
 export const BINS = 40;
 
-const clamp = (p: number) => Math.min(1, Math.max(0, p));
+export const clamp = (p: number) => Math.min(1, Math.max(0, p));
 const names = (list: [number, string][]) => (v: number) => list.find(([max]) => v < max)![1];
 
 export const SLIDERS: Slider[] = [
@@ -244,6 +244,9 @@ export const SLIDERS: Slider[] = [
 
 /** The look sliders in groups: what one sets first, the voice of a font, and fine-tuning (collapsed at first). */
 export const LOOK_KEYS = ['weight', 'width', 'slant', 's', 'sb', 'c', 'e', 'r', 'o', 'cn', 'hf', 'x', 'ge', 'ap', 'mo'];
+
+/** The technical sliders (what a font contains). */
+export const TECHNICAL_KEYS = SLIDERS.filter((s) => s.technical).map((s) => s.key);
 
 export const STYLE = Object.fromEntries(SLIDERS.filter((s) => s.style).map((s) => [s.key, s])) as Record<'weight' | 'width' | 'slant', Slider>;
 

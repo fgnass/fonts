@@ -234,6 +234,26 @@ function styleFor(f: Font, c: Candidate, ranges: Map<string, Range>): Style {
   return style;
 }
 
+/** Choose the passing style closest to the corridor centers, with default-style tie breaks. */
+function chooseDisplayedStyle(f: Font, passing: Candidate[], ranges: Map<string, Range>, styleSliders: Slider[]): Style {
+  let pick: Style = displayedStyle(f);
+  if (styleSliders.some((s) => ranges.has(s.key))) {
+    let bestCost = Infinity;
+    for (const c of passing) {
+      const style = styleFor(f, c, ranges);
+      let cost = Math.abs(style.weight - 400) / 1e4; // prefer weights near 400 on a tie
+      // Without a slant corridor, prefer the default style (usually upright).
+      if (!ranges.has('slant') && c.italic !== f.italic) cost += 1;
+      styleSliders.forEach((s) => {
+        const r = ranges.get(s.key);
+        if (r) cost += ((s.pos(fontValue(f, s, style)!) - (r.lo + r.hi) / 2) / (r.hi - r.lo + 0.01)) ** 2;
+      });
+      if (cost < bestCost) (bestCost = cost), (pick = style);
+    }
+  }
+  return pick;
+}
+
 export interface FilterResult {
   list: Passing[];
   /** Per slider, how many fonts that pass all *other* filters fall into each bin. */
@@ -307,22 +327,7 @@ export function filterFonts(ranges: Map<string, Range>): FilterResult {
     }
     if (famFails || !stylePass) continue;
 
-    // The style to show: the passing candidate that fits the corridors best.
-    let pick: Style = displayedStyle(f);
-    if (styleSliders.some((s) => ranges.has(s.key))) {
-      let bestCost = Infinity;
-      for (const c of passing) {
-        const style = styleFor(f, c, ranges);
-        let cost = Math.abs(style.weight - 400) / 1e4; // prefer weights near 400 on a tie
-        // Without a slant corridor, prefer the default style (usually upright).
-        if (!ranges.has('slant') && c.italic !== f.italic) cost += 1;
-        styleSliders.forEach((s) => {
-          const r = ranges.get(s.key);
-          if (r) cost += ((s.pos(fontValue(f, s, style)!) - (r.lo + r.hi) / 2) / (r.hi - r.lo + 0.01)) ** 2;
-        });
-        if (cost < bestCost) (bestCost = cost), (pick = style);
-      }
-    }
+    const pick = chooseDisplayedStyle(f, passing, ranges, styleSliders);
     list.push({ ...f, pick });
   }
   return { list, hist, misses, ranges };

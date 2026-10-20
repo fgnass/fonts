@@ -5,7 +5,7 @@ import { DEFAULT_TEXT, MAX_LINES, text } from '../state';
 const limitLines = (value: string) => value.split('\n').slice(0, MAX_LINES).join('\n');
 
 /** The preview text: a field that grows with its lines, up to MAX_LINES. */
-export function PreviewTextField({ id, autofocus }: { id?: string; autofocus?: boolean }) {
+export function PreviewTextField({ id, autofocus, class: className }: { id?: string; autofocus?: boolean; class?: string }) {
   const field = useRef<HTMLTextAreaElement>(null);
   useLayoutEffect(() => {
     const el = field.current;
@@ -16,7 +16,7 @@ export function PreviewTextField({ id, autofocus }: { id?: string; autofocus?: b
   return (
     <textarea
       id={id}
-      class="preview-text"
+      class={'h-10 min-w-0 resize-none overflow-hidden rounded-lg border border-line2 bg-tile px-3.5 py-1.75 text-[18px]/6 font-medium whitespace-pre placeholder:text-muted focus:border-accent focus:outline-none ' + (className ?? '')}
       ref={field}
       rows={1}
       autofocus={autofocus}

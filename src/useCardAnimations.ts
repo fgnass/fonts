@@ -65,7 +65,7 @@ export function useCardAnimations(grid: { current: HTMLElement | null }, exits: 
     const bounds = root.getBoundingClientRect();
     const next = new Map<string, Position>();
     const size = root.style.getPropertyValue('--size');
-    for (const node of root.querySelectorAll<HTMLElement>(':scope > .card')) {
+    for (const node of root.querySelectorAll<HTMLElement>(':scope > [data-font-index]')) {
       const rect = node.getBoundingClientRect();
       const motion = motions.current.get(node);
       next.set(node.dataset.fontIndex!, { node, x: rect.left - bounds.left - (motion?.x ?? 0), y: rect.top - bounds.top - (motion?.y ?? 0), width: rect.width, height: rect.height, size });
@@ -113,7 +113,7 @@ export function useCardAnimations(grid: { current: HTMLElement | null }, exits: 
       const clone = before.node.cloneNode(true) as HTMLElement;
       clone.style.transform = '';
       clone.inert = true;
-      clone.classList.add('card-exit');
+      clone.style.pointerEvents = 'none';
       Object.assign(clone.style, { position: 'absolute', left: `${x}px`, top: `${y}px`, width: `${before.width}px`, height: `${before.height}px`, margin: '0' });
       clone.style.setProperty('--size', before.size);
       // cloneNode does not copy a canvas's bitmap.

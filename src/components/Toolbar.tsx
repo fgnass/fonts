@@ -2,24 +2,23 @@ import { hasStyles } from '../data';
 import { Slider } from './Slider';
 import { DEFAULT_GROUP_COUNT, groupCount, previewSize, showShortlist } from '../state';
 import { PreviewTextField } from './PreviewText';
+import { Switch } from './ui';
 
 /** Preview text (up to three lines), grouping and preview size. */
 export function Toolbar() {
   const grouped = groupCount.value > 0;
   return (
-    <div class="toolbar">
-      <PreviewTextField id="text" />
+    <div class="flex flex-wrap items-center gap-4 border-b border-line bg-base px-6 py-3">
+      <PreviewTextField id="text" class="flex-[1_1_240px]" />
       {!showShortlist.value && (
-        <label class="switch" title="Show one font per group of similar-looking fonts">
-          <input type="checkbox" checked={grouped} disabled={!hasStyles} onChange={(e) => (groupCount.value = e.currentTarget.checked ? DEFAULT_GROUP_COUNT : 0)} />
-          <span class="knob" />
+        <Switch title="Show one font per group of similar-looking fonts" checked={grouped} disabled={!hasStyles} onChange={(on) => (groupCount.value = on ? DEFAULT_GROUP_COUNT : 0)}>
           Hide look-alikes
-        </label>
+        </Switch>
       )}
-      <div class="size" title="Preview size">
-        <span class="a" style={{ fontSize: 10 }} aria-hidden="true">A</span>
-        <Slider label="Preview size" min={20} max={120} value={previewSize.value} onChange={(v) => (previewSize.value = v)} />
-        <span class="a" style={{ fontSize: 17 }} aria-hidden="true">A</span>
+      <div class="flex items-end gap-1.5" title="Preview size">
+        <span class="pb-px text-[10px]/none text-muted" aria-hidden="true">A</span>
+        <Slider class="w-30" label="Preview size" min={20} max={120} value={previewSize.value} onChange={(v) => (previewSize.value = v)} />
+        <span class="pb-px text-[17px]/none text-muted" aria-hidden="true">A</span>
       </div>
     </div>
   );
