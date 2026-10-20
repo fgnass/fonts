@@ -112,7 +112,10 @@ async function searchAll(pts: Uint8Array, allowed: (i: number) => boolean, noLow
 async function letterRanks(part: SearchRequest['parts'][number], list: Glyph[], allowed: (i: number) => boolean) {
   const has = (i: number) => allowed(i) && list[i].pts.length > 0;
   const E = part.fontIndex != null ? await loadEmbeddings(part.ch) : null;
-  const ai = E && part.fontIndex != null ? embeddingDistances(E, part.fontIndex).map((d, i) => (d != null && has(i) ? d : null)) : null;
+  const aiDistances = E && part.fontIndex != null ? embeddingDistances(E, part.fontIndex) : null;
+  // The glyph index may contain newer fonts than the embeddings. Keep every
+  // glyph row so missing embeddings fall back and ineligible fonts stay null.
+  const ai = aiDistances ? list.map((_, i) => (has(i) ? aiDistances[i] ?? null : null)) : null;
   const aiRank = ai?.some((d) => d != null) ? ranks(ai) : null;
   if (aiRank && !aiRank.some((r, i) => r == null && has(i))) return { rank: aiRank, ai: true };
   const pts = part.fontIndex != null ? list[part.fontIndex].pts : part.pts;
