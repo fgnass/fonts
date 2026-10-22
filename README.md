@@ -18,9 +18,14 @@ make        # builds the font data in public/data/ (needs Node and uv)
 npm run dev
 ```
 
-## Technical details
+## How it works
 
-For the data pipeline, the shape search, the measurements behind the sliders and the code structure, see [docs/TECHNICAL.md](docs/TECHNICAL.md).
+Every glyph is reduced to its center line (an approximation of the medial axis). A drawing is compared with these center lines by chamfer distance plus a term for the number and position of stroke ends. A font chosen as an example is compared by DINOv2 features of its center lines. The sliders are values measured from the outlines, without categories or training.
+
+The idea of searching by drawing comes from [Shapecatcher](https://shapecatcher.com) by Benjamin Milde, which does the same for Unicode characters.
+
+- [docs/METHOD.md](docs/METHOD.md): the methods, an evaluation (sliders against crowdsourced judgments, shape search on synthetic sketches), related work and limitations.
+- [docs/PIPELINE.md](docs/PIPELINE.md): how to build the data, run the evaluation, and where the code is.
 
 ## License
 
