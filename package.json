@@ -24,6 +24,7 @@
     "@preact/signals": "^2.11.3",
     "classname-variants": "^1.7.1",
     "delaunator": "^5.1.0",
+    "lucide-preact": "^1.60.0",
     "preact": "^10.29.8"
   }
 }

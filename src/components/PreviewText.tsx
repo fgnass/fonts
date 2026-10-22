@@ -20,7 +20,7 @@ export function PreviewTextField({ id, autofocus, class: className }: { id?: str
       ref={field}
       rows={1}
       autofocus={autofocus}
-      placeholder="Up to three lines…"
+      placeholder="Type your preview text…"
       title={`Shown when empty: ${DEFAULT_TEXT.replace(/\n/g, ' · ')}`}
       aria-label="Text to preview, up to three lines"
       autocomplete="off"

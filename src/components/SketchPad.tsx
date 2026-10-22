@@ -3,12 +3,12 @@ import { GRID } from '../shape.js';
 import { drawSkeleton, loadSkeleton } from '../skeleton';
 import { addStroke, excluded, focused, likeFont, type Point, strokes } from '../state';
 
-/** The sketch of the focused letter, or its example-font skeleton, dimmed when excluded. */
+/** The sketch of the focused letter, or its example-font skeleton unless the letter is left out. */
 export function SketchPad() {
   const canvas = useRef<HTMLCanvasElement>(null);
   const current = useRef<Point[] | null>(null);
   const font = likeFont.value, ch = focused.value, lines = strokes.value;
-  const dimmed = excluded.value.includes(ch);
+  const leftOut = excluded.value.includes(ch);
 
   const draw = () => {
     const c = canvas.current!;
@@ -32,18 +32,16 @@ export function SketchPad() {
     const c = canvas.current!;
     const ctx = c.getContext('2d')!;
     ctx.clearRect(0, 0, c.width, c.height);
-    if (!ch) return;
+    if (!ch || leftOut) return;
     let live = true;
     void loadSkeleton(ch, font.index).then((skeleton) => {
       if (!live || current.current || !skeleton) return;
       ctx.clearRect(0, 0, c.width, c.height);
       ctx.strokeStyle = getComputedStyle(c).color;
-      ctx.globalAlpha = dimmed ? 0.3 : 1;
       drawSkeleton(ctx, skeleton, c.width / GRID, 14);
-      ctx.globalAlpha = 1;
     }).catch(() => {});
     return () => void (live = false);
-  }, [font, ch, lines, dimmed]);
+  }, [font, ch, lines, leftOut]);
 
   const point = (e: PointerEvent): Point => {
     const c = canvas.current!;

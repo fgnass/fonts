@@ -1,7 +1,7 @@
 // The state of the app as signals, and the searches that follow from it.
 import { batch, computed, effect, type Signal, signal } from '@preact/signals';
 import { CHARS } from './chars.js';
-import { type Font, hasSkeleton, hasStyles, ligaturesIn, metrics, type Style, textFonts } from './data';
+import { type Font, fonts, hasSkeleton, hasStyles, ligaturesIn, metrics, type Style, textFonts } from './data';
 import { activeRanges, compromises, exclusionSuggestions, filterFonts, type ExclusionPlan } from './filter';
 import { groupFonts } from './groups';
 import type { SearchPart } from './search-types';
@@ -192,17 +192,6 @@ export function applyExclusion(plan: ExclusionPlan) {
   });
 }
 
-export function undoExclusion() {
-  const change = lastExclusion.value;
-  if (!change) return;
-  batch(() => {
-    corridors.value = change.before;
-    withinFilters.value = change.within;
-    tab.value = change.tab;
-    dismissExclusion();
-  });
-}
-
 export const setCorridor = (key: string, value: Corridor) => {
   dismissExclusion();
   corridors.value = { ...corridors.value, [key]: value };
@@ -312,28 +301,115 @@ export const view = computed(() => (activeShapeQuery.value ? shapeView.value : b
 
 // --- Actions -----------------------------------------------------------------
 
+// --- Workspaces ---------------------------------------------------------------
+
+/** The tabs: the overview, the shape query and the shortlist (tabs at the top left, or the tab bar on narrow screens). */
+export type Workspace = 'explore' | 'shape' | 'shortlist';
+export const workspace = computed<Workspace>(() => (showShortlist.value ? 'shortlist' : tab.value === 'shape' ? 'shape' : 'explore'));
+
+/** Opens a tab; leaving Shape keeps its query for later. */
+export function openWorkspace(next: Workspace) {
+  if (next === workspace.value) return;
+  batch(() => {
+    selectWorkspace(next === 'shortlist');
+    if (next === 'shape') tab.value = 'shape';
+    else if (next === 'explore' && tab.value === 'shape') tab.value = 'look';
+  });
+  if (next === 'shape') window.scrollTo(0, 0);
+}
+
+// --- Undo of filter changes --------------------------------------------------
+
+/** Filters before each change; a drag counts as one change once it rests. */
+const undoStack = signal<Record<string, Corridor>[]>([]);
+const SETTLE_MS = 500;
+let settled = corridors.peek();
+let settleTimer: ReturnType<typeof setTimeout> | undefined;
+let undoing = false;
+effect(() => {
+  const now = corridors.value;
+  clearTimeout(settleTimer);
+  if (undoing) return void (settled = now);
+  settleTimer = setTimeout(() => {
+    if (now === settled) return;
+    undoStack.value = [...undoStack.value.slice(-49), settled];
+    settled = now;
+  }, SETTLE_MS);
+});
+
+/** Whether a filter change can be undone, also one that is still settling. */
+export const canUndo = computed(() => undoStack.value.length > 0 || corridors.value !== settled);
+
+/** Puts the filters back to before the last change (a slider move, a reset or an exclusion). */
+export function undoFilters() {
+  clearTimeout(settleTimer);
+  const pending = corridors.peek() !== settled;
+  const target = pending ? settled : undoStack.peek().at(-1);
+  if (!target) return;
+  undoing = true;
+  batch(() => {
+    if (!pending) undoStack.value = undoStack.value.slice(0, -1);
+    corridors.value = target;
+    lastExclusion.value = null;
+    exclusionMessage.value = null;
+  });
+  undoing = false;
+}
+
+
 /** Makes `font` the example (or removes it with null): its glyphs stand in for every letter that is not drawn. */
 export function setLikeFont(font: Font | null) {
   batch(() => {
     likeFont.value = font;
-    if (font) withinFilters.value = false;
   });
 }
 
 /**
- * "≈" on a card: the fonts whose letters look like those of `font`, among
- * all fonts (the font is the specification, so the filters pause). Opens the
- * Shape tab with the font as the example.
+ * A tap on a card: the fonts whose letters look like those of `font`. Opens
+ * the Shape tab with the font as the example. Each step is a history entry,
+ * so that "back" returns to the font before; a tap outside the Shape tab
+ * starts a new chain.
  */
 export function showSimilar(font: Font) {
+  const inShape = tab.value === 'shape' && !showShortlist.value;
+  if (inShape && likeFont.value?.index === font.index) return;
+  const depth = inShape ? chainDepth.value + 1 : 1;
+  // The current entry may still describe an older Shape chain after returning
+  // to Explore. Make it the boundary so Back from this new chain exits Shape.
+  if (!inShape) history.replaceState(null, '');
+  history.pushState({ similar: font.index, depth, session } satisfies SimilarEntry, '');
+  chainDepth.value = depth;
+  openSimilar(font);
+}
+
+/** The history entry of a "similar" step: the example font, how many steps the chain has up to it, and the page load that made it. */
+type SimilarEntry = { similar: number; depth: number; session: number };
+// Entries outlive a reload, but the query of that page is gone: entries of other loads only lead out of the Shape tab.
+const session = Math.random();
+const similarEntry = (state: unknown) => ((state as SimilarEntry | null)?.session === session ? (state as SimilarEntry) : null);
+/** How many "similar" steps lead to the current example font: above 1, "back" has a font to return to. */
+export const chainDepth = signal(0);
+
+/** A new query from the font: its letters only, without the sketches and left-out letters of the query before. */
+function openSimilar(font: Font) {
   batch(() => {
     showShortlist.value = false;
+    sketches.value = {};
+    excluded.value = [];
     setLikeFont(font);
     tab.value = 'shape';
     if (focus.value === '') focus.value = null;
   });
   window.scrollTo(0, 0);
 }
+
+// "Back" goes to the font before in the chain; before the first step, out of the Shape tab (the query stays for later).
+addEventListener('popstate', (e: PopStateEvent) => {
+  const entry = similarEntry(e.state);
+  chainDepth.value = entry?.depth ?? 0;
+  if (entry && fonts[entry.similar]) openSimilar(fonts[entry.similar]);
+  else if (tab.value === 'shape') tab.value = 'look';
+});
 
 /** Shows `ch` on the pad; a left-out letter comes back into the query. */
 export function pickLetter(ch: string) {
@@ -348,6 +424,8 @@ export function addStroke(stroke: Point[]) {
   batch(() => {
     const ch = focused.value;
     sketches.value = { ...sketches.value, [ch]: [...(sketches.value[ch] ?? []), stroke] };
+    // A drawing brings a left-out letter back into the query.
+    if (excluded.value.includes(ch)) excluded.value = excluded.value.filter((c) => c !== ch);
     if (!likeFont.value) withinFilters.value = true;
   });
 }
@@ -357,18 +435,14 @@ export const undoStroke = () => {
   sketches.value = { ...sketches.value, [ch]: (sketches.value[ch] ?? []).slice(0, -1) };
 };
 
-/** Clears the pad: the sketch of the focused letter; without one, the letter leaves the query and the next one comes onto the pad. */
+/** Clears the pad: the sketch of the focused letter; without one, the letter leaves the query and the pad stays empty for a drawing. */
 export function clearPad() {
   const ch = focused.value;
   if (sketches.value[ch]?.length) {
     const { [ch]: _, ...rest } = sketches.value;
     sketches.value = rest;
-  } else if (ch) {
-    batch(() => {
-      const out = [...excluded.value, ch];
-      excluded.value = out;
-      focus.value = letters.value.find((c) => !out.includes(c)) ?? null;
-    });
+  } else if (ch && !excluded.value.includes(ch)) {
+    excluded.value = [...excluded.value, ch];
   }
 }
 

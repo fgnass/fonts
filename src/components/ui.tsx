@@ -1,6 +1,7 @@
+import { useEffect, useState } from 'preact/hooks';
 import type { ComponentChildren } from 'preact';
 import { styled } from 'classname-variants/preact';
-import { ResetIcon } from './icons';
+import { RotateCcw } from 'lucide-preact';
 
 /** A small label in capitals above or beside a group of controls. */
 export const Eyebrow = styled('span', 'font-mono text-[11px]/[1.4] tracking-[0.08em] text-muted uppercase');
@@ -36,8 +37,20 @@ export function ResetButton({ onClick }: { onClick: () => void }) {
       title="Set all sliders of this group back to any"
       onClick={onClick}
     >
-      <ResetIcon />
+      <RotateCcw size={12} aria-hidden="true" />
       Reset
     </button>
   );
+}
+
+/** The message while it is new: it shows for a few seconds, then gives way. */
+export function useFresh(message: string | null, ms = 4000) {
+  const [fresh, setFresh] = useState<string | null>(null);
+  useEffect(() => {
+    setFresh(message);
+    if (!message) return;
+    const timer = setTimeout(() => setFresh(null), ms);
+    return () => clearTimeout(timer);
+  }, [message]);
+  return fresh;
 }

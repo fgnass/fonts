@@ -46,10 +46,10 @@ const SampleGlyph = styled('i', {
   variants: { ready: { true: 'opacity-100', false: 'opacity-0' } },
 });
 
-const byKey = new Map(SLIDERS.map((s) => [s.key, s]));
+export const byKey = new Map(SLIDERS.map((s) => [s.key, s]));
 
 /** Sample fonts for both ends of each slider, filled in one slider at a time (the pairs take some time). */
-const samples = signal<Record<string, [Sample, Sample] | null>>({});
+export const samples = signal<Record<string, [Sample, Sample] | null>>({});
 function findSamples() {
   const queue = SLIDERS.filter((s) => s.sample);
   const next = () => {
@@ -63,7 +63,7 @@ function findSamples() {
 findSamples();
 
 /** A sample letter in a font, shown when the font has loaded. The name of the end is its tooltip. */
-function SampleText({ sample, text, name }: { sample?: Sample; text: string; name: string }) {
+export function SampleText({ sample, text, name }: { sample?: Sample; text: string; name: string }) {
   const alias = useLoadedFont(sample?.font, sample?.style, text);
   if (!sample) return <SampleGlyph />;
   const { font, style } = sample;
@@ -89,7 +89,7 @@ function useScrollIntoPane(el: RefObject<HTMLElement>, active: boolean) {
   }, [active]);
 }
 
-function SliderRow({ slider }: { slider: Slider }) {
+export function SliderRow({ slider }: { slider: Slider }) {
   const row = useRef<HTMLDivElement>(null);
   const value = corridors.value[slider.key];
   const pair = samples.value[slider.key];
@@ -136,7 +136,7 @@ function SliderRow({ slider }: { slider: Slider }) {
 }
 
 /** A slider with a bimodal value, shown as a checkbox that sets its corridor. */
-function ToggleRow({ slider }: { slider: Slider }) {
+export function ToggleRow({ slider }: { slider: Slider }) {
   const on = !isAny(corridors.value[slider.key]);
   return (
     <label class="flex cursor-pointer items-center gap-2 font-mono text-[11px]/[1.4]" title={slider.tip}>

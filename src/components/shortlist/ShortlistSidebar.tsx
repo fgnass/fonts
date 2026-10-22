@@ -1,3 +1,4 @@
+import { ArrowLeft, Star } from 'lucide-preact';
 import { styled } from 'classname-variants/preact';
 import { displayedStyle, type Font } from '../../data';
 import { primary, savedFonts, secondary, selection } from '../../shortlist-state';
@@ -36,13 +37,13 @@ export function ShortlistSidebar() {
                 <FamilyName font={font} />
                 <small class="mt-1 block text-[11px] text-muted">{roleLabel(font)}</small>
               </button>
-              <button type="button" class="cursor-pointer p-2.5 text-[17px] text-accent" aria-label={`Remove ${font.family} from shortlist`} title="Remove from shortlist" onClick={() => toggleShortlist(font.family)}>★</button>
+              <button type="button" class="cursor-pointer p-2.5 text-accent" aria-label={`Remove ${font.family} from shortlist`} title="Remove from shortlist" onClick={() => toggleShortlist(font.family)}><Star size={18} fill="currentColor" aria-hidden="true" /></button>
             </Row>
           );
         })}
       </div>
       {!savedFonts.value.length && <p class="text-[12px] text-muted">Star fonts in Explore to collect them here.</p>}
-      <button type="button" class="mt-auto cursor-pointer pt-3 text-left text-soft" onClick={() => selectWorkspace(false)}>← Explore fonts</button>
+      <button type="button" class="mt-auto inline-flex cursor-pointer items-center gap-1.5 pt-3 text-left text-soft narrow:hidden" onClick={() => selectWorkspace(false)}><ArrowLeft size={14} aria-hidden="true" /> Explore fonts</button>
     </div>
   );
 }

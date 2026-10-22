@@ -15,7 +15,7 @@ const chipConfig = {
       similar: 'mr-auto',
       dislike: 'inline-flex items-center justify-center',
       // The star of a shortlisted font shows at all times.
-      star: 'absolute top-3 right-2.5 text-[17px] opacity-0 aria-pressed:text-accent aria-pressed:opacity-100 ' + showOnHover,
+      star: 'absolute top-3 right-2.5 inline-flex items-center justify-center opacity-0 aria-pressed:text-accent aria-pressed:opacity-100 ' + showOnHover,
     },
   },
 };

@@ -1,3 +1,4 @@
+import { Star } from 'lucide-preact';
 import { shortlist, toggleShortlist } from '../../state';
 import { Chip } from './styles';
 
@@ -12,7 +13,7 @@ export function ShortlistStar({ family }: { family: string }) {
       title={saved ? 'Remove from shortlist' : 'Add to shortlist'}
       onClick={() => toggleShortlist(family)}
     >
-      {saved ? '★' : '☆'}
+      <Star size={16} strokeWidth={1.75} fill={saved ? 'currentColor' : 'none'} aria-hidden="true" />
     </Chip>
   );
 }

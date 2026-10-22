@@ -6,6 +6,8 @@
   --color-base: #121212;
   --color-panel: #0c0c0c;
   --color-tile: #1a1a1a;
+  /* Panels that float over the tiles, e.g. a slider slid out of the rail. */
+  --color-raised: #262523;
   --color-line: #262626;
   --color-line2: #2e2e2e;
   --color-track: #2a2a2a;
@@ -42,6 +44,8 @@
 @layer base {
   :root {
     color-scheme: dark;
+    /* The tab bar on narrow screens, with the home indicator below it. */
+    --tabbar: calc(56px + env(safe-area-inset-bottom));
   }
 
   body {

@@ -30,7 +30,7 @@ export const Shade = styled('span', 'pointer-events-none absolute bottom-0 z-2 -
 
 /** A handle, with a larger hit area. */
 export const Handle = styled('div', {
-  base: 'absolute bottom-0 z-4 -ml-1.25 size-2.5 rounded-full before:absolute before:-inset-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent',
+  base: 'absolute bottom-0 z-4 -ml-1.25 size-2.5 rounded-full before:absolute before:-inset-2 touch:size-3.5 touch:-ml-1.75 touch:before:-inset-3.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent',
   variants: {
     end: { lo: 'left-[calc(var(--lo)*100%)]', hi: 'left-[calc(var(--hi)*100%)]' },
     off: { true: 'bg-dim', false: 'bg-accent' },

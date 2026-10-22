@@ -72,7 +72,7 @@ export function Results() {
     <div
       id="results"
       ref={grid}
-      class="relative isolate grid grid-cols-[repeat(auto-fill,minmax(min(100%,var(--card-min)),1fr))] content-start gap-2.5 px-6 pt-5 pb-6"
+      class="relative isolate grid grid-cols-[repeat(auto-fill,minmax(min(100%,var(--card-min)),1fr))] narrow:grid-cols-1 content-start gap-2.5 px-6 pt-5 pb-6 narrow:px-3 narrow:pt-3"
       style={{ '--size': `${size}px`, '--card-min': `${Math.max(160, size * 1.6, size * width + 16)}px` }}
     >
       {items.slice(0, count).map((item) => (

@@ -1,7 +1,7 @@
 import { styled } from 'classname-variants/preact';
-import { displayedStyle } from '../../data';
+import { displayedStyle, fonts, hasStyle } from '../../data';
 import { styleName } from '../../fontload';
-import { activeShapeQuery, type Item, likeFont } from '../../state';
+import { activeShapeQuery, type Item, likeFont, pendingExclusion, showShortlist, showSimilar } from '../../state';
 import { CardActions } from './CardActions';
 import { Glyph } from './Glyph';
 import { ShortlistStar } from './ShortlistStar';
@@ -10,15 +10,20 @@ import { showOnHover } from './styles';
 import { useInspection } from './useInspection';
 
 const CardBox = styled('div', {
-  base: 'group/card relative z-1 flex flex-col items-center overflow-hidden rounded-lg border bg-tile px-2.5 py-1.5 text-bright hover:border-accent',
+  // On touch devices the controls show at all times: star and actions need the height of two rows, and the name a row above the preview.
+  base: 'group/card relative z-1 flex flex-col items-center overflow-hidden rounded-lg border bg-tile px-2.5 py-1.5 text-bright hover:border-accent touch:min-h-24 touch:justify-center touch:pt-8',
   variants: { query: { true: 'border-accent shadow-[0_0_0_1px_var(--color-accent)]', false: 'border-line' } },
 });
+
+/** On touch devices the name shows at all times: one quiet line above the preview, so that it does not mix with the preview. */
+const touchName = 'touch:max-w-full touch:truncate touch:text-[11px] touch:text-muted';
 
 /** Name and actions sit at opposite edges without reserving preview space. */
 const Overlay = styled('div', 'pointer-events-none absolute inset-0 flex flex-col justify-between px-2.5 py-3 font-sans text-[12px]/[1.4] text-soft opacity-0 ' + showOnHover);
 
 /**
- * A result: the preview in the font, with buttons for similar fonts and Google Fonts.
+ * A result: the preview in the font, with its name, a star and actions. A tap
+ * on the card (or on the name, for the keyboard) shows similar fonts.
  * While skeletons show, a shape search result shows its skeletons instead of its text.
  */
 export function Card({ item, lines: text, skeletons }: { item: Item; lines: string[]; skeletons?: boolean }) {
@@ -26,15 +31,29 @@ export function Card({ item, lines: text, skeletons }: { item: Item; lines: stri
   const lines = item.ch ? [item.ch] : text;
   const inspection = useInspection(item);
   const details = styleName(displayedStyle(item), item).trim();
+  const similar = hasStyle[item.index] && !showShortlist.value ? () => showSimilar(fonts[item.index]) : undefined;
   return (
-    <CardBox query={!!activeShapeQuery.value && item.index === likeFont.value?.index} data-font-index={item.index} {...inspection}>
+    <CardBox
+      // The example font of the shape query, and the card whose exclusion suggestions are open, show framed.
+      query={(!!activeShapeQuery.value && item.index === likeFont.value?.index) || pendingExclusion.value?.family === item.family}
+      class={similar && 'cursor-pointer'}
+      data-font-index={item.index}
+      {...inspection}
+      onClick={similar && ((e: MouseEvent) => { if (!(e.target as Element).closest('button, a, input')) similar(); })}
+    >
       <Glyph item={item} lines={lines} hidden={skeletons && !!item.skeletons} />
       {item.skeletons && <Skeletons skeletons={item.skeletons} shown={skeletons} />}
       <ShortlistStar family={item.family} />
       <Overlay>
         <div class="pr-9.5">
-          <span class="block leading-[1.5] font-medium wrap-anywhere text-fg">{item.family}</span>
-          {details && <span class="mt-0.5 block text-[11px] text-muted">{details}</span>}
+          {similar ? (
+            <button type="button" class={"pointer-events-auto block cursor-pointer text-left leading-[1.5] font-medium wrap-anywhere text-fg hover:text-accent " + touchName} title="Show fonts that look like this" onClick={similar}>
+              {item.family}
+            </button>
+          ) : (
+            <span class={"block leading-[1.5] font-medium wrap-anywhere text-fg " + touchName}>{item.family}</span>
+          )}
+          {details && <span class="mt-0.5 block text-[11px] text-muted touch:hidden">{details}</span>}
         </div>
         <CardActions item={item} />
       </Overlay>
