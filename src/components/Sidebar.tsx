@@ -119,6 +119,17 @@ export function querySummary() {
   return drawn ? drawing : 'Draw the letters you have in mind';
 }
 
+/** How the shape query works, below the pad. */
+function ShapeHelp() {
+  return (
+    <div class="flex flex-col gap-2 border-t border-line pt-4 text-[12px]/[1.5] text-muted">
+      <p>Draw a letter as a simple line, the way you would write it. Thickness and serifs do not matter, only the shape.</p>
+      <p>The letters on the left come from your preview text. Click one to draw it; each letter you draw narrows the search. With <span class="font-mono text-[11px] text-soft">any</span>, your drawing is compared with every character.</p>
+      <p>Click a font card to find fonts with letters like it.</p>
+    </div>
+  );
+}
+
 type SectionKey = 'look' | 'technical';
 
 /** The accordion sections; the slider sections list the keys of their sliders. */
@@ -179,13 +190,14 @@ export function Sidebar() {
   if (workspace.value === 'shape') {
     return (
       <div>
-        <section class="flex flex-col gap-3 border-b border-line pt-1 pb-5" aria-labelledby="shape-heading">
+        <section class="flex flex-col gap-3 pt-1 pb-5" aria-labelledby="shape-heading">
           <div>
             <h2 id="shape-heading" class="text-[13px] font-medium text-fg">Find by shape</h2>
             <p class="mt-0.5 text-[11px] text-muted">{querySummary()}</p>
           </div>
           <Shape />
         </section>
+        <ShapeHelp />
       </div>
     );
   }

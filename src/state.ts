@@ -123,8 +123,13 @@ export const extra = signal('');
 export const excluded = signal<string[]>([]);
 /** Strokes drawn per letter ('' for a sketch compared with all characters). */
 export const sketches = signal<Record<string, Point[][]>>({});
-/** The letter shown on the pad (null: the first letter of the name; '': any character). */
-export const focus = signal<string | null>(null);
+/**
+ * The letter shown on the pad (null: the first letter of the name; '': any
+ * character). Wide screens start with any character, so that a first drawing
+ * needs no choice; narrow screens start with a letter, because comparing with
+ * all characters loads the skeletons of all of them (about 15 MB).
+ */
+export const focus = signal<string | null>(matchMedia('(max-width: 760px)').matches ? null : '');
 export const showSkeletons = signal(false);
 /** The open tab of the console. */
 export const tab = signal<'look' | 'technical' | 'shape' | null>('look');

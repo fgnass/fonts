@@ -20,7 +20,7 @@ test('Back exits a new similarity chain and still traverses steps within it', as
   const entries = [null];
   let position = 0;
   let onPopState;
-  const globals = ['history', 'window', 'addEventListener', 'requestAnimationFrame'];
+  const globals = ['history', 'window', 'addEventListener', 'requestAnimationFrame', 'matchMedia'];
   const previous = new Map(globals.map((key) => [key, Object.getOwnPropertyDescriptor(globalThis, key)]));
   Object.assign(globalThis, {
     history: {
@@ -30,6 +30,7 @@ test('Back exits a new similarity chain and still traverses steps within it', as
     window: { scrollY: 0, scrollTo() {} },
     addEventListener(type, listener) { if (type === 'popstate') onPopState = listener; },
     requestAnimationFrame(callback) { callback(); },
+    matchMedia: () => ({ matches: false }),
   });
   try {
     let source = stripTypeScriptTypes(fs.readFileSync(new URL('../src/state.ts', import.meta.url), 'utf8'));
