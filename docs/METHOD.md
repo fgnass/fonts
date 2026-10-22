@@ -35,6 +35,7 @@ A sketch is normalized to the same frame, using its bounding box. For each candi
 
 - The **symmetric chamfer distance** (Barrow et al., 1977) between the two point sets on the 64 × 64 raster, with a 3-4 distance transform (Borgefors, 1986). It is the mean distance from each point of one set to the nearest point of the other, averaged over both directions.
 - **Plus a stroke-end term:** the mean distance between the stroke ends of the sketch and the glyph, plus a penalty for each extra or missing end. Chamfer distance alone barely notices whether a stroke goes through or stops short. The number of ends is what separates, for example, a "$" with one stroke from one with two.
+- **Gaps are joins.** Strokes of a sketch that should meet often stop just short of each other, and each gap would add two stroke ends. So a sketch end counts only when no other part of the drawing lies within 4 cells (about 7 % of the glyph height) that cannot be reached along the end's own stroke.
 
 Fonts are ranked by this sum. The weights of the two terms are hand-tuned.
 
@@ -128,7 +129,7 @@ The real question for the shape search is not whether it finds one specific font
 - A smooth wobble across each stroke (0.3 / 0.7 cells).
 - Free stroke ends that stop early or overshoot (±1 / ±2.5 cells).
 - Rotation (3° / 7°) and scale (5 % / 12 %).
-- A fourth level, "low + gaps", is "low" with every junction opened by about 2 cells (3 % of the glyph height), as when two strokes of a sketch do not quite meet.
+- A fourth level, "low + gaps", is "low" with every line at a junction cut back by 2 cells, so the strokes of a junction end up to about 4 cells apart, as when the strokes of a sketch do not quite meet.
 
 ![Synthetic sketches: no noise, low, high](../eval/results/sketches.png)
 
@@ -138,40 +139,46 @@ The real question for the shape search is not whether it finds one specific font
 
 **Protocol.** 14 characters (a e g k n y A G M Q R $ * &). Every class of a label with at least 10 fonts is used, with up to 20 query fonts per class. This gives 134 classes (48 by holes, 86 by ends) and 2,543 queries per noise level. For each query, the metric is the share of the top 10 results (without the query font) that are in the same class, compared with the share of the class among all candidates (the base rate). Each class counts equally. Intervals are 95 % bootstrap intervals over the queries.
 
-**Precision@10, mean over classes:**
+**Precision@10, mean over classes.** "App" is the search as it is now. "Without gap joining" counts every end of the sketch, as the app did before this evaluation.
 
-| Noise | Holes: base rate | Holes: app | Holes: chamfer only | Ends: base rate | Ends: app | Ends: chamfer only |
-|---|---|---|---|---|---|---|
-| none | 0.29 | 0.53 [0.52–0.54] | 0.45 | 0.16 | 0.68 [0.66–0.70] | 0.37 |
-| low | 0.29 | 0.52 [0.51–0.54] | 0.44 | 0.16 | 0.68 [0.66–0.70] | 0.34 |
-| high | 0.29 | 0.50 [0.49–0.52] | 0.41 | 0.16 | 0.64 [0.62–0.66] | 0.27 |
-| low + gaps | 0.29 | **0.31** [0.30–0.31] | 0.44 | 0.16 | **0.10** [0.09–0.11] | 0.34 |
-
-**Examples at low noise:**
-
-| Query | Fonts in class | Base rate | App | Chamfer only |
+| Noise | Base rate | App | Without gap joining | Chamfer only |
 |---|---|---|---|---|
-| g, single-story (1 hole) | 978 | 0.59 | 0.99 | 0.84 |
-| g, double-story (2 holes) | 573 | 0.35 | 0.97 | 0.73 |
-| $, through stroke (2 holes) | 1,083 | 0.62 | 0.96 | 0.99 |
-| $, short strokes only (0 holes) | 579 | 0.33 | 0.79 | 0.91 |
-| *, 4 arms | 22 | 0.01 | 0.28 | 0.24 |
-| *, 8 arms | 131 | 0.08 | 0.55 | 0.44 |
+| *Holes* | | | | |
+| none | 0.29 | 0.53 [0.51–0.54] | 0.53 | 0.45 |
+| low | 0.29 | 0.52 [0.51–0.53] | 0.52 | 0.44 |
+| high | 0.29 | 0.49 [0.48–0.51] | 0.50 | 0.41 |
+| low + gaps | 0.29 | 0.49 [0.47–0.50] | **0.31** | 0.44 |
+| *Stroke ends* | | | | |
+| none | 0.16 | 0.63 [0.62–0.65] | 0.68 | 0.37 |
+| low | 0.16 | 0.62 [0.60–0.64] | 0.68 | 0.34 |
+| high | 0.16 | 0.59 [0.57–0.61] | 0.64 | 0.27 |
+| low + gaps | 0.16 | 0.53 [0.51–0.55] | **0.10** | 0.34 |
+
+**Examples:**
+
+| Query | Fonts in class | Base rate | App, low | App, low + gaps | Chamfer only, low |
+|---|---|---|---|---|---|
+| g, single-story (1 hole) | 978 | 0.59 | 0.99 | 0.98 | 0.84 |
+| g, double-story (2 holes) | 573 | 0.35 | 0.97 | 0.53 | 0.73 |
+| $, through stroke (2 holes) | 1,083 | 0.62 | 0.96 | 0.95 | 0.99 |
+| $, short strokes only (0 holes) | 579 | 0.33 | 0.82 | 0.73 | 0.91 |
+| *, 4 arms | 22 | 0.01 | 0.28 | 0.20 | 0.24 |
+| *, 8 arms | 131 | 0.08 | 0.55 | 0.50 | 0.44 |
 
 **Known item.** How often the query font itself comes first:
 
 | Noise | App R@1 | App R@10 | Chamfer only R@1 | Chamfer only R@10 |
 |---|---|---|---|---|
-| none | 0.67 | 0.81 | 0.91 | 0.97 |
-| low | 0.48 | 0.66 | 0.61 | 0.80 |
-| high | 0.27 | 0.48 | 0.26 | 0.49 |
-| low + gaps | 0.05 | 0.07 | 0.62 | 0.81 |
+| none | 0.62 | 0.78 | 0.91 | 0.97 |
+| low | 0.43 | 0.63 | 0.61 | 0.80 |
+| high | 0.23 | 0.43 | 0.26 | 0.49 |
+| low + gaps | 0.36 | 0.56 | 0.62 | 0.81 |
 
 **Findings.**
 
 1. **The search finds the drawn structure, also from sloppy sketches.** Precision is well above the base rate and decreases only slightly from no noise to high noise. Rare forms profit most: an asterisk with four arms is 1 % of all fonts but 28 % of the top 10.
-2. **The stroke-end term is a trade-off.** It helps to find the right structure (holes: 0.52 vs. 0.44) but costs exact-font retrieval (R@1 0.48 vs. 0.61 at low noise). For this app, structure is the more important goal.
-3. **The stroke-end term is fragile at junctions.** When the strokes of a sketch do not quite meet, each gap adds two stroke ends. The penalty then pushes the search below the base rate, while chamfer distance alone does not change. Hand-drawn sketches often have such gaps, so this is probably the largest weakness of the current search. A likely fix is to treat a stroke end close to another stroke as a junction before counting ends.
+2. **The stroke-end term is a trade-off.** It helps to find the right structure (holes: 0.52 vs. 0.44) but costs exact-font retrieval (R@1 0.43 vs. 0.61 at low noise). For this app, structure is the more important goal.
+3. **Gaps at junctions were the largest weakness.** Without gap joining, each gap added two stroke ends, and the penalty pushed the search below the base rate (stroke ends 0.10 against a base rate of 0.16). Gap joining brings it back to 0.53, above chamfer distance alone. It has a cost: some real ends close to another stroke now count as joins, and precision for stroke ends without gaps goes down from 0.68 to 0.63. The tolerance of 4 cells was chosen on this test (3 and 5 cells were also tried), so the gain with gaps is optimistic. The double-story g with gaps (0.53) shows that a gap can still split or merge loops.
 
 **Limits of this test.** The sketches are skeletons of indexed fonts. They are cleaner than real drawings, and query and index share the same skeleton extraction, which favors the search. The noise model and its strength are assumptions, not measurements of real sketches. The hole label is coarse: it does not see the bowl of an a or the crossbar height of an A. A study with real users and real sketches remains to be done.
 

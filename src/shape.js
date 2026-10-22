@@ -226,6 +226,52 @@ export function strokeEnds(pts) {
   return Uint8Array.from(ends);
 }
 
+/** Gaps in a sketch up to this many cells are joins, not stroke ends. */
+const GAP = 4;
+
+/**
+ * Stroke ends of a sketch. Strokes that should meet often stop just short of
+ * each other, and each such gap would add two stroke ends. So an end counts
+ * only when no part of the drawing within GAP cells is out of reach along its
+ * own stroke (2 * GAP + 2 steps).
+ */
+export function sketchEnds(pts, gap = GAP) {
+  const ends = strokeEnds(pts);
+  const img = new Uint8Array(GRID * GRID);
+  for (let i = 0; i < pts.length; i += 2) img[pts[i + 1] * GRID + pts[i]] = 1;
+  const out = [];
+  for (let e = 0; e < ends.length; e += 2) {
+    const ex = ends[e], ey = ends[e + 1];
+    const reached = new Set([ey * GRID + ex]);
+    let frontier = [ey * GRID + ex];
+    for (let step = 0; step < 2 * gap + 2 && frontier.length; step++) {
+      const next = [];
+      for (const i of frontier) {
+        const x = i % GRID, y = (i - x) / GRID;
+        for (let dy = -1; dy <= 1; dy++) {
+          for (let dx = -1; dx <= 1; dx++) {
+            const nx = x + dx, ny = y + dy, j = ny * GRID + nx;
+            if (nx >= 0 && ny >= 0 && nx < GRID && ny < GRID && img[j] && !reached.has(j)) reached.add(j), next.push(j);
+          }
+        }
+      }
+      frontier = next;
+    }
+    let joined = false;
+    for (let y = Math.max(0, ey - gap); y <= Math.min(GRID - 1, ey + gap) && !joined; y++) {
+      for (let x = Math.max(0, ex - gap); x <= Math.min(GRID - 1, ex + gap); x++) {
+        const i = y * GRID + x;
+        if (img[i] && !reached.has(i) && Math.hypot(x - ex, y - ey) <= gap) {
+          joined = true;
+          break;
+        }
+      }
+    }
+    if (!joined) out.push(ex, ey);
+  }
+  return Uint8Array.from(out);
+}
+
 /** Extra/missing stroke ends and their positions, in the same units as chamfer distance. */
 export function strokeEndDistance(a, b) {
   if (!a.length && !b.length) return 0;

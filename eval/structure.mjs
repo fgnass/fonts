@@ -19,7 +19,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { createCanvas, Path2D } from '@napi-rs/canvas';
 import { createServer } from 'vite';
-import { chamfer, decodeLines, distanceField, GRID, linePoints, sketchPoints, strokeEndDistance, strokeEnds } from '../src/shape.js';
+import { chamfer, decodeLines, distanceField, GRID, linePoints, sketchEnds, sketchPoints, strokeEndDistance, strokeEnds } from '../src/shape.js';
 import { loadGlyphs, pathData } from '../scripts/glyph.mjs';
 
 const ROOT = new URL('..', import.meta.url);
@@ -287,9 +287,10 @@ for (const ch of CHARS) {
       for (const q of queries) {
         for (const [level, noise] of Object.entries(NOISE)) {
           const pts = sketchPoints(sketch(list[q].lines, noise, rand).map((s) => s.map(({ x, y }) => ({ x: x * 10, y: y * 10 }))));
-          const sdt = distanceField(pts), ends = strokeEnds(pts);
+          const sdt = distanceField(pts), ends = sketchEnds(pts), allEnds = strokeEnds(pts);
           const methods = {
             app: (i) => chamfer(pts, sdt, list[i].pts, list[i].dt) + strokeEndDistance(ends, list[i].ends),
+            'ends without gap joining': (i) => chamfer(pts, sdt, list[i].pts, list[i].dt) + strokeEndDistance(allEnds, list[i].ends),
             'chamfer only': (i) => chamfer(pts, sdt, list[i].pts, list[i].dt),
           };
           const row = { ch, kind, value: +value, base, query: fonts[q].family, level };
@@ -313,7 +314,7 @@ process.stdout.write('\n');
   const q = pool.find((i) => list[i]?.pts.length);
   const pts = sketchPoints(sketch(list[q].lines, NOISE.low, random(2)).map((s) => s.map(({ x, y }) => ({ x: x * 10, y: y * 10 }))));
   const { results: hits } = await workerSearch({ id: 1, parts: [{ ch, pts }], allowed: pool, noLower: pool.filter((i) => metrics[i].lc === 0), limit: pool.length });
-  const sdt = distanceField(pts), ends = strokeEnds(pts);
+  const sdt = distanceField(pts), ends = sketchEnds(pts);
   const mine = pool.filter((i) => list[i]?.pts.length && metrics[i].lc !== 0)
     .map((i) => ({ i, d: chamfer(pts, sdt, list[i].pts, list[i].dt) + strokeEndDistance(ends, list[i].ends) }))
     .sort((a, b) => a.d - b.d).slice(0, 20).map((x) => x.i);
@@ -333,16 +334,14 @@ function macro(select, value) {
 }
 const f2 = ([v, lo, hi]) => `${v.toFixed(2)} [${lo.toFixed(2)}–${hi.toFixed(2)}]`;
 
+const METHODS = ['app', 'ends without gap joining', 'chamfer only'];
+
 for (const kind of ['holes', 'ends']) {
   console.log(`\n${kind}: precision@${K} of the class, mean over classes (each class weighs the same)`);
-  console.log(['noise', 'base rate', 'app', 'chamfer only'].join('\t'));
+  console.log(['noise', 'base rate', ...METHODS].join('\t'));
   for (const level of Object.keys(NOISE)) {
     const select = (r) => r.kind === kind && r.level === level;
-    const s = {
-      'base rate': macro(select, (r) => r.base),
-      app: macro(select, (r) => r.app.precision),
-      'chamfer only': macro(select, (r) => r['chamfer only'].precision),
-    };
+    const s = { 'base rate': macro(select, (r) => r.base), ...Object.fromEntries(METHODS.map((m) => [m, macro(select, (r) => r[m].precision)])) };
     results.summary[`${kind} ${level}`] = s;
     console.log([level, ...Object.values(s).map(f2)].join('\t'));
   }
@@ -351,7 +350,7 @@ for (const kind of ['holes', 'ends']) {
 console.log('\nQuery font itself (known item), all queries');
 console.log(['noise', 'method', 'R@1', 'R@10', 'median rank'].join('\t'));
 for (const level of Object.keys(NOISE)) {
-  for (const method of ['app', 'chamfer only']) {
+  for (const method of METHODS) {
     const ranks = rows.filter((r) => r.level === level && r.kind === 'holes').map((r) => r[method].rank).sort((a, b) => a - b);
     const s = { 'R@1': ranks.filter((x) => x <= 1).length / ranks.length, 'R@10': ranks.filter((x) => x <= 10).length / ranks.length, median: ranks[ranks.length >> 1] };
     results.summary[`known item ${level} ${method}`] = s;
@@ -359,13 +358,16 @@ for (const level of Object.keys(NOISE)) {
   }
 }
 
-console.log(`\nPer class at noise "low": precision@${K}`);
-console.log(['char', 'label', 'fonts', 'base', 'app', 'chamfer only'].join('\t'));
+console.log(`\nPer class: precision@${K} at noise "low" and "low + gaps"`);
+console.log(['char', 'label', 'fonts', 'base', ...METHODS.map((m) => `${m} (low)`), ...METHODS.map((m) => `${m} (gaps)`)].join('\t'));
 for (const c of results.classes) {
-  const rs = rows.filter((r) => r.ch === c.ch && r.kind === c.kind && r.value === c.value && r.level === 'low');
-  const mean = (f) => rs.reduce((a, r) => a + f(r), 0) / rs.length;
-  c.low = { app: mean((r) => r.app.precision), 'chamfer only': mean((r) => r['chamfer only'].precision) };
-  console.log([c.ch, `${c.kind}=${c.value}`, c.fonts, c.base.toFixed(2), c.low.app.toFixed(2), c.low['chamfer only'].toFixed(2)].join('\t'));
+  const at = (level) => {
+    const rs = rows.filter((r) => r.ch === c.ch && r.kind === c.kind && r.value === c.value && r.level === level);
+    return Object.fromEntries(METHODS.map((m) => [m, rs.reduce((a, r) => a + r[m].precision, 0) / rs.length]));
+  };
+  c.low = at('low');
+  c.gaps = at('low + gaps');
+  console.log([c.ch, `${c.kind}=${c.value}`, c.fonts, c.base.toFixed(2), ...METHODS.map((m) => c.low[m].toFixed(2)), ...METHODS.map((m) => c.gaps[m].toFixed(2))].join('\t'));
 }
 
 writeFileSync(new URL('eval/results/structure.json', ROOT), JSON.stringify(results, null, 1));

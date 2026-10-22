@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import test from 'node:test';
-import { chamfer, decodeLines, distanceField, linePoints, sketchPoints, strokeEndDistance, strokeEnds } from '../src/shape.js';
+import { chamfer, decodeLines, distanceField, linePoints, sketchEnds, sketchPoints, strokeEndDistance, strokeEnds } from '../src/shape.js';
 
 const read = (file) => fs.readFileSync(new URL(`../public/data/${file}`, import.meta.url));
 const fonts = JSON.parse(read('fonts.json'));
@@ -35,7 +35,7 @@ test('actual glyph topology preserves stems lost by medial-axis pruning', () => 
 for (const width of [1, 1.12, 1.25]) {
   test(`real arch-shaped n glyphs outrank extra-stem glyphs at drawing width ${width}`, () => {
     const points = sketchPoints([stroke.map(([x, y]) => ({ x: x * width, y }))]);
-    const field = distanceField(points), ends = strokeEnds(points);
+    const field = distanceField(points), ends = sketchEnds(points);
     const score = (family) => {
       const i = index(family), candidate = glyphs[i];
       return chamfer(points, field, candidate, distanceField(candidate)) + strokeEndDistance(ends, Uint8Array.from(topology[i]));
@@ -48,7 +48,7 @@ for (const width of [1, 1.12, 1.25]) {
 
 test('the corresponding u arches also outrank glyphs with an extra stem', () => {
   const points = sketchPoints([stroke.map(([x, y]) => ({ x, y: 940 - y }))]);
-  const ends = strokeEnds(points), field = distanceField(points);
+  const ends = sketchEnds(points), field = distanceField(points);
   const candidates = loadPoints(117), endsByFont = JSON.parse(read('t/117.json'));
   const score = (family) => {
     const i = index(family), candidate = candidates[i];
@@ -68,4 +68,16 @@ test('stroke-end comparison handles loops, dots, and is symmetric', () => {
   assert.ok(strokeEndDistance(arch, withStem) > 0);
   assert.equal(strokeEndDistance(arch, withStem), strokeEndDistance(withStem, arch));
   assert.deepEqual([...strokeEnds(Uint8Array.from([32,32]))], [32,32]);
+});
+
+test('a small gap where strokes should meet adds no stroke ends', () => {
+  // A T: the stem stops just short of the bar, or touches it.
+  const bar = [{ x: 100, y: 100 }, { x: 500, y: 100 }];
+  const touching = sketchPoints([bar, [{ x: 300, y: 100 }, { x: 300, y: 600 }]]);
+  const gap = sketchPoints([bar, [{ x: 300, y: 125 }, { x: 300, y: 600 }]]);
+  assert.equal(sketchEnds(touching).length / 2, 3);
+  assert.equal(strokeEnds(gap).length / 2, 4);
+  assert.equal(sketchEnds(gap).length / 2, 3);
+  // Free ends stay, also short ones: an L with a short foot.
+  assert.equal(sketchEnds(sketchPoints([[{ x: 100, y: 100 }, { x: 100, y: 600 }, { x: 180, y: 600 }]])).length / 2, 2);
 });

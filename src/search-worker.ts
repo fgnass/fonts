@@ -2,7 +2,7 @@
 // a sketch per letter, or the glyphs of an example font.
 import { CHARS as ALL } from './chars.js';
 import type { SearchHit, SearchRequest, SearchResponse } from './search-types';
-import { chamfer, decodeLines, distanceField, GRID, linePoints, meanDist, strokeEndDistance, strokeEnds } from './shape.js';
+import { chamfer, decodeLines, distanceField, GRID, linePoints, meanDist, sketchEnds, strokeEndDistance, strokeEnds } from './shape.js';
 
 const EMB_DIMS = 256;
 const CHARS = [...ALL];
@@ -81,7 +81,7 @@ function embeddingDistances(E: Int8Array, q: number) {
 async function searchAll(pts: Uint8Array, allowed: (i: number) => boolean, noLower: Uint8Array): Promise<SearchHit[]> {
   const lists = await Promise.all(CHARS.map(loadGlyphs));
   const sketchDt = distanceField(pts);
-  const ends = strokeEnds(pts);
+  const ends = sketchEnds(pts);
   const best = new Map<number, { c: number; score: number }>();
   const dt = new Uint16Array(GRID * GRID);
   CHARS.forEach((ch, c) => {
@@ -122,7 +122,7 @@ async function letterRanks(part: SearchRequest['parts'][number], list: Glyph[], 
   const dist: (number | null)[] = new Array(list.length).fill(null);
   if (pts?.length) {
     const sketchDt = distanceField(pts);
-    const ends = part.fontIndex == null ? strokeEnds(pts) : null;
+    const ends = part.fontIndex == null ? sketchEnds(pts) : null;
     const dt = new Uint16Array(GRID * GRID);
     list.forEach((g, i) => {
       if (has(i)) dist[i] = chamfer(pts, sketchDt, g.pts, distanceField(g.pts, dt)) + (ends ? strokeEndDistance(ends, g.ends) : 0);
