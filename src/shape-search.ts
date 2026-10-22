@@ -1,7 +1,7 @@
 // Owns worker requests, stale-response handling and the shape-search view.
 import { computed, effect, signal } from '@preact/signals';
 import { CHARS, SYMBOLS } from './chars.js';
-import { type Font, fonts, hasSkeleton, ligaturesIn, metrics, type Style, textFonts } from './data';
+import { type Font, fonts, hasSkeleton, ligaturesIn, metrics, type Style } from './data';
 import type { FilterResult } from './filter';
 import { bestOfGroups, groupFonts, groupOf } from './groups';
 import type { SearchHit, SearchPart, SearchRequest, SearchResponse } from './search-types';
@@ -14,12 +14,10 @@ interface Inputs {
   open: () => boolean;
   query: () => SearchPart[];
   extra: () => string;
-  withinFilters: () => boolean;
   filtered: () => FilterResult;
   font: () => Font | null;
   groupCount: () => number;
   text: () => string;
-  pausedNote: () => string;
 }
 
 /** Accessors keep dependencies reactive without importing the app's state at runtime. */
@@ -62,10 +60,9 @@ export function createShapeSearch(inputs: Inputs) {
       shapeSearch.value = { message: `Only a–z, A–Z, 0–9, ä ö ü ß Ä Ö Ü and ${[...SYMBOLS].join(' ')} are indexed.` };
       return;
     }
-    // Filters affect both eligibility and style only when explicitly enabled.
-    const restrict = inputs.withinFilters();
-    const picks = new Map<number, Style>(restrict ? inputs.filtered().list.map((f) => [f.index, f.pick]) : []);
-    const list: Font[] = restrict ? inputs.filtered().list : textFonts;
+    // The filters decide which fonts take part and the style to show them in.
+    const picks = new Map<number, Style>(inputs.filtered().list.map((f) => [f.index, f.pick]));
+    const list: Font[] = inputs.filtered().list;
     // Barcode, texture and multi-line fonts have skeletons that do not describe their letters: only the example font itself may be one.
     const font = inputs.font();
     const pool = list.filter((f) => hasSkeleton(f.index) || f.index === font?.index);
@@ -111,7 +108,7 @@ export function createShapeSearch(inputs: Inputs) {
         if (drawn.length) like.push(`${quote(drawn)} like your drawing`);
         status += ` with ${like.join(' and ')}`;
       }
-      status += (search.groups ? ' (one per group of similar-looking fonts)' : '') + inputs.pausedNote();
+      status += search.groups ? ' (one per group of similar-looking fonts)' : '';
       if (data.usedChamfer.length) status += ` (no AI features yet for ${quote(data.usedChamfer)}: skeleton distance)`;
     }
     const t = inputs.text();

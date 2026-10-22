@@ -35,8 +35,8 @@ function setup() {
   const filtered = signal({ list: [{ index: 0, pick: pick(400) }] });
   try {
     const view = createShapeSearch({
-      open: () => open.value, query: () => query.value, extra: () => '', withinFilters: () => true,
-      filtered: () => filtered.value, font: () => null, groupCount: () => 0, text: () => 'a', pausedNote: () => '',
+      open: () => open.value, query: () => query.value, extra: () => '',
+      filtered: () => filtered.value, font: () => null, groupCount: () => 0, text: () => 'a',
     });
     return { view, worker, open, query, filtered, pick };
   } finally {

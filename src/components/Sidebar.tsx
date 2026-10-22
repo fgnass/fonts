@@ -170,15 +170,15 @@ function Section({ id, label, open, highlight, badge, onToggle, onReset, childre
 }
 
 /**
- * The tools of the sidebar: in Shape, the pad and the letters on top; below,
- * the filters (they apply in both tabs), with one accordion section open at a time.
+ * The tools of the sidebar: in Shape, the pad and the letters; in Filters,
+ * the sliders, with one accordion section open at a time. The filters apply in both.
  */
 export function Sidebar() {
   const current = exclusionPreview.value ? 'look' : section.value;
   const adjustedKey = lastExclusion.value?.plan.slider.key;
-  return (
-    <div>
-      {workspace.value === 'shape' && (
+  if (workspace.value === 'shape') {
+    return (
+      <div>
         <section class="flex flex-col gap-3 border-b border-line pt-1 pb-5" aria-labelledby="shape-heading">
           <div>
             <h2 id="shape-heading" class="text-[13px] font-medium text-fg">Find by shape</h2>
@@ -186,7 +186,11 @@ export function Sidebar() {
           </div>
           <Shape />
         </section>
-      )}
+      </div>
+    );
+  }
+  return (
+    <div>
       {SECTIONS.map(({ key, label, keys }) => {
         const open = current === key;
         const active = keys.filter((k) => !isAny(corridors.value[k])).length;

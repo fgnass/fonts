@@ -125,8 +125,6 @@ export const excluded = signal<string[]>([]);
 export const sketches = signal<Record<string, Point[][]>>({});
 /** The letter shown on the pad (null: the first letter of the name; '': any character). */
 export const focus = signal<string | null>(null);
-/** Whether a shape query searches only the fonts that pass the filters (a drawing) or all fonts ("≈" on a card). */
-export const withinFilters = signal(true);
 export const showSkeletons = signal(false);
 /** The open tab of the console. */
 export const tab = signal<'look' | 'technical' | 'shape' | null>('look');
@@ -136,16 +134,13 @@ export const exclusionMessage = signal<string | null>(null);
 export const lastExclusion = signal<{
   plan: ExclusionPlan;
   before: Record<string, Corridor>;
-  within: boolean;
   tab: typeof tab.value;
 } | null>(null);
 export const exclusionPreview = signal<ExclusionPlan | null>(null);
 export const pendingExclusion = signal<{
   family: string;
   options: ExclusionPlan[];
-  base: Record<string, Corridor>;
   before: Record<string, Corridor>;
-  within: boolean;
   tab: typeof tab.value;
   searching: boolean;
   query: SearchPart[];
@@ -165,17 +160,15 @@ export function dismissExclusion() {
 }
 
 export function dislikeFont(font: Font) {
-  const before = corridors.value, within = withinFilters.value, previousTab = tab.value;
+  const before = corridors.value, previousTab = tab.value;
   const searching = activeShapeQuery.value;
-  // A similarity query may have paused older filters; keep those paused constraints out of this choice.
-  const base = searching && !within ? Object.fromEntries(SLIDERS.map((s) => [s.key, [0, 1] as Corridor])) : before;
   const needsLower = searching && parts.value.some((p) => p.ch >= 'a' && p.ch <= 'z');
   const allowed = searching ? new Set(textFonts.filter((f) =>
     (hasSkeleton(f.index) || f.index === likeFont.value?.index) && !(needsLower && metrics[f.index].lc === 0)).map((f) => f.index)) : undefined;
   batch(() => {
     inspectedFont.value = null;
     exclusionPreview.value = null;
-    pendingExclusion.value = { family: font.family, options: exclusionSuggestions(font, base, allowed), base, before, within, tab: previousTab, searching, query: parts.value };
+    pendingExclusion.value = { family: font.family, options: exclusionSuggestions(font, before, allowed), before, tab: previousTab, searching, query: parts.value };
   });
 }
 
@@ -184,11 +177,10 @@ export function applyExclusion(plan: ExclusionPlan) {
   if (!pending || !pending.options.includes(plan)) return;
   batch(() => {
     cancelExclusion();
-    lastExclusion.value = { plan, before: pending.before, within: pending.within, tab: pending.tab };
+    lastExclusion.value = { plan, before: pending.before, tab: pending.tab };
     exclusionMessage.value = `${plan.label} · ${pending.family} removed · ${plan.removed} font${plan.removed === 1 ? '' : 's'} excluded`;
-    corridors.value = { ...pending.base, [plan.slider.key]: plan.corridor };
-    if (pending.searching) withinFilters.value = true;
-    else tab.value = 'look';
+    corridors.value = { ...pending.before, [plan.slider.key]: plan.corridor };
+    if (!pending.searching) tab.value = 'look';
   });
 }
 
@@ -249,10 +241,8 @@ export const activeShapeQuery = computed(() => tab.value === 'shape' && isShapeQ
 // A proposal is valid only for the selection it was calculated from.
 effect(() => {
   const pending = pendingExclusion.value;
-  if (pending && (showShortlist.value || corridors.value !== pending.before || withinFilters.value !== pending.within || tab.value !== pending.tab || parts.value !== pending.query)) cancelExclusion();
+  if (pending && (showShortlist.value || corridors.value !== pending.before  || tab.value !== pending.tab || parts.value !== pending.query)) cancelExclusion();
 });
-/** Note for the status when a query ignores active filters. */
-const pausedNote = () => (!withinFilters.value && activeRanges(corridors.value).size ? ' · filters paused' : '');
 export const filtered = computed(() => filterFonts(activeRanges(appliedCorridors.value)));
 export const suggestions = computed(() => showShortlist.value ? null : compromises(filtered.value));
 
@@ -289,12 +279,10 @@ const shapeView = createShapeSearch({
   open: () => tab.value === 'shape',
   query: () => parts.value,
   extra: () => extra.value,
-  withinFilters: () => withinFilters.value,
   filtered: () => filtered.value,
   font: () => likeFont.value,
   groupCount: () => groupCount.value,
   text: () => previewText.value,
-  pausedNote,
 });
 
 export const view = computed(() => (activeShapeQuery.value ? shapeView.value : browseView.value));
@@ -419,14 +407,13 @@ export function pickLetter(ch: string) {
   });
 }
 
-/** Adds a finished stroke to the sketch of the focused letter (a drawing alone searches within the filters). */
+/** Adds a finished stroke to the sketch of the focused letter. */
 export function addStroke(stroke: Point[]) {
   batch(() => {
     const ch = focused.value;
     sketches.value = { ...sketches.value, [ch]: [...(sketches.value[ch] ?? []), stroke] };
     // A drawing brings a left-out letter back into the query.
     if (excluded.value.includes(ch)) excluded.value = excluded.value.filter((c) => c !== ch);
-    if (!likeFont.value) withinFilters.value = true;
   });
 }
 

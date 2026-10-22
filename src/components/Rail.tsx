@@ -1,9 +1,10 @@
 import { computed, effect, signal } from '@preact/signals';
-import { ChevronDown, LayoutGrid, PencilLine, RotateCcw, Star, Undo2, X } from 'lucide-preact';
+import { ChevronDown, PencilLine, RotateCcw, SlidersHorizontal, Star, Undo2, X } from 'lucide-preact';
 import { styled } from 'classname-variants/preact';
 import { type RefObject } from 'preact';
 import { useEffect, useLayoutEffect, useRef, useState } from 'preact/hooks';
 import { isAny, LOOK_KEYS, TECHNICAL_KEYS, type Slider } from '../sliders';
+import { activeRanges } from '../filter';
 import { canUndo, corridors, exclusionMessage, filtered, isShapeQuery, lastExclusion, likeFont, openWorkspace, parts, setCorridor, shortlist, tab, undoFilters, workspace } from '../state';
 import { querySummary, Shape } from './Sidebar';
 import { useFresh } from './ui';
@@ -122,7 +123,7 @@ const StripButton = styled('button', {
 });
 
 /**
- * The top bar of Explore and Shape: the name of the tab and a line about the
+ * The top bar of Filters and Shape: the name of the tab and a line about the
  * results (or what the shape query consists of, or what the last exclusion
  * did), the undo of filter changes and, in Shape, a toggle for the pad. The
  * shape query applies whether the pad shows or not. The bar stays at the
@@ -137,7 +138,7 @@ export function TopBar() {
     <>
       <div data-bar class="sticky top-0 z-2 flex h-14 items-center gap-1 border-b border-line bg-panel pr-1 pl-3">
         <div class="min-w-0 flex-1">
-          <div class="truncate text-[15px]/[1.3] font-medium text-fg">{shape ? 'Find by shape' : 'Explore'}</div>
+          <div class="truncate text-[15px]/[1.3] font-medium text-fg">{shape ? 'Find by shape' : 'Filters'}</div>
           <div class={'truncate text-[11px] ' + (message ? 'text-accent' : 'text-muted')} role="status">{line}</div>
         </div>
         <StripButton disabled={!canUndo.value} aria-label="Undo the last filter change" title="Undo the last filter change" onClick={undoFilters}>
@@ -173,14 +174,16 @@ export function TabBar() {
   return (
     <nav data-tabbar data-bar class="fixed inset-x-0 bottom-0 z-30 flex h-(--tabbar) border-t border-line bg-panel pb-[env(safe-area-inset-bottom)]" role="tablist" aria-label="Font workspace">
       <Tab on={current === 'explore'} aria-selected={current === 'explore'} onClick={() => openWorkspace('explore')}>
-        <LayoutGrid size={20} strokeWidth={1.75} aria-hidden="true" />
-        Explore
+        <SlidersHorizontal size={20} strokeWidth={1.75} aria-hidden="true" />
+        Filters
+        {/* Filters that are set apply in every tab. */}
+        {activeRanges(corridors.value).size > 0 && <span class="absolute top-2 left-[calc(50%+10px)] size-1.5 rounded-full bg-accent" />}
       </Tab>
       <Tab on={current === 'shape'} aria-selected={current === 'shape'} onClick={() => openWorkspace('shape')}>
         <PencilLine size={20} strokeWidth={1.75} aria-hidden="true" />
         Shape
-        {/* A shape query that waits for this tab. */}
-        {current !== 'shape' && isShapeQuery.value && <span class="absolute top-2 left-[calc(50%+10px)] size-1.5 rounded-full bg-accent" />}
+        {/* A shape query is set (as on the tabs of wide screens). */}
+        {isShapeQuery.value && <span class="absolute top-2 left-[calc(50%+10px)] size-1.5 rounded-full bg-accent" />}
       </Tab>
       <Tab on={current === 'shortlist'} aria-selected={current === 'shortlist'} onClick={() => openWorkspace('shortlist')}>
         <Star size={20} strokeWidth={1.75} aria-hidden="true" />

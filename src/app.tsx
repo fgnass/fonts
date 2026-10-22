@@ -1,6 +1,6 @@
 import { styled } from 'classname-variants/preact';
 import { describe, isAny } from './sliders';
-import { activeShapeQuery, filtered, setCorridor, showShortlist, suggestions, welcome, withinFilters, workspace } from './state';
+import { activeShapeQuery, filtered, setCorridor, showShortlist, suggestions, welcome, workspace } from './state';
 import { Results } from './components/Results';
 import { Sidebar } from './components/Sidebar';
 import { Toolbar } from './components/Toolbar';
@@ -19,7 +19,6 @@ const fontCount = (n: number) => `${n} font${n === 1 ? '' : 's'}`;
 
 /** Suggestions for wider corridors when few fonts pass. */
 function Compromises() {
-  if (activeShapeQuery.value && !withinFilters.value) return null;
   const options = suggestions.value;
   if (!options) return null;
   const count = filtered.value.list.length;

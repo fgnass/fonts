@@ -42,7 +42,7 @@ export function ShortlistSidebar() {
           );
         })}
       </div>
-      {!savedFonts.value.length && <p class="text-[12px] text-muted">Star fonts in Explore to collect them here.</p>}
+      {!savedFonts.value.length && <p class="text-[12px] text-muted">Star fonts to collect them here.</p>}
       <button type="button" class="mt-auto inline-flex cursor-pointer items-center gap-1.5 pt-3 text-left text-soft narrow:hidden" onClick={() => selectWorkspace(false)}><ArrowLeft size={14} aria-hidden="true" /> Explore fonts</button>
     </div>
   );
