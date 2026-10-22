@@ -45,6 +45,10 @@ Notes on single steps:
 - **Technical statistics.** The subsets in `data/fonts/` lack most OpenType features, so `tech.py` reads the table directory and the maxp, fvar, GSUB and GPOS tables of the full files with HTTP range requests. Results per family are cached in `data/tech/`. Color fonts (COLR, SVG, CBDT or sbix tables) get `c: 1` and are excluded from the app.
 - **Inspection.** Most measuring scripts print their values for named families instead of writing: `node scripts/form.mjs <family> …`, `node scripts/connected.mjs <family> …`, `uv run scripts/recognize.py --dry`.
 
+## Deploy
+
+`npm run deploy` builds the site and force-pushes `dist/` as a single commit to the `gh-pages` branch, which GitHub Pages serves at fonts.gnass.buzz (`public/CNAME`). The font data in `public/data/` is not in git, so the site is built locally, after `make`.
+
 ## Evaluation
 
 - `uv run eval/attributes.py`: sliders against the crowdsourced attributes of O'Donovan et al. (2014). Expects their `attribute.zip`, unpacked in `data/odonovan/`. Writes `eval/results/attributes.json`.
