@@ -19,7 +19,14 @@
  *                                     (360 × 700), shape and explore, on the
  *                                     amber of the app, 2400 × 1260
  *
+ * Not deployed, so not in public/:
+ *
+ *   promo/post.png                    a LinkedIn post image (4:5): a desktop
+ *                                     shot of the Shape tab in a browser
+ *                                     window on the amber, 2160 × 2700
+ *
  * Re-run any time the UI changes:  npm run screenshot
+ * Only the post image:             npm run screenshot -- post
  */
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
@@ -30,6 +37,7 @@ import { createServer } from 'vite';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, '..');
 const outDir = resolve(root, 'public', 'screenshots');
+const promoDir = resolve(root, 'promo');
 
 // Target output is 780 × 1688: half that on a high-DPI viewport, captured at
 // the native device pixels.
@@ -41,6 +49,14 @@ const BASE = `http://127.0.0.1:${PORT}/`;
 
 // Viewport of the phones in the link preview
 const PREVIEW_VIEWPORT = { width: 360, height: 700 };
+
+// The LinkedIn post: 4:5 gets the most room in the feed. The desktop shot is
+// taken wider than the window shows it, so that the app has its desktop layout.
+const POST = { width: 1080, height: 1350 };
+const POST_WINDOW = { x: 60, y: 60, width: 960, height: 1230 };
+const BAR = 40, BORDER = 2;
+const DESKTOP_WIDTH = 1100;
+const DESKTOP_SCALE = 2;
 
 // Frame colors: the black console of the app on its amber
 const ACCENT = '#e8b84a';
@@ -86,6 +102,17 @@ async function drawA(page) {
     }
     await page.mouse.up();
   }
+}
+
+/** The Shape tab on a wide screen: the letters of the preview text, the "A" picked and drawn. */
+async function desktopShape(page) {
+  await start(page);
+  await page.getByRole('textbox', { name: 'Text to preview, up to three lines' }).fill('Amber');
+  await tab(page, 'Shape');
+  await page.getByRole('group', { name: 'Letters of the query' }).getByRole('button', { name: 'A', exact: true }).click();
+  await drawA(page);
+  await wait(page, 1500);
+  await settle(page);
 }
 
 /** Each shot: how to bring the app into its state. */
@@ -178,6 +205,50 @@ ${body}`;
   }
 }
 
+/** The viewport of the desktop shot: the window content, scaled to a desktop width. */
+function postViewport() {
+  const width = POST_WINDOW.width - 2 * BORDER, height = POST_WINDOW.height - BAR - 2 * BORDER;
+  return { width: DESKTOP_WIDTH, height: Math.round((DESKTOP_WIDTH * height) / width) };
+}
+
+/** The LinkedIn post: the desktop shot in a browser window, like the windows on gnass.buzz/projects, on the amber of the app. */
+async function post(browser, png) {
+  const w = POST_WINDOW;
+  const html = `<!doctype html>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { width: ${POST.width}px; height: ${POST.height}px; background: ${ACCENT}; overflow: hidden; }
+  .window {
+    position: absolute; left: ${w.x}px; top: ${w.y}px; width: ${w.width}px; height: ${w.height}px;
+    border: ${BORDER}px solid ${FRAME}; border-radius: 16px; overflow: hidden;
+    background: ${FRAME}; box-shadow: 0 10px #00000038;
+  }
+  .bar { position: relative; height: ${BAR}px; display: flex; align-items: center; padding-left: 16px; gap: 8px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: ${ACCENT}; opacity: 0.6; }
+  .url {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 360px; height: 26px; border-radius: 13px; background: #ffffff14;
+    color: #f2e3bd; font: 500 13px/26px system-ui, sans-serif; text-align: center; letter-spacing: 0.02em;
+  }
+  img { display: block; width: 100%; }
+</style>
+<div class="window">
+  <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">fonts.gnass.buzz</span></div>
+  <img src="data:image/png;base64,${png.toString('base64')}" />
+</div>`;
+  const context = await browser.newContext({ viewport: POST, deviceScaleFactor: SCALE });
+  try {
+    const page = await context.newPage();
+    await page.setContent(html, { waitUntil: 'load' });
+    await mkdir(promoDir, { recursive: true });
+    const out = resolve(promoDir, 'post.png');
+    await writeFile(out, await page.screenshot());
+    console.log(`Saved ${out} (${POST.width * SCALE} × ${POST.height * SCALE})`);
+  } finally {
+    await context.close();
+  }
+}
+
 function startServer() {
   return createServer({
     root,
@@ -187,12 +258,12 @@ function startServer() {
 }
 
 /** Capture one shot in its own context (own localStorage), then dispose it. */
-async function capture(browser, name, shot, viewport = VIEWPORT) {
+async function capture(browser, name, shot, viewport = VIEWPORT, mobile = true) {
   const context = await browser.newContext({
     viewport,
-    deviceScaleFactor: SCALE,
-    isMobile: true,
-    hasTouch: true,
+    deviceScaleFactor: mobile ? SCALE : DESKTOP_SCALE,
+    isMobile: mobile,
+    hasTouch: mobile,
   });
   try {
     if (shot.saved) await context.addInitScript((saved) => localStorage.setItem('fonts.shortlist', JSON.stringify(saved)), shot.saved);
@@ -213,23 +284,29 @@ async function main() {
   let browser;
   try {
     browser = await chromium.launch();
-    // One after the other: in parallel, the shape searches compete for the CPU.
-    for (const [name, shot] of Object.entries(SHOTS)) {
-      const out = resolve(outDir, `${name}.png`);
-      await writeFile(out, await capture(browser, name, shot));
-      console.log(`Saved ${out} (${VIEWPORT.width * SCALE} × ${VIEWPORT.height * SCALE})`);
-    }
-    // For the link preview: shorter phones, so two of them fit completely.
-    const shots = {
-      ogShape: await capture(browser, 'og shape', SHOTS.shape, PREVIEW_VIEWPORT),
-      ogExplore: await capture(browser, 'og explore', SHOTS.explore, PREVIEW_VIEWPORT),
-    };
-    for (const [name, body] of Object.entries(PREVIEWS)) {
-      await compose(browser, name, body(shots));
-    }
+    if (process.argv[2] !== 'post') await screenshots(browser);
+    await post(browser, await capture(browser, 'post', { stage: desktopShape }, postViewport(), false));
   } finally {
     await browser?.close();
     await server.close();
+  }
+}
+
+/** The screenshots and link preview in public/screenshots/. */
+async function screenshots(browser) {
+  // One after the other: in parallel, the shape searches compete for the CPU.
+  for (const [name, shot] of Object.entries(SHOTS)) {
+    const out = resolve(outDir, `${name}.png`);
+    await writeFile(out, await capture(browser, name, shot));
+    console.log(`Saved ${out} (${VIEWPORT.width * SCALE} × ${VIEWPORT.height * SCALE})`);
+  }
+  // For the link preview: shorter phones, so two of them fit completely.
+  const shots = {
+    ogShape: await capture(browser, 'og shape', SHOTS.shape, PREVIEW_VIEWPORT),
+    ogExplore: await capture(browser, 'og explore', SHOTS.explore, PREVIEW_VIEWPORT),
+  };
+  for (const [name, body] of Object.entries(PREVIEWS)) {
+    await compose(browser, name, body(shots));
   }
 }
 
