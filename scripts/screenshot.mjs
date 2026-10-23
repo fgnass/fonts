@@ -12,7 +12,8 @@
  *                                     fonts that match it
  *   public/screenshots/explore.png    the contrast slider slid out of the
  *                                     rail, set to high contrast
- *   public/screenshots/shortlist.png  a shortlist with a heading/body pair
+ *   public/screenshots/shortlist.png  the specimen of a font on the shortlist:
+ *                                     the preview text at several sizes
  *   public/screenshots/og.png         the link preview (og:image): the name,
  *                                     the tagline and two short phones
  *                                     (360 × 700), shape and explore, on the
@@ -114,9 +115,8 @@ const SHOTS = {
     saved: SHORTLIST,
     async stage(page) {
       await start(page);
+      await page.getByRole('textbox', { name: 'Text to preview, up to three lines' }).fill('Amber');
       await tab(page, 'Shortlist');
-      await page.getByRole('combobox', { name: 'Body text font' }).selectOption('Inter');
-      await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
       // The specimen loads its fonts on demand: wait until each font it uses is in.
       await page.waitForFunction(async () => {
         const families = new Set([...document.querySelectorAll('#font-workspace *')].map((e) => getComputedStyle(e).fontFamily).filter((f) => f.startsWith('fs-')));

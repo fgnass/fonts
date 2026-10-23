@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from 'preact/hooks';
-import { DEFAULT_TEXT, MAX_LINES, text } from '../state';
+import { DEFAULT_TEXT, MAX_LINES, showShortlist, text } from '../state';
 
 /** Keeps the text to MAX_LINES lines. */
 const limitLines = (value: string) => value.split('\n').slice(0, MAX_LINES).join('\n');
@@ -11,8 +11,9 @@ export function PreviewTextField({ id, autofocus, class: className }: { id?: str
     const el = field.current;
     if (!el) return;
     el.style.height = '';
-    if (el.value) el.style.height = `${el.scrollHeight}px`;
-  }, [text.value]);
+    // A hidden field has no height: measure again when the workspace changes and the field shows.
+    if (el.value && el.scrollHeight) el.style.height = `${el.scrollHeight}px`;
+  }, [text.value, showShortlist.value]);
   return (
     <textarea
       id={id}

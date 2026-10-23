@@ -7,7 +7,7 @@ import { Toolbar } from './components/Toolbar';
 import { ViewTabs } from './components/ViewTabs';
 import { ShortlistHeader } from './components/shortlist/ShortlistHeader';
 import { ShortlistPreview } from './components/shortlist/ShortlistPreview';
-import { ShortlistSidebar } from './components/shortlist/ShortlistSidebar';
+import { ShortlistSidebar, ShortlistStrip } from './components/shortlist/ShortlistSidebar';
 import { ExclusionPopover } from './components/FontFeedback';
 import { Welcome } from './components/Welcome';
 import { isNarrow, Rail, railHidden, shapeOnTop, TabBar, TopBar } from './components/Rail';
@@ -60,7 +60,11 @@ export function App() {
           ) : (
             <header class="sticky top-0 z-1 bg-base">
               <div hidden={showShortlist.value}><Toolbar /></div>
-              <div hidden={!showShortlist.value}><ShortlistHeader /></div>
+              <div hidden={!showShortlist.value}>
+                {/* On narrow screens, the saved fonts come first and the views of the selected font below them. */}
+                {isNarrow.value && <ShortlistStrip />}
+                <ShortlistHeader />
+              </div>
             </header>
           )}
           <section id="font-workspace" role="tabpanel" aria-labelledby={`${workspace.value}-tab`}>
@@ -69,7 +73,6 @@ export function App() {
               <Results />
             </div>
             <div hidden={!showShortlist.value}>
-              {isNarrow.value && <div class="px-3 pt-3"><ShortlistSidebar /></div>}
               <ShortlistPreview />
             </div>
           </section>
