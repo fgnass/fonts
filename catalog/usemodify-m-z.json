@@ -1,0 +1,881 @@
+[
+ {
+  "family": "Manusquared",
+  "foundry": "Quentin Juhel",
+  "designers": [
+   "Quentin Juhel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://gitlab.com/quentinjuhel/manusquared",
+  "repo": "https://gitlab.com/quentinjuhel/manusquared",
+  "rev": "0fdcfa8db117f4290c26f192dc23a92c2f40f79b",
+  "category": "Display",
+  "files": {
+   "400": "OTF/Manusquared-Regular.otf",
+   "700": "OTF/Manusquared-Bold.otf"
+  }
+ },
+ {
+  "family": "Maple Mono",
+  "foundry": "subframe7536",
+  "designers": [
+   "subframe7536"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/subframe7536/maple-font",
+  "zip": "https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-OTF.zip",
+  "category": "Monospace",
+  "files": {
+   "100": "MapleMono-Thin.otf",
+   "200": "MapleMono-ExtraLight.otf",
+   "300": "MapleMono-Light.otf",
+   "400": "MapleMono-Regular.otf",
+   "500": "MapleMono-Medium.otf",
+   "600": "MapleMono-SemiBold.otf",
+   "700": "MapleMono-Bold.otf",
+   "800": "MapleMono-ExtraBold.otf",
+   "100i": "MapleMono-ThinItalic.otf",
+   "200i": "MapleMono-ExtraLightItalic.otf",
+   "300i": "MapleMono-LightItalic.otf",
+   "400i": "MapleMono-Italic.otf",
+   "500i": "MapleMono-MediumItalic.otf",
+   "600i": "MapleMono-SemiBoldItalic.otf",
+   "700i": "MapleMono-BoldItalic.otf",
+   "800i": "MapleMono-ExtraBoldItalic.otf"
+  }
+ },
+ {
+  "family": "Meyrin",
+  "foundry": "Brian Suda",
+  "designers": [
+   "Brian Suda"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License.md",
+  "rfn": [
+   "Meyrin"
+  ],
+  "url": "http://optional.is/required/2014/03/26/meyrin-cern-terminal-font/",
+  "repo": "https://github.com/optional-is/Meyrin",
+  "rev": "80885d256748ec828fb28109fb8fadd5fc983801",
+  "category": "Monospace",
+  "files": {
+   "400": "formats/Meyrin.ttf"
+  }
+ },
+ {
+  "family": "Moche",
+  "foundry": "Pépite",
+  "designers": [
+   "Vivien Gorse"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Moche/LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.pepite-collectif.com/portfolio/moche/",
+  "zip": "https://www.typo.pepite.world/wp-content/uploads/2021/01/Moche-Pepite.zip",
+  "category": "Display",
+  "files": {
+   "300": "Moche/OTF/Moche-Light.otf",
+   "400": "Moche/OTF/Moche-Regular.otf",
+   "700": "Moche/OTF/Moche-Bold.otf"
+  }
+ },
+ {
+  "family": "Monoid",
+  "foundry": "Andreas Larsen",
+  "designers": [
+   "Andreas Larsen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Readme+License.html",
+  "rfn": [],
+  "url": "https://github.com/larsenwork/monoid",
+  "zip": "https://raw.githubusercontent.com/larsenwork/monoid/2db2d289f4e61010dd3f44e09918d9bb32fb96fd/Monoid.zip",
+  "category": "Monospace",
+  "files": {
+   "300": "Monoid-Retina.ttf",
+   "400": "Monoid-Regular.ttf",
+   "700": "Monoid-Bold.ttf",
+   "400i": "Monoid-Italic.ttf"
+  }
+ },
+ {
+  "family": "Nanook",
+  "foundry": "Lucas Le Bihan",
+  "designers": [
+   "Lucas Le Bihan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/LucasLeBihan/Nanook",
+  "repo": "https://github.com/LucasLeBihan/Nanook",
+  "rev": "b217f605711843582aed9a946d6f45a41cd03bc4",
+  "category": "Display",
+  "files": {
+   "400": "fonts/nanook.otf",
+   "700": "fonts/nanook_BOLD.otf"
+  }
+ },
+ {
+  "family": "Nighthawk",
+  "foundry": "Erwan Le Rétif",
+  "designers": [
+   "Erwan Le Rétif"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://erwanleretif.xyz/typotheque",
+  "category": "Display",
+  "files": {
+   "400": "https://erwanleretif.xyz/fonts/Nighthawk.otf"
+  }
+ },
+ {
+  "family": "Now Alt",
+  "foundry": "Alfredo Marco Pradil",
+  "designers": [
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/now-alt",
+  "zip": "https://fontlibrary.org/assets/downloads/now-alt/1df5ff03b0ce226322916936346e17d6/now-alt.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "NowAlt-Thin.otf",
+   "300": "NowAlt-Light.otf",
+   "400": "NowAlt-Regular.otf",
+   "500": "NowAlt-Medium.otf",
+   "700": "NowAlt-Bold.otf",
+   "900": "NowAlt-Black.otf"
+  }
+ },
+ {
+  "family": "Orchard Linear",
+  "foundry": "Rory King",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Orchard",
+  "repo": "https://github.com/nervousattack/Orchard",
+  "rev": "d1eb7f48570fbd449a974ac7e0815fb120ffc7f8",
+  "category": "Display",
+  "files": {
+   "400": "Orchard-Linear.otf"
+  }
+ },
+ {
+  "family": "Panamera",
+  "foundry": "Noir Blanc Rouge",
+  "designers": [
+   "Bastien Sozeau"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://noirblancrouge.com/fonts/panamera/",
+  "repo": "https://github.com/noirblancrouge/Panamera",
+  "rev": "752984bcf4be6ca592cef3eb409374f9735177dc",
+  "category": "Sans Serif",
+  "files": {
+   "100": "fonts/otf/Panamera-Thin.otf",
+   "300": "fonts/otf/Panamera-Light.otf",
+   "400": "fonts/otf/Panamera-Regular.otf",
+   "500": "fonts/otf/Panamera-Medium.otf",
+   "700": "fonts/otf/Panamera-Bold.otf",
+   "900": "fonts/otf/Panamera-Black.otf"
+  },
+  "variable": "docs/proof/Panamera[wght].ttf"
+ },
+ {
+  "family": "Panchi Mono",
+  "foundry": "Erwan Le Rétif",
+  "designers": [
+   "Erwan Le Rétif"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://erwanleretif.xyz/typotheque",
+  "category": "Monospace",
+  "files": {
+   "400": "https://erwanleretif.xyz/fonts/Panchi%20Mono.otf"
+  }
+ },
+ {
+  "family": "Pecita",
+  "foundry": "Philippe Cochy",
+  "designers": [
+   "Philippe Cochy"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Pecita"
+  ],
+  "url": "http://pecita.eu/",
+  "repo": "https://github.com/googlefonts/pecita",
+  "rev": "673108d52660aaa2edecf3f49257de02808efa06",
+  "category": "Handwriting",
+  "files": {
+   "400": "fonts/Pecita.otf"
+  }
+ },
+ {
+  "family": "Ptah",
+  "foundry": "T Christopher White",
+  "designers": [
+   "T Christopher White"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Ptah/OFL.rtf",
+  "rfn": [
+   "Ptah"
+  ],
+  "url": "https://fontlibrary.org/en/font/ptah",
+  "zip": "https://fontlibrary.org/assets/downloads/ptah/271b964e09c6b36aba9fbedd1b103aad/ptah.zip",
+  "category": "Display",
+  "files": {
+   "400": "Ptah/Ptah-Regular.otf",
+   "400i": "Ptah/Ptah-Italic.otf"
+  }
+ },
+ {
+  "family": "Quebec",
+  "foundry": "Cristiano Sobral",
+  "designers": [
+   "Cristiano Sobral",
+   "Victor Gaultney",
+   "Annie Olsen",
+   "Pablo Ugerman"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "SIL Open Font License.txt",
+  "rfn": [
+   "Andika",
+   "SIL",
+   "Québec"
+  ],
+  "url": "https://fontlibrary.org/en/font/quebec",
+  "zip": "https://fontlibrary.org/assets/downloads/quebec/56847f8c6769ccdaa0691f142f13ac81/quebec.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "Quebec-Light.otf",
+   "400": "Quebec-Regular.otf",
+   "600": "Quebec-SemiBold.otf",
+   "700": "Quebec-Bold.otf",
+   "300i": "Quebec-LightItalic.otf",
+   "400i": "Quebec-Italic.otf",
+   "600i": "Quebec-SemiBoldItalic.otf",
+   "700i": "Quebec-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "Railway Sans",
+  "foundry": "Greg Fleming",
+  "designers": [
+   "Greg Fleming",
+   "Justin Howes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Railway"
+  ],
+  "url": "https://github.com/googlefonts/railway-sans",
+  "repo": "https://github.com/googlefonts/railway-sans",
+  "rev": "f57159bb2ec23e96830ef1b0c81ad112f6cf3efd",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/OTF/Railway.otf"
+  }
+ },
+ {
+  "family": "Redaction",
+  "foundry": "MCKL",
+  "designers": [
+   "Forest Young",
+   "Jeremy Mickel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://www.redaction.us/",
+  "repo": "https://github.com/jeremymickel/Redaction",
+  "rev": "d6d5404e094773468db8fe07069c8e681949790c",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Redaction-Regular.otf",
+   "700": "fonts/otf/Redaction-Bold.otf",
+   "400i": "fonts/otf/Redaction-Italic.otf"
+  }
+ },
+ {
+  "family": "Redaction 10",
+  "foundry": "MCKL",
+  "designers": [
+   "Forest Young",
+   "Jeremy Mickel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://www.redaction.us/",
+  "repo": "https://github.com/jeremymickel/Redaction",
+  "rev": "d6d5404e094773468db8fe07069c8e681949790c",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Redaction10-Regular.otf",
+   "700": "fonts/otf/Redaction10-Bold.otf",
+   "400i": "fonts/otf/Redaction10-Italic.otf"
+  }
+ },
+ {
+  "family": "Redaction 100",
+  "foundry": "MCKL",
+  "designers": [
+   "Forest Young",
+   "Jeremy Mickel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://www.redaction.us/",
+  "repo": "https://github.com/jeremymickel/Redaction",
+  "rev": "d6d5404e094773468db8fe07069c8e681949790c",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Redaction100-Regular.otf",
+   "700": "fonts/otf/Redaction100-Bold.otf",
+   "400i": "fonts/otf/Redaction100-Italic.otf"
+  }
+ },
+ {
+  "family": "Redaction 20",
+  "foundry": "MCKL",
+  "designers": [
+   "Forest Young",
+   "Jeremy Mickel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://www.redaction.us/",
+  "repo": "https://github.com/jeremymickel/Redaction",
+  "rev": "d6d5404e094773468db8fe07069c8e681949790c",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Redaction20-Regular.otf",
+   "700": "fonts/otf/Redaction20-Bold.otf",
+   "400i": "fonts/otf/Redaction20-Italic.otf"
+  }
+ },
+ {
+  "family": "Redaction 35",
+  "foundry": "MCKL",
+  "designers": [
+   "Forest Young",
+   "Jeremy Mickel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://www.redaction.us/",
+  "repo": "https://github.com/jeremymickel/Redaction",
+  "rev": "d6d5404e094773468db8fe07069c8e681949790c",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Redaction35-Regular.otf",
+   "700": "fonts/otf/Redaction35-Bold.otf",
+   "400i": "fonts/otf/Redaction35-Italic.otf"
+  }
+ },
+ {
+  "family": "Redaction 50",
+  "foundry": "MCKL",
+  "designers": [
+   "Forest Young",
+   "Jeremy Mickel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://www.redaction.us/",
+  "repo": "https://github.com/jeremymickel/Redaction",
+  "rev": "d6d5404e094773468db8fe07069c8e681949790c",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Redaction50-Regular.otf",
+   "700": "fonts/otf/Redaction50-Bold.otf",
+   "400i": "fonts/otf/Redaction50-Italic.otf"
+  }
+ },
+ {
+  "family": "Redaction 70",
+  "foundry": "MCKL",
+  "designers": [
+   "Forest Young",
+   "Jeremy Mickel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://www.redaction.us/",
+  "repo": "https://github.com/jeremymickel/Redaction",
+  "rev": "d6d5404e094773468db8fe07069c8e681949790c",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Redaction70-Regular.otf",
+   "700": "fonts/otf/Redaction70-Bold.otf",
+   "400i": "fonts/otf/Redaction70-Italic.otf"
+  }
+ },
+ {
+  "family": "Routed Gothic",
+  "foundry": "Darren Embry",
+  "designers": [
+   "Darren Embry"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [
+   "Routed Gothic"
+  ],
+  "url": "https://webonastick.com/fonts/routed-gothic/",
+  "repo": "https://github.com/dse/routed-gothic",
+  "rev": "365e340d64c55cb7c57940744773e6c833e3efd9",
+  "category": "Sans Serif",
+  "files": {
+   "400": "dist/ttf/routed-gothic.ttf",
+   "400i": "dist/ttf/routed-gothic-italic.ttf"
+  }
+ },
+ {
+  "family": "Routed Gothic Narrow",
+  "foundry": "Darren Embry",
+  "designers": [
+   "Darren Embry"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [
+   "Routed Gothic"
+  ],
+  "url": "https://webonastick.com/fonts/routed-gothic/",
+  "repo": "https://github.com/dse/routed-gothic",
+  "rev": "365e340d64c55cb7c57940744773e6c833e3efd9",
+  "category": "Sans Serif",
+  "files": {
+   "400": "dist/ttf/routed-gothic-narrow.ttf",
+   "400i": "dist/ttf/routed-gothic-narrow-italic.ttf"
+  }
+ },
+ {
+  "family": "Routed Gothic Wide",
+  "foundry": "Darren Embry",
+  "designers": [
+   "Darren Embry"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [
+   "Routed Gothic"
+  ],
+  "url": "https://webonastick.com/fonts/routed-gothic/",
+  "repo": "https://github.com/dse/routed-gothic",
+  "rev": "365e340d64c55cb7c57940744773e6c833e3efd9",
+  "category": "Sans Serif",
+  "files": {
+   "400": "dist/ttf/routed-gothic-wide.ttf",
+   "400i": "dist/ttf/routed-gothic-wide-italic.ttf"
+  }
+ },
+ {
+  "family": "Rumeur",
+  "foundry": "Groupe CCC",
+  "designers": [
+   "Alice Gavin",
+   "Valentin Bigel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Rumeur"
+  ],
+  "url": "https://github.com/groupeccc/Rumeur",
+  "repo": "https://github.com/groupeccc/Rumeur",
+  "rev": "d13542057cc930579d1e842199bcc04d9e506760",
+  "category": "Display",
+  "files": {
+   "700": "font/rumeur.otf"
+  }
+ },
+ {
+  "family": "Sani Trixie Sans",
+  "foundry": "GrandChaos9000",
+  "designers": [
+   "GrandChaos9000"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License.txt",
+  "rfn": [
+   "Sani Trixie Sans"
+  ],
+  "url": "https://fontlibrary.org/en/font/sani-trixie-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/sani-trixie-sans/bd5003a93066853669b17b81f16e4fb7/sani-trixie-sans.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "SaniTrixieSans.ttf"
+  }
+ },
+ {
+  "family": "Selectric",
+  "foundry": "Atelier Bek",
+  "designers": [
+   "Léonard Mabille"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-license.txt",
+  "rfn": [
+   "SelectricMono"
+  ],
+  "url": "https://github.com/atelierBek/selectric",
+  "repo": "https://github.com/atelierBek/selectric",
+  "rev": "11fe4181949171df5be8b4b2fe18ef69f28886d2",
+  "category": "Serif",
+  "files": {
+   "400": "OTF/SelectricRoman.otf"
+  }
+ },
+ {
+  "family": "Selectric Mono",
+  "foundry": "Atelier Bek",
+  "designers": [
+   "Léonard Mabille"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-license.txt",
+  "rfn": [
+   "SelectricMono"
+  ],
+  "url": "https://github.com/atelierBek/selectric",
+  "repo": "https://github.com/atelierBek/selectric",
+  "rev": "11fe4181949171df5be8b4b2fe18ef69f28886d2",
+  "category": "Monospace",
+  "files": {
+   "400": "OTF/SelectricMono.otf"
+  }
+ },
+ {
+  "family": "Server Mono",
+  "foundry": "Internet Development Studio Company",
+  "designers": [
+   "Jimmy Lee"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [],
+  "url": "https://github.com/internet-development/www-server-mono",
+  "repo": "https://github.com/internet-development/www-server-mono",
+  "rev": "795ed63ddc4c395856a0745ec445696fc034d483",
+  "category": "Monospace",
+  "files": {
+   "400": "public/fonts/ServerMono-Regular.otf",
+   "400i": "public/fonts/ServerMono-RegularOblique.otf"
+  }
+ },
+ {
+  "family": "Snap-it Mono",
+  "foundry": "Objet Papier",
+  "designers": [
+   "Morgane Bartoli",
+   "Corentin Moussard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license.md",
+  "rfn": [
+   "Snap-it"
+  ],
+  "url": "https://gitlab.com/Alune/snap-it-mono-font",
+  "repo": "https://gitlab.com/Alune/snap-it-mono-font",
+  "rev": "da85fe4d8691ad0011aec1a1ee26d5a623229205",
+  "category": "Monospace",
+  "files": {
+   "400": "font-files/Snap-itmono-1.6-Regular.otf"
+  }
+ },
+ {
+  "family": "Struggle",
+  "foundry": "Klotter Supply",
+  "designers": [
+   "Falk Olavi Schröter"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "struggle 1_0/OFL.txt",
+  "rfn": [
+   "struggle"
+  ],
+  "url": "https://klotter.supply/struggle",
+  "zip": "https://klotter.supply/media/pages/works/struggle/733a719f1f-1718058700/struggle-1_0.zip",
+  "category": "Display",
+  "files": {
+   "400": "struggle 1_0/struggle-regular.otf",
+   "400i": "struggle 1_0/struggle-rotalics.otf"
+  }
+ },
+ {
+  "family": "Techna Sans",
+  "foundry": "Carl Enlund",
+  "designers": [
+   "Carl Enlund"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/carlenlund/techna-sans",
+  "repo": "https://github.com/carlenlund/techna-sans",
+  "rev": "8caf97a0176a85d9880167c1d7192a40a7984161",
+  "category": "Sans Serif",
+  "files": {
+   "400": "TechnaSans-Regular.otf"
+  }
+ },
+ {
+  "family": "TGL 0-16",
+  "foundry": "Peter Wiegel",
+  "designers": [
+   "Peter Wiegel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.txt",
+  "rfn": [
+   "TGL 0-16",
+   "TGL 0-17"
+  ],
+  "url": "http://www.peter-wiegel.de/TGL_0-16.html",
+  "zip": "http://www.peter-wiegel.de/Fonts/TGL_0-16.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "TGL 0-16.ttf"
+  }
+ },
+ {
+  "family": "TGL 0-17",
+  "foundry": "Peter Wiegel",
+  "designers": [
+   "Peter Wiegel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.txt",
+  "rfn": [
+   "TGL 0-16",
+   "TGL 0-17"
+  ],
+  "url": "http://www.peter-wiegel.de/TGL_0-16.html",
+  "zip": "http://www.peter-wiegel.de/Fonts/TGL_0-16.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "TGL 0-17.ttf"
+  }
+ },
+ {
+  "family": "Toren",
+  "foundry": "Eli Heuer",
+  "designers": [
+   "Eli Heuer"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/eliheuer/tenpo",
+  "repo": "https://github.com/eliheuer/tenpo",
+  "rev": "e0c1a1af028068487c4fd3df0b5a59cc9839cf1b",
+  "category": "Serif",
+  "files": {
+   "400": "Toren-Proportional.otf",
+   "400i": "Toren-Rotalic.otf"
+  }
+ },
+ {
+  "family": "Toren Mono",
+  "foundry": "Eli Heuer",
+  "designers": [
+   "Eli Heuer"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/eliheuer/tenpo",
+  "repo": "https://github.com/eliheuer/tenpo",
+  "rev": "e0c1a1af028068487c4fd3df0b5a59cc9839cf1b",
+  "category": "Monospace",
+  "files": {
+   "400": "Toren-Mono.otf"
+  }
+ },
+ {
+  "family": "Vintage Propagandist",
+  "foundry": "Loki Gwynbleidd",
+  "designers": [
+   "Loki Gwynbleidd"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://usemodify.com/fonts/vintage-propagandist/",
+  "category": "Serif",
+  "files": {
+   "400": "https://usemodify.com/site/assets/files/1472/vintagepropagandist.ttf"
+  }
+ },
+ {
+  "family": "Violet Sans",
+  "foundry": "Calvin Waterman",
+  "designers": [
+   "Calvin Waterman"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/violetoffice/violet_sans",
+  "repo": "https://github.com/violetoffice/violet_sans",
+  "rev": "e332826cf8445d60bf17bd21c07eafb052cf9070",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/OTF/VioletSans-Regular.otf"
+  }
+ },
+ {
+  "family": "Vägra",
+  "foundry": "Klotter Supply",
+  "designers": [
+   "Falk Olavi Schröter"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "vagra-2-1/OFL.txt",
+  "rfn": [
+   "vägra!"
+  ],
+  "url": "https://klotter.supply/vagra",
+  "zip": "https://klotter.supply/media/pages/works/vagra/e9c116480b-1758461369/vagra-2-1.zip",
+  "category": "Display",
+  "files": {
+   "400": "vagra-2-1/vagra-regular.otf"
+  }
+ },
+ {
+  "family": "Vägra Pixel",
+  "foundry": "Klotter Supply",
+  "designers": [
+   "Falk Olavi Schröter"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "vagra-2-1/OFL.txt",
+  "rfn": [
+   "vägra!"
+  ],
+  "url": "https://klotter.supply/vagra",
+  "zip": "https://klotter.supply/media/pages/works/vagra/e9c116480b-1758461369/vagra-2-1.zip",
+  "category": "Display",
+  "files": {
+   "400": "vagra-2-1/vagra-pixel.otf"
+  }
+ },
+ {
+  "family": "Westernic",
+  "foundry": "Erwan Le Rétif",
+  "designers": [
+   "Erwan Le Rétif"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://erwanleretif.xyz/typotheque",
+  "category": "Display",
+  "files": {
+   "400i": "https://erwanleretif.xyz/fonts/westernic.otf"
+  }
+ },
+ {
+  "family": "Whois Mono",
+  "foundry": "Raphaël Bastide",
+  "designers": [
+   "Raphaël Bastide"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/raphaelbastide/Whois-mono",
+  "repo": "https://github.com/raphaelbastide/Whois-mono",
+  "rev": "41d8d7c6a9111dd021ff47fc58356c0a2ed2408b",
+  "category": "Monospace",
+  "files": {
+   "400": "whois-mono.ttf"
+  }
+ },
+ {
+  "family": "WonderType",
+  "foundry": "Clémence Fontaine",
+  "designers": [
+   "Clémence Fontaine"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Spe╠ücimen WONDERTYPE/ SIL Open Font License.txt",
+  "rfn": [
+   "WONDERTYPE"
+  ],
+  "url": "https://www.clemencefontaine.fr/page/wonder.html",
+  "zip": "https://www.clemencefontaine.fr/specimen/WONDERTYPE.zip",
+  "category": "Display",
+  "files": {
+   "400": "Spe╠ücimen WONDERTYPE/WonderType-Regular.otf"
+  }
+ },
+ {
+  "family": "Xolonium",
+  "foundry": "Severin Meyer",
+  "designers": [
+   "Severin Meyer"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "xolonium-fonts-4.1/LICENSE.txt",
+  "rfn": [
+   "Xolonium"
+  ],
+  "url": "https://fontlibrary.org/en/font/xolonium",
+  "zip": "https://fontlibrary.org/assets/downloads/xolonium/e00c124f3e1b130e5ec2a7eee2f4f1b8/xolonium.zip",
+  "category": "Display",
+  "files": {
+   "400": "xolonium-fonts-4.1/otf/Xolonium-Regular.otf",
+   "700": "xolonium-fonts-4.1/otf/Xolonium-Bold.otf"
+  }
+ },
+ {
+  "family": "xx Queen",
+  "foundry": "studio muchogusto",
+  "designers": [
+   "studio muchogusto"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "xx muchogusto26/LICENSE.txt",
+  "rfn": [],
+  "url": "https://studiomuchogusto.ch/typefoundry/",
+  "zip": "https://www.dropbox.com/scl/fi/al1usyu10dizqyojms69a/xx-muchogusto26.zip?rlkey=wr1ewesbrnihg8jjr50spv51a&dl=1",
+  "category": "Display",
+  "files": {
+   "400": "xx muchogusto26/xxQueen-basic.ttf",
+   "700": "xx muchogusto26/xxQueen-juicy.ttf"
+  }
+ }
+]

@@ -22,15 +22,18 @@ PARTS := base width caps ornate form stroke-fill connected distinct recognize
 all: $(PUB)/fonts.json $(STAMPS)/topology $(STAMPS)/embeddings $(PUB)/style.bin \
 	$(PUB)/metrics.json $(PUB)/tech.json $(PUB)/ligatures.json
 
-# Downloads new Google Fonts families. Changes data/manifest.json, so all later steps run again.
+# Downloads new Google Fonts families and the libre families of catalog/*.json.
+# Changes data/manifest.json, so all later steps run again.
 download:
+	$(PY) scripts/libre.py download
 	$(NODE) scripts/download.mjs
 
 # Downloads the files of the known families again (for example after new characters in src/chars.js).
 refresh:
 	$(NODE) scripts/download.mjs --refresh
 
-data/manifest.json:
+data/manifest.json: $(wildcard catalog/*.json)
+	$(PY) scripts/libre.py download
 	$(NODE) scripts/download.mjs
 
 index: $(PUB)/fonts.json $(STAMPS)/topology

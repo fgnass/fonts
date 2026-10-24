@@ -1,0 +1,1051 @@
+[
+ {
+  "family": "Abordage",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ange Degheest",
+   "Eugénie Bidaut"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License SIL OFL.txt",
+  "rfn": [
+   "Abordage"
+  ],
+  "url": "https://velvetyne.fr/fonts/degheest/",
+  "repo": "https://gitlab.com/Eugenie-B/degheest-types",
+  "rev": "22a7ed8a6371d98e7f8a6fdb4db74a17885ae3bf",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/otf/Abordage-Regular.otf"
+  }
+ },
+ {
+  "family": "Anthony",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Sun Young Oh"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Anthony"
+  ],
+  "url": "https://velvetyne.fr/fonts/anthony/",
+  "repo": "https://gitlab.com/velvetyne/anthony",
+  "rev": "bf84739794cf48ff661f3ba6cee2dc38f3bc4710",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Anthony.otf"
+  }
+ },
+ {
+  "family": "Avara",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Raphaël Bastide",
+   "Wei Huang",
+   "Lucas Le Bihan",
+   "Walid Bouchouchi",
+   "Jérémy Landes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/avara/",
+  "repo": "https://gitlab.com/velvetyne/Avara",
+  "rev": "cb655944d819ff3636e35bc58407e2b30b36e6fe",
+  "category": "Serif",
+  "files": {
+   "700": "fonts/Avara-Bold.otf",
+   "900": "fonts/Avara-Black.otf",
+   "700i": "fonts/Avara-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "BackOut",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Frank Adebiaye",
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/backout/",
+  "repo": "https://gitlab.com/velvetyne/backout",
+  "rev": "4f894ca0bf7d46e12a1e818d24a1234660e5848b",
+  "category": "Display",
+  "files": {
+   "500": "fonts/BackOut.otf"
+  }
+ },
+ {
+  "family": "Basalte",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ange Degheest",
+   "Benjamin Gomez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License SIL OFL.txt",
+  "rfn": [
+   "Basalte"
+  ],
+  "url": "https://velvetyne.fr/fonts/degheest/",
+  "repo": "https://gitlab.com/Eugenie-B/degheest-types",
+  "rev": "22a7ed8a6371d98e7f8a6fdb4db74a17885ae3bf",
+  "category": "Display",
+  "files": {
+   "400": "fonts/otf/Basalte-Fond.otf"
+  }
+ },
+ {
+  "family": "Basteleur",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Keussel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Basteleur"
+  ],
+  "url": "https://velvetyne.fr/fonts/basteleur/",
+  "repo": "https://gitlab.com/velvetyne/basteleur",
+  "rev": "f32302d63d46e9b996f329648b0f2df01c9190f5",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Basteleur-Moonlight.otf",
+   "700": "fonts/otf/Basteleur-Bold.otf"
+  }
+ },
+ {
+  "family": "CirrusCumulus",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Clara Sambot"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "CirrusCumulus"
+  ],
+  "url": "https://velvetyne.fr/fonts/cirruscumulus/",
+  "repo": "https://gitlab.com/Clarasambot/cirruscumulus",
+  "rev": "f4a5673e51959e55fc488df00a9f3d638a850677",
+  "category": "Display",
+  "files": {
+   "400": "fonts/CirrusCumulus.otf"
+  }
+ },
+ {
+  "family": "Combat",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Martin Desinde"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/combat/",
+  "repo": "https://github.com/martindesinde/Combat",
+  "rev": "67659793e45764ed8faa242a4d5654fc6cf40649",
+  "category": "Serif",
+  "files": {
+   "400": "font/Combat.otf"
+  }
+ },
+ {
+  "family": "Compagnon",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Juliette Duhé",
+   "Léa Pradine",
+   "Valentin Papon",
+   "Chloé Lozano",
+   "Sébastien Riollier"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/compagnon/",
+  "repo": "https://gitlab.com/velvetyne/compagnon",
+  "rev": "4f2344df5adb6eaf9ffd9215c5406c0729fb7aa1",
+  "category": "Monospace",
+  "files": {
+   "300": "fonts/Compagnon-Light.otf",
+   "400": "fonts/Compagnon-Roman.otf",
+   "500": "fonts/Compagnon-Medium.otf",
+   "700": "fonts/Compagnon-Bold.otf",
+   "300i": "fonts/Compagnon-LightItalic.otf"
+  }
+ },
+ {
+  "family": "Director",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ange Degheest",
+   "Justine Herbel",
+   "May Jolivet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License SIL OFL.txt",
+  "rfn": [
+   "Director"
+  ],
+  "url": "https://velvetyne.fr/fonts/degheest/",
+  "repo": "https://gitlab.com/Eugenie-B/degheest-types",
+  "rev": "22a7ed8a6371d98e7f8a6fdb4db74a17885ae3bf",
+  "category": "Monospace",
+  "files": {
+   "300": "fonts/otf/Director-Light.otf",
+   "400": "fonts/otf/Director-Regular.otf",
+   "700": "fonts/otf/Director-bold.otf"
+  },
+  "variable": "fonts/ttf/Director-Variable.ttf"
+ },
+ {
+  "family": "Equateur",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ange Degheest",
+   "Eugénie Bidaut"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License SIL OFL.txt",
+  "rfn": [
+   "Équateur"
+  ],
+  "url": "https://velvetyne.fr/fonts/degheest/",
+  "repo": "https://gitlab.com/Eugenie-B/degheest-types",
+  "rev": "22a7ed8a6371d98e7f8a6fdb4db74a17885ae3bf",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Equateur-Regular.otf"
+  }
+ },
+ {
+  "family": "Facade",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Éléonore Fines"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/facade/",
+  "repo": "https://gitlab.com/velvetyne/Facade-font",
+  "rev": "ee8aec96787b070239419632c8eecbf822df74eb",
+  "category": "Display",
+  "files": {
+   "300": "fonts/Static/OTF/Facade-Sud.otf",
+   "400": "fonts/Static/OTF/Facade-Sud-Ouest.otf",
+   "500": "fonts/Static/OTF/Facade-Ouest.otf",
+   "700": "fonts/Static/OTF/Facade-Est.otf"
+  },
+  "variable": "fonts/Variable/FacadeVF.ttf"
+ },
+ {
+  "family": "Feroniapi",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Peter Wiegel",
+   "Julienne Richard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Feroniapi"
+  ],
+  "url": "https://velvetyne.fr/fonts/feroniapi/",
+  "repo": "https://gitlab.com/velvetyne/feroniapi",
+  "rev": "4d94d4701ec463afee65da5228bba875f073eb54",
+  "category": "Display",
+  "files": {
+   "500i": "fonts/otf/Feroniapi-MediumItalic.otf"
+  }
+ },
+ {
+  "family": "Flor de Ruina",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Felipe Sanzana"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Flor de Ruina"
+  ],
+  "url": "https://velvetyne.fr/fonts/flor-de-ruina/",
+  "repo": "https://gitlab.com/velvetyne/flor-des-ruina",
+  "rev": "5ddb2681fecc6050de609200f9498593fb9d52d9",
+  "category": "Display",
+  "files": {
+   "300": "fonts/otf/FlorDeRuina-Germen.otf",
+   "400": "fonts/otf/FlorDeRuina-Semilla.otf",
+   "500": "fonts/otf/FlorDeRuina-Flor.otf",
+   "600": "fonts/otf/FlorDeRuina-Ruina.otf",
+   "700": "fonts/otf/FlorDeRuina-Fractura.otf"
+  }
+ },
+ {
+  "family": "Format 1452",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Frank Adebiaye",
+   "Anton Moglia"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/format-1452/",
+  "repo": "https://gitlab.com/velvetyne/format-1452",
+  "rev": "4af715b8a873139975d2651f0e316604508635ff",
+  "category": "Sans Serif",
+  "files": {
+   "500": "fonts/otf/Format_1452.otf"
+  }
+ },
+ {
+  "family": "FT88",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ange Degheest",
+   "Oriane Charvieux",
+   "Mandy Elbé"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License SIL OFL.txt",
+  "rfn": [
+   "FT88"
+  ],
+  "url": "https://velvetyne.fr/fonts/degheest/",
+  "repo": "https://gitlab.com/Eugenie-B/degheest-types",
+  "rev": "22a7ed8a6371d98e7f8a6fdb4db74a17885ae3bf",
+  "category": "Monospace",
+  "files": {
+   "400": "fonts/otf/FT88-Regular.otf",
+   "700": "fonts/otf/FT88-Bold.otf",
+   "400i": "fonts/otf/FT88-Italic.otf"
+  }
+ },
+ {
+  "family": "FT88 Expanded",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ange Degheest",
+   "Oriane Charvieux",
+   "Mandy Elbé"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License SIL OFL.txt",
+  "rfn": [
+   "FT88"
+  ],
+  "url": "https://velvetyne.fr/fonts/degheest/",
+  "repo": "https://gitlab.com/Eugenie-B/degheest-types",
+  "rev": "22a7ed8a6371d98e7f8a6fdb4db74a17885ae3bf",
+  "category": "Monospace",
+  "files": {
+   "400": "fonts/otf/FT88-Expanded.otf"
+  }
+ },
+ {
+  "family": "FT88 Gothique",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ange Degheest",
+   "Oriane Charvieux",
+   "Mandy Elbé"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License SIL OFL.txt",
+  "rfn": [
+   "FT88"
+  ],
+  "url": "https://velvetyne.fr/fonts/degheest/",
+  "repo": "https://gitlab.com/Eugenie-B/degheest-types",
+  "rev": "22a7ed8a6371d98e7f8a6fdb4db74a17885ae3bf",
+  "category": "Monospace",
+  "files": {
+   "400": "fonts/otf/FT88-Gothique.otf"
+  }
+ },
+ {
+  "family": "FT88 School",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ange Degheest",
+   "Oriane Charvieux",
+   "Mandy Elbé"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License SIL OFL.txt",
+  "rfn": [
+   "FT88"
+  ],
+  "url": "https://velvetyne.fr/fonts/degheest/",
+  "repo": "https://gitlab.com/Eugenie-B/degheest-types",
+  "rev": "22a7ed8a6371d98e7f8a6fdb4db74a17885ae3bf",
+  "category": "Monospace",
+  "files": {
+   "400": "fonts/otf/FT88-School.otf"
+  }
+ },
+ {
+  "family": "FT88 Serif",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ange Degheest",
+   "Oriane Charvieux",
+   "Mandy Elbé"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License SIL OFL.txt",
+  "rfn": [
+   "FT88"
+  ],
+  "url": "https://velvetyne.fr/fonts/degheest/",
+  "repo": "https://gitlab.com/Eugenie-B/degheest-types",
+  "rev": "22a7ed8a6371d98e7f8a6fdb4db74a17885ae3bf",
+  "category": "Monospace",
+  "files": {
+   "400": "fonts/otf/FT88-Serif.otf"
+  }
+ },
+ {
+  "family": "Grotesk",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Frank Adebiaye",
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Grotesk"
+  ],
+  "url": "https://velvetyne.fr/fonts/grotesk/",
+  "repo": "https://gitlab.com/velvetyne/grotesk",
+  "rev": "ac79fbc0f818fba94b61fb7f302e44ebc7a107bf",
+  "category": "Sans Serif",
+  "files": {
+   "100": "fonts/Grotesk-01Extrafin.otf",
+   "300": "fonts/Grotesk-02Mince.otf",
+   "400": "fonts/Grotesk-03Regular.otf",
+   "700": "fonts/Grotesk-04Gras.otf"
+  },
+  "variable": "fonts/_variable/GroteskVF.ttf"
+ },
+ {
+  "family": "Gulax",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Morgan Gilbert",
+   "Anton Moglia"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/gulax/",
+  "repo": "https://gitlab.com/velvetyne/Gulax",
+  "rev": "25ad92e48c142ad0f50c70f4fbaed3a44d93e37a",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/otf/Gulax-Regular.otf"
+  }
+ },
+ {
+  "family": "Hyper Scrypt",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Jérémy Landes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/hyper-scrypt/",
+  "repo": "https://gitlab.com/StudioTriple/Hyper-Scrypt",
+  "rev": "d7c8bc9029a886755095de92d3509ecb016ce788",
+  "category": "Display",
+  "files": {
+   "400": "fonts/HyperScrypt.otf"
+  }
+ },
+ {
+  "family": "Interlope",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Gabriel Dubourg"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Interlope"
+  ],
+  "url": "https://velvetyne.fr/fonts/interlope/",
+  "repo": "https://gitlab.com/velvetyne/interlope",
+  "rev": "1b7c0ef818ae62620c749de80ac35a05b04ba9bc",
+  "category": "Handwriting",
+  "files": {
+   "400": "font/otf/Interlope-Regular.otf"
+  }
+ },
+ {
+  "family": "Jgs Font",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Adel Faure"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "jgs5",
+   "jgs7",
+   "jgs9"
+  ],
+  "url": "https://velvetyne.fr/fonts/jgs-font/",
+  "repo": "https://gitlab.com/velvetyne/jgs",
+  "rev": "b1fe344c6ab4cb97aa9ceb09ba3b6056f826b040",
+  "category": "Monospace",
+  "files": {
+   "400": "fonts/jgs_Font.ttf"
+  }
+ },
+ {
+  "family": "Kaeru Kaeru",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Isabel Motz"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/kaeru-kaeru/",
+  "repo": "https://gitlab.com/velvetyne/kaerukaeru",
+  "rev": "dae804908ffb9249af2c4ee0b65a4a9084620de5",
+  "category": "Display",
+  "files": {
+   "400": "fonts/kaerukaeru-Regular.otf"
+  }
+ },
+ {
+  "family": "Karrik",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Jean-Baptiste Morizot",
+   "Lucas Le Bihan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENCE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/karrik/",
+  "repo": "https://gitlab.com/phantomfoundry/karrik_fonts",
+  "rev": "42ae96dcdfdd75b883d4d56a783c337f818f6651",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/Desktop/OTF/Karrik-Regular.otf",
+   "400i": "fonts/Desktop/OTF/Karrik-Italic.otf"
+  }
+ },
+ {
+  "family": "Latitude",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ange Degheest",
+   "Eugénie Bidaut"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License SIL OFL.txt",
+  "rfn": [
+   "Latitude"
+  ],
+  "url": "https://velvetyne.fr/fonts/degheest/",
+  "repo": "https://gitlab.com/Eugenie-B/degheest-types",
+  "rev": "22a7ed8a6371d98e7f8a6fdb4db74a17885ae3bf",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Latitude-Regular.otf"
+  }
+ },
+ {
+  "family": "Le Murmure",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Jérémy Landes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Murmure",
+   "Le Murmure"
+  ],
+  "url": "https://velvetyne.fr/fonts/le-murmure/",
+  "repo": "https://gitlab.com/velvetyne/murmure",
+  "rev": "7cfa8faf6ce6fe8d030410913b6147931cdc2ecb",
+  "category": "Display",
+  "files": {
+   "400": "fonts/le-murmure.otf"
+  }
+ },
+ {
+  "family": "Letters Torn",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Céline Hurka",
+   "Jules Janssen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Letters"
+  ],
+  "url": "https://velvetyne.fr/fonts/letters/",
+  "repo": "https://gitlab.com/velvetyne/letters",
+  "rev": "f402d42dcd6afc8f7c5f55bf4bbaae37643a69c5",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Letters-Torn.otf"
+  }
+ },
+ {
+  "family": "Lineal",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Frank Adebiaye",
+   "Anton Moglia",
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Lineal"
+  ],
+  "url": "https://velvetyne.fr/fonts/lineal/",
+  "repo": "https://gitlab.com/velvetyne/lineal",
+  "rev": "8dfea6601fdb5022ec38fc6d83de3cc44cb1bffa",
+  "category": "Sans Serif",
+  "files": {
+   "100": "fonts/Static/OTF/Lineal-Thin.otf",
+   "300": "fonts/Static/OTF/Lineal-Light.otf",
+   "400": "fonts/Static/OTF/Lineal-Regular.otf",
+   "500": "fonts/Static/OTF/Lineal-Medium.otf",
+   "700": "fonts/Static/OTF/Lineal-Bold.otf",
+   "800": "fonts/Static/OTF/Lineal-Black.otf",
+   "900": "fonts/Static/OTF/Lineal-Heavy.otf"
+  },
+  "variable": "fonts/Variable/LinealVF.ttf"
+ },
+ {
+  "family": "Lithops",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Anne-Dauphine Borione"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Lithops"
+  ],
+  "url": "https://velvetyne.fr/fonts/lithops/",
+  "repo": "https://gitlab.com/daytonamess/lithops",
+  "rev": "b9f42e0fb75746fa72a23cc96d86891c42d4eaba",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Lithops-Regular.otf"
+  }
+ },
+ {
+  "family": "Louise",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ange Degheest",
+   "Luna Delabre",
+   "Camille Depalle"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License SIL OFL.txt",
+  "rfn": [
+   "Louise"
+  ],
+  "url": "https://velvetyne.fr/fonts/degheest/",
+  "repo": "https://gitlab.com/Eugenie-B/degheest-types",
+  "rev": "22a7ed8a6371d98e7f8a6fdb4db74a17885ae3bf",
+  "category": "Handwriting",
+  "files": {
+   "400": "fonts/otf/Louise-Regular.otf"
+  }
+ },
+ {
+  "family": "Mourier",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Eric Mourier",
+   "Sébastien Hayez",
+   "Ariel Martín Pérez",
+   "Alexander Kondratenko"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Mourier"
+  ],
+  "url": "https://velvetyne.fr/fonts/mourier/",
+  "repo": "https://gitlab.com/velvetyne/mourier",
+  "rev": "02c6e2d3aa23b3b8b625f50b7a912baa02e055f5",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Mourier-Regular.otf"
+  }
+ },
+ {
+  "family": "Ouroboros",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ariel Martín Pérez",
+   "H·Alix Sanyas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Ouroboros"
+  ],
+  "url": "https://velvetyne.fr/fonts/ouroboros/",
+  "repo": "https://gitlab.com/velvetyne/ouroboros",
+  "rev": "660bf83a5c6c5f3d500173e80fe51f74c046fdc2",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Ouroboros-Regular.otf"
+  }
+ },
+ {
+  "family": "Outward Block",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Raoul Audouin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license.txt",
+  "rfn": [
+   "Outward"
+  ],
+  "url": "https://velvetyne.fr/fonts/outward/",
+  "repo": "https://github.com/raoulaudouin/Outward",
+  "rev": "e541c20e28d6aa9b8d51489c86d0bb71b2a1e431",
+  "category": "Display",
+  "files": {
+   "400": "fonts/ttf/outward-block.ttf"
+  }
+ },
+ {
+  "family": "Outward Borders",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Raoul Audouin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license.txt",
+  "rfn": [
+   "Outward"
+  ],
+  "url": "https://velvetyne.fr/fonts/outward/",
+  "repo": "https://github.com/raoulaudouin/Outward",
+  "rev": "e541c20e28d6aa9b8d51489c86d0bb71b2a1e431",
+  "category": "Display",
+  "files": {
+   "400": "fonts/ttf/outward-borders.ttf"
+  }
+ },
+ {
+  "family": "Outward Round",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Raoul Audouin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license.txt",
+  "rfn": [
+   "Outward"
+  ],
+  "url": "https://velvetyne.fr/fonts/outward/",
+  "repo": "https://github.com/raoulaudouin/Outward",
+  "rev": "e541c20e28d6aa9b8d51489c86d0bb71b2a1e431",
+  "category": "Display",
+  "files": {
+   "400i": "fonts/ttf/outward-round.ttf"
+  }
+ },
+ {
+  "family": "Ouvrières",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Laure Azizi"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/ouvrieres/",
+  "repo": "https://github.com/laureazz/Ouvrieres",
+  "rev": "c9dcaf19aba4cdba208211ce6a57fb3da0b50617",
+  "category": "Display",
+  "files": {
+   "100": "otf/Ouvrieres-affamees.otf",
+   "400": "otf/Ouvrieres-agricultrices.otf",
+   "900": "otf/Ouvrieres-rassasiees.otf"
+  },
+  "variable": "OuvrièresGX.ttf"
+ },
+ {
+  "family": "Pilowlava",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Anton Moglia",
+   "Jérémy Landes",
+   "Maksym Kobuzan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License.txt",
+  "rfn": [
+   "Pilowlava"
+  ],
+  "url": "https://velvetyne.fr/fonts/pilowlava/",
+  "repo": "https://gitlab.com/StudioTriple/pilowlava",
+  "rev": "71577dd3b4d66e9837e12e9da84f8bfb495a35c9",
+  "category": "Display",
+  "files": {
+   "400": "Fonts/Pilowlava-Regular.otf"
+  }
+ },
+ {
+  "family": "Pilowlava Atome",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Anton Moglia",
+   "Jérémy Landes",
+   "Maksym Kobuzan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License.txt",
+  "rfn": [
+   "Pilowlava"
+  ],
+  "url": "https://velvetyne.fr/fonts/pilowlava/",
+  "repo": "https://gitlab.com/StudioTriple/pilowlava",
+  "rev": "71577dd3b4d66e9837e12e9da84f8bfb495a35c9",
+  "category": "Display",
+  "files": {
+   "400": "Fonts/Pilowlava-Atome.otf"
+  }
+ },
+ {
+  "family": "Resistance",
+  "foundry": "Velvetyne",
+  "designers": [
+   "A collective"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/resistance/",
+  "repo": "https://github.com/velvetyne/resistance-generale",
+  "rev": "b45a061aa8e7f1fdd783fc3170438bf7238ca656",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/Resistance générale.otf"
+  }
+ },
+ {
+  "family": "Sligoil",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Ariel Martín Pérez",
+   "Đông Trúc Nguyễn"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Sligoil"
+  ],
+  "url": "https://velvetyne.fr/fonts/sligoil/",
+  "repo": "https://gitlab.com/velvetyne/sligoil",
+  "rev": "d6d999088dff79d3fab81c5661e52f2caa2c479d",
+  "category": "Monospace",
+  "files": {
+   "400": "fonts/otf/Sligoil-Micro.otf",
+   "500": "fonts/otf/Sligoil-MicroMedium.otf",
+   "700": "fonts/otf/Sligoil-MicroBold.otf"
+  },
+  "variable": "fonts/variable/SligoilVF.ttf"
+ },
+ {
+  "family": "Steps Mono",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Jean-Baptiste Morizot",
+   "Raphaël Bastide"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Steps Mono"
+  ],
+  "url": "https://velvetyne.fr/fonts/steps-mono/",
+  "repo": "https://gitlab.com/raphaelbastide/steps-mono",
+  "rev": "47d05e9bcb1a5f96fbafa262a1c7052aa10ed176",
+  "category": "Monospace",
+  "files": {
+   "400": "fonts/Steps-Mono.otf"
+  }
+ },
+ {
+  "family": "Steps Mono Thin",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Jean-Baptiste Morizot",
+   "Raphaël Bastide"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Steps Mono"
+  ],
+  "url": "https://velvetyne.fr/fonts/steps-mono/",
+  "repo": "https://gitlab.com/raphaelbastide/steps-mono",
+  "rev": "47d05e9bcb1a5f96fbafa262a1c7052aa10ed176",
+  "category": "Monospace",
+  "files": {
+   "400": "fonts/Steps-Mono-Thin.otf"
+  }
+ },
+ {
+  "family": "Terminal Grotesque",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Raphaël Bastide",
+   "Jérémy Landes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [
+   "Blackout"
+  ],
+  "url": "https://velvetyne.fr/fonts/terminal-grotesque/",
+  "repo": "https://gitlab.com/raphaelbastide/Terminal-Grotesque",
+  "rev": "93d7478ef094e9f4efa38cf072879471c7b64f71",
+  "category": "Sans Serif",
+  "files": {
+   "400": "terminal-grotesque.otf"
+  }
+ },
+ {
+  "family": "Terminal Grotesque Open",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Raphaël Bastide",
+   "Jérémy Landes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [
+   "Blackout"
+  ],
+  "url": "https://velvetyne.fr/fonts/terminal-grotesque/",
+  "repo": "https://gitlab.com/raphaelbastide/Terminal-Grotesque",
+  "rev": "93d7478ef094e9f4efa38cf072879471c7b64f71",
+  "category": "Display",
+  "files": {
+   "400": "terminal-grotesque_open.otf"
+  }
+ },
+ {
+  "family": "TINY5x3",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Jack Halten Fahnestock"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/tiny/",
+  "repo": "https://github.com/jckfa/tinyfonts",
+  "rev": "259f633d770ea08cbb9620d477fdfa7a7384efc2",
+  "category": "Monospace",
+  "files": {
+   "100": "fonts/instances/TINY5x3-40.otf",
+   "200": "fonts/instances/TINY5x3-80.otf",
+   "300": "fonts/instances/TINY5x3-120.otf",
+   "400": "fonts/instances/TINY5x3-160.otf",
+   "500": "fonts/instances/TINY5x3-200.otf",
+   "600": "fonts/instances/TINY5x3-240.otf",
+   "700": "fonts/instances/TINY5x3-280.otf"
+  }
+ },
+ {
+  "family": "Trickster",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Jean-Baptiste Morizot"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/trickster/",
+  "repo": "https://gitlab.com/velvetyne/Trickster",
+  "rev": "751b1fa5fd5293614d0eb4df4962ec195fa243ab",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Trickster-Reg.otf"
+  }
+ },
+ {
+  "family": "Typefesse Claire-Obscure",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Océane Juvin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/typefesse/",
+  "repo": "https://github.com/ohpla/typefesse",
+  "rev": "3a1d99ace34398547315e55dafb7263310148350",
+  "category": "Display",
+  "files": {
+   "400": "Fonts/1-otf/Typefesse_Claire-Obscure.otf"
+  }
+ },
+ {
+  "family": "Typefesse Pleine",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Océane Juvin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/typefesse/",
+  "repo": "https://github.com/ohpla/typefesse",
+  "rev": "3a1d99ace34398547315e55dafb7263310148350",
+  "category": "Display",
+  "files": {
+   "400": "Fonts/1-otf/Typefesse_Pleine.otf"
+  }
+ },
+ {
+  "family": "VG5000",
+  "foundry": "Velvetyne",
+  "designers": [
+   "Justin Bihan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://velvetyne.fr/fonts/vg5000/",
+  "repo": "https://gitlab.com/velvetyne/vg5000",
+  "rev": "e4eeaed973f75fd5bafe2c69de60e8ad0f710f58",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/VG5000-Regular.otf"
+  }
+ }
+]

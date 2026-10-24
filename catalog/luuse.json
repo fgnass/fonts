@@ -1,0 +1,258 @@
+[
+ {
+  "family": "Living Uncut Sans",
+  "foundry": "Luuse",
+  "designers": [
+   "Luuse",
+   "Kasper Nordkvist"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Living-Uncut-Sans"
+  ],
+  "url": "https://gitlab.com/Luuse/foundry/lp-uncut-sans",
+  "repo": "https://gitlab.com/Luuse/foundry/lp-uncut-sans",
+  "rev": "f25fddfe2d09b34c2245ddbbb6b22802276a3756",
+  "category": "Sans Serif",
+  "files": {
+   "200": "fonts/Living-Uncut-Sans-Extra-Light.otf",
+   "400": "fonts/Living-Uncut-Sans-Regular.otf",
+   "600": "fonts/Living-Uncut-Sans-Semi-Bold.otf",
+   "900": "fonts/Living-Uncut-Sans-Extra-Black.otf"
+  }
+ },
+ {
+  "family": "ParaRubber",
+  "foundry": "Luuse",
+  "designers": [
+   "Léonard Mabille"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "SIL Open Font License.txt",
+  "rfn": [
+   "ParaRubber"
+  ],
+  "url": "https://typotheque.luuse.io/specimen/pararubber",
+  "repo": "https://gitlab.com/Luuse/foundry/pararubber",
+  "rev": "c2aa51e4787af195f86a8e8dbe4d3949e118cd92",
+  "category": "Serif",
+  "files": {
+   "500": "font/V8/ParaRubber-Medium.otf"
+  }
+ },
+ {
+  "family": "ParaRubber Sans",
+  "foundry": "Luuse",
+  "designers": [
+   "Léonard Mabille"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "SIL Open Font License.txt",
+  "rfn": [
+   "ParaRubber"
+  ],
+  "url": "https://typotheque.luuse.io/specimen/pararubber",
+  "repo": "https://gitlab.com/Luuse/foundry/pararubber",
+  "rev": "c2aa51e4787af195f86a8e8dbe4d3949e118cd92",
+  "category": "Serif",
+  "files": {
+   "500": "font/Sans/V1/ParaRubberSans.otf",
+   "700": "font/sans-bold/V2/ParaRubberSansBold.otf"
+  }
+ },
+ {
+  "family": "Meta Old French",
+  "foundry": "Luuse",
+  "designers": [
+   "Antoine Gelgon"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://typotheque.luuse.io/specimen/meta-old-french",
+  "repo": "https://gitlab.com/Luuse/foundry/meta-old-french",
+  "rev": "3e986f1c3d3e8feeeb8e2fbc390b21726012ac15",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/work-in-progress/Meta-old-French.otf"
+  }
+ },
+ {
+  "family": "Manifont Grotesk",
+  "foundry": "Interstices",
+  "designers": [
+   "Alexandre Liziard",
+   "Étienne Ozeray"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://typotheque.luuse.io/specimen/manifont-grotesk",
+  "repo": "https://gitlab.com/Interstices-/Manifont-Grotesk",
+  "rev": "50b52c185a4b2ea1d384c7ae95b95564479055f8",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fontes/OTF/ManifontGroteskBook.otf",
+   "700": "fontes/OTF/ManifontGroteskBold.otf",
+   "400i": "fontes/OTF/ManifontGroteskBookItalic.otf",
+   "700i": "fontes/OTF/ManifontGroteskBoldItalic.otf"
+  }
+ },
+ {
+  "family": "Hershey Noailles Futura Simplex",
+  "foundry": "Luuse",
+  "designers": [
+   "Luuse"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [],
+  "url": "http://hershey-noailles.luuse.io/",
+  "repo": "https://gitlab.com/Luuse/Villa-Noailles/font-hershey-noailles",
+  "rev": "11c451db0342b9679f56fa092616d334453d4175",
+  "category": "Sans Serif",
+  "files": {
+   "300": "FINAL/Hershey-Noailles-Futura-Simplex-Light.otf",
+   "400": "FINAL/Hershey-Noailles-Futura-Simplex-Regular.otf",
+   "700": "FINAL/Hershey-Noailles-Futura-Simplex-Bold.otf"
+  }
+ },
+ {
+  "family": "Hershey Noailles Futura Duplex",
+  "foundry": "Luuse",
+  "designers": [
+   "Luuse"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [],
+  "url": "http://hershey-noailles.luuse.io/",
+  "repo": "https://gitlab.com/Luuse/Villa-Noailles/font-hershey-noailles",
+  "rev": "11c451db0342b9679f56fa092616d334453d4175",
+  "category": "Sans Serif",
+  "files": {
+   "300": "FINAL/Hershey-Noailles-Futura-Duplex-Light.otf",
+   "400": "FINAL/Hershey-Noailles-Futura-Duplex-Regular.otf",
+   "700": "FINAL/Hershey-Noailles-Futura-Duplex-Bold.otf"
+  }
+ },
+ {
+  "family": "Hershey Noailles Futura Triplex",
+  "foundry": "Luuse",
+  "designers": [
+   "Luuse"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [],
+  "url": "http://hershey-noailles.luuse.io/",
+  "repo": "https://gitlab.com/Luuse/Villa-Noailles/font-hershey-noailles",
+  "rev": "11c451db0342b9679f56fa092616d334453d4175",
+  "category": "Sans Serif",
+  "files": {
+   "300": "FINAL/Hershey-Noailles-Futura-Triplex-Light.otf",
+   "400": "FINAL/Hershey-Noailles-Futura-Triplex-Regular.otf",
+   "700": "FINAL/Hershey-Noailles-Futura-Triplex-Bold.otf"
+  }
+ },
+ {
+  "family": "Hershey Noailles Old French",
+  "foundry": "Luuse",
+  "designers": [
+   "Luuse"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [],
+  "url": "http://hershey-noailles.luuse.io/",
+  "repo": "https://gitlab.com/Luuse/Villa-Noailles/font-hershey-noailles",
+  "rev": "11c451db0342b9679f56fa092616d334453d4175",
+  "category": "Serif",
+  "files": {
+   "300": "FINAL/Hershey-Noailles-OldFrench-Light.otf",
+   "400": "FINAL/Hershey-Noailles-OldFrench-Regular.otf",
+   "700": "FINAL/Hershey-Noailles-OldFrench-Bold.otf"
+  }
+ },
+ {
+  "family": "Hershey Noailles Times Simplex",
+  "foundry": "Luuse",
+  "designers": [
+   "Luuse"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [],
+  "url": "http://hershey-noailles.luuse.io/",
+  "repo": "https://gitlab.com/Luuse/Villa-Noailles/font-hershey-noailles",
+  "rev": "11c451db0342b9679f56fa092616d334453d4175",
+  "category": "Serif",
+  "files": {
+   "300": "FINAL/Hershey-Noailles-Times-Simplex-Light.otf",
+   "400": "FINAL/Hershey-Noailles-Times-Simplex-Regular.otf",
+   "700": "FINAL/Hershey-Noailles-Times-Simplex-Bold.otf"
+  }
+ },
+ {
+  "family": "Hershey Noailles Times Duplex",
+  "foundry": "Luuse",
+  "designers": [
+   "Luuse"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [],
+  "url": "http://hershey-noailles.luuse.io/",
+  "repo": "https://gitlab.com/Luuse/Villa-Noailles/font-hershey-noailles",
+  "rev": "11c451db0342b9679f56fa092616d334453d4175",
+  "category": "Serif",
+  "files": {
+   "300": "FINAL/Hershey-Noailles-Times-Duplex-Light.otf",
+   "400": "FINAL/Hershey-Noailles-Times-Duplex-Regular.otf",
+   "700": "FINAL/Hershey-Noailles-Times-Duplex-Bold.otf",
+   "300i": "FINAL/Hershey-Noailles-Times-Duplex-Italic-Light.otf",
+   "400i": "FINAL/Hershey-Noailles-Times-Duplex-Italic-Regular.otf",
+   "700i": "FINAL/Hershey-Noailles-Times-Duplex-Italic-Bold.otf"
+  }
+ },
+ {
+  "family": "Hershey Noailles Times Triplex",
+  "foundry": "Luuse",
+  "designers": [
+   "Luuse"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [],
+  "url": "http://hershey-noailles.luuse.io/",
+  "repo": "https://gitlab.com/Luuse/Villa-Noailles/font-hershey-noailles",
+  "rev": "11c451db0342b9679f56fa092616d334453d4175",
+  "category": "Serif",
+  "files": {
+   "300": "FINAL/Hershey-Noailles-Times-Triplex-Light.otf",
+   "400": "FINAL/Hershey-Noailles-Times-Triplex-Regular.otf",
+   "700": "FINAL/Hershey-Noailles-Times-Triplex-Bold.otf",
+   "300i": "FINAL/Hershey-Noailles-Times-Triplex-Italic-Light.otf",
+   "400i": "FINAL/Hershey-Noailles-Times-Triplex-Italic-Regular.otf",
+   "700i": "FINAL/Hershey-Noailles-Times-Triplex-Italic-Bold.otf"
+  }
+ },
+ {
+  "family": "Hershey Noailles Times Mono",
+  "foundry": "Luuse",
+  "designers": [
+   "Luuse"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [],
+  "url": "http://hershey-noailles.luuse.io/",
+  "repo": "https://gitlab.com/Luuse/Villa-Noailles/font-hershey-noailles",
+  "rev": "11c451db0342b9679f56fa092616d334453d4175",
+  "category": "Serif",
+  "files": {
+   "400": "FINAL/Hershey-Noailles-Times-Mono-Regular.otf"
+  }
+ }
+]

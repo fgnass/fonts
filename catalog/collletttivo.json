@@ -1,0 +1,458 @@
+[
+ {
+  "family": "Absans",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Valerio Monopoli"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/absans",
+  "repo": "https://github.com/collletttivo/absans",
+  "rev": "e1ba5d9a2359934df024b4ebef4c1be76e0db263",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/Absans-Regular.otf"
+  }
+ },
+ {
+  "family": "Apfel Grotezk",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Luigi Gorlero"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/apfel-grotezk",
+  "repo": "https://github.com/collletttivo/apfel-grotezk",
+  "rev": "8b4c9f2682d274d7fae81d8eceef24f7f2fba4ea",
+  "category": "Sans Serif",
+  "files": {
+   "300": "fonts/ApfelGrotezk-Brukt.otf",
+   "400": "fonts/ApfelGrotezk-Regular.otf",
+   "500": "fonts/ApfelGrotezk-Mittel.otf",
+   "700": "fonts/ApfelGrotezk-Fett.otf",
+   "900": "fonts/ApfelGrotezk-Satt.otf"
+  }
+ },
+ {
+  "family": "Aujournuit",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Teo Gaudet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/aujournuit",
+  "repo": "https://github.com/collletttivo/aujournuit",
+  "rev": "8b8aed12b67454ea6ae37009ad719bf33617b80d",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Aujournuit-Regular.otf"
+  },
+  "variable": "fonts/Aujournuit-VariableVF.ttf"
+ },
+ {
+  "family": "Aujournuit Condensed",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Teo Gaudet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/aujournuit",
+  "repo": "https://github.com/collletttivo/aujournuit",
+  "rev": "8b8aed12b67454ea6ae37009ad719bf33617b80d",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Aujournuit-Condensed.otf"
+  },
+  "variable": "fonts/Aujournuit-VariableVF.ttf"
+ },
+ {
+  "family": "Aujournuit Wide",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Teo Gaudet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/aujournuit",
+  "repo": "https://github.com/collletttivo/aujournuit",
+  "rev": "8b8aed12b67454ea6ae37009ad719bf33617b80d",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Aujournuit-Wide.otf"
+  },
+  "variable": "fonts/Aujournuit-VariableVF.ttf"
+ },
+ {
+  "family": "Borges",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Matteo Bertin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/borges",
+  "repo": "https://github.com/collletttivo/borges",
+  "rev": "f0c85182388603998ab55f84f9bc8cd8e8719383",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Borges-SquarePixelRegular.otf"
+  }
+ },
+ {
+  "family": "Coconat",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Sara Lavazza"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/coconat",
+  "repo": "https://github.com/collletttivo/coconat",
+  "rev": "75f0bf21470de362ebee2f173e99505b7a7e977b",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Coconat-Regular.otf",
+   "600": "fonts/Coconat-Demi.otf"
+  }
+ },
+ {
+  "family": "Coconat Extended",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Sara Lavazza"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/coconat",
+  "repo": "https://github.com/collletttivo/coconat",
+  "rev": "75f0bf21470de362ebee2f173e99505b7a7e977b",
+  "category": "Serif",
+  "files": {
+   "700": "fonts/Coconat-Bold.otf"
+  }
+ },
+ {
+  "family": "Halibut",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Matteo Maggi"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/halibut",
+  "repo": "https://github.com/collletttivo/halibut",
+  "rev": "13df8fd7ea926f9a47049ec1426fcce186909ee8",
+  "category": "Display",
+  "files": {
+   "100": "fonts/Halibut-Thin.otf",
+   "400": "fonts/Halibut-Regular.otf"
+  }
+ },
+ {
+  "family": "Halibut Condensed",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Matteo Maggi"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/halibut",
+  "repo": "https://github.com/collletttivo/halibut",
+  "rev": "13df8fd7ea926f9a47049ec1426fcce186909ee8",
+  "category": "Display",
+  "files": {
+   "100": "fonts/Halibut-CondensedThin.otf",
+   "400": "fonts/Halibut-CondensedRegular.otf"
+  }
+ },
+ {
+  "family": "Halibut Expanded",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Matteo Maggi"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/halibut",
+  "repo": "https://github.com/collletttivo/halibut",
+  "rev": "13df8fd7ea926f9a47049ec1426fcce186909ee8",
+  "category": "Display",
+  "files": {
+   "100": "fonts/Halibut-ExpandedThin.otf",
+   "400": "fonts/Halibut-ExpandedRegular.otf"
+  }
+ },
+ {
+  "family": "Mattone",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Nunzio Mazzaferro"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/mattone",
+  "repo": "https://github.com/collletttivo/mattone",
+  "rev": "b1dc55dc6a432708ab00329d452d8f6907c6e570",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Mattone-Regular.otf",
+   "700": "fonts/Mattone-Bold.otf",
+   "900": "fonts/Mattone-Black.otf"
+  }
+ },
+ {
+  "family": "Mazius Display",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Alberto Casagrande"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/mazius-display",
+  "repo": "https://github.com/collletttivo/mazius-display",
+  "rev": "5798d69b14f0b7c1691f031f2ecb98ebdb709b54",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/MaziusDisplay-Regular.otf",
+   "700": "fonts/MaziusDisplay-Bold.otf",
+   "400i": "fonts/MaziusDisplay-Extraitalic.otf",
+   "700i": "fonts/MaziusDisplay-ExtraItalicBold.otf"
+  }
+ },
+ {
+  "family": "Messapia",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Luca Marsano"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/messapia",
+  "repo": "https://github.com/collletttivo/messapia",
+  "rev": "c7fbc664055d3f16f5d7431271f738ab5cdc6373",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Messapia-Regular.otf",
+   "700": "fonts/Messapia-Bold.otf"
+  }
+ },
+ {
+  "family": "Necto Mono",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Marco Condello"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/necto-mono",
+  "repo": "https://github.com/collletttivo/necto-mono",
+  "rev": "db9edb73bace38d64f36f29e698d9c7547045ce6",
+  "category": "Monospace",
+  "files": {
+   "400": "fonts/NectoMono-Regular.otf"
+  }
+ },
+ {
+  "family": "Ortica Angular",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Ben Bovani"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/ortica",
+  "repo": "https://github.com/collletttivo/ortica",
+  "rev": "27bf44d3ea5057b7abcd09a8922d43d0b37a4f06",
+  "category": "Serif",
+  "files": {
+   "700": "fonts/OrticaAngular-Bold.otf"
+  }
+ },
+ {
+  "family": "Ortica Linear",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Ben Bovani"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/ortica",
+  "repo": "https://github.com/collletttivo/ortica",
+  "rev": "27bf44d3ea5057b7abcd09a8922d43d0b37a4f06",
+  "category": "Serif",
+  "files": {
+   "300": "fonts/OrticaLinear-Light.otf",
+   "400": "fonts/OrticaLinear-Regular.otf",
+   "700": "fonts/OrticaLinear-Bold.otf"
+  }
+ },
+ {
+  "family": "Ribes",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Luigi Gorlero"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/ribes",
+  "repo": "https://github.com/collletttivo/ribes",
+  "rev": "e5f58f6ef719ff69b599a3155c66f4cecaed0a0f",
+  "category": "Display",
+  "files": {
+   "200": "fonts/Ribes-Light.otf",
+   "400": "fonts/Ribes-Regular.otf",
+   "900": "fonts/Ribes-Black.otf"
+  }
+ },
+ {
+  "family": "Ronzino",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Luigi Gorlero",
+   "Nunzio Mazzaferro"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/ronzino",
+  "repo": "https://github.com/collletttivo/ronzino",
+  "rev": "24df8cdde479fef13948de629c3b10849e1dffb5",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/Ronzino-Regular.otf",
+   "500": "fonts/Ronzino-Medium.otf",
+   "700": "fonts/Ronzino-Bold.otf",
+   "400i": "fonts/Ronzino-Oblique.otf",
+   "500i": "fonts/Ronzino-MediumOblique.otf",
+   "700i": "fonts/Ronzino-BoldOblique.otf"
+  }
+ },
+ {
+  "family": "Sinistre",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Jules Durand"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/sinistre",
+  "repo": "https://github.com/collletttivo/sinistre",
+  "rev": "fbf85f1130670ff2e1b944a17ec13872996b4305",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Sinistre-Regular.otf",
+   "700": "fonts/Sinistre-Bold.otf",
+   "900": "fonts/Sinistre-Dark.otf"
+  },
+  "variable": "fonts/SinistreVF.ttf"
+ },
+ {
+  "family": "Sneaky Times",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Jules Durand"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/sneaky-times",
+  "repo": "https://github.com/collletttivo/sneaky-times",
+  "rev": "7094a621508090d479ccb95ce6a6b8827b3f9d4e",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Sneaky-Times.otf"
+  }
+ },
+ {
+  "family": "Sprat",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Ethan Nakache"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/sprat",
+  "repo": "https://github.com/collletttivo/sprat",
+  "rev": "bdf9c50243d647290ecb21555b03a1aafba447ac",
+  "category": "Serif",
+  "files": {
+   "100": "fonts/Sprat-Thin.otf",
+   "300": "fonts/Sprat-Light.otf",
+   "400": "fonts/Sprat-Regular.otf",
+   "500": "fonts/Sprat-Medium.otf",
+   "700": "fonts/Sprat-Bold.otf",
+   "900": "fonts/Sprat-Black.otf"
+  },
+  "variable": "fonts/SpratVF.ttf"
+ },
+ {
+  "family": "Sprat Condensed",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Ethan Nakache"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/sprat",
+  "repo": "https://github.com/collletttivo/sprat",
+  "rev": "bdf9c50243d647290ecb21555b03a1aafba447ac",
+  "category": "Serif",
+  "files": {
+   "100": "fonts/Sprat-CondensedThin.otf",
+   "300": "fonts/Sprat-CondensedLight.otf",
+   "400": "fonts/Sprat-CondesedRegular.otf",
+   "500": "fonts/Sprat-CondensedMedium.otf",
+   "700": "fonts/Sprat-CondensedBold.otf",
+   "900": "fonts/Sprat-CondensedBlack.otf"
+  },
+  "variable": "fonts/SpratVF.ttf"
+ },
+ {
+  "family": "Sprat Extended",
+  "foundry": "Collletttivo",
+  "designers": [
+   "Ethan Nakache"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.collletttivo.it/typefaces/sprat",
+  "repo": "https://github.com/collletttivo/sprat",
+  "rev": "bdf9c50243d647290ecb21555b03a1aafba447ac",
+  "category": "Serif",
+  "files": {
+   "100": "fonts/Sprat-ExtendedThin.otf",
+   "300": "fonts/Sprat-ExtendedLight.otf",
+   "400": "fonts/Sprat-ExtendedRegular.otf",
+   "500": "fonts/Sprat-ExtendedMedium.otf",
+   "700": "fonts/Sprat-ExtendedBold.otf",
+   "900": "fonts/Sprat-ExtendedBlack.otf"
+  },
+  "variable": "fonts/SpratVF.ttf"
+ }
+]

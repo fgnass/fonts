@@ -1,0 +1,793 @@
+[
+ {
+  "family": "Argentum Sans",
+  "foundry": "Cristiano Sobral",
+  "designers": [
+   "Cristiano Sobral"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/cssobral2013/Argentum-Sans",
+  "repo": "https://github.com/cssobral2013/Argentum-Sans",
+  "rev": "396d0c5b9a1c520215e2c4d2fd7e8b9165c4e4d6",
+  "category": "Sans Serif",
+  "files": {
+   "100": "otf/ArgentumSans-Thin.otf",
+   "200": "otf/ArgentumSans-ExtraLight.otf",
+   "300": "otf/ArgentumSans-Light.otf",
+   "400": "otf/ArgentumSans-Regular.otf",
+   "500": "otf/ArgentumSans-Medium.otf",
+   "600": "otf/ArgentumSans-SemiBold.otf",
+   "700": "otf/ArgentumSans-Bold.otf",
+   "800": "otf/ArgentumSans-ExtraBold.otf",
+   "900": "otf/ArgentumSans-Black.otf",
+   "100i": "otf/ArgentumSans-ThinItalic.otf",
+   "200i": "otf/ArgentumSans-ExtraLightItalic.otf",
+   "300i": "otf/ArgentumSans-LightItalic.otf",
+   "400i": "otf/ArgentumSans-Italic.otf",
+   "500i": "otf/ArgentumSans-MediumItalic.otf",
+   "600i": "otf/ArgentumSans-SemiBoldItalic.otf",
+   "700i": "otf/ArgentumSans-BoldItalic.otf",
+   "800i": "otf/ArgentumSans-ExtraBoldItalic.otf",
+   "900i": "otf/ArgentumSans-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Argentum Sans Condensed",
+  "foundry": "Cristiano Sobral",
+  "designers": [
+   "Cristiano Sobral"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/cssobral2013/Argentum-Sans",
+  "repo": "https://github.com/cssobral2013/Argentum-Sans",
+  "rev": "396d0c5b9a1c520215e2c4d2fd7e8b9165c4e4d6",
+  "category": "Sans Serif",
+  "files": {
+   "100": "otf/ArgentumSansCondensed-Thin.otf",
+   "200": "otf/ArgentumSansCondensed-ExtraLight.otf",
+   "300": "otf/ArgentumSansCondensed-Light.otf",
+   "400": "otf/ArgentumSansCondensed-Regular.otf",
+   "500": "otf/ArgentumSansCondensed-Medium.otf",
+   "600": "otf/ArgentumSansCondensed-SemiBold.otf",
+   "700": "otf/ArgentumSansCondensed-Bold.otf",
+   "800": "otf/ArgentumSansCondensed-ExtraBold.otf",
+   "100i": "otf/ArgentumSansCondensed-ThinItalic.otf",
+   "200i": "otf/ArgentumSansCondensed-ExtraLightItalic.otf",
+   "300i": "otf/ArgentumSansCondensed-LightItalic.otf",
+   "400i": "otf/ArgentumSansCondensed-Italic.otf",
+   "500i": "otf/ArgentumSansCondensed-MediumItalic.otf",
+   "600i": "otf/ArgentumSansCondensed-SemiBoldItalic.otf",
+   "700i": "otf/ArgentumSansCondensed-BoldItalic.otf",
+   "800i": "otf/ArgentumSansCondensed-ExtraBoldItalic.otf",
+   "900i": "otf/ArgentumSansCondensed-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Argentum Sans Semi Condensed",
+  "foundry": "Cristiano Sobral",
+  "designers": [
+   "Cristiano Sobral"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/cssobral2013/Argentum-Sans",
+  "repo": "https://github.com/cssobral2013/Argentum-Sans",
+  "rev": "396d0c5b9a1c520215e2c4d2fd7e8b9165c4e4d6",
+  "category": "Sans Serif",
+  "files": {
+   "100": "otf/ArgentumSansSemiCondensed-Thin.otf",
+   "200": "otf/ArgentumSansSemiCondensed-ExtraLight.otf",
+   "300": "otf/ArgentumSansSemiCondensed-Light.otf",
+   "400": "otf/ArgentumSansSemiCondensed-Regular.otf",
+   "500": "otf/ArgentumSansSemiCondensed-Medium.otf",
+   "600": "otf/ArgentumSansSemiCondensed-SemiBold.otf",
+   "700": "otf/ArgentumSansSemiCondensed-Bold.otf",
+   "800": "otf/ArgentumSansSemiCondensed-ExtraBold.otf",
+   "900": "otf/ArgentumSansSemiCondensed-Black.otf",
+   "100i": "otf/ArgentumSansSemiCondensed-ThinItalic.otf",
+   "200i": "otf/ArgentumSansSemiCondensed-ExtraLightItalic.otf",
+   "300i": "otf/ArgentumSansSemiCondensed-LightItalic.otf",
+   "400i": "otf/ArgentumSansSemiCondensed-Italic.otf",
+   "500i": "otf/ArgentumSansSemiCondensed-MediumItalic.otf",
+   "600i": "otf/ArgentumSansSemiCondensed-SemiBoldItalic.otf",
+   "700i": "otf/ArgentumSansSemiCondensed-BoldItalic.otf",
+   "800i": "otf/ArgentumSansSemiCondensed-ExtraBoldItalic.otf",
+   "900i": "otf/ArgentumSansSemiCondensed-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Commit Mono",
+  "foundry": "Eigil Nikolajsen",
+  "designers": [
+   "Eigil Nikolajsen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "CommitMono-1.143/license.txt",
+  "rfn": [],
+  "url": "https://commitmono.com/",
+  "zip": "https://github.com/eigilnikolajsen/commit-mono/releases/download/v1.143/CommitMono-1.143.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "CommitMono-1.143/CommitMono-400-Regular.otf",
+   "700": "CommitMono-1.143/CommitMono-700-Regular.otf",
+   "400i": "CommitMono-1.143/CommitMono-400-Italic.otf",
+   "700i": "CommitMono-1.143/CommitMono-700-Italic.otf"
+  }
+ },
+ {
+  "family": "Cooper Hewitt",
+  "foundry": "Cooper Hewitt, Smithsonian Design Museum",
+  "designers": [
+   "Chester Jenkins"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "CooperHewitt-OTF-public/-CooperHewitt-OFL-201406.txt",
+  "rfn": [
+   "Cooper Hewitt"
+  ],
+  "url": "https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/",
+  "zip": "https://www.cooperhewitt.org/wp-content/uploads/fonts/CooperHewitt-OTF-public.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "CooperHewitt-OTF-public/CooperHewitt-Thin.otf",
+   "300": "CooperHewitt-OTF-public/CooperHewitt-Light.otf",
+   "400": "CooperHewitt-OTF-public/CooperHewitt-Book.otf",
+   "500": "CooperHewitt-OTF-public/CooperHewitt-Medium.otf",
+   "600": "CooperHewitt-OTF-public/CooperHewitt-Semibold.otf",
+   "700": "CooperHewitt-OTF-public/CooperHewitt-Bold.otf",
+   "800": "CooperHewitt-OTF-public/CooperHewitt-Heavy.otf",
+   "100i": "CooperHewitt-OTF-public/CooperHewitt-ThinItalic.otf",
+   "300i": "CooperHewitt-OTF-public/CooperHewitt-LightItalic.otf",
+   "400i": "CooperHewitt-OTF-public/CooperHewitt-BookItalic.otf",
+   "500i": "CooperHewitt-OTF-public/CooperHewitt-MediumItalic.otf",
+   "600i": "CooperHewitt-OTF-public/CooperHewitt-SemiboldItalic.otf",
+   "700i": "CooperHewitt-OTF-public/CooperHewitt-BoldItalic.otf",
+   "800i": "CooperHewitt-OTF-public/CooperHewitt-HeavyItalic.otf"
+  }
+ },
+ {
+  "family": "DSEG14 Classic",
+  "foundry": "keshikan",
+  "designers": [
+   "keshikan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "fonts-DSEG_v046/DSEG-LICENSE.txt",
+  "rfn": [
+   "DSEG"
+  ],
+  "url": "https://www.keshikan.net/fonts-e.html",
+  "zip": "https://github.com/keshikan/DSEG/releases/download/v0.46/fonts-DSEG_v046.zip",
+  "category": "Display",
+  "files": {
+   "300": "fonts-DSEG_v046/DSEG14-Classic/DSEG14Classic-Light.ttf",
+   "400": "fonts-DSEG_v046/DSEG14-Classic/DSEG14Classic-Regular.ttf",
+   "700": "fonts-DSEG_v046/DSEG14-Classic/DSEG14Classic-Bold.ttf",
+   "300i": "fonts-DSEG_v046/DSEG14-Classic/DSEG14Classic-LightItalic.ttf",
+   "400i": "fonts-DSEG_v046/DSEG14-Classic/DSEG14Classic-Italic.ttf",
+   "700i": "fonts-DSEG_v046/DSEG14-Classic/DSEG14Classic-BoldItalic.ttf"
+  }
+ },
+ {
+  "family": "DSEG14 Modern",
+  "foundry": "keshikan",
+  "designers": [
+   "keshikan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "fonts-DSEG_v046/DSEG-LICENSE.txt",
+  "rfn": [
+   "DSEG"
+  ],
+  "url": "https://www.keshikan.net/fonts-e.html",
+  "zip": "https://github.com/keshikan/DSEG/releases/download/v0.46/fonts-DSEG_v046.zip",
+  "category": "Display",
+  "files": {
+   "300": "fonts-DSEG_v046/DSEG14-Modern/DSEG14Modern-Light.ttf",
+   "400": "fonts-DSEG_v046/DSEG14-Modern/DSEG14Modern-Regular.ttf",
+   "700": "fonts-DSEG_v046/DSEG14-Modern/DSEG14Modern-Bold.ttf",
+   "300i": "fonts-DSEG_v046/DSEG14-Modern/DSEG14Modern-LightItalic.ttf",
+   "400i": "fonts-DSEG_v046/DSEG14-Modern/DSEG14Modern-Italic.ttf",
+   "700i": "fonts-DSEG_v046/DSEG14-Modern/DSEG14Modern-BoldItalic.ttf"
+  }
+ },
+ {
+  "family": "DSEG7 Classic",
+  "foundry": "keshikan",
+  "designers": [
+   "keshikan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "fonts-DSEG_v046/DSEG-LICENSE.txt",
+  "rfn": [
+   "DSEG"
+  ],
+  "url": "https://www.keshikan.net/fonts-e.html",
+  "zip": "https://github.com/keshikan/DSEG/releases/download/v0.46/fonts-DSEG_v046.zip",
+  "category": "Display",
+  "files": {
+   "300": "fonts-DSEG_v046/DSEG7-Classic/DSEG7Classic-Light.ttf",
+   "400": "fonts-DSEG_v046/DSEG7-Classic/DSEG7Classic-Regular.ttf",
+   "700": "fonts-DSEG_v046/DSEG7-Classic/DSEG7Classic-Bold.ttf",
+   "300i": "fonts-DSEG_v046/DSEG7-Classic/DSEG7Classic-LightItalic.ttf",
+   "400i": "fonts-DSEG_v046/DSEG7-Classic/DSEG7Classic-Italic.ttf",
+   "700i": "fonts-DSEG_v046/DSEG7-Classic/DSEG7Classic-BoldItalic.ttf"
+  }
+ },
+ {
+  "family": "DSEG7 Modern",
+  "foundry": "keshikan",
+  "designers": [
+   "keshikan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "fonts-DSEG_v046/DSEG-LICENSE.txt",
+  "rfn": [
+   "DSEG"
+  ],
+  "url": "https://www.keshikan.net/fonts-e.html",
+  "zip": "https://github.com/keshikan/DSEG/releases/download/v0.46/fonts-DSEG_v046.zip",
+  "category": "Display",
+  "files": {
+   "300": "fonts-DSEG_v046/DSEG7-Modern/DSEG7Modern-Light.ttf",
+   "400": "fonts-DSEG_v046/DSEG7-Modern/DSEG7Modern-Regular.ttf",
+   "700": "fonts-DSEG_v046/DSEG7-Modern/DSEG7Modern-Bold.ttf",
+   "300i": "fonts-DSEG_v046/DSEG7-Modern/DSEG7Modern-LightItalic.ttf",
+   "400i": "fonts-DSEG_v046/DSEG7-Modern/DSEG7Modern-Italic.ttf",
+   "700i": "fonts-DSEG_v046/DSEG7-Modern/DSEG7Modern-BoldItalic.ttf"
+  }
+ },
+ {
+  "family": "Hauora Sans",
+  "foundry": "WCYS",
+  "designers": [
+   "Wayne Shih"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Hauora",
+   "Hauora Sans"
+  ],
+  "url": "https://github.com/WCYS-Co/Hauora-Sans",
+  "repo": "https://github.com/WCYS-Co/Hauora-Sans",
+  "rev": "75131397db767f52236dde990405aad2deaf9cb6",
+  "category": "Sans Serif",
+  "files": {
+   "200": "fonts/otf/Hauora-ExtraLight.otf",
+   "300": "fonts/otf/Hauora-Light.otf",
+   "400": "fonts/otf/Hauora-Regular.otf",
+   "500": "fonts/otf/Hauora-Medium.otf",
+   "600": "fonts/otf/Hauora-SemiBold.otf",
+   "700": "fonts/otf/Hauora-Bold.otf",
+   "800": "fonts/otf/Hauora-ExtraBold.otf"
+  },
+  "variable": "fonts/variable/Hauora[wght].ttf"
+ },
+ {
+  "family": "Monaspace Argon",
+  "foundry": "GitHub Next",
+  "designers": [
+   "Lettermatic",
+   "GitHub Next"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "Monaspace",
+   "Argon",
+   "Neon",
+   "Xenon",
+   "Radon",
+   "Krypton"
+  ],
+  "url": "https://monaspace.githubnext.com/",
+  "repo": "https://github.com/githubnext/monaspace",
+  "rev": "f31794b6e9e65698a062262e2f826f679dcb7070",
+  "category": "Monospace",
+  "files": {
+   "200": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-ExtraLight.otf",
+   "300": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-Light.otf",
+   "400": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-Regular.otf",
+   "500": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-Medium.otf",
+   "600": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-SemiBold.otf",
+   "700": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-Bold.otf",
+   "800": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-ExtraBold.otf",
+   "200i": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-ExtraLightItalic.otf",
+   "300i": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-LightItalic.otf",
+   "400i": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-Italic.otf",
+   "500i": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-MediumItalic.otf",
+   "600i": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-SemiBoldItalic.otf",
+   "700i": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-BoldItalic.otf",
+   "800i": "fonts/Static Fonts/Monaspace Argon/MonaspaceArgon-ExtraBoldItalic.otf"
+  }
+ },
+ {
+  "family": "Monaspace Krypton",
+  "foundry": "GitHub Next",
+  "designers": [
+   "Lettermatic",
+   "GitHub Next"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "Monaspace",
+   "Argon",
+   "Neon",
+   "Xenon",
+   "Radon",
+   "Krypton"
+  ],
+  "url": "https://monaspace.githubnext.com/",
+  "repo": "https://github.com/githubnext/monaspace",
+  "rev": "f31794b6e9e65698a062262e2f826f679dcb7070",
+  "category": "Monospace",
+  "files": {
+   "200": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-ExtraLight.otf",
+   "300": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-Light.otf",
+   "400": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-Regular.otf",
+   "500": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-Medium.otf",
+   "600": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-SemiBold.otf",
+   "700": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-Bold.otf",
+   "800": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-ExtraBold.otf",
+   "200i": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-ExtraLightItalic.otf",
+   "300i": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-LightItalic.otf",
+   "400i": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-Italic.otf",
+   "500i": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-MediumItalic.otf",
+   "600i": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-SemiBoldItalic.otf",
+   "700i": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-BoldItalic.otf",
+   "800i": "fonts/Static Fonts/Monaspace Krypton/MonaspaceKrypton-ExtraBoldItalic.otf"
+  }
+ },
+ {
+  "family": "Monaspace Neon",
+  "foundry": "GitHub Next",
+  "designers": [
+   "Lettermatic",
+   "GitHub Next"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "Monaspace",
+   "Argon",
+   "Neon",
+   "Xenon",
+   "Radon",
+   "Krypton"
+  ],
+  "url": "https://monaspace.githubnext.com/",
+  "repo": "https://github.com/githubnext/monaspace",
+  "rev": "f31794b6e9e65698a062262e2f826f679dcb7070",
+  "category": "Monospace",
+  "files": {
+   "200": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-ExtraLight.otf",
+   "300": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-Light.otf",
+   "400": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-Regular.otf",
+   "500": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-Medium.otf",
+   "600": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-SemiBold.otf",
+   "700": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-Bold.otf",
+   "800": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-ExtraBold.otf",
+   "200i": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-ExtraLightItalic.otf",
+   "300i": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-LightItalic.otf",
+   "400i": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-Italic.otf",
+   "500i": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-MediumItalic.otf",
+   "600i": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-SemiBoldItalic.otf",
+   "700i": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-BoldItalic.otf",
+   "800i": "fonts/Static Fonts/Monaspace Neon/MonaspaceNeon-ExtraBoldItalic.otf"
+  }
+ },
+ {
+  "family": "Monaspace Radon",
+  "foundry": "GitHub Next",
+  "designers": [
+   "Lettermatic",
+   "GitHub Next"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "Monaspace",
+   "Argon",
+   "Neon",
+   "Xenon",
+   "Radon",
+   "Krypton"
+  ],
+  "url": "https://monaspace.githubnext.com/",
+  "repo": "https://github.com/githubnext/monaspace",
+  "rev": "f31794b6e9e65698a062262e2f826f679dcb7070",
+  "category": "Monospace",
+  "files": {
+   "200": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-ExtraLight.otf",
+   "300": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-Light.otf",
+   "400": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-Regular.otf",
+   "500": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-Medium.otf",
+   "600": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-SemiBold.otf",
+   "700": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-Bold.otf",
+   "800": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-ExtraBold.otf",
+   "200i": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-ExtraLightItalic.otf",
+   "300i": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-LightItalic.otf",
+   "400i": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-Italic.otf",
+   "500i": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-MediumItalic.otf",
+   "600i": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-SemiBoldItalic.otf",
+   "700i": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-BoldItalic.otf",
+   "800i": "fonts/Static Fonts/Monaspace Radon/MonaspaceRadon-ExtraBoldItalic.otf"
+  }
+ },
+ {
+  "family": "Monaspace Xenon",
+  "foundry": "GitHub Next",
+  "designers": [
+   "Lettermatic",
+   "GitHub Next"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "Monaspace",
+   "Argon",
+   "Neon",
+   "Xenon",
+   "Radon",
+   "Krypton"
+  ],
+  "url": "https://monaspace.githubnext.com/",
+  "repo": "https://github.com/githubnext/monaspace",
+  "rev": "f31794b6e9e65698a062262e2f826f679dcb7070",
+  "category": "Monospace",
+  "files": {
+   "200": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-ExtraLight.otf",
+   "300": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-Light.otf",
+   "400": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-Regular.otf",
+   "500": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-Medium.otf",
+   "600": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-SemiBold.otf",
+   "700": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-Bold.otf",
+   "800": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-ExtraBold.otf",
+   "200i": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-ExtraLightItalic.otf",
+   "300i": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-LightItalic.otf",
+   "400i": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-Italic.otf",
+   "500i": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-MediumItalic.otf",
+   "600i": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-SemiBoldItalic.otf",
+   "700i": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-BoldItalic.otf",
+   "800i": "fonts/Static Fonts/Monaspace Xenon/MonaspaceXenon-ExtraBoldItalic.otf"
+  }
+ },
+ {
+  "family": "Mononoki",
+  "foundry": "Matthias Tellen",
+  "designers": [
+   "Matthias Tellen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "mononoki"
+  ],
+  "url": "https://madmalik.github.io/mononoki/",
+  "repo": "https://github.com/madmalik/mononoki",
+  "rev": "4f329e225dde5e22287c86851ea519047548d17c",
+  "category": "Monospace",
+  "files": {
+   "400": "export/mononoki-Regular.otf",
+   "700": "export/mononoki-Bold.otf",
+   "400i": "export/mononoki-Italic.otf",
+   "700i": "export/mononoki-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "Norwester",
+  "foundry": "Jamie Wilson",
+  "designers": [
+   "Jamie Wilson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "Norwester"
+  ],
+  "url": "https://jamiewilson.io/norwester/",
+  "category": "Display",
+  "files": {
+   "400": "https://cdn.jsdelivr.net/npm/@fontsource/norwester@5.3.0/files/norwester-latin-400-normal.woff2"
+  }
+ },
+ {
+  "family": "Open Runde",
+  "foundry": "Laurids Kern",
+  "designers": [
+   "Laurids Kern"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/lauridskern/open-runde",
+  "repo": "https://github.com/lauridskern/open-runde",
+  "rev": "3e7ed7f3cdfa5523766db7e430066472615fc935",
+  "category": "Sans Serif",
+  "files": {
+   "400": "src/desktop/OpenRunde-Regular.otf",
+   "500": "src/desktop/OpenRunde-Medium.otf",
+   "600": "src/desktop/OpenRunde-Semibold.otf",
+   "700": "src/desktop/OpenRunde-Bold.otf"
+  }
+ },
+ {
+  "family": "Open Sauce One",
+  "foundry": "Marcelo Magalhães",
+  "designers": [
+   "Marcelo Magalhães"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Sauce One OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/marcologous/Open-Sauce-Fonts",
+  "repo": "https://github.com/marcologous/Open-Sauce-Fonts",
+  "rev": "1747e4467caf9ecce17690ae6880d86a03e17c41",
+  "category": "Sans Serif",
+  "files": {
+   "300": "fonts/otf/OpenSauceOne-Light.otf",
+   "400": "fonts/otf/OpenSauceOne-Regular.otf",
+   "500": "fonts/otf/OpenSauceOne-Medium.otf",
+   "600": "fonts/otf/OpenSauceOne-SemiBold.otf",
+   "700": "fonts/otf/OpenSauceOne-Bold.otf",
+   "800": "fonts/otf/OpenSauceOne-ExtraBold.otf",
+   "900": "fonts/otf/OpenSauceOne-Black.otf",
+   "300i": "fonts/otf/OpenSauceOne-LightItalic.otf",
+   "400i": "fonts/otf/OpenSauceOne-Italic.otf",
+   "500i": "fonts/otf/OpenSauceOne-MediumItalic.otf",
+   "600i": "fonts/otf/OpenSauceOne-SemiBoldItalic.otf",
+   "700i": "fonts/otf/OpenSauceOne-BoldItalic.otf",
+   "800i": "fonts/otf/OpenSauceOne-ExtraBoldItalic.otf",
+   "900i": "fonts/otf/OpenSauceOne-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Open Sauce Sans",
+  "foundry": "Marcelo Magalhães",
+  "designers": [
+   "Marcelo Magalhães"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Sauce Sans OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/marcologous/Open-Sauce-Fonts",
+  "repo": "https://github.com/marcologous/Open-Sauce-Fonts",
+  "rev": "1747e4467caf9ecce17690ae6880d86a03e17c41",
+  "category": "Sans Serif",
+  "files": {
+   "300": "fonts/otf/OpenSauceSans-Light.otf",
+   "400": "fonts/otf/OpenSauceSans-Regular.otf",
+   "500": "fonts/otf/OpenSauceSans-Medium.otf",
+   "600": "fonts/otf/OpenSauceSans-SemiBold.otf",
+   "700": "fonts/otf/OpenSauceSans-Bold.otf",
+   "800": "fonts/otf/OpenSauceSans-ExtraBold.otf",
+   "900": "fonts/otf/OpenSauceSans-Black.otf",
+   "300i": "fonts/otf/OpenSauceSans-LightItalic.otf",
+   "400i": "fonts/otf/OpenSauceSans-Italic.otf",
+   "500i": "fonts/otf/OpenSauceSans-MediumItalic.otf",
+   "600i": "fonts/otf/OpenSauceSans-SemiBoldItalic.otf",
+   "700i": "fonts/otf/OpenSauceSans-BoldItalic.otf",
+   "800i": "fonts/otf/OpenSauceSans-ExtraBoldItalic.otf",
+   "900i": "fonts/otf/OpenSauceSans-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Open Sauce Two",
+  "foundry": "Marcelo Magalhães",
+  "designers": [
+   "Marcelo Magalhães"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Sauce Two OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/marcologous/Open-Sauce-Fonts",
+  "repo": "https://github.com/marcologous/Open-Sauce-Fonts",
+  "rev": "1747e4467caf9ecce17690ae6880d86a03e17c41",
+  "category": "Sans Serif",
+  "files": {
+   "300": "fonts/otf/OpenSauceTwo-Light.otf",
+   "400": "fonts/otf/OpenSauceTwo-Regular.otf",
+   "500": "fonts/otf/OpenSauceTwo-Medium.otf",
+   "600": "fonts/otf/OpenSauceTwo-SemiBold.otf",
+   "700": "fonts/otf/OpenSauceTwo-Bold.otf",
+   "800": "fonts/otf/OpenSauceTwo-ExtraBold.otf",
+   "900": "fonts/otf/OpenSauceTwo-Black.otf",
+   "300i": "fonts/otf/OpenSauceTwo-LightItalic.otf",
+   "400i": "fonts/otf/OpenSauceTwo-Italic.otf",
+   "500i": "fonts/otf/OpenSauceTwo-MediumItalic.otf",
+   "600i": "fonts/otf/OpenSauceTwo-SemiBoldItalic.otf",
+   "700i": "fonts/otf/OpenSauceTwo-BoldItalic.otf",
+   "800i": "fonts/otf/OpenSauceTwo-ExtraBoldItalic.otf",
+   "900i": "fonts/otf/OpenSauceTwo-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "OpenDyslexic",
+  "foundry": "Abbie Gonzalez",
+  "designers": [
+   "Abbie Gonzalez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "OpenDyslexic"
+  ],
+  "url": "https://opendyslexic.org/",
+  "repo": "https://github.com/antijingoist/opendyslexic",
+  "rev": "1824da5c0e41dc3e13ffc7f3a636dcaf695d61b7",
+  "category": "Sans Serif",
+  "files": {
+   "400": "compiled/OpenDyslexic-Regular.otf",
+   "700": "compiled/OpenDyslexic-Bold.otf",
+   "400i": "compiled/OpenDyslexic-Italic.otf",
+   "700i": "compiled/OpenDyslexic-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "Pitagon Sans",
+  "foundry": "Pitagon",
+  "designers": [
+   "Travis Tran"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/ThePitagon/pitagon-sans",
+  "zip": "https://github.com/ThePitagon/pitagon-sans/releases/download/v1.1.1/pitagon-sans-fonts.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "pitagon-sans-fonts/otf/PitagonSans-Regular.otf",
+   "500": "pitagon-sans-fonts/otf/PitagonSans-Medium.otf",
+   "600": "pitagon-sans-fonts/otf/PitagonSans-SemiBold.otf",
+   "700": "pitagon-sans-fonts/otf/PitagonSans-Bold.otf",
+   "800": "pitagon-sans-fonts/otf/PitagonSans-ExtraBold.otf",
+   "900": "pitagon-sans-fonts/otf/PitagonSans-Black.otf"
+  },
+  "variable": "pitagon-sans-fonts/variable/PitagonSans[wght].ttf"
+ },
+ {
+  "family": "Pitagon Sans Mono",
+  "foundry": "Pitagon",
+  "designers": [
+   "Travis Tran"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/ThePitagon/pitagon-sans-mono",
+  "zip": "https://github.com/ThePitagon/pitagon-sans-mono/releases/download/v1.1.1/pitagon-sans-mono-fonts.zip",
+  "category": "Monospace",
+  "files": {
+   "100": "pitagon-sans-mono-fonts/otf/PitagonSansMono-Thin.otf",
+   "200": "pitagon-sans-mono-fonts/otf/PitagonSansMono-ExtraLight.otf",
+   "300": "pitagon-sans-mono-fonts/otf/PitagonSansMono-Light.otf",
+   "400": "pitagon-sans-mono-fonts/otf/PitagonSansMono-Regular.otf",
+   "500": "pitagon-sans-mono-fonts/otf/PitagonSansMono-Medium.otf",
+   "600": "pitagon-sans-mono-fonts/otf/PitagonSansMono-SemiBold.otf",
+   "700": "pitagon-sans-mono-fonts/otf/PitagonSansMono-Bold.otf",
+   "800": "pitagon-sans-mono-fonts/otf/PitagonSansMono-ExtraBold.otf",
+   "100i": "pitagon-sans-mono-fonts/otf/PitagonSansMono-ThinItalic.otf",
+   "200i": "pitagon-sans-mono-fonts/otf/PitagonSansMono-ExtraLightItalic.otf",
+   "300i": "pitagon-sans-mono-fonts/otf/PitagonSansMono-LightItalic.otf",
+   "400i": "pitagon-sans-mono-fonts/otf/PitagonSansMono-Italic.otf",
+   "500i": "pitagon-sans-mono-fonts/otf/PitagonSansMono-MediumItalic.otf",
+   "600i": "pitagon-sans-mono-fonts/otf/PitagonSansMono-SemiBoldItalic.otf",
+   "700i": "pitagon-sans-mono-fonts/otf/PitagonSansMono-BoldItalic.otf",
+   "800i": "pitagon-sans-mono-fonts/otf/PitagonSansMono-ExtraBoldItalic.otf"
+  },
+  "variable": "pitagon-sans-mono-fonts/variable/PitagonSansMono[wght].ttf"
+ },
+ {
+  "family": "Pitagon Sans Text",
+  "foundry": "Pitagon",
+  "designers": [
+   "Travis Tran"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/ThePitagon/pitagon-sans-text",
+  "zip": "https://github.com/ThePitagon/pitagon-sans-text/releases/download/v1.1.1/pitagon-sans-text-fonts.zip",
+  "category": "Sans Serif",
+  "files": {
+   "200": "pitagon-sans-text-fonts/otf/PitagonSansText-ExtraLight.otf",
+   "300": "pitagon-sans-text-fonts/otf/PitagonSansText-Light.otf",
+   "400": "pitagon-sans-text-fonts/otf/PitagonSansText-Regular.otf",
+   "500": "pitagon-sans-text-fonts/otf/PitagonSansText-Medium.otf",
+   "600": "pitagon-sans-text-fonts/otf/PitagonSansText-SemiBold.otf",
+   "700": "pitagon-sans-text-fonts/otf/PitagonSansText-Bold.otf",
+   "800": "pitagon-sans-text-fonts/otf/PitagonSansText-ExtraBold.otf",
+   "200i": "pitagon-sans-text-fonts/otf/PitagonSansText-ExtraLightItalic.otf",
+   "300i": "pitagon-sans-text-fonts/otf/PitagonSansText-LightItalic.otf",
+   "400i": "pitagon-sans-text-fonts/otf/PitagonSansText-Italic.otf",
+   "500i": "pitagon-sans-text-fonts/otf/PitagonSansText-MediumItalic.otf",
+   "600i": "pitagon-sans-text-fonts/otf/PitagonSansText-SemiBoldItalic.otf",
+   "700i": "pitagon-sans-text-fonts/otf/PitagonSansText-BoldItalic.otf",
+   "800i": "pitagon-sans-text-fonts/otf/PitagonSansText-ExtraBoldItalic.otf"
+  },
+  "variable": "pitagon-sans-text-fonts/variable/PitagonSansText[wght].ttf"
+ },
+ {
+  "family": "Pitagon Serif",
+  "foundry": "Pitagon",
+  "designers": [
+   "Travis Tran"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/ThePitagon/pitagon-serif",
+  "zip": "https://github.com/ThePitagon/pitagon-serif/releases/download/v1.1.1/pitagon-serif-fonts.zip",
+  "category": "Serif",
+  "files": {
+   "100": "pitagon-serif-fonts/otf/PitagonSerif-Thin.otf",
+   "200": "pitagon-serif-fonts/otf/PitagonSerif-ExtraLight.otf",
+   "300": "pitagon-serif-fonts/otf/PitagonSerif-Light.otf",
+   "400": "pitagon-serif-fonts/otf/PitagonSerif-Regular.otf",
+   "500": "pitagon-serif-fonts/otf/PitagonSerif-Medium.otf",
+   "600": "pitagon-serif-fonts/otf/PitagonSerif-SemiBold.otf",
+   "700": "pitagon-serif-fonts/otf/PitagonSerif-Bold.otf",
+   "800": "pitagon-serif-fonts/otf/PitagonSerif-ExtraBold.otf",
+   "900": "pitagon-serif-fonts/otf/PitagonSerif-Black.otf",
+   "100i": "pitagon-serif-fonts/otf/PitagonSerif-ThinItalic.otf",
+   "200i": "pitagon-serif-fonts/otf/PitagonSerif-ExtraLightItalic.otf",
+   "300i": "pitagon-serif-fonts/otf/PitagonSerif-LightItalic.otf",
+   "400i": "pitagon-serif-fonts/otf/PitagonSerif-Italic.otf",
+   "500i": "pitagon-serif-fonts/otf/PitagonSerif-MediumItalic.otf",
+   "600i": "pitagon-serif-fonts/otf/PitagonSerif-SemiBoldItalic.otf",
+   "700i": "pitagon-serif-fonts/otf/PitagonSerif-BoldItalic.otf",
+   "800i": "pitagon-serif-fonts/otf/PitagonSerif-ExtraBoldItalic.otf",
+   "900i": "pitagon-serif-fonts/otf/PitagonSerif-BlackItalic.otf"
+  },
+  "variable": "pitagon-serif-fonts/variable/PitagonSerif[wght].ttf"
+ },
+ {
+  "family": "Uncut Sans",
+  "foundry": "Kasper Nordkvist",
+  "designers": [
+   "Kasper Nordkvist"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://uncut.wtf/sans-serif/uncut-sans/",
+  "repo": "https://github.com/kaspernordkvist/uncut_sans",
+  "rev": "b3b42467781e3bd98c68f2d70eba325196e7d9c5",
+  "category": "Sans Serif",
+  "files": {
+   "300": "Static/UncutSans-Light.otf",
+   "400": "Static/UncutSans-Regular.otf",
+   "500": "Static/UncutSans-Medium.otf",
+   "600": "Static/UncutSans-Semibold.otf",
+   "700": "Static/UncutSans-Bold.otf",
+   "300i": "Static/UncutSans-LightItalic.otf",
+   "400i": "Static/UncutSans-RegularItalic.otf",
+   "500i": "Static/UncutSans-MediumItalic.otf",
+   "600i": "Static/UncutSans-SemiboldItalic.otf",
+   "700i": "Static/UncutSans-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "Unifont",
+  "foundry": "GNU Unifont",
+  "designers": [
+   "Roman Czyborra",
+   "Paul Hardy"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://unifoundry.com/unifont/",
+  "category": "Monospace",
+  "files": {
+   "400": "https://unifoundry.com/pub/unifont/unifont-18.0.01/font-builds/unifont-18.0.01.otf"
+  }
+ }
+]

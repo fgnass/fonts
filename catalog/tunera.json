@@ -1,0 +1,386 @@
+[
+ {
+  "family": "Amakan",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Jad Maza"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Amakan"
+  ],
+  "url": "https://www.tunera.xyz/fonts/amakan/",
+  "repo": "https://github.com/jadmaza/amakan",
+  "rev": "818850574c4ef01f42288647f4c0679197065142",
+  "category": "Display",
+  "files": {
+   "400": "fonts/OTF/Amakan-Strips.otf"
+  }
+ },
+ {
+  "family": "Ampoule",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Daytona Mess"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Ampoule"
+  ],
+  "url": "https://www.tunera.xyz/fonts/ampoule/",
+  "repo": "https://codeberg.org/daytonamess/Ampoule",
+  "rev": "18f0fd64025785a3cb69243bc93cc11793d169cc",
+  "category": "Display",
+  "files": {
+   "400": "fonts/otf/Ampoule/Ampoule-Neon.otf",
+   "400i": "fonts/otf/Ampoule/Ampoule-NeonSlant.otf"
+  },
+  "variable": "fonts/variable/Ampoule-VariableVF.ttf"
+ },
+ {
+  "family": "Azabache",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license/LICENSE.txt",
+  "rfn": [
+   "Azabache"
+  ],
+  "url": "https://www.tunera.xyz/fonts/azabache/",
+  "repo": "https://codeberg.org/ArielMartinPerez/azabache",
+  "rev": "bb7cc6372610501b6b531c5ec0c4c6a89f93cac2",
+  "category": "Handwriting",
+  "files": {
+   "400": "font files/Azabache-Regular.otf"
+  }
+ },
+ {
+  "family": "Brassia",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Brassia"
+  ],
+  "url": "https://www.tunera.xyz/fonts/brassia/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Brassia",
+  "rev": "bed7773f81c3ac0a9637576a5f3bdfc0d200e336",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Brassia-Regular.otf"
+  }
+ },
+ {
+  "family": "Canarina",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Canarina"
+  ],
+  "url": "https://www.tunera.xyz/fonts/canarina/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Canarina",
+  "rev": "5aa8b269de281286e7cdede5d12f308e197af0ad",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/otf/Canarina-Chica.otf",
+   "500": "fonts/otf/Canarina-Mediana.otf",
+   "800": "fonts/otf/Canarina-Grande.otf"
+  },
+  "variable": "fonts/variable/CanarinaVF.ttf"
+ },
+ {
+  "family": "Isenheim",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Benoît Ferran"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Isenheim"
+  ],
+  "url": "https://www.tunera.xyz/fonts/isenheim/",
+  "repo": "https://gitlab.com/benoitsansterre/isenheim",
+  "rev": "f7f751b61d9af743fefc1b0129773cee67f2bc9e",
+  "category": "Serif",
+  "files": {
+   "200": "fonts/OpenType-PS/Isenheim_Fin.otf",
+   "400": "fonts/OpenType-PS/Isenheim_Regulier.otf"
+  }
+ },
+ {
+  "family": "Kobata",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Kobata"
+  ],
+  "url": "https://www.tunera.xyz/fonts/kobata/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Kobata",
+  "rev": "beb926cb1756c9b005a7b3c75efd6bf2f6de133b",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Kobata-Regular.otf",
+   "700": "fonts/Kobata-Bold.otf"
+  },
+  "variable": "fonts/variable/KobataGX.ttf"
+ },
+ {
+  "family": "Lobular",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Lobular"
+  ],
+  "url": "https://www.tunera.xyz/fonts/lobular/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Lobular",
+  "rev": "0abdf46a369f91d7f30d36916df542df5c98ce2d",
+  "category": "Display",
+  "files": {
+   "400": "fonts/otf/Lobular-Regular.otf"
+  }
+ },
+ {
+  "family": "Luperca",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Luperca"
+  ],
+  "url": "https://www.tunera.xyz/fonts/luperca/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Luperca",
+  "rev": "c33e62971e96e87b6ce894e17c948d72333ff9e2",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Luperca-36-48Title.otf"
+  },
+  "variable": "fonts/variable/LupercaVF.ttf"
+ },
+ {
+  "family": "Malebolge",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Malebolge"
+  ],
+  "url": "https://www.tunera.xyz/fonts/malebolge/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Malebolge",
+  "rev": "c8c4d6e4b2f3e81f1f92e2a2401cb58a4191ee3b",
+  "category": "Display",
+  "files": {
+   "400": "fonts/web/Malebolge-Adversarial.woff2"
+  }
+ },
+ {
+  "family": "Manosque",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Manosque"
+  ],
+  "url": "https://www.tunera.xyz/fonts/manosque/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Manosque",
+  "rev": "e29e3da6c2acc425373d5da5b37d96ea9ca55e3e",
+  "category": "Display",
+  "files": {
+   "400": "fonts/otf/Manosque-Regular.otf"
+  }
+ },
+ {
+  "family": "Nyght Serif",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Maksym Kobuzan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Nyght Serif"
+  ],
+  "url": "https://www.tunera.xyz/fonts/nyght-serif/",
+  "repo": "https://gitlab.com/mkobuzan/nyght-serif",
+  "rev": "989e09eb543da3ade3375b2cde97bface350467b",
+  "category": "Serif",
+  "files": {
+   "300": "fonts/OTF/NyghtSerif-Light.otf",
+   "400": "fonts/OTF/NyghtSerif-Regular.otf",
+   "500": "fonts/OTF/NyghtSerif-Medium.otf",
+   "700": "fonts/OTF/NyghtSerif-Bold.otf",
+   "800": "fonts/OTF/NyghtSerif-Dark.otf",
+   "300i": "fonts/OTF/NyghtSerif-LightItalic.otf",
+   "400i": "fonts/OTF/NyghtSerif-RegularItalic.otf",
+   "500i": "fonts/OTF/NyghtSerif-MediumItalic.otf",
+   "700i": "fonts/OTF/NyghtSerif-BoldItalic.otf",
+   "800i": "fonts/OTF/NyghtSerif-DarkItalic.otf"
+  }
+ },
+ {
+  "family": "Paysage",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Anton Moglia"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://www.tunera.xyz/fonts/paysage/",
+  "repo": "https://gitlab.com/antonmoglia/Paysage",
+  "rev": "cbb34792600e4147342c06cbec16619af2119509",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/otf/Paysage-Regular.otf",
+   "500": "fonts/otf/Paysage-Medium.otf",
+   "700": "fonts/otf/Paysage-Bold.otf",
+   "900": "fonts/otf/Paysage-Black.otf"
+  }
+ },
+ {
+  "family": "Pescante",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Pescante"
+  ],
+  "url": "https://www.tunera.xyz/fonts/pescante/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Pescante",
+  "rev": "4677f8394e2025c7dfcb24adc8c029cdf6b1c97c",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Pescante-Normal.otf"
+  }
+ },
+ {
+  "family": "Picaflor",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Picaflor"
+  ],
+  "url": "https://www.tunera.xyz/fonts/picaflor/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Picaflor",
+  "rev": "53a9bb3ae0e544534b5ebc72b5f9db0a24356db4",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Picaflor-36pt.otf"
+  },
+  "variable": "fonts/variable/PicaflorGX.ttf"
+ },
+ {
+  "family": "Piscolabis",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Piscolabis"
+  ],
+  "url": "https://www.tunera.xyz/fonts/piscolabis/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Piscolabis",
+  "rev": "67704dfcec3ef0f1646f35187b9d4c5f49fbb603",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/Piscolabis-Regular.otf"
+  }
+ },
+ {
+  "family": "Roubaix Industrielle",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Roubaix Industrielle"
+  ],
+  "url": "https://www.tunera.xyz/fonts/roubaix-industrielle/",
+  "repo": "https://codeberg.org/ArielMartinPerez/RoubaixIndustrielle",
+  "rev": "45ae1e5ac503774dc8bbaeb28b3ed1ba9f3e421a",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Regular/OTF/RoubaixIndustrielle-Regular24-35pt.otf"
+  },
+  "variable": "fonts/Multi/06B/Variable/RoubaixIndustrielleVF.ttf"
+ },
+ {
+  "family": "Tanklager",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Tanklager"
+  ],
+  "url": "https://www.tunera.xyz/fonts/tanklager/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Tanklager",
+  "rev": "56a599108086a4c34eded6a5a14a1ca7b52b17e3",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/OTF/Tanklager-Original.otf"
+  },
+  "variable": "fonts/Variable/TanklagerVF.ttf"
+ },
+ {
+  "family": "Tanklager Kompakt",
+  "foundry": "Tunera Type Foundry",
+  "designers": [
+   "Ariel Martín Pérez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Tanklager"
+  ],
+  "url": "https://www.tunera.xyz/fonts/tanklager/",
+  "repo": "https://codeberg.org/ArielMartinPerez/Tanklager",
+  "rev": "56a599108086a4c34eded6a5a14a1ca7b52b17e3",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/OTF/Tanklager-Kompakt.otf"
+  },
+  "variable": "fonts/Variable/TanklagerVF.ttf"
+ }
+]

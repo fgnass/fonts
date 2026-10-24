@@ -1,0 +1,76 @@
+[
+ {
+  "family": "Acrata",
+  "foundry": "Torneo Tipográfico Comunidad Letrástica",
+  "designers": [
+   "Aspacia Kusulas",
+   "Karla Mateos",
+   "Romina Hernández",
+   "Sandra Morales",
+   "Tamara Segura"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "Ácrata"
+  ],
+  "url": "https://github.com/Torneo-Tipografico-Comunidad/Torneo-2020/tree/master/%C3%81crata",
+  "repo": "https://github.com/Torneo-Tipografico-Comunidad/Torneo-2020",
+  "rev": "2205c3d7be9efc01a1353c7d29bc51c9f12c1880",
+  "category": "Serif",
+  "files": {
+   "400": "Ácrata/Fonts/Acrata_Text_Beta_4.otf"
+  }
+ },
+ {
+  "family": "Mon Hugo",
+  "foundry": "Vika Usmanova",
+  "designers": [
+   "Vika Usmanova"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Mon_Hugo_freefont/FREE FONT LICENSE.txt",
+  "rfn": [],
+  "url": "http://montifonti.tilda.ws/mon_hugo",
+  "zip": "https://www.dropbox.com/s/70rncbqkhd7pvqi/Mon_Hugo_freefont.zip?dl=1",
+  "category": "Display",
+  "files": {
+   "400": "Mon_Hugo_freefont/MonHugo-in.otf"
+  }
+ },
+ {
+  "family": "Mon Trappist",
+  "foundry": "Vika Usmanova",
+  "designers": [
+   "Vika Usmanova"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Mon_Trappist_freefont/FREE FONT LICENSE.txt",
+  "rfn": [],
+  "url": "http://montifonti.tilda.ws/mon_trappist",
+  "zip": "https://www.dropbox.com/s/9bk9mq8knjey8fx/Mon_Trappist_freefont.zip?dl=1",
+  "category": "Sans Serif",
+  "files": {
+   "900": "Mon_Trappist_freefont/MonTrappist-Black.otf"
+  }
+ },
+ {
+  "family": "Zarathustra",
+  "foundry": "Lorène Ceccon",
+  "designers": [
+   "Lorène Ceccon"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [
+   "Zarathustra"
+  ],
+  "url": "https://github.com/lorene-cn/zarathustra-typeface",
+  "repo": "https://github.com/lorene-cn/zarathustra-typeface",
+  "rev": "407e2ea59e76081474fc2591fa892b7da0c7c8ca",
+  "category": "Serif",
+  "files": {
+   "400": "ZAR_font/zarathustra-v01.otf"
+  }
+ }
+]

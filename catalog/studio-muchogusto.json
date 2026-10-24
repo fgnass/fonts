@@ -1,0 +1,66 @@
+[
+ {
+  "family": "xx Amour",
+  "foundry": "Studio MuchoGusto",
+  "designers": [
+   "Studio MuchoGusto"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "xx muchogusto26/LICENSE.txt",
+  "rfn": [],
+  "url": "https://studiomuchogusto.ch/typefoundry/",
+  "zip": "https://www.dropbox.com/scl/fi/al1usyu10dizqyojms69a/xx-muchogusto26.zip?rlkey=wr1ewesbrnihg8jjr50spv51a&dl=1",
+  "category": "Display",
+  "files": {
+   "400": "xx muchogusto26/xxAmour-fort.ttf"
+  }
+ },
+ {
+  "family": "xx Dopamine Mono",
+  "foundry": "Studio MuchoGusto",
+  "designers": [
+   "Studio MuchoGusto"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "xx muchogusto26/LICENSE.txt",
+  "rfn": [],
+  "url": "https://studiomuchogusto.ch/typefoundry/",
+  "zip": "https://www.dropbox.com/scl/fi/al1usyu10dizqyojms69a/xx-muchogusto26.zip?rlkey=wr1ewesbrnihg8jjr50spv51a&dl=1",
+  "category": "Monospace",
+  "files": {
+   "400": "xx muchogusto26/xxDopamine-Mono.ttf"
+  }
+ },
+ {
+  "family": "xx Stardust",
+  "foundry": "Studio MuchoGusto",
+  "designers": [
+   "Studio MuchoGusto"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "xx muchogusto26/LICENSE.txt",
+  "rfn": [],
+  "url": "https://studiomuchogusto.ch/typefoundry/",
+  "zip": "https://www.dropbox.com/scl/fi/al1usyu10dizqyojms69a/xx-muchogusto26.zip?rlkey=wr1ewesbrnihg8jjr50spv51a&dl=1",
+  "category": "Display",
+  "files": {
+   "400": "xx muchogusto26/xxStardust-super.ttf"
+  }
+ },
+ {
+  "family": "xx Treasure",
+  "foundry": "Studio MuchoGusto",
+  "designers": [
+   "Studio MuchoGusto"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "xx muchogusto26/LICENSE.txt",
+  "rfn": [],
+  "url": "https://studiomuchogusto.ch/typefoundry/",
+  "zip": "https://www.dropbox.com/scl/fi/al1usyu10dizqyojms69a/xx-muchogusto26.zip?rlkey=wr1ewesbrnihg8jjr50spv51a&dl=1",
+  "category": "Handwriting",
+  "files": {
+   "400": "xx muchogusto26/xxTreasure-radical.ttf"
+  }
+ }
+]

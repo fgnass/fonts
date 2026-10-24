@@ -1,0 +1,301 @@
+[
+ {
+  "family": "Cooper",
+  "foundry": "Indestructible Type",
+  "designers": [
+   "Owen Earl"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://indestructibletype.com/Cooper/index.html",
+  "repo": "https://github.com/indestructible-type/Cooper",
+  "rev": "062a60572254535634569ab23b993a5745bab4ac",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/otf/Cooper-Regular.otf",
+   "500": "fonts/otf/Cooper-Medium.otf",
+   "600": "fonts/otf/Cooper-SemiBold.otf",
+   "700": "fonts/otf/Cooper-Bold.otf",
+   "800": "fonts/otf/Cooper-ExtraBold.otf",
+   "900": "fonts/otf/Cooper-Black.otf",
+   "400i": "fonts/otf/Cooper-Italic.otf",
+   "500i": "fonts/otf/Cooper-MediumItalic.otf",
+   "600i": "fonts/otf/Cooper-SemiBoldItalic.otf",
+   "700i": "fonts/otf/Cooper-BoldItalic.otf",
+   "800i": "fonts/otf/Cooper-ExtraBoldItalic.otf",
+   "900i": "fonts/otf/Cooper-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Drafting Mono",
+  "foundry": "Indestructible Type",
+  "designers": [
+   "Owen Earl"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://indestructibletype.com/Drafting",
+  "repo": "https://github.com/indestructible-type/Drafting",
+  "rev": "5de0891b473bd42ccb0932aedd63d12a4e6ffd58",
+  "category": "Monospace",
+  "files": {
+   "100": "fonts/otf/DraftingMono-Thin.otf",
+   "200": "fonts/otf/DraftingMono-ExtraLight.otf",
+   "300": "fonts/otf/DraftingMono-Light.otf",
+   "400": "fonts/otf/DraftingMono-Regular.otf",
+   "500": "fonts/otf/DraftingMono-Medium.otf",
+   "600": "fonts/otf/DraftingMono-SemiBold.otf",
+   "700": "fonts/otf/DraftingMono-Bold.otf",
+   "100i": "fonts/otf/DraftingMono-ThinItalic.otf",
+   "200i": "fonts/otf/DraftingMono-ExtraLightItalic.otf",
+   "300i": "fonts/otf/DraftingMono-LightItalic.otf",
+   "400i": "fonts/otf/DraftingMono-Italic.otf",
+   "500i": "fonts/otf/DraftingMono-MediumItalic.otf",
+   "600i": "fonts/otf/DraftingMono-SemiBoldItalic.otf",
+   "700i": "fonts/otf/DraftingMono-BoldItalic.otf"
+  },
+  "variable": "fonts/variable/DraftingMono[wght].ttf"
+ },
+ {
+  "family": "Jones",
+  "foundry": "Indestructible Type",
+  "designers": [
+   "Owen Earl"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [],
+  "url": "https://github.com/indestructible-type/Jones",
+  "repo": "https://github.com/indestructible-type/Jones",
+  "rev": "7b3b6958f384f3099a631cf2c9cb261034101f4a",
+  "category": "Sans Serif",
+  "files": {
+   "300": "Finished/Light/Jones-Light.otf",
+   "400": "Finished/Book/Jones-Book.otf",
+   "500": "Finished/Medium/Jones-Medium.otf",
+   "700": "Finished/Bold/Jones-Bold.otf",
+   "900": "Finished/Black/Jones-Black.otf",
+   "300i": "Finished/Light/Jones-LightItalic.otf",
+   "400i": "Finished/Book/Jones-BookItalic.otf",
+   "500i": "Finished/Medium/Jones-MediumItalic.otf",
+   "700i": "Finished/Bold/Jones-BoldItalic.otf",
+   "900i": "Finished/Black/Jones-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Marauder Display",
+  "foundry": "Indestructible Type",
+  "designers": [
+   "Owen Earl"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [],
+  "url": "https://indestructibletype.com/Marauder/index.html",
+  "zip": "https://indestructibletype.com/Marauder.zip",
+  "category": "Serif",
+  "files": {
+   "400": "otf/Marauder-Display-Regular.otf",
+   "500": "otf/Marauder-Display-Medium.otf",
+   "600": "otf/Marauder-Display-SemiBold.otf",
+   "700": "otf/Marauder-Display-Bold.otf",
+   "800": "otf/Marauder-Display-ExtraBold.otf",
+   "900": "otf/Marauder-Display-Black.otf",
+   "400i": "otf/Marauder-Display-Italic.otf",
+   "500i": "otf/Marauder-Display-MediumItalic.otf",
+   "600i": "otf/Marauder-Display-SemiBoldItalic.otf",
+   "700i": "otf/Marauder-Display-BoldItalic.otf",
+   "800i": "otf/Marauder-Display-ExtraBoldItalic.otf",
+   "900i": "otf/Marauder-Display-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Marauder Text",
+  "foundry": "Indestructible Type",
+  "designers": [
+   "Owen Earl"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [],
+  "url": "https://indestructibletype.com/Marauder/index.html",
+  "zip": "https://indestructibletype.com/Marauder.zip",
+  "category": "Serif",
+  "files": {
+   "400": "otf/Marauder-Text-Regular.otf",
+   "500": "otf/Marauder-Text-Medium.otf",
+   "600": "otf/Marauder-Text-SemiBold.otf",
+   "700": "otf/Marauder-Text-Bold.otf",
+   "800": "otf/Marauder-Text-ExtraBold.otf",
+   "900": "otf/Marauder-Text-Black.otf",
+   "400i": "otf/Marauder-Text-Italic.otf",
+   "500i": "otf/Marauder-Text-MediumItalic.otf",
+   "600i": "otf/Marauder-Text-SemiBoldItalic.otf",
+   "700i": "otf/Marauder-Text-BoldItalic.otf",
+   "800i": "otf/Marauder-Text-ExtraBoldItalic.otf",
+   "900i": "otf/Marauder-Text-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "MFEK Sans",
+  "foundry": "Indestructible Type",
+  "designers": [
+   "Owen Earl"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/indestructible-type/MFEK-Sans",
+  "repo": "https://github.com/indestructible-type/MFEK-Sans",
+  "rev": "20fd55528dd3e37b863f33e6955eb21e73cca0e6",
+  "category": "Sans Serif",
+  "files": {
+   "100": "fonts/otf/MFEKSans-150-Thin.otf",
+   "200": "fonts/otf/MFEKSans-250-ExtraLight.otf",
+   "300": "fonts/otf/MFEKSans-350-Light.otf",
+   "400": "fonts/otf/MFEKSans-450-Regular.otf",
+   "500": "fonts/otf/MFEKSans-550-Medium.otf",
+   "600": "fonts/otf/MFEKSans-650-SemiBold.otf",
+   "700": "fonts/otf/MFEKSans-750-Bold.otf",
+   "800": "fonts/otf/MFEKSans-850-ExtraBold.otf",
+   "900": "fonts/otf/MFEKSans-950-Black.otf",
+   "100i": "fonts/otf/MFEKSans-151-ThinItalic.otf",
+   "200i": "fonts/otf/MFEKSans-251-ExtraLightItalic.otf",
+   "300i": "fonts/otf/MFEKSans-351-LightItalic.otf",
+   "400i": "fonts/otf/MFEKSans-451-ItalicItalic.otf",
+   "500i": "fonts/otf/MFEKSans-551-MediumItalic.otf",
+   "600i": "fonts/otf/MFEKSans-651-SemiBoldItalic.otf",
+   "700i": "fonts/otf/MFEKSans-751-BoldItalic.otf",
+   "800i": "fonts/otf/MFEKSans-851-ExtraBoldItalic.otf",
+   "900i": "fonts/otf/MFEKSans-951-BlackItalic.otf"
+  },
+  "variable": "fonts/variable/MFEK-Sans[TRMA,wght,wdth].ttf"
+ },
+ {
+  "family": "MFEK Sans Condensed",
+  "foundry": "Indestructible Type",
+  "designers": [
+   "Owen Earl"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/indestructible-type/MFEK-Sans",
+  "repo": "https://github.com/indestructible-type/MFEK-Sans",
+  "rev": "20fd55528dd3e37b863f33e6955eb21e73cca0e6",
+  "category": "Sans Serif",
+  "files": {
+   "100": "fonts/otf/MFEKSans-130-CondensedThin.otf",
+   "200": "fonts/otf/MFEKSans-230-CondensedExtraLight.otf",
+   "300": "fonts/otf/MFEKSans-330-CondensedLight.otf",
+   "400": "fonts/otf/MFEKSans-430-CondensedRegular.otf",
+   "500": "fonts/otf/MFEKSans-530-CondensedMedium.otf",
+   "600": "fonts/otf/MFEKSans-630-CondensedSemiBold.otf",
+   "700": "fonts/otf/MFEKSans-730-CondensedBold.otf",
+   "800": "fonts/otf/MFEKSans-830-CondensedExtraBold.otf",
+   "900": "fonts/otf/MFEKSans-930-CondensedBlack.otf",
+   "100i": "fonts/otf/MFEKSans-131-CondensedThinItalic.otf",
+   "200i": "fonts/otf/MFEKSans-231-CondensedExtraLightItalic.otf",
+   "300i": "fonts/otf/MFEKSans-331-CondensedLightItalic.otf",
+   "400i": "fonts/otf/MFEKSans-431-CondensedItalic.otf",
+   "500i": "fonts/otf/MFEKSans-531-CondensedMediumItalic.otf",
+   "600i": "fonts/otf/MFEKSans-631-CondensedSemiBoldItalic.otf",
+   "700i": "fonts/otf/MFEKSans-731-CondensedBoldItalic.otf",
+   "800i": "fonts/otf/MFEKSans-831-CondensedExtraBoldItalic.otf",
+   "900i": "fonts/otf/MFEKSans-931-CondensedBlackItalic.otf"
+  },
+  "variable": "fonts/variable/MFEK-Sans[TRMA,wght,wdth].ttf"
+ },
+ {
+  "family": "MFEK Sans Rounded",
+  "foundry": "Indestructible Type",
+  "designers": [
+   "Owen Earl"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/indestructible-type/MFEK-Sans",
+  "repo": "https://github.com/indestructible-type/MFEK-Sans",
+  "rev": "20fd55528dd3e37b863f33e6955eb21e73cca0e6",
+  "category": "Sans Serif",
+  "files": {
+   "100": "fonts/otf/MFEKSans-152-RoundedThin.otf",
+   "200": "fonts/otf/MFEKSans-252-RoundedExtraLight.otf",
+   "300": "fonts/otf/MFEKSans-352-RoundedLight.otf",
+   "400": "fonts/otf/MFEKSans-452-RoundedRegular.otf",
+   "500": "fonts/otf/MFEKSans-552-RoundedMedium.otf",
+   "600": "fonts/otf/MFEKSans-652-RoundedSemiBold.otf",
+   "700": "fonts/otf/MFEKSans-752-RoundedBold.otf",
+   "800": "fonts/otf/MFEKSans-852-RoundedExtraBold.otf",
+   "900": "fonts/otf/MFEKSans-952-RoundedBlack.otf",
+   "100i": "fonts/otf/MFEKSans-153-RoundedThinItalic.otf",
+   "200i": "fonts/otf/MFEKSans-253-RoundedExtraLightItalic.otf",
+   "300i": "fonts/otf/MFEKSans-353-RoundedLightItalic.otf",
+   "400i": "fonts/otf/MFEKSans-453-Rounded-ItalicItalic.otf",
+   "500i": "fonts/otf/MFEKSans-553-RoundedMediumItalic.otf",
+   "600i": "fonts/otf/MFEKSans-653-RoundedSemiBoldItalic.otf",
+   "700i": "fonts/otf/MFEKSans-753-RoundedBoldItalic.otf",
+   "800i": "fonts/otf/MFEKSans-853-RoundedExtraBoldItalic.otf",
+   "900i": "fonts/otf/MFEKSans-953-RoundedBlackItalic.otf"
+  },
+  "variable": "fonts/variable/MFEK-Sans[TRMA,wght,wdth].ttf"
+ },
+ {
+  "family": "MFEK Sans Ultra Condensed",
+  "foundry": "Indestructible Type",
+  "designers": [
+   "Owen Earl"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/indestructible-type/MFEK-Sans",
+  "repo": "https://github.com/indestructible-type/MFEK-Sans",
+  "rev": "20fd55528dd3e37b863f33e6955eb21e73cca0e6",
+  "category": "Sans Serif",
+  "files": {
+   "100": "fonts/otf/MFEKSans-110-UltraCondensedThin.otf",
+   "200": "fonts/otf/MFEKSans-210-UltraCondensedExtraLight.otf",
+   "300": "fonts/otf/MFEKSans-310-UltraCondensedLight.otf",
+   "400": "fonts/otf/MFEKSans-410-UltraCondensedRegular.otf",
+   "500": "fonts/otf/MFEKSans-510-UltraCondensedMedium.otf",
+   "600": "fonts/otf/MFEKSans-610-UltraCondensedSemiBold.otf",
+   "700": "fonts/otf/MFEKSans-710-UltraCondensedBold.otf",
+   "800": "fonts/otf/MFEKSans-810-UltraCondensedExtraBold.otf",
+   "900": "fonts/otf/MFEKSans-910-UltraCondensedBlack.otf",
+   "100i": "fonts/otf/MFEKSans-111-UltraCondensedThinItalic.otf",
+   "200i": "fonts/otf/MFEKSans-211-UltraCondensedExtraLightItalic.otf",
+   "300i": "fonts/otf/MFEKSans-311-UltraCondensedLightItalic.otf",
+   "400i": "fonts/otf/MFEKSans-411-UltraCondensedItalic.otf",
+   "500i": "fonts/otf/MFEKSans-511-UltraCondensedMediumItalic.otf",
+   "600i": "fonts/otf/MFEKSans-611-UltraCondensedSemiBoldItalic.otf",
+   "700i": "fonts/otf/MFEKSans-711-UltraCondensedBoldItalic.otf",
+   "800i": "fonts/otf/MFEKSans-811-UltraCondensedExtraBoldItalic.otf",
+   "900i": "fonts/otf/MFEKSans-911-UltraCondensedBlackItalic.otf"
+  },
+  "variable": "fonts/variable/MFEK-Sans[TRMA,wght,wdth].ttf"
+ },
+ {
+  "family": "Miedinger",
+  "foundry": "Indestructible Type",
+  "designers": [
+   "Owen Earl"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [],
+  "url": "https://github.com/indestructible-type/Miedinger",
+  "repo": "https://github.com/indestructible-type/Miedinger",
+  "rev": "d79ca0e672eaabae4639c52004d4c09c8597b93a",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Finished/Book/Miedinger*-Book.otf",
+   "700": "Finished/Bold/Miedinger*-Bold.otf",
+   "400i": "Finished/Book/Miedinger*-Book-Italic.otf",
+   "700i": "Finished/Bold/Miedinger*-Bold-Italic.otf"
+  }
+ }
+]

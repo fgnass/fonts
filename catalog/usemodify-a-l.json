@@ -1,0 +1,1466 @@
+[
+ {
+  "family": "0xA000",
+  "foundry": "Øyvind Kolås",
+  "designers": [
+   "Øyvind Kolås"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://pippin.gimp.org/0xA000/",
+  "category": "Display",
+  "files": {
+   "400": "http://pippin.gimp.org/0xA000/0xA000-Regular.ttf",
+   "700": "http://pippin.gimp.org/0xA000/0xA000-Bold.ttf"
+  }
+ },
+ {
+  "family": "0xA000 Mono",
+  "foundry": "Øyvind Kolås",
+  "designers": [
+   "Øyvind Kolås"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://pippin.gimp.org/0xA000/",
+  "category": "Monospace",
+  "files": {
+   "400": "http://pippin.gimp.org/0xA000/0xA000-Mono.ttf",
+   "700": "http://pippin.gimp.org/0xA000/0xA000-Mono-Bold.ttf"
+  }
+ },
+ {
+  "family": "A MONO",
+  "foundry": "Klotter Supply",
+  "designers": [
+   "falk"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "A-MONO-0-4/OFL.txt",
+  "rfn": [
+   "A MONO"
+  ],
+  "url": "https://klotter.supply/a-mono/",
+  "zip": "https://klotter.supply/media/pages/works/a-mono/b2aa6ddd30-1728389375/a-mono-0-4.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "A-MONO-0-4/desktop/AMONO-regular.otf",
+   "700": "A-MONO-0-4/desktop/AMONO-bold.otf",
+   "900": "A-MONO-0-4/desktop/AMONO-black.otf",
+   "400i": "A-MONO-0-4/desktop/AMONO-rotalic.otf",
+   "700i": "A-MONO-0-4/desktop/AMONO-rotalicbold.otf",
+   "900i": "A-MONO-0-4/desktop/AMONO-rotalicblack.otf"
+  },
+  "variable": "A-MONO-0-4/variable/AMONOVF.ttf"
+ },
+ {
+  "family": "Aboensis",
+  "foundry": "Tommi Syrjänen",
+  "designers": [
+   "Tommi Syrjänen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "aboensis/OFL.txt",
+  "rfn": [
+   "Missaali"
+  ],
+  "url": "https://ctan.org/pkg/aboensis",
+  "zip": "https://mirrors.ctan.org/fonts/aboensis.zip",
+  "category": "Display",
+  "files": {
+   "400": "aboensis/Aboensis-Regular.otf"
+  }
+ },
+ {
+  "family": "ADAXI",
+  "foundry": "La Scuola Open Source",
+  "designers": [
+   "La Scuola Open Source"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/lascuolaopensource/bca-font-Adaxi",
+  "repo": "https://github.com/lascuolaopensource/bca-font-Adaxi",
+  "rev": "8ac68074589ec2c0af2073b6cb725b31b29ca1b0",
+  "category": "Display",
+  "files": {
+   "400": "fonts/ttf/ADAXI.ttf"
+  }
+ },
+ {
+  "family": "Anka Coder",
+  "foundry": "Andrey Makarov",
+  "designers": [
+   "Andrey Makarov"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "AnkaCoder/OFL.txt",
+  "rfn": [
+   "Anka/Coder"
+  ],
+  "url": "https://github.com/loafer-mka/anka-coder-fonts",
+  "repo": "https://github.com/loafer-mka/anka-coder-fonts",
+  "rev": "a55caea96b91b74a82c1e8410752de6ed1dcd82b",
+  "category": "Monospace",
+  "files": {
+   "400": "TTFs/AnkaCoder-r.ttf",
+   "700": "TTFs/AnkaCoder-b.ttf",
+   "400i": "TTFs/AnkaCoder-i.ttf",
+   "700i": "TTFs/AnkaCoder-bi.ttf"
+  }
+ },
+ {
+  "family": "Anka Coder Condensed",
+  "foundry": "Andrey Makarov",
+  "designers": [
+   "Andrey Makarov"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "AnkaCoder Condensed/OFL.txt",
+  "rfn": [
+   "Anka/Coder Condensed"
+  ],
+  "url": "https://github.com/loafer-mka/anka-coder-fonts",
+  "repo": "https://github.com/loafer-mka/anka-coder-fonts",
+  "rev": "a55caea96b91b74a82c1e8410752de6ed1dcd82b",
+  "category": "Monospace",
+  "files": {
+   "400": "TTFs/AnkaCoder-C75-r.ttf",
+   "700": "TTFs/AnkaCoder-C75-b.ttf",
+   "400i": "TTFs/AnkaCoder-C75-i.ttf",
+   "700i": "TTFs/AnkaCoder-C75-bi.ttf"
+  }
+ },
+ {
+  "family": "Anka Coder Narrow",
+  "foundry": "Andrey Makarov",
+  "designers": [
+   "Andrey Makarov"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "AnkaCoder Narrow/OFL.txt",
+  "rfn": [
+   "Anka/Coder Narrow"
+  ],
+  "url": "https://github.com/loafer-mka/anka-coder-fonts",
+  "repo": "https://github.com/loafer-mka/anka-coder-fonts",
+  "rev": "a55caea96b91b74a82c1e8410752de6ed1dcd82b",
+  "category": "Monospace",
+  "files": {
+   "400": "TTFs/AnkaCoder-C87-r.ttf",
+   "700": "TTFs/AnkaCoder-C87-b.ttf",
+   "400i": "TTFs/AnkaCoder-C87-i.ttf",
+   "700i": "TTFs/AnkaCoder-C87-bi.ttf"
+  }
+ },
+ {
+  "family": "Aquis",
+  "foundry": "Erwan Le Rétif",
+  "designers": [
+   "Erwan Le Rétif"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://erwanleretif.xyz/typotheque",
+  "category": "Display",
+  "files": {
+   "400": "https://erwanleretif.xyz/fonts/Aquis-Regular.otf"
+  }
+ },
+ {
+  "family": "Autopia",
+  "foundry": "Luuse",
+  "designers": [
+   "Antoine Gelgon"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://gitlab.com/Luuse/foundry/Autopia",
+  "repo": "https://gitlab.com/Luuse/foundry/Autopia",
+  "rev": "cb4fa0fa6be26f410ff94e06e5f94e72198e1b4f",
+  "category": "Display",
+  "files": {
+   "400": "autopia/Autopia-Regular/Autopia-Regular.otf",
+   "700": "autopia/Autopia-Bold/Autopia-Bold.otf",
+   "400i": "autopia/Autopia-Italic/Autopia-Italic.otf",
+   "700i": "autopia/Autopia-Bold-Italic/Autopia-Bold-Italic.otf"
+  }
+ },
+ {
+  "family": "Bagnard",
+  "foundry": "Sebastien Sanfilippo",
+  "designers": [
+   "Sebastien Sanfilippo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/sebsan/Bagnard",
+  "repo": "https://github.com/sebsan/Bagnard",
+  "rev": "31415d5e03d2088941fecae2c4ea9f2e6ca0446a",
+  "category": "Serif",
+  "files": {
+   "400": "Bagnard.otf"
+  }
+ },
+ {
+  "family": "Breite Grotesk",
+  "foundry": "Nicolas F. Pauly",
+  "designers": [
+   "Nicolas F. Pauly"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/metapolator/Breite",
+  "repo": "https://github.com/metapolator/Breite",
+  "rev": "93e02d7f72f8c3fde20aa6945a95a9506d9d10c9",
+  "category": "Sans Serif",
+  "files": {
+   "300": "Output/Light.otf",
+   "400": "Output/Regular.otf"
+  }
+ },
+ {
+  "family": "Breite Grotesk Condensed",
+  "foundry": "Nicolas F. Pauly",
+  "designers": [
+   "Nicolas F. Pauly"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/metapolator/Breite",
+  "repo": "https://github.com/metapolator/Breite",
+  "rev": "93e02d7f72f8c3fde20aa6945a95a9506d9d10c9",
+  "category": "Sans Serif",
+  "files": {
+   "300": "Output/Light Condensed.otf",
+   "400": "Output/Condensed.otf"
+  }
+ },
+ {
+  "family": "C reduci",
+  "foundry": "Cuchulain Coker",
+  "designers": [
+   "Cuchulain Coker"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "C reduci openfont/oflLICENSEcreduci.txt",
+  "rfn": [
+   "C reduci"
+  ],
+  "url": "https://fontlibrary.org/en/font/c-reduci",
+  "zip": "https://fontlibrary.org/assets/downloads/c-reduci/c7348243f4dbf901fbc63ece8c17349a/c-reduci.zip",
+  "category": "Display",
+  "files": {
+   "500": "C reduci openfont/Creduci.ttf"
+  }
+ },
+ {
+  "family": "Centaury",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Justine Gagnaire"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fonderiz.fr/centaury/",
+  "zip": "https://fonderiz.fr/site/assets/files/1018/centaury.zip",
+  "category": "Serif",
+  "files": {
+   "400": "centaury/Centaury-Regular.otf",
+   "400i": "centaury/Centaury-Italic.otf"
+  }
+ },
+ {
+  "family": "Centaury Display",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Justine Gagnaire"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fonderiz.fr/centaury/",
+  "zip": "https://fonderiz.fr/site/assets/files/1018/centaury.zip",
+  "category": "Display",
+  "files": {
+   "400": "centaury/Centaury-Display.otf",
+   "400i": "centaury/Centaury-DisplayItalic.otf"
+  }
+ },
+ {
+  "family": "CMRDD",
+  "foundry": "Paul Bernhard",
+  "designers": [
+   "Paul Bernhard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [],
+  "url": "https://gitlab.com/swrs/cmrdd",
+  "repo": "https://gitlab.com/swrs/cmrdd",
+  "rev": "5de767ff5f67de647d3c72364edb675a0eec7a3d",
+  "category": "Sans Serif",
+  "files": {
+   "400": "outline/CMRDD-Regular.ttf",
+   "700": "outline/CMRDD-Bold.ttf",
+   "800": "outline/CMRDD-ExtraBold.ttf",
+   "400i": "outline/CMRDD-Italic.ttf"
+  }
+ },
+ {
+  "family": "Coaster Sans",
+  "foundry": "Mother Type",
+  "designers": [
+   "printer_scanner"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/mother-type/CoasterSans",
+  "repo": "https://github.com/mother-type/CoasterSans",
+  "rev": "c6d8e8462c2942f696f3ce48e332c0d26f56e2ed",
+  "category": "Display",
+  "files": {
+   "400": "fonts/CoasterSans-Regular.otf"
+  }
+ },
+ {
+  "family": "Cotham Sans",
+  "foundry": "Sebastien Sanfilippo",
+  "designers": [
+   "Sebastien Sanfilippo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/sebsan/Cotham",
+  "repo": "https://github.com/sebsan/Cotham",
+  "rev": "eca5c6d0cdaea789e06a3118147c0ecbabe20e94",
+  "category": "Sans Serif",
+  "files": {
+   "400": "CothamSans.otf"
+  }
+ },
+ {
+  "family": "Dauphine",
+  "foundry": "Charles Mazé & Coline Sunier",
+  "designers": [
+   "Charles Mazé",
+   "Coline Sunier",
+   "Alexandre Leray",
+   "Stéphanie Vilayphiou"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Dauphine"
+  ],
+  "url": "https://github.com/no-feature/dauphine",
+  "repo": "https://github.com/no-feature/dauphine",
+  "rev": "7acb743ceeb6b1ab5f20aa496f4fb6f5819380a2",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Dauphine Regular.otf"
+  }
+ },
+ {
+  "family": "DINish",
+  "foundry": "Bert Driehuis",
+  "designers": [
+   "Bert Driehuis"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/playbeing/dinish",
+  "repo": "https://github.com/playbeing/dinish",
+  "rev": "a5f3b2a3b932336225815bf9005e3b72cc3de71c",
+  "category": "Sans Serif",
+  "files": {
+   "300": "fonts/otf/DINish/DINish-Light.otf",
+   "400": "fonts/otf/DINish/DINish-Regular.otf",
+   "500": "fonts/otf/DINish/DINish-Medium.otf",
+   "600": "fonts/otf/DINish/DINish-SemiBold.otf",
+   "700": "fonts/otf/DINish/DINish-Bold.otf",
+   "800": "fonts/otf/DINish/DINish-Heavy.otf",
+   "900": "fonts/otf/DINish/DINish-Black.otf",
+   "300i": "fonts/otf/DINish/DINish-LightItalic.otf",
+   "400i": "fonts/otf/DINish/DINish-Italic.otf",
+   "500i": "fonts/otf/DINish/DINish-MediumItalic.otf",
+   "600i": "fonts/otf/DINish/DINish-SemiBoldItalic.otf",
+   "700i": "fonts/otf/DINish/DINish-BoldItalic.otf",
+   "800i": "fonts/otf/DINish/DINish-HeavyItalic.otf",
+   "900i": "fonts/otf/DINish/DINish-BlackItalic.otf"
+  },
+  "variable": "fonts/ttf/variable/DINish[slnt,wdth,wght].ttf"
+ },
+ {
+  "family": "DINish Condensed",
+  "foundry": "Bert Driehuis",
+  "designers": [
+   "Bert Driehuis"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/playbeing/dinish",
+  "repo": "https://github.com/playbeing/dinish",
+  "rev": "a5f3b2a3b932336225815bf9005e3b72cc3de71c",
+  "category": "Sans Serif",
+  "files": {
+   "300": "fonts/otf/DINishCondensed/DINishCondensed-Light.otf",
+   "400": "fonts/otf/DINishCondensed/DINishCondensed-Regular.otf",
+   "500": "fonts/otf/DINishCondensed/DINishCondensed-Medium.otf",
+   "600": "fonts/otf/DINishCondensed/DINishCondensed-SemiBold.otf",
+   "700": "fonts/otf/DINishCondensed/DINishCondensed-Bold.otf",
+   "800": "fonts/otf/DINishCondensed/DINishCondensed-Heavy.otf",
+   "900": "fonts/otf/DINishCondensed/DINishCondensed-Black.otf",
+   "300i": "fonts/otf/DINishCondensed/DINishCondensed-LightItalic.otf",
+   "400i": "fonts/otf/DINishCondensed/DINishCondensed-Italic.otf",
+   "500i": "fonts/otf/DINishCondensed/DINishCondensed-MediumItalic.otf",
+   "600i": "fonts/otf/DINishCondensed/DINishCondensed-SemiBoldItalic.otf",
+   "700i": "fonts/otf/DINishCondensed/DINishCondensed-BoldItalic.otf",
+   "800i": "fonts/otf/DINishCondensed/DINishCondensed-HeavyItalic.otf",
+   "900i": "fonts/otf/DINishCondensed/DINishCondensed-BlackItalic.otf"
+  },
+  "variable": "fonts/ttf/variable/DINish[slnt,wdth,wght].ttf"
+ },
+ {
+  "family": "DINish Expanded",
+  "foundry": "Bert Driehuis",
+  "designers": [
+   "Bert Driehuis"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/playbeing/dinish",
+  "repo": "https://github.com/playbeing/dinish",
+  "rev": "a5f3b2a3b932336225815bf9005e3b72cc3de71c",
+  "category": "Sans Serif",
+  "files": {
+   "300": "fonts/otf/DINishExpanded/DINishExpanded-Light.otf",
+   "400": "fonts/otf/DINishExpanded/DINishExpanded-Regular.otf",
+   "500": "fonts/otf/DINishExpanded/DINishExpanded-Medium.otf",
+   "600": "fonts/otf/DINishExpanded/DINishExpanded-SemiBold.otf",
+   "700": "fonts/otf/DINishExpanded/DINishExpanded-Bold.otf",
+   "800": "fonts/otf/DINishExpanded/DINishExpanded-Heavy.otf",
+   "900": "fonts/otf/DINishExpanded/DINishExpanded-Black.otf",
+   "300i": "fonts/otf/DINishExpanded/DINishExpanded-LightItalic.otf",
+   "400i": "fonts/otf/DINishExpanded/DINishExpanded-Italic.otf",
+   "500i": "fonts/otf/DINishExpanded/DINishExpanded-MediumItalic.otf",
+   "600i": "fonts/otf/DINishExpanded/DINishExpanded-SemiBoldItalic.otf",
+   "700i": "fonts/otf/DINishExpanded/DINishExpanded-BoldItalic.otf",
+   "800i": "fonts/otf/DINishExpanded/DINishExpanded-HeavyItalic.otf",
+   "900i": "fonts/otf/DINishExpanded/DINishExpanded-BlackItalic.otf"
+  },
+  "variable": "fonts/ttf/variable/DINish[slnt,wdth,wght].ttf"
+ },
+ {
+  "family": "DOF 1",
+  "foundry": "Paul Bernhard",
+  "designers": [
+   "Paul Bernhard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "DOF"
+  ],
+  "url": "https://gitlab.com/swrs/dof",
+  "repo": "https://gitlab.com/swrs/dof",
+  "rev": "0d11b31515a97856b59b02ed0486e95be1c9c05d",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/dof-1-reg.ttf",
+   "400i": "fonts/dof-1-it.ttf"
+  }
+ },
+ {
+  "family": "DOF 1 Extended",
+  "foundry": "Paul Bernhard",
+  "designers": [
+   "Paul Bernhard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "DOF"
+  ],
+  "url": "https://gitlab.com/swrs/dof",
+  "repo": "https://gitlab.com/swrs/dof",
+  "rev": "0d11b31515a97856b59b02ed0486e95be1c9c05d",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/dof-1-ext.ttf"
+  }
+ },
+ {
+  "family": "DOF 2",
+  "foundry": "Paul Bernhard",
+  "designers": [
+   "Paul Bernhard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "DOF"
+  ],
+  "url": "https://gitlab.com/swrs/dof",
+  "repo": "https://gitlab.com/swrs/dof",
+  "rev": "0d11b31515a97856b59b02ed0486e95be1c9c05d",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/dof-2-reg.ttf",
+   "400i": "fonts/dof-2-it.ttf"
+  }
+ },
+ {
+  "family": "DOF 2 Extended",
+  "foundry": "Paul Bernhard",
+  "designers": [
+   "Paul Bernhard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "DOF"
+  ],
+  "url": "https://gitlab.com/swrs/dof",
+  "repo": "https://gitlab.com/swrs/dof",
+  "rev": "0d11b31515a97856b59b02ed0486e95be1c9c05d",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/dof-2-ext.ttf"
+  }
+ },
+ {
+  "family": "DOF 3",
+  "foundry": "Paul Bernhard",
+  "designers": [
+   "Paul Bernhard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "DOF"
+  ],
+  "url": "https://gitlab.com/swrs/dof",
+  "repo": "https://gitlab.com/swrs/dof",
+  "rev": "0d11b31515a97856b59b02ed0486e95be1c9c05d",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/dof-3-reg.ttf",
+   "400i": "fonts/dof-3-it.ttf"
+  }
+ },
+ {
+  "family": "DOF 3 Extended",
+  "foundry": "Paul Bernhard",
+  "designers": [
+   "Paul Bernhard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "DOF"
+  ],
+  "url": "https://gitlab.com/swrs/dof",
+  "repo": "https://gitlab.com/swrs/dof",
+  "rev": "0d11b31515a97856b59b02ed0486e95be1c9c05d",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/dof-3-ext.ttf"
+  }
+ },
+ {
+  "family": "DOF Afield",
+  "foundry": "Paul Bernhard",
+  "designers": [
+   "Paul Bernhard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "DOF"
+  ],
+  "url": "https://gitlab.com/swrs/dof",
+  "repo": "https://gitlab.com/swrs/dof",
+  "rev": "0d11b31515a97856b59b02ed0486e95be1c9c05d",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/dof-afield-reg.ttf",
+   "400i": "fonts/dof-afield-it.ttf"
+  }
+ },
+ {
+  "family": "Elvenes",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Justine Gagnaire"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fonderiz.fr/elvenes/",
+  "zip": "https://fonderiz.fr/site/assets/files/1023/elvenes.zip",
+  "category": "Display",
+  "files": {
+   "100": "elvenes/Elvenes-ThinDisplay.ttf",
+   "400": "elvenes/Elvenes-RegularDisplay.ttf",
+   "700": "elvenes/Elvenes-BoldDisplay.ttf"
+  }
+ },
+ {
+  "family": "Fantasque Sans Mono",
+  "foundry": "Jany Belluz",
+  "designers": [
+   "Jany Belluz"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/belluzj/fantasque-sans",
+  "zip": "https://github.com/belluzj/fantasque-sans/releases/download/v1.8.0/FantasqueSansMono-Normal.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "OTF/FantasqueSansMono-Regular.otf",
+   "700": "OTF/FantasqueSansMono-Bold.otf",
+   "400i": "OTF/FantasqueSansMono-Italic.otf",
+   "700i": "OTF/FantasqueSansMono-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "Ferrite Core",
+  "foundry": "Froyo Tam",
+  "designers": [
+   "Froyo Tam"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/froyotam/ferrite-core",
+  "repo": "https://github.com/froyotam/ferrite-core",
+  "rev": "dac522398cf9b7161e690250a84d3f7bf9e26355",
+  "category": "Display",
+  "files": {
+   "300": "fonts/otf/FerriteCoreDX-Light.otf",
+   "400": "fonts/otf/FerriteCoreDX-Regular.otf",
+   "500": "fonts/otf/FerriteCoreDX-Medium.otf",
+   "900": "fonts/otf/FerriteCoreDX-Black.otf"
+  }
+ },
+ {
+  "family": "Fibel Nord",
+  "foundry": "Peter Wiegel",
+  "designers": [
+   "Peter Wiegel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.txt",
+  "rfn": [
+   "Gruenewals VE"
+  ],
+  "url": "http://www.peter-wiegel.de/Fibel.html",
+  "zip": "http://www.peter-wiegel.de/Fonts/FibelNordTT.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Fibel Nord.ttf",
+   "700": "Fibel Nord Bold.ttf",
+   "400i": "Fibel Nord Italic.ttf",
+   "700i": "Fibel Nord Bold Italic.ttf"
+  }
+ },
+ {
+  "family": "Fibel Sued",
+  "foundry": "Peter Wiegel",
+  "designers": [
+   "Peter Wiegel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.txt",
+  "rfn": [
+   "Gruenewals VE"
+  ],
+  "url": "http://www.peter-wiegel.de/Fibel.html",
+  "zip": "http://www.peter-wiegel.de/Fonts/FibelSuedTT.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Fibel Sued.ttf",
+   "700": "Fibel Sued Bold.ttf",
+   "400i": "Fibel Sued Italic.ttf",
+   "700i": "Fibel Sued Bold Italic.ttf"
+  }
+ },
+ {
+  "family": "Fontlab Font",
+  "foundry": "Bryce Wilner",
+  "designers": [
+   "Bryce Wilner"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/brycewilner/Fontlab-Font",
+  "repo": "https://github.com/brycewilner/Fontlab-Font",
+  "rev": "64b00279030d5631c20912bcb8ca81e88fdcd9c3",
+  "category": "Display",
+  "files": {
+   "400": "Fontlab.otf"
+  }
+ },
+ {
+  "family": "Frames Part One",
+  "foundry": "Nathan Laurent",
+  "designers": [
+   "Nathan Laurent"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Frames Part One 1.6/OFL.txt",
+  "rfn": [],
+  "url": "https://nathanlaurent.github.io/frames.html",
+  "zip": "https://nathanlaurent.github.io/FramesPartOne.zip",
+  "category": "Monospace",
+  "files": {
+   "100": "Frames Part One 1.6/otf/FramesPartOne-Thin.otf",
+   "300": "Frames Part One 1.6/otf/FramesPartOne-Light.otf",
+   "400": "Frames Part One 1.6/otf/FramesPartOne-Regular.otf",
+   "500": "Frames Part One 1.6/otf/FramesPartOne-Medium.otf",
+   "700": "Frames Part One 1.6/otf/FramesPartOne-Bold.otf"
+  },
+  "variable": "Frames Part One 1.6/variable (beta)/FramesPartOneGX.ttf"
+ },
+ {
+  "family": "Gap Sans",
+  "foundry": "Interstices",
+  "designers": [
+   "Étienne Ozeray",
+   "Alexandre Liziard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/Interstices-/GapSans",
+  "repo": "https://github.com/Interstices-/GapSans",
+  "rev": "24e59f53bbfac3c7d8e4eb8db89ae828f9f8fba7",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/GapSans.ttf",
+   "700": "fonts/GapSansBold.ttf",
+   "900": "fonts/GapSansBlack.ttf"
+  }
+ },
+ {
+  "family": "Garcia",
+  "foundry": "Anton Moglia",
+  "designers": [
+   "Anton Moglia"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/antonmoglia/Garcia",
+  "repo": "https://github.com/antonmoglia/Garcia",
+  "rev": "fece09fbef437f531f1bff1cb8fe751a900a78f3",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/GARCIA-Regular.otf"
+  }
+ },
+ {
+  "family": "Half",
+  "foundry": "Bryce Wilner",
+  "designers": [
+   "Bryce Wilner"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/brycewilner/Half",
+  "repo": "https://github.com/brycewilner/Half",
+  "rev": "5a68b826d64665b191c91ab2a88b8d7418ecf001",
+  "category": "Display",
+  "files": {
+   "200": "Half-21.otf",
+   "400": "Half-39.otf",
+   "500": "Half-51.otf",
+   "700": "Half-75.otf"
+  }
+ },
+ {
+  "family": "Herbiflora",
+  "foundry": "Ahyangyi",
+  "designers": [
+   "Ahyangyi"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://gitlab.com/raphaelbastide/herbiflora",
+  "repo": "https://gitlab.com/raphaelbastide/herbiflora",
+  "rev": "fdcc726f65b85f3666f63d313500c040cf5585e1",
+  "category": "Serif",
+  "files": {
+   "400": "Herbiflora.ttf"
+  }
+ },
+ {
+  "family": "Hibana",
+  "foundry": "Pygmalion",
+  "designers": [
+   "Shichao Yang"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.md",
+  "rfn": [],
+  "url": "https://pygmalion.xyz/typefaces/hibana",
+  "repo": "https://github.com/pygmalion-y/hibana",
+  "rev": "c29fe02bdd40f134d4b0781f350cbb62c68c4383",
+  "category": "Sans Serif",
+  "files": {
+   "500": "Hibana-45SubMedium.otf"
+  }
+ },
+ {
+  "family": "iA Writer Duo",
+  "foundry": "iA",
+  "designers": [
+   "Information Architects"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "iA Writer Duo/LICENSE.md",
+  "rfn": [
+   "iA Writer",
+   "Plex"
+  ],
+  "url": "https://github.com/iaolo/iA-Fonts",
+  "repo": "https://github.com/iaolo/iA-Fonts",
+  "rev": "c6588670c71e9ac628acc27b72cde4bf12726b7f",
+  "category": "Monospace",
+  "files": {
+   "400": "iA Writer Duo/Static/iAWriterDuoS-Regular.ttf",
+   "700": "iA Writer Duo/Static/iAWriterDuoS-Bold.ttf",
+   "400i": "iA Writer Duo/Static/iAWriterDuoS-Italic.ttf",
+   "700i": "iA Writer Duo/Static/iAWriterDuoS-BoldItalic.ttf"
+  }
+ },
+ {
+  "family": "iA Writer Mono",
+  "foundry": "iA",
+  "designers": [
+   "Information Architects"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "iA Writer Mono/LICENSE.md",
+  "rfn": [
+   "iA Writer",
+   "Plex"
+  ],
+  "url": "https://github.com/iaolo/iA-Fonts",
+  "repo": "https://github.com/iaolo/iA-Fonts",
+  "rev": "c6588670c71e9ac628acc27b72cde4bf12726b7f",
+  "category": "Monospace",
+  "files": {
+   "400": "iA Writer Mono/Static/iAWriterMonoS-Regular.ttf",
+   "700": "iA Writer Mono/Static/iAWriterMonoS-Bold.ttf",
+   "400i": "iA Writer Mono/Static/iAWriterMonoS-Italic.ttf",
+   "700i": "iA Writer Mono/Static/iAWriterMonoS-BoldItalic.ttf"
+  }
+ },
+ {
+  "family": "iA Writer Quattro",
+  "foundry": "iA",
+  "designers": [
+   "Information Architects"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "iA Writer Quattro/LICENSE.md",
+  "rfn": [
+   "iA Writer",
+   "Plex"
+  ],
+  "url": "https://github.com/iaolo/iA-Fonts",
+  "repo": "https://github.com/iaolo/iA-Fonts",
+  "rev": "c6588670c71e9ac628acc27b72cde4bf12726b7f",
+  "category": "Sans Serif",
+  "files": {
+   "400": "iA Writer Quattro/Static/iAWriterQuattroS-Regular.ttf",
+   "700": "iA Writer Quattro/Static/iAWriterQuattroS-Bold.ttf",
+   "400i": "iA Writer Quattro/Static/iAWriterQuattroS-Italic.ttf",
+   "700i": "iA Writer Quattro/Static/iAWriterQuattroS-BoldItalic.ttf"
+  }
+ },
+ {
+  "family": "IBM 3270",
+  "foundry": "Ricardo Bánffy",
+  "designers": [
+   "Ricardo Bánffy"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/rbanffy/3270font",
+  "zip": "https://github.com/rbanffy/3270font/releases/download/v3.0.1/3270_fonts_d916271.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "3270-Regular.otf"
+  }
+ },
+ {
+  "family": "IBM 3270 Condensed",
+  "foundry": "Ricardo Bánffy",
+  "designers": [
+   "Ricardo Bánffy"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/rbanffy/3270font",
+  "zip": "https://github.com/rbanffy/3270font/releases/download/v3.0.1/3270_fonts_d916271.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "3270Condensed-Regular.otf"
+  }
+ },
+ {
+  "family": "IBM 3270 Semi-Condensed",
+  "foundry": "Ricardo Bánffy",
+  "designers": [
+   "Ricardo Bánffy"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/rbanffy/3270font",
+  "zip": "https://github.com/rbanffy/3270font/releases/download/v3.0.1/3270_fonts_d916271.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "3270SemiCondensed-Regular.otf"
+  }
+ },
+ {
+  "family": "Indira K",
+  "foundry": "Peter Wiegel",
+  "designers": [
+   "Peter Wiegel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Indira K"
+  ],
+  "url": "http://www.peter-wiegel.de/IndiraK.html",
+  "zip": "http://www.peter-wiegel.de/Fonts/Indira_K.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Indira_K.ttf"
+  }
+ },
+ {
+  "family": "Interval",
+  "foundry": "Alex Chavot",
+  "designers": [
+   "Alex Chavot"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Interval"
+  ],
+  "url": "https://fontlibrary.org/en/font/interval",
+  "zip": "https://fontlibrary.org/assets/downloads/interval/5122d20431a4072acfe00cda1dd642ca/interval.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "Interval.otf",
+   "700": "Interval Bold.otf",
+   "400i": "Interval Slanted.otf",
+   "700i": "Interval Bold slanted.otf"
+  }
+ },
+ {
+  "family": "Iosevka",
+  "foundry": "Belleve Invis",
+  "designers": [
+   "Belleve Invis"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/be5invis/Iosevka",
+  "zip": "https://github.com/be5invis/Iosevka/releases/download/v34.9.0/PkgTTF-Iosevka-34.9.0.zip",
+  "category": "Monospace",
+  "files": {
+   "100": "Iosevka-Thin.ttf",
+   "200": "Iosevka-ExtraLight.ttf",
+   "300": "Iosevka-Light.ttf",
+   "400": "Iosevka-Regular.ttf",
+   "500": "Iosevka-Medium.ttf",
+   "600": "Iosevka-SemiBold.ttf",
+   "700": "Iosevka-Bold.ttf",
+   "800": "Iosevka-ExtraBold.ttf",
+   "900": "Iosevka-Heavy.ttf",
+   "100i": "Iosevka-ThinItalic.ttf",
+   "200i": "Iosevka-ExtraLightItalic.ttf",
+   "300i": "Iosevka-LightItalic.ttf",
+   "400i": "Iosevka-Italic.ttf",
+   "500i": "Iosevka-MediumItalic.ttf",
+   "600i": "Iosevka-SemiBoldItalic.ttf",
+   "700i": "Iosevka-BoldItalic.ttf",
+   "800i": "Iosevka-ExtraBoldItalic.ttf",
+   "900i": "Iosevka-HeavyItalic.ttf"
+  }
+ },
+ {
+  "family": "Iosevka Extended",
+  "foundry": "Belleve Invis",
+  "designers": [
+   "Belleve Invis"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/be5invis/Iosevka",
+  "zip": "https://github.com/be5invis/Iosevka/releases/download/v34.9.0/PkgTTF-Iosevka-34.9.0.zip",
+  "category": "Monospace",
+  "files": {
+   "100": "Iosevka-ExtendedThin.ttf",
+   "200": "Iosevka-ExtendedExtraLight.ttf",
+   "300": "Iosevka-ExtendedLight.ttf",
+   "400": "Iosevka-Extended.ttf",
+   "500": "Iosevka-ExtendedMedium.ttf",
+   "600": "Iosevka-ExtendedSemiBold.ttf",
+   "700": "Iosevka-ExtendedBold.ttf",
+   "800": "Iosevka-ExtendedExtraBold.ttf",
+   "900": "Iosevka-ExtendedHeavy.ttf",
+   "100i": "Iosevka-ExtendedThinItalic.ttf",
+   "200i": "Iosevka-ExtendedExtraLightItalic.ttf",
+   "300i": "Iosevka-ExtendedLightItalic.ttf",
+   "400i": "Iosevka-ExtendedItalic.ttf",
+   "500i": "Iosevka-ExtendedMediumItalic.ttf",
+   "600i": "Iosevka-ExtendedSemiBoldItalic.ttf",
+   "700i": "Iosevka-ExtendedBoldItalic.ttf",
+   "800i": "Iosevka-ExtendedExtraBoldItalic.ttf",
+   "900i": "Iosevka-ExtendedHeavyItalic.ttf"
+  }
+ },
+ {
+  "family": "Isobare",
+  "foundry": "Clémence Fontaine",
+  "designers": [
+   "Clémence Fontaine"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Spe╠ücimen ISOBARE/ SIL Open Font License .txt",
+  "rfn": [
+   "ISOBARE"
+  ],
+  "url": "https://www.clemencefontaine.fr/page/isobar.html",
+  "zip": "https://www.clemencefontaine.fr/specimen/ISOBARE.zip",
+  "category": "Display",
+  "files": {
+   "400": "Spe╠ücimen ISOBARE/Isobare-Regular.otf"
+  }
+ },
+ {
+  "family": "Junicode",
+  "foundry": "Peter S. Baker",
+  "designers": [
+   "Peter S. Baker"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/Fromager/junicode",
+  "repo": "https://github.com/Fromager/junicode",
+  "rev": "059558d413cf88277dc123e0b02fef15b67dd3b3",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Junicode-Regular.ttf",
+   "700": "fonts/Junicode-Bold.ttf",
+   "400i": "fonts/Junicode-Italic.ttf",
+   "700i": "fonts/Junicode-BoldItalic.ttf"
+  }
+ },
+ {
+  "family": "Junicode Condensed",
+  "foundry": "Peter S. Baker",
+  "designers": [
+   "Peter S. Baker"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/Fromager/junicode",
+  "repo": "https://github.com/Fromager/junicode",
+  "rev": "059558d413cf88277dc123e0b02fef15b67dd3b3",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Junicode-RegularCondensed.ttf",
+   "700": "fonts/Junicode-BoldCondensed.ttf",
+   "400i": "fonts/Junicode-ItalicCondensed.ttf",
+   "700i": "fonts/Junicode-BoldItalicCondensed.ttf"
+  }
+ },
+ {
+  "family": "Karmilla",
+  "foundry": "Manuel Schmalstieg",
+  "designers": [
+   "Jonny Pinhorn",
+   "Raphaël Bastide",
+   "Manuel Schmalstieg"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/ms-studio/karmilla",
+  "repo": "https://github.com/ms-studio/karmilla",
+  "rev": "203397e7f44f28d203737f6c575833ef620daa2b",
+  "category": "Sans Serif",
+  "files": {
+   "400": "fonts/ttf/Karmilla-Regular.ttf",
+   "700": "fonts/ttf/Karmilla-Bold.ttf"
+  }
+ },
+ {
+  "family": "Lab Mono",
+  "foundry": "Martin Wecke",
+  "designers": [
+   "Martin Wecke"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Lab Mono"
+  ],
+  "url": "https://github.com/hatsumatsu/Lab-Mono",
+  "repo": "https://github.com/hatsumatsu/Lab-Mono",
+  "rev": "df43b694862a22df19c1f2bf6b69f84337ca2a26",
+  "category": "Monospace",
+  "files": {
+   "400": "LabMono-Regular.otf"
+  }
+ },
+ {
+  "family": "Lil Grotesk",
+  "foundry": "Bastien Sozeau",
+  "designers": [
+   "Bastien Sozeau"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://github.com/bsozoo/LilGrotesk",
+  "repo": "https://github.com/bsozoo/LilGrotesk",
+  "rev": "150b9c8405ee95185c32023c09a430972309cfde",
+  "category": "Sans Serif",
+  "files": {
+   "100": "fonts/otf/LilGrotesk-Thin.otf",
+   "200": "fonts/otf/LilGrotesk-ExtraLight.otf",
+   "300": "fonts/otf/LilGrotesk-Light.otf",
+   "400": "fonts/otf/LilGrotesk-Regular.otf",
+   "500": "fonts/otf/LilGrotesk-Medium.otf",
+   "700": "fonts/otf/LilGrotesk-Bold.otf",
+   "800": "fonts/otf/LilGrotesk-Heavy.otf",
+   "900": "fonts/otf/LilGrotesk-Black.otf"
+  },
+  "variable": "docs/proof/LilGrotesk[wght].ttf"
+ },
+ {
+  "family": "Linux Biolinum",
+  "foundry": "Libertine Open Fonts Project",
+  "designers": [
+   "Philipp H. Poll"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "libertine/doc/LICENCE.txt",
+  "rfn": [
+   "Linux Libertine",
+   "Linux Biolinum"
+  ],
+  "url": "http://www.linuxlibertine.org/",
+  "zip": "https://mirrors.ctan.org/fonts/libertine.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "libertine/opentype/LinBiolinum_R.otf",
+   "700": "libertine/opentype/LinBiolinum_RB.otf",
+   "400i": "libertine/opentype/LinBiolinum_RI.otf",
+   "700i": "libertine/opentype/LinBiolinum_RBO.otf"
+  }
+ },
+ {
+  "family": "Linux Libertine",
+  "foundry": "Libertine Open Fonts Project",
+  "designers": [
+   "Philipp H. Poll"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "libertine/doc/LICENCE.txt",
+  "rfn": [
+   "Linux Libertine",
+   "Linux Biolinum"
+  ],
+  "url": "http://www.linuxlibertine.org/",
+  "zip": "https://mirrors.ctan.org/fonts/libertine.zip",
+  "category": "Serif",
+  "files": {
+   "400": "libertine/opentype/LinLibertine_R.otf",
+   "600": "libertine/opentype/LinLibertine_RZ.otf",
+   "700": "libertine/opentype/LinLibertine_RB.otf",
+   "400i": "libertine/opentype/LinLibertine_RI.otf",
+   "600i": "libertine/opentype/LinLibertine_RZI.otf",
+   "700i": "libertine/opentype/LinLibertine_RBI.otf"
+  }
+ },
+ {
+  "family": "Luculent",
+  "foundry": "Andrew Kensler",
+  "designers": [
+   "Andrew Kensler"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "Luculent"
+  ],
+  "url": "http://eastfarthing.com/luculent/",
+  "zip": "http://eastfarthing.com/luculent/luculent.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "luculent/luculent.ttf",
+   "700": "luculent/luculentb.ttf",
+   "400i": "luculent/luculenti.ttf",
+   "700i": "luculent/luculentbi.ttf"
+  }
+ },
+ {
+  "family": "Lunchtype",
+  "foundry": "Stefan Wetterstrand",
+  "designers": [
+   "Stefan Wetterstrand"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENCE.md",
+  "rfn": [],
+  "url": "https://github.com/fontalternative/lunchtype",
+  "repo": "https://github.com/fontalternative/lunchtype",
+  "rev": "99a4fa5a036d45f987cb03f4fe84a61b4450d28d",
+  "category": "Sans Serif",
+  "files": {
+   "300": "ttf/Lunchtype22-Light.ttf",
+   "400": "ttf/Lunchtype22-Regular.ttf",
+   "500": "ttf/Lunchtype22-Medium.ttf",
+   "300i": "ttf/Lunchtype23-Light-Italic.ttf",
+   "400i": "ttf/Lunchtype23-Regular-Italic.ttf",
+   "500i": "ttf/Lunchtype23-Medium-Italic.ttf"
+  }
+ },
+ {
+  "family": "Lunchtype Condensed",
+  "foundry": "Stefan Wetterstrand",
+  "designers": [
+   "Stefan Wetterstrand"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENCE.md",
+  "rfn": [],
+  "url": "https://github.com/fontalternative/lunchtype",
+  "repo": "https://github.com/fontalternative/lunchtype",
+  "rev": "99a4fa5a036d45f987cb03f4fe84a61b4450d28d",
+  "category": "Sans Serif",
+  "files": {
+   "300": "ttf/Lunchtype25-Light_Condensed.ttf",
+   "400": "ttf/Lunchtype25-Regular_Condensed.ttf",
+   "500": "ttf/Lunchtype25-Medium-Condensed.ttf"
+  }
+ },
+ {
+  "family": "Lunchtype Expanded",
+  "foundry": "Stefan Wetterstrand",
+  "designers": [
+   "Stefan Wetterstrand"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENCE.md",
+  "rfn": [],
+  "url": "https://github.com/fontalternative/lunchtype",
+  "repo": "https://github.com/fontalternative/lunchtype",
+  "rev": "99a4fa5a036d45f987cb03f4fe84a61b4450d28d",
+  "category": "Sans Serif",
+  "files": {
+   "300": "ttf/Lunchtype24-Light-Expanded.ttf",
+   "400": "ttf/Lunchtype24-Regular-Expanded.ttf",
+   "500": "ttf/Lunchtype24-Medium-Expanded.ttf"
+  }
+ },
+ {
+  "family": "Sean Sans",
+  "foundry": "Simon Egli",
+  "designers": [
+   "Simon Egli"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Sean Sans"
+  ],
+  "url": "https://github.com/metapolator/canola",
+  "repo": "https://github.com/metapolator/canola",
+  "rev": "e86fe7c4eaae096d5cc83057980fc083686aab4b",
+  "category": "Sans Serif",
+  "files": {
+   "100": "beta/Sans/Instances/OTF/SeanSans-NormalThin.otf",
+   "200": "beta/Sans/Instances/OTF/SeanSans-NormalExtralight.otf",
+   "300": "beta/Sans/Instances/OTF/SeanSans-NormalLight.otf",
+   "400": "beta/Sans/Instances/OTF/SeanSans-NormalRegular.otf",
+   "500": "beta/Sans/Instances/OTF/SeanSans-NormalMedium.otf",
+   "600": "beta/Sans/Instances/OTF/SeanSans-NormalSemibold.otf",
+   "700": "beta/Sans/Instances/OTF/SeanSans-NormalBold.otf",
+   "800": "beta/Sans/Instances/OTF/SeanSans-NormalExtrabold.otf",
+   "900": "beta/Sans/Instances/OTF/SeanSans-NormalBlack.otf"
+  }
+ },
+ {
+  "family": "Sean Sans Compressed",
+  "foundry": "Simon Egli",
+  "designers": [
+   "Simon Egli"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Sean Sans"
+  ],
+  "url": "https://github.com/metapolator/canola",
+  "repo": "https://github.com/metapolator/canola",
+  "rev": "e86fe7c4eaae096d5cc83057980fc083686aab4b",
+  "category": "Sans Serif",
+  "files": {
+   "100": "beta/Sans/Instances/OTF/SeanSans-CompressedThin.otf",
+   "200": "beta/Sans/Instances/OTF/SeanSans-CompressedExtralight.otf",
+   "300": "beta/Sans/Instances/OTF/SeanSans-CompressedLight.otf",
+   "400": "beta/Sans/Instances/OTF/SeanSans-CompressedRegular.otf",
+   "500": "beta/Sans/Instances/OTF/SeanSans-CompressedMedium.otf",
+   "600": "beta/Sans/Instances/OTF/SeanSans-CompressedSemibold.otf",
+   "700": "beta/Sans/Instances/OTF/SeanSans-CompressedBold.otf",
+   "800": "beta/Sans/Instances/OTF/SeanSans-CompressedExtrabold.otf",
+   "900": "beta/Sans/Instances/OTF/SeanSans-CompressedBlack.otf"
+  }
+ },
+ {
+  "family": "Sean Sans Wide",
+  "foundry": "Simon Egli",
+  "designers": [
+   "Simon Egli"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Sean Sans"
+  ],
+  "url": "https://github.com/metapolator/canola",
+  "repo": "https://github.com/metapolator/canola",
+  "rev": "e86fe7c4eaae096d5cc83057980fc083686aab4b",
+  "category": "Sans Serif",
+  "files": {
+   "100": "beta/Sans/Instances/OTF/SeanSans-WideThin.otf",
+   "200": "beta/Sans/Instances/OTF/SeanSans-WideExtralight.otf",
+   "300": "beta/Sans/Instances/OTF/SeanSans-WideLight.otf",
+   "400": "beta/Sans/Instances/OTF/SeanSans-WideRegular.otf",
+   "500": "beta/Sans/Instances/OTF/SeanSans-WideMedium.otf",
+   "600": "beta/Sans/Instances/OTF/SeanSans-WideSemibold.otf",
+   "700": "beta/Sans/Instances/OTF/SeanSans-WideBold.otf",
+   "800": "beta/Sans/Instances/OTF/SeanSans-WideExtrabold.otf",
+   "900": "beta/Sans/Instances/OTF/SeanSans-WideBlack.otf"
+  }
+ },
+ {
+  "family": "Sean Slab",
+  "foundry": "Simon Egli",
+  "designers": [
+   "Simon Egli"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Sean Sans"
+  ],
+  "url": "https://github.com/metapolator/canola",
+  "repo": "https://github.com/metapolator/canola",
+  "rev": "e86fe7c4eaae096d5cc83057980fc083686aab4b",
+  "category": "Serif",
+  "files": {
+   "100": "beta/Slab/Instances/OTF/SeanSlab-NormalThin.otf",
+   "200": "beta/Slab/Instances/OTF/SeanSlab-NormalExtralight.otf",
+   "300": "beta/Slab/Instances/OTF/SeanSlab-NormalLight.otf",
+   "400": "beta/Slab/Instances/OTF/SeanSlab-NormalRegular.otf",
+   "500": "beta/Slab/Instances/OTF/SeanSlab-NormalMedium.otf",
+   "600": "beta/Slab/Instances/OTF/SeanSlab-NormalSemibold.otf",
+   "700": "beta/Slab/Instances/OTF/SeanSlab-NormalBold.otf",
+   "800": "beta/Slab/Instances/OTF/SeanSlab-NormalExtrabold.otf",
+   "900": "beta/Slab/Instances/OTF/SeanSlab-NormalBlack.otf"
+  }
+ },
+ {
+  "family": "Sean Slab Compressed",
+  "foundry": "Simon Egli",
+  "designers": [
+   "Simon Egli"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Sean Sans"
+  ],
+  "url": "https://github.com/metapolator/canola",
+  "repo": "https://github.com/metapolator/canola",
+  "rev": "e86fe7c4eaae096d5cc83057980fc083686aab4b",
+  "category": "Serif",
+  "files": {
+   "100": "beta/Slab/Instances/OTF/SeanSlab-CompressedThin.otf",
+   "200": "beta/Slab/Instances/OTF/SeanSlab-CompressedExtralight.otf",
+   "300": "beta/Slab/Instances/OTF/SeanSlab-CompressedLight.otf",
+   "400": "beta/Slab/Instances/OTF/SeanSlab-CompressedRegular.otf",
+   "500": "beta/Slab/Instances/OTF/SeanSlab-CompressedMedium.otf",
+   "600": "beta/Slab/Instances/OTF/SeanSlab-CompressedSemibold.otf",
+   "700": "beta/Slab/Instances/OTF/SeanSlab-CompressedBold.otf",
+   "800": "beta/Slab/Instances/OTF/SeanSlab-CompressedExtrabold.otf",
+   "900": "beta/Slab/Instances/OTF/SeanSlab-CompressedBlack.otf"
+  }
+ },
+ {
+  "family": "Sean Slab Wide",
+  "foundry": "Simon Egli",
+  "designers": [
+   "Simon Egli"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Sean Sans"
+  ],
+  "url": "https://github.com/metapolator/canola",
+  "repo": "https://github.com/metapolator/canola",
+  "rev": "e86fe7c4eaae096d5cc83057980fc083686aab4b",
+  "category": "Serif",
+  "files": {
+   "100": "beta/Slab/Instances/OTF/SeanSlab-WideThin.otf",
+   "200": "beta/Slab/Instances/OTF/SeanSlab-WideExtralight.otf",
+   "300": "beta/Slab/Instances/OTF/SeanSlab-WideLight.otf",
+   "400": "beta/Slab/Instances/OTF/SeanSlab-WideRegular.otf",
+   "500": "beta/Slab/Instances/OTF/SeanSlab-WideMedium.otf",
+   "600": "beta/Slab/Instances/OTF/SeanSlab-WideSemibold.otf",
+   "700": "beta/Slab/Instances/OTF/SeanSlab-WideBold.otf",
+   "800": "beta/Slab/Instances/OTF/SeanSlab-WideExtrabold.otf",
+   "900": "beta/Slab/Instances/OTF/SeanSlab-WideBlack.otf"
+  }
+ }
+]

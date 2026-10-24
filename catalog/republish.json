@@ -1,0 +1,125 @@
+[
+ {
+  "family": "Barber",
+  "foundry": "Republish",
+  "designers": [
+   "Giang Nguyen",
+   "Minh Nguyen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://republi.sh/#barber",
+  "zip": "https://republi.sh/wp-content/uploads/2020/05/Barber-v2.0-1.zip",
+  "category": "Display",
+  "files": {
+   "700": "Barber-v2.0/Fonts/Barber-Complete.otf"
+  }
+ },
+ {
+  "family": "Danh Da",
+  "foundry": "Republish",
+  "designers": [
+   "Giang Nguyen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://republi.sh/#danhda",
+  "zip": "https://republi.sh/wp-content/uploads/2020/05/Danhda-v2.0-1.zip",
+  "category": "Display",
+  "files": {
+   "700": "Danhda-v2.0/Fonts/DanhDa-Bold.otf"
+  }
+ },
+ {
+  "family": "Finesse",
+  "foundry": "Republish",
+  "designers": [
+   "Hoàng Lê"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://republi.sh/#finesse",
+  "zip": "https://republi.sh/finesse-v2-0/",
+  "category": "Handwriting",
+  "files": {
+   "400": "Finesse-v2.0/Fonts/Finesse-Roman.otf",
+   "400i": "Finesse-v2.0/Fonts/Finesse-Italic.otf"
+  }
+ },
+ {
+  "family": "Finesse Flair",
+  "foundry": "Republish",
+  "designers": [
+   "Hoàng Lê"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://republi.sh/#finesse",
+  "zip": "https://republi.sh/finesse-v2-0/",
+  "category": "Handwriting",
+  "files": {
+   "400": "Finesse-v2.0/Fonts/Finesse-Flair.otf"
+  }
+ },
+ {
+  "family": "Finesse Future",
+  "foundry": "Republish",
+  "designers": [
+   "Hoàng Lê"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://republi.sh/#finesse",
+  "zip": "https://republi.sh/finesse-v2-0/",
+  "category": "Display",
+  "files": {
+   "400": "Finesse-v2.0/Fonts/Finesse-Future.otf"
+  }
+ },
+ {
+  "family": "Patriot",
+  "foundry": "Republish",
+  "designers": [
+   "Hoàng Lê"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://republi.sh/#patriot",
+  "zip": "https://republi.sh/wp-content/uploads/2021/02/Patriot-v1.0-1.zip",
+  "category": "Display",
+  "files": {
+   "300": "Patriot-v1.0/Fonts/Patriot-Light.otf",
+   "400": "Patriot-v1.0/Fonts/Patriot-Normal.otf",
+   "500": "Patriot-v1.0/Fonts/Patriot-Medium.otf",
+   "700": "Patriot-v1.0/Fonts/Patriot-Bold.otf",
+   "800": "Patriot-v1.0/Fonts/Patriot-UltraBold.otf",
+   "900": "Patriot-v1.0/Fonts/Patriot-Black.otf"
+  }
+ },
+ {
+  "family": "Westgate",
+  "foundry": "Republish",
+  "designers": [
+   "Giang Nguyen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://republi.sh/#westgate",
+  "zip": "https://republi.sh/wp-content/uploads/2020/05/Westgate-v2.0-1.zip",
+  "category": "Display",
+  "files": {
+   "100": "Westgate-v2.0/Fonts/Westgate-Thin.otf",
+   "300": "Westgate-v2.0/Fonts/Westgate-Light.otf",
+   "400": "Westgate-v2.0/Fonts/Westgate-Regular.otf",
+   "600": "Westgate-v2.0/Fonts/Westgate-Semibold.otf",
+   "700": "Westgate-v2.0/Fonts/Westgate-Bold.otf"
+  }
+ }
+]

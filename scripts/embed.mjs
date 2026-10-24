@@ -172,7 +172,9 @@ for (const ch of CHARS) {
   if (only) {
     const rows = await embedAll(only.map((i) => fonts[i]), ch, 'regular');
     const file = `${OUT}/${code}.f32`;
-    const all = new Float32Array(fs.readFileSync(file).buffer.slice(0));
+    // Families added at the end of the manifest are not in the file yet.
+    const all = new Float32Array(fonts.length * ROW);
+    all.set(new Float32Array(fs.readFileSync(file).buffer.slice(0)).subarray(0, all.length));
     only.forEach((i, k) => all.set(rows.subarray(k * ROW, (k + 1) * ROW), i * ROW));
     fs.writeFileSync(file, all);
     continue;

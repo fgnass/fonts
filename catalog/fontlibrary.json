@@ -1,0 +1,6802 @@
+[
+ {
+  "family": "Capitalis",
+  "foundry": "Taniwha",
+  "designers": [
+   "Taniwha"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/capitalis-minimalis",
+  "zip": "https://fontlibrary.org/assets/downloads/capitalis-minimalis/58a6657f96d066ac9c9b1965f3cfe48d/capitalis-minimalis.zip",
+  "category": "Serif",
+  "files": {
+   "500": "minicaps.ttf"
+  }
+ },
+ {
+  "family": "Gamaliel",
+  "foundry": "Rafael Ferran i Peralta",
+  "designers": [
+   "Rafael Ferran i Peralta"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/gamaliel",
+  "zip": "https://fontlibrary.org/assets/downloads/gamaliel/e0c9601992c81cd08b8d449411bc0ac6/gamaliel.zip",
+  "category": "Display",
+  "files": {
+   "500": "Gamaliel/Gamaliel/Gamaliel.otf"
+  }
+ },
+ {
+  "family": "Schilder Grotesk",
+  "foundry": "Taniwha",
+  "designers": [
+   "Taniwha"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/schilder-grotesk",
+  "zip": "https://fontlibrary.org/assets/downloads/schilder-grotesk/2f042cc97912925f0afd0b8cf7013cb7/schilder-grotesk.zip",
+  "category": "Display",
+  "files": {
+   "500": "schilder.ttf"
+  }
+ },
+ {
+  "family": "Hussar Techniczny",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/hussar-techniczny",
+  "zip": "https://fontlibrary.org/assets/downloads/hussar-techniczny/582bedd81c12820f580ffa15b43ea949/hussar-techniczny.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "HussarTechniczny.otf"
+  }
+ },
+ {
+  "family": "Saucy Jack",
+  "foundry": "Nick Matavka",
+  "designers": [
+   "Nick Matavka"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/saucy-jack",
+  "zip": "https://fontlibrary.org/assets/downloads/saucy-jack/5afafe12d85a618d3f8d2f444352c9ff/saucy-jack.zip",
+  "category": "Handwriting",
+  "files": {
+   "400i": "Saucy Jack.ttf"
+  }
+ },
+ {
+  "family": "H0bby of night Condensed",
+  "foundry": "deFharo",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Hobby of night"
+  ],
+  "url": "https://fontlibrary.org/en/font/hobby-of-night",
+  "zip": "https://fontlibrary.org/assets/downloads/hobby-of-night/08f1ccd68d02be14fa45dd7c55e80d15/hobby-of-night.zip",
+  "category": "Display",
+  "files": {
+   "400": "Hobby-of-night.ttf"
+  }
+ },
+ {
+  "family": "Aghja",
+  "foundry": "Philippe Cochy",
+  "designers": [
+   "Philippe Cochy"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/otfpoc",
+  "zip": "https://fontlibrary.org/assets/downloads/otfpoc/080dd7a4cbefec3a7797d583055e8a44/otfpoc.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "Aghja.otf"
+  }
+ },
+ {
+  "family": "Marapfhont",
+  "foundry": "Tim Larson",
+  "designers": [
+   "Tim Larson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/marapfhont",
+  "zip": "https://fontlibrary.org/assets/downloads/marapfhont/ed5028401ab4d6cb4c8d144f739009ae/marapfhont.zip",
+  "category": "Display",
+  "files": {
+   "400": "Marapfhont.ttf"
+  }
+ },
+ {
+  "family": "JakobSC",
+  "foundry": "Taniwha",
+  "designers": [
+   "Taniwha"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENCE.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/jakob",
+  "zip": "https://fontlibrary.org/assets/downloads/jakob/ce3e32fc2e8b348158b8b1636deafa39/jakob.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "otf/jakob_sc.otf"
+  }
+ },
+ {
+  "family": "Binz",
+  "foundry": "Kay Stenschke",
+  "designers": [
+   "Kay Stenschke"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/binz-medium",
+  "zip": "https://fontlibrary.org/assets/downloads/binz-medium/bdde814202b761eb130e376998fe6594/binz-medium.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "Binz-v1-0-0/Binz.ttf"
+  }
+ },
+ {
+  "family": "Caslon OS",
+  "foundry": "Hanken Design Co",
+  "designers": [
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/caslon-os",
+  "zip": "https://fontlibrary.org/assets/downloads/caslon-os/b44cf3e95c2e2e73244ddc8ca0ab8be1/caslon-os.zip",
+  "category": "Serif",
+  "files": {
+   "400": "CaslonOS-Regular.otf"
+  }
+ },
+ {
+  "family": "Standard",
+  "foundry": "Bryce Wilner",
+  "designers": [
+   "Bryce Wilner"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/standard",
+  "zip": "https://fontlibrary.org/assets/downloads/standard/b6def3e64fa1a6e261ac5954d7ced67a/standard.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "standard-font/standard-bold.otf",
+   "700i": "standard-font/standard-bold-italic.otf"
+  }
+ },
+ {
+  "family": "La chata",
+  "foundry": "Fernando Haro",
+  "designers": [
+   "Fernando Haro"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "La-chata-normal/OFL.txt",
+  "rfn": [
+   "Marck Script"
+  ],
+  "url": "https://fontlibrary.org/en/font/la-chata",
+  "zip": "https://fontlibrary.org/assets/downloads/la-chata/0e36b00d348f2ce6086a9d1b284f87f3/la-chata.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "La-chata-normal/La-chata-normal.otf"
+  }
+ },
+ {
+  "family": "Quaerite Regnum Dei",
+  "foundry": "Fredrick R. Brennan",
+  "designers": [
+   "Fredrick R. Brennan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/quaerite-regnum-dei",
+  "zip": "https://fontlibrary.org/assets/downloads/quaerite-regnum-dei/06eadab39996a1280946bd5d49addc4f/quaerite-regnum-dei.zip",
+  "category": "Display",
+  "files": {
+   "400": "QuaeriteRegnumDei.otf"
+  }
+ },
+ {
+  "family": "D-DIN",
+  "foundry": "Datto Inc",
+  "designers": [
+   "Charles Nix"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-1.1.txt",
+  "rfn": [
+   "D-DIN",
+   "D-DIN Condensed",
+   "D-DIN Expanded"
+  ],
+  "url": "https://fontlibrary.org/en/font/d-din",
+  "zip": "https://fontlibrary.org/assets/downloads/d-din/39fc8c3de156292478f87c2ff0b96df2/d-din.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "D-DIN.otf",
+   "700": "D-DIN-Bold.otf",
+   "400i": "D-DIN-Italic.otf"
+  }
+ },
+ {
+  "family": "D-DIN Condensed",
+  "foundry": "Datto Inc",
+  "designers": [
+   "Charles Nix"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-1.1.txt",
+  "rfn": [
+   "D-DIN",
+   "D-DIN Condensed",
+   "D-DIN Expanded"
+  ],
+  "url": "https://fontlibrary.org/en/font/d-din",
+  "zip": "https://fontlibrary.org/assets/downloads/d-din/39fc8c3de156292478f87c2ff0b96df2/d-din.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "D-DINCondensed.otf",
+   "700": "D-DINCondensed-Bold.otf"
+  }
+ },
+ {
+  "family": "D-DIN Exp Expanded",
+  "foundry": "Datto Inc",
+  "designers": [
+   "Charles Nix"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-1.1.txt",
+  "rfn": [
+   "D-DIN",
+   "D-DIN Condensed",
+   "D-DIN Expanded"
+  ],
+  "url": "https://fontlibrary.org/en/font/d-din",
+  "zip": "https://fontlibrary.org/assets/downloads/d-din/39fc8c3de156292478f87c2ff0b96df2/d-din.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "D-DINExp.otf",
+   "700": "D-DINExp-Bold.otf",
+   "400i": "D-DINExp-Italic.otf"
+  }
+ },
+ {
+  "family": "Puk",
+  "foundry": "Robert Martinez",
+  "designers": [
+   "Robert Martinez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/puk",
+  "zip": "https://fontlibrary.org/assets/downloads/puk/7610f5253843af7088032ba79dedba4b/puk.zip",
+  "category": "Display",
+  "files": {
+   "400": "fonts/Puk_Desktop_OTF/Puk-Regular.otf"
+  }
+ },
+ {
+  "family": "Square Antiqua",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/squareantiqua",
+  "zip": "https://fontlibrary.org/assets/downloads/squareantiqua/e4f46c7494a2a5dfd26f0f706f61b418/squareantiqua.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Square Antiqua/SquareAntiqua-Book.ttf",
+   "700": "Square Antiqua/SquareAntiqua-Bold.ttf",
+   "400i": "Square Antiqua/SquareAntiqua-BookOblique.ttf",
+   "700i": "Square Antiqua/SquareAntiqua-BoldOblique.ttf"
+  }
+ },
+ {
+  "family": "TraceDots",
+  "foundry": "j4p4n",
+  "designers": [
+   "j4p4n"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/tracedots",
+  "zip": "https://fontlibrary.org/assets/downloads/tracedots/51f7b55d105ff8fb2bad458267e353ce/tracedots.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "TraceDots.ttf"
+  }
+ },
+ {
+  "family": "Alphabet Caps Lined",
+  "foundry": "Alina Sava",
+  "designers": [
+   "Alina Sava"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "alphabet-caps-lined/license.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/alphabet-caps-lined",
+  "zip": "https://fontlibrary.org/assets/downloads/alphabet-caps-lined/6c2e51a74fe40319960e9fedd5ae4acf/alphabet-caps-lined.zip",
+  "category": "Display",
+  "files": {
+   "400": "alphabet-caps-lined/AlphabetCapsLined.otf"
+  }
+ },
+ {
+  "family": "Sztylet",
+  "foundry": "Cannot Into Space Fonts, PlusOne Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/sztylet",
+  "zip": "https://fontlibrary.org/assets/downloads/sztylet/038189c773c5df0967987ddcb0fa2fc8/sztylet.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "SztyletBd.otf"
+  }
+ },
+ {
+  "family": "Hi.",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [
+   "Mew Too, Robert Jablonski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/hi",
+  "zip": "https://fontlibrary.org/assets/downloads/hi/af7dc92bc48c622fcc11c9ccef1ee30e/hi.zip",
+  "category": "Display",
+  "files": {
+   "400": "Hi.otf"
+  }
+ },
+ {
+  "family": "Peleja",
+  "foundry": "Bruno de Souza Leão",
+  "designers": [
+   "Bruno de Souza Leão"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/peleja",
+  "zip": "https://fontlibrary.org/assets/downloads/peleja/638c63ca7da24f2baa4adc059d8346d4/peleja.zip",
+  "category": "Display",
+  "files": {
+   "400": "peleja-regular-1.0.otf"
+  }
+ },
+ {
+  "family": "Broadaxe Revolution",
+  "foundry": "Loki Gwynbleidd",
+  "designers": [
+   "Loki Gwynbleidd"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/broadaxe-revolution",
+  "zip": "https://fontlibrary.org/assets/downloads/broadaxe-revolution/2836df376e97ca0a2b81df3aa4a66ac7/broadaxe-revolution.zip",
+  "category": "Display",
+  "files": {
+   "400": "BroadaxeRevolution.ttf"
+  }
+ },
+ {
+  "family": "Amburegul",
+  "foundry": "Aydi Rainkarnichi",
+  "designers": [
+   "Aydi Rainkarnichi"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Amburegul_v001.000_rev2/OFL.txt",
+  "rfn": [
+   "Amburegul"
+  ],
+  "url": "https://fontlibrary.org/en/font/amburegul",
+  "zip": "https://fontlibrary.org/assets/downloads/amburegul/32de3a50c59699794bcca9d16a459d6e/amburegul.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "Amburegul_v001.000_rev2/Amburegul.otf"
+  }
+ },
+ {
+  "family": "KiriFont",
+  "foundry": "Pablo Lizardo",
+  "designers": [
+   "Pablo Lizardo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/kirifont",
+  "zip": "https://fontlibrary.org/assets/downloads/kirifont/e14eba6be2e2bf4a547c109771c3936d/kirifont.zip",
+  "category": "Display",
+  "files": {
+   "400": "KiriFont.otf"
+  }
+ },
+ {
+  "family": "The Alarm",
+  "foundry": "Loki Gwynbleidd",
+  "designers": [
+   "Loki Gwynbleidd"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/the-alarm",
+  "zip": "https://fontlibrary.org/assets/downloads/the-alarm/ae4faa3779bed48a0534c06955848a55/the-alarm.zip",
+  "category": "Display",
+  "files": {
+   "400": "The Alarm.ttf"
+  }
+ },
+ {
+  "family": "J.M. Nexus Grotesque",
+  "foundry": "deFharo",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "J.M. Nexus"
+  ],
+  "url": "https://fontlibrary.org/en/font/j-m-nexus-grotesque",
+  "zip": "https://fontlibrary.org/assets/downloads/j-m-nexus-grotesque/a264576258d60a50d02d285f3c1d37f8/j-m-nexus-grotesque.zip",
+  "category": "Display",
+  "files": {
+   "400": "J.M.Nexus-Grotesque.ttf"
+  }
+ },
+ {
+  "family": "Arco Perpetuo",
+  "foundry": "Alfredo Marco Pradil",
+  "designers": [
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/arco-perpetuo",
+  "zip": "https://fontlibrary.org/assets/downloads/arco-perpetuo/6f58dfea86e591b535e4a11d13364ea1/arco-perpetuo.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "ArcoPerpetuo-Regular.ttf"
+  }
+ },
+ {
+  "family": "lerotica",
+  "foundry": "deFharo",
+  "designers": [
+   "defharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "lerotica-regular/OFL.txt",
+  "rfn": [
+   "Marck Script"
+  ],
+  "url": "https://fontlibrary.org/en/font/lertica",
+  "zip": "https://fontlibrary.org/assets/downloads/lertica/5df1273a283df6ceb13a4b766e14cde6/lertica.zip",
+  "category": "Serif",
+  "files": {
+   "400": "lerotica-regular/lerotica-regular.otf"
+  }
+ },
+ {
+  "family": "Manila Sans",
+  "foundry": "Andrew Paglinawan",
+  "designers": [
+   "Andrew Paglinawan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/rocketpayzfont",
+  "zip": "https://fontlibrary.org/assets/downloads/rocketpayzfont/5ea4477f9cd81caf6d172e52849de631/rocketpayzfont.zip",
+  "category": "Serif",
+  "files": {
+   "700": "ManilaSansBld.otf"
+  }
+ },
+ {
+  "family": "Nicolas Frespech",
+  "foundry": "Nicolas Frespech",
+  "designers": [
+   "Nicolas Frespech"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/nicolas-frespech",
+  "zip": "https://fontlibrary.org/assets/downloads/nicolas-frespech/eb57254de11f43a863e28c7312def728/nicolas-frespech.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "Nicolas_Frespech.otf"
+  }
+ },
+ {
+  "family": "Mrs Beasley",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Mrs Beasley"
+  ],
+  "url": "https://fontlibrary.org/en/font/mrs-beasley",
+  "zip": "https://fontlibrary.org/assets/downloads/mrs-beasley/d28f720a1804ae9611b894b92c05dec4/mrs-beasley.zip",
+  "category": "Display",
+  "files": {
+   "400": "Mrs Beasley.ttf"
+  }
+ },
+ {
+  "family": "Code New Roman",
+  "foundry": "TypoStyle Co",
+  "designers": [
+   "Samiru R"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/code-new-roman",
+  "zip": "https://fontlibrary.org/assets/downloads/code-new-roman/2a82f29eedcdfe52fc23336e2e30ac22/code-new-roman.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "cnr.otf"
+  }
+ },
+ {
+  "family": "Warszawa",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/warszawa",
+  "zip": "https://fontlibrary.org/assets/downloads/warszawa/119a131ec08d19f428d3c435ee1b066c/warszawa.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Warszawa.otf"
+  }
+ },
+ {
+  "family": "Prodigy Sans",
+  "foundry": "Wei Huang",
+  "designers": [
+   "Wei Huang"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/prodigy-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/prodigy-sans/f1bb9d147552ee655b7bec29a3a0969b/prodigy-sans.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "fonts/desktop/ProdigySans-Thin.otf",
+   "200": "fonts/desktop/ProdigySans-ExtraLight.otf",
+   "300": "fonts/desktop/ProdigySans-Light.otf",
+   "400": "fonts/desktop/ProdigySans-Regular.otf",
+   "500": "fonts/desktop/ProdigySans-Medium.otf",
+   "600": "fonts/desktop/ProdigySans-SemiBold.otf",
+   "700": "fonts/desktop/ProdigySans-Bold.otf",
+   "800": "fonts/desktop/ProdigySans-ExtraBold.otf",
+   "900": "fonts/desktop/ProdigySans-Black.otf",
+   "100i": "fonts/desktop/ProdigySans-ThinItalic.otf",
+   "200i": "fonts/desktop/ProdigySans-ExtraLightItalic.otf",
+   "300i": "fonts/desktop/ProdigySans-LightItalic.otf",
+   "400i": "fonts/desktop/ProdigySans-Italic.otf",
+   "500i": "fonts/desktop/ProdigySans-MediumItalic.otf",
+   "600i": "fonts/desktop/ProdigySans-SemiBoldItalic.otf",
+   "700i": "fonts/desktop/ProdigySans-BoldItalic.otf",
+   "800i": "fonts/desktop/ProdigySans-ExtraBoldItalic.otf",
+   "900i": "fonts/desktop/ProdigySans-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Dogica",
+  "foundry": "Roberto Mocci",
+  "designers": [
+   "Roberto Mocci"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/dogica",
+  "zip": "https://fontlibrary.org/assets/downloads/dogica/8afa8668b806e5466fa90e9826e56774/dogica.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "OTF/dogica.otf",
+   "700": "OTF/dogicabold.otf"
+  }
+ },
+ {
+  "family": "Dogica Pixel",
+  "foundry": "Roberto Mocci",
+  "designers": [
+   "Roberto Mocci"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/dogica",
+  "zip": "https://fontlibrary.org/assets/downloads/dogica/8afa8668b806e5466fa90e9826e56774/dogica.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "OTF/dogicapixel.otf",
+   "700": "OTF/dogicapixelbold.otf"
+  }
+ },
+ {
+  "family": "Courier Prime Code",
+  "foundry": "Quote-Unquote Apps",
+  "designers": [
+   "Alan Dague-Greene"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/courier-prime-code",
+  "zip": "https://fontlibrary.org/assets/downloads/courier-prime-code/b708dc0c59481ac3da86518a98d74dfa/courier-prime-code.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "ttf/Courier Prime Code.ttf",
+   "400i": "ttf/Courier Prime Code Italic.ttf"
+  }
+ },
+ {
+  "family": "Ackermann",
+  "foundry": "James Kilfiger",
+  "designers": [
+   "James Kilfiger"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/ackermann",
+  "zip": "https://fontlibrary.org/assets/downloads/ackermann/e2e1d4d4225556079e020ac5926e60e2/ackermann.zip",
+  "category": "Serif",
+  "files": {
+   "500i": "Ackermann.otf"
+  }
+ },
+ {
+  "family": "Horta Condensed",
+  "foundry": "Tim Larson",
+  "designers": [
+   "Tim Larson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/horta",
+  "zip": "https://fontlibrary.org/assets/downloads/horta/8551728fb6df72908168efc55dbf80c9/horta.zip",
+  "category": "Display",
+  "files": {
+   "400": "Horta demo.otf"
+  }
+ },
+ {
+  "family": "MiTica",
+  "foundry": "Rafael Ferran i Peralta",
+  "designers": [
+   "Rafael Ferran i Peralta"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/mitica",
+  "zip": "https://fontlibrary.org/assets/downloads/mitica/ca3c213a84ce609d7710c667dca291d8/mitica.zip",
+  "category": "Display",
+  "files": {
+   "400": "MiTica/MiTica.otf"
+  }
+ },
+ {
+  "family": "Banana Brick",
+  "foundry": "artmaker",
+  "designers": [
+   "artmaker"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/banana-brick",
+  "zip": "https://fontlibrary.org/assets/downloads/banana-brick/2100182bf265504c3dc286eccb6383a9/banana-brick.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "BBrick.otf"
+  }
+ },
+ {
+  "family": "Neomatrix Code",
+  "foundry": "Josue Acevedo Maldonado",
+  "designers": [
+   "Josue Acevedo Maldonado"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/neomatrixcode",
+  "zip": "https://fontlibrary.org/assets/downloads/neomatrixcode/385e194b8d6946c64a41e3636145e13e/neomatrixcode.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "NeomatrixCode.ttf"
+  }
+ },
+ {
+  "family": "Pacaya",
+  "foundry": "Daniel Johnson",
+  "designers": [
+   "Daniel Johnson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/pacaya",
+  "zip": "https://fontlibrary.org/assets/downloads/pacaya/cbe814a9bbf2b4122bb3ab62b95aef1c/pacaya.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "Pacaya.otf"
+  }
+ },
+ {
+  "family": "Sputnik Outline",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Sputnik"
+  ],
+  "url": "https://fontlibrary.org/en/font/sputnik",
+  "zip": "https://fontlibrary.org/assets/downloads/sputnik/f31417d95dc792a506eb47eb60b63ec8/sputnik.zip",
+  "category": "Display",
+  "files": {
+   "400": "Sputnik Outline.ttf"
+  }
+ },
+ {
+  "family": "Sputnik",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Sputnik"
+  ],
+  "url": "https://fontlibrary.org/en/font/sputnik",
+  "zip": "https://fontlibrary.org/assets/downloads/sputnik/f31417d95dc792a506eb47eb60b63ec8/sputnik.zip",
+  "category": "Display",
+  "files": {
+   "400": "Sputnik.ttf"
+  }
+ },
+ {
+  "family": "Brivido",
+  "foundry": "Roberto Boschetto",
+  "designers": [
+   "Roberto Boschetto"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "brivido-font/OFL.txt",
+  "rfn": [
+   "Brivido"
+  ],
+  "url": "https://fontlibrary.org/en/font/brivido",
+  "zip": "https://fontlibrary.org/assets/downloads/brivido/9597a29c71cdf5f6f0117f76ce9f6e10/brivido.zip",
+  "category": "Display",
+  "files": {
+   "400": "brivido-font/Brivido.ttf"
+  }
+ },
+ {
+  "family": "Zapus Sans",
+  "foundry": "Belleve Invis",
+  "designers": [
+   "Belleve Invis"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/zapus-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/zapus-sans/ca6ee11c899a00a2450baf5deb5b5aed/zapus-sans.zip",
+  "category": "Sans Serif",
+  "files": {
+   "200": "ZapusSans-ExtraLight.ttf",
+   "300": "ZapusSans-Light.ttf",
+   "400": "ZapusSans-Regular.ttf",
+   "500": "ZapusSans-Medium.ttf",
+   "600": "ZapusSans-SemiBold.ttf",
+   "700": "ZapusSans-Bold.ttf",
+   "800": "ZapusSans-ExtraBold.ttf",
+   "900": "ZapusSans-Black.ttf",
+   "200i": "ZapusSans-ExtraLightItalic.ttf",
+   "300i": "ZapusSans-LightItalic.ttf",
+   "400i": "ZapusSans-Italic.ttf",
+   "500i": "ZapusSans-MediumItalic.ttf",
+   "600i": "ZapusSans-SemiBoldItalic.ttf",
+   "700i": "ZapusSans-BoldItalic.ttf",
+   "800i": "ZapusSans-ExtraBoldItalic.ttf",
+   "900i": "ZapusSans-BlackItalic.ttf"
+  }
+ },
+ {
+  "family": "Stanislav",
+  "foundry": "Daniel Johnson",
+  "designers": [
+   "Daniel Johnson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/stanislav",
+  "zip": "https://fontlibrary.org/assets/downloads/stanislav/526508e6b8f7a4239d45f10e53f52972/stanislav.zip",
+  "category": "Serif",
+  "files": {
+   "500": "Stanislav.otf"
+  }
+ },
+ {
+  "family": "New Telegraph",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "New Telegraph"
+  ],
+  "url": "https://fontlibrary.org/en/font/new-telegraph",
+  "zip": "https://fontlibrary.org/assets/downloads/new-telegraph/391600e9a630d846d4f02e659de880f0/new-telegraph.zip",
+  "category": "Serif",
+  "files": {
+   "400": "New Telegraph.ttf",
+   "700": "New Telegraph Bold.ttf"
+  }
+ },
+ {
+  "family": "Ponyo",
+  "foundry": "Robert Martinez",
+  "designers": [
+   "Robert Martinez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/ponyo",
+  "zip": "https://fontlibrary.org/assets/downloads/ponyo/474ed7369b7091c34516c159a8012c1f/ponyo.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "Ponyo.otf"
+  }
+ },
+ {
+  "family": "Alanesiana",
+  "foundry": "Kris Alans",
+  "designers": [
+   "Kris Alans"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/alanesiana",
+  "zip": "https://fontlibrary.org/assets/downloads/alanesiana/65f442e2a9450b22e4fdaa2f23a6e8e1/alanesiana.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Alanesiana Regular.ttf"
+  }
+ },
+ {
+  "family": "Carpathe",
+  "foundry": "Fe'licie Bouckaert",
+  "designers": [
+   "Fe'licie Bouckaert"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/carpathe",
+  "zip": "https://fontlibrary.org/assets/downloads/carpathe/1bb5e9c774ad032f70953f2cc171bb68/carpathe.zip",
+  "category": "Serif",
+  "files": {
+   "300": "Carpathe/CarpatheLight.ttf",
+   "400": "Carpathe/CarpatheRegular.ttf",
+   "700": "Carpathe/CarpatheBold.ttf"
+  }
+ },
+ {
+  "family": "Connection",
+  "foundry": "Jasper",
+  "designers": [
+   "Jasper"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/connection",
+  "zip": "https://fontlibrary.org/assets/downloads/connection/041130cb69668c94b7cfb4725db0f0dc/connection.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "Connection.otf"
+  }
+ },
+ {
+  "family": "Courneuf",
+  "foundry": "Thomas jund",
+  "designers": [
+   "Thomas jund"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/courneuf-family",
+  "zip": "https://fontlibrary.org/assets/downloads/courneuf-family/b229a77aef7a842b6e142ca2607f4c9c/courneuf-family.zip",
+  "category": "Display",
+  "files": {
+   "400": "Courneuf-Regular.ttf",
+   "700": "Courneuf-Outline.ttf"
+  }
+ },
+ {
+  "family": "Acevedo",
+  "foundry": "Josue Acevedo Maldonado",
+  "designers": [
+   "Josue Acevedo Maldonado"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/acevedo",
+  "zip": "https://fontlibrary.org/assets/downloads/acevedo/96c6e28c6aba9ab365cf1f59829e76dc/acevedo.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "acevedo.ttf"
+  }
+ },
+ {
+  "family": "Tambourine Outline",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Tambourine"
+  ],
+  "url": "https://fontlibrary.org/en/font/tambourine",
+  "zip": "https://fontlibrary.org/assets/downloads/tambourine/3bcca01f8e4b0ea4ccadf65444333d14/tambourine.zip",
+  "category": "Display",
+  "files": {
+   "400": "Tambourine Outline.ttf"
+  }
+ },
+ {
+  "family": "Tambourine",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Tambourine"
+  ],
+  "url": "https://fontlibrary.org/en/font/tambourine",
+  "zip": "https://fontlibrary.org/assets/downloads/tambourine/3bcca01f8e4b0ea4ccadf65444333d14/tambourine.zip",
+  "category": "Display",
+  "files": {
+   "400": "Tambourine.ttf"
+  }
+ },
+ {
+  "family": "BStyle",
+  "foundry": "Uwe Borchert",
+  "designers": [
+   "Uwe Borchert"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/bstyle",
+  "zip": "https://fontlibrary.org/assets/downloads/bstyle/2292ed732c7c190b03bff93f13cbb9bb/bstyle.zip",
+  "category": "Display",
+  "files": {
+   "400": "BStyle_R.otf",
+   "700": "BStyle_B.otf"
+  }
+ },
+ {
+  "family": "VDS",
+  "foundry": "artmaker",
+  "designers": [
+   "artmaker"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "ofl-faq10.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/vds",
+  "zip": "https://fontlibrary.org/assets/downloads/vds/4af6691b4cf3d06bb623421ad4e10665/vds.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "VDS_Thin.ttf",
+   "400": "VDS_New.ttf",
+   "700": "VDS_Bold_New.ttf",
+   "100i": "VDS_Thin_Ita.ttf",
+   "400i": "VDS_Italic_New.ttf",
+   "700i": "VDS_Bold_Italic_New.ttf"
+  }
+ },
+ {
+  "family": "VDS Compensated",
+  "foundry": "artmaker",
+  "designers": [
+   "artmaker"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "ofl-faq10.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/vds",
+  "zip": "https://fontlibrary.org/assets/downloads/vds/4af6691b4cf3d06bb623421ad4e10665/vds.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "VDS_Compensated_Light.ttf",
+   "300i": "VDS_Compensated_Light_Italic.ttf"
+  }
+ },
+ {
+  "family": "Hussar",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/hussar-szturm",
+  "zip": "https://fontlibrary.org/assets/downloads/hussar-szturm/821e82c526a0dac7c3686c461054fb14/hussar-szturm.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "HussarSzturm.otf"
+  }
+ },
+ {
+  "family": "Looks Like S'pht",
+  "foundry": "Tim Larson",
+  "designers": [
+   "Tim Larson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/looks-like-s-pht",
+  "zip": "https://fontlibrary.org/assets/downloads/looks-like-s-pht/c49feb336d2419751213fc0ed06cef12/looks-like-s-pht.zip",
+  "category": "Display",
+  "files": {
+   "500": "lookslikespht/Looks Like S'pht.ttf"
+  }
+ },
+ {
+  "family": "Ruji's Handwriting Font",
+  "foundry": "Ruji Chapnik",
+  "designers": [
+   "Ruji Chapnik"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/ruji-s-handwriting-font",
+  "zip": "https://fontlibrary.org/assets/downloads/ruji-s-handwriting-font/7ee6d364f05d90cf56ecb5ce83d5e45e/ruji-s-handwriting-font.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "RujisHandwritingFont.otf"
+  }
+ },
+ {
+  "family": "That Nogo Font",
+  "foundry": "HandWrittenSquare",
+  "designers": [
+   "HandWrittenSquare"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "ThatNogoFontCasual/OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/that-nogo-font-casual",
+  "zip": "https://fontlibrary.org/assets/downloads/that-nogo-font-casual/475ee49e6b00739f8074b02a5c8f1b50/that-nogo-font-casual.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "ThatNogoFontCasual/ThatNogoFontCasual.ttf"
+  }
+ },
+ {
+  "family": "5by7",
+  "foundry": "Peter Wiegel",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/5by7",
+  "zip": "https://fontlibrary.org/assets/downloads/5by7/212e32bc6d9783983fc8fa5a1fbf0a20/5by7.zip",
+  "category": "Display",
+  "files": {
+   "400": "5by7.ttf",
+   "700": "5by7_b.ttf"
+  }
+ },
+ {
+  "family": "odstemplik",
+  "foundry": "gluk",
+  "designers": [
+   "gluk"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL_License.txt",
+  "rfn": [
+   "odstemplik"
+  ],
+  "url": "https://fontlibrary.org/en/font/odstemplik",
+  "zip": "https://fontlibrary.org/assets/downloads/odstemplik/68dada9f91e83618398131e136ca5371/odstemplik.zip",
+  "category": "Handwriting",
+  "files": {
+   "400i": "odstemplik.ttf",
+   "700i": "odstemplikBold.ttf"
+  }
+ },
+ {
+  "family": "New Shape",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/new-shape",
+  "zip": "https://fontlibrary.org/assets/downloads/new-shape/e8f8698693392b3ebe1bd9cd0f6cdac6/new-shape.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "New Shape/NewShape-Book.ttf",
+   "700": "New Shape/NewShape-Bold.ttf",
+   "400i": "New Shape/NewShape-BookOblique.ttf",
+   "700i": "New Shape/NewShape-BoldOblique.ttf"
+  }
+ },
+ {
+  "family": "Jozsika",
+  "foundry": "Belleve Invis",
+  "designers": [
+   "Belleve Invis"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/joszika",
+  "zip": "https://fontlibrary.org/assets/downloads/joszika/cff940beb6c140a9c7612be4359291b4/joszika.zip",
+  "category": "Monospace",
+  "files": {
+   "100": "output/jozsika-thin.ttf",
+   "200": "output/jozsika-extralight.ttf",
+   "300": "output/jozsika-light.ttf",
+   "400": "output/jozsika-regular.ttf",
+   "500": "output/jozsika-medium.ttf",
+   "600": "output/jozsika-semibold.ttf",
+   "700": "output/jozsika-bold.ttf",
+   "800": "output/jozsika-extrabold.ttf",
+   "100i": "output/jozsika-thinoblique.ttf",
+   "200i": "output/jozsika-extralightitalic.ttf",
+   "300i": "output/jozsika-lightitalic.ttf",
+   "400i": "output/jozsika-italic.ttf",
+   "500i": "output/jozsika-mediumitalic.ttf",
+   "600i": "output/jozsika-semiboldoblique.ttf",
+   "700i": "output/jozsika-bolditalic.ttf",
+   "800i": "output/jozsika-extrabolditalic.ttf"
+  }
+ },
+ {
+  "family": "JozsikaNilcons",
+  "foundry": "Belleve Invis",
+  "designers": [
+   "Belleve Invis"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/joszika",
+  "zip": "https://fontlibrary.org/assets/downloads/joszika/cff940beb6c140a9c7612be4359291b4/joszika.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "output/jozsikanilcons-regular.ttf",
+   "700": "output/jozsikanilcons-bold.ttf",
+   "400i": "output/jozsikanilcons-italic.ttf",
+   "700i": "output/jozsikanilcons-bolditalic.ttf"
+  }
+ },
+ {
+  "family": "Diggity",
+  "foundry": "Sean O'Brien",
+  "designers": [
+   "Sean O'Brien"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "Diggity"
+  ],
+  "url": "https://fontlibrary.org/en/font/diggity",
+  "zip": "https://fontlibrary.org/assets/downloads/diggity/82ea47258baf3f49de153439585b4331/diggity.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "Diggity.otf"
+  }
+ },
+ {
+  "family": "S3IJ4S",
+  "foundry": "s3ij4s",
+  "designers": [
+   "s3ij4s"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/s3ij4s",
+  "zip": "https://fontlibrary.org/assets/downloads/s3ij4s/75c5972441905006b756bb07e3b3a3e6/s3ij4s.zip",
+  "category": "Display",
+  "files": {
+   "700": "s3ij4sbold.otf"
+  }
+ },
+ {
+  "family": "s3ij4sheavy",
+  "foundry": "s3ij4s",
+  "designers": [
+   "s3ij4s"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/s3ij4s",
+  "zip": "https://fontlibrary.org/assets/downloads/s3ij4s/75c5972441905006b756bb07e3b3a3e6/s3ij4s.zip",
+  "category": "Display",
+  "files": {
+   "800": "s3ij4sheavy.otf"
+  }
+ },
+ {
+  "family": "s3ij4slight",
+  "foundry": "s3ij4s",
+  "designers": [
+   "s3ij4s"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/s3ij4s",
+  "zip": "https://fontlibrary.org/assets/downloads/s3ij4s/75c5972441905006b756bb07e3b3a3e6/s3ij4s.zip",
+  "category": "Display",
+  "files": {
+   "300": "s3ij4slight.otf"
+  }
+ },
+ {
+  "family": "!Crass Roots OFL",
+  "foundry": "!Exclamachine Type Foundry",
+  "designers": [
+   "Choz Cunningham"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/crass-roots-ofl",
+  "zip": "https://fontlibrary.org/assets/downloads/crass-roots-ofl/2a448a1c0631e5e407886985368816bb/crass-roots-ofl.zip",
+  "category": "Display",
+  "files": {
+   "400": "!CRASS ROOTS OFL.ttf"
+  }
+ },
+ {
+  "family": "Znikomit No25",
+  "foundry": "gluk",
+  "designers": [
+   "gluk"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL_License.txt",
+  "rfn": [
+   "Znikomit and ZnikomitNo25"
+  ],
+  "url": "https://fontlibrary.org/en/font/znikomit-no25",
+  "zip": "https://fontlibrary.org/assets/downloads/znikomit-no25/4f550b3870f7ccf48318580b7664bda9/znikomit-no25.zip",
+  "category": "Serif",
+  "files": {
+   "400": "ZnikomitNo25.otf"
+  }
+ },
+ {
+  "family": "Onilesca",
+  "foundry": "Michael Huynh",
+  "designers": [
+   "Michael Huynh"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Onilesca"
+  ],
+  "url": "https://fontlibrary.org/en/font/onilesca",
+  "zip": "https://fontlibrary.org/assets/downloads/onilesca/1089ce821e1e638c1299713c86e23130/onilesca.zip",
+  "category": "Display",
+  "files": {
+   "400": "Onilesca.ttf"
+  }
+ },
+ {
+  "family": "Lets Trace",
+  "foundry": "James Kilfiger",
+  "designers": [
+   "James Kilfiger"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/lets-trace",
+  "zip": "https://fontlibrary.org/assets/downloads/lets-trace/2bda9d1771d50bdbac12553291852b53/lets-trace.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "LetsTracebasic.otf",
+   "500i": "LetsTraceItalic.otf"
+  }
+ },
+ {
+  "family": "LetsTraceRuled",
+  "foundry": "James Kilfiger",
+  "designers": [
+   "James Kilfiger"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/lets-trace",
+  "zip": "https://fontlibrary.org/assets/downloads/lets-trace/2bda9d1771d50bdbac12553291852b53/lets-trace.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "LetsTraceruled.otf"
+  }
+ },
+ {
+  "family": "Genome",
+  "foundry": "Alfredo Marco Pradil",
+  "designers": [
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/genome",
+  "zip": "https://fontlibrary.org/assets/downloads/genome/4bf8165113bfb991e5728ea0b697dfaf/genome.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "Genome-Thin.otf"
+  }
+ },
+ {
+  "family": "Tecnico",
+  "foundry": "Cristhian Gomez",
+  "designers": [
+   "Cristhian Gomez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/tecnico",
+  "zip": "https://fontlibrary.org/assets/downloads/tecnico/3609ee24d64d73e9e12732dac773caf9/tecnico.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "tecnico_regular.ttf",
+   "700": "tecnico_bold.ttf",
+   "400i": "tecnico_regularitalic.ttf",
+   "700i": "tecnico_bolditalic.ttf"
+  }
+ },
+ {
+  "family": "Lightshadow",
+  "foundry": "Kimeki",
+  "designers": [
+   "Kimeki"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Lightshadow"
+  ],
+  "url": "https://fontlibrary.org/en/font/lightshadow",
+  "zip": "https://fontlibrary.org/assets/downloads/lightshadow/50f7e0f04533e280c1cd9806b9a4ea98/lightshadow.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "Lightshadow.otf"
+  }
+ },
+ {
+  "family": "On The Wall",
+  "foundry": "Steakeye Ltd",
+  "designers": [
+   "Steakeye Ltd"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/on-the-wall",
+  "zip": "https://fontlibrary.org/assets/downloads/on-the-wall/c504a5af0d518ad086c8acdad4cdf421/on-the-wall.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "OnTheWall.1.1.otf"
+  }
+ },
+ {
+  "family": "Toscuchet CM",
+  "foundry": "depizol",
+  "designers": [
+   "depizol"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/toscuchet-cm",
+  "zip": "https://fontlibrary.org/assets/downloads/toscuchet-cm/4f74e640ef15727275f80d602085c4e7/toscuchet-cm.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "toscuchet.otf"
+  }
+ },
+ {
+  "family": "Eunomia",
+  "foundry": "Sora Sagano",
+  "designers": [
+   "Sora Sagano"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/eunomia",
+  "zip": "https://fontlibrary.org/assets/downloads/eunomia/9ea48f33b3a96808e061be918c1a5e5a/eunomia.zip",
+  "category": "Display",
+  "files": {
+   "300": "Eunomia-Light.otf",
+   "400": "Eunomia-Regular.otf",
+   "700": "Eunomia-Bold.otf"
+  }
+ },
+ {
+  "family": "DIN Kursivschrift",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [
+   "Robert Jablonski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "DinKursivschriftUpd8/OFL2.txt",
+  "rfn": [
+   "Polski DIN Kursivschrift"
+  ],
+  "url": "https://fontlibrary.org/en/font/din-kursivschrift",
+  "zip": "https://fontlibrary.org/assets/downloads/din-kursivschrift/28069b9a8ac2e6df736bacb22fdd7f01/din-kursivschrift.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "DinKursivschriftUpd8/DinKursivschriftBreit.otf",
+   "400i": "DinKursivschriftUpd8/PolskiDINKursivschrift.otf"
+  }
+ },
+ {
+  "family": "Cyanotype",
+  "foundry": "Edward Matavka",
+  "designers": [
+   "Edward Matavka"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/cyanotype",
+  "zip": "https://fontlibrary.org/assets/downloads/cyanotype/d3ec1b5a673bfa49f7eb5bc707c692f0/cyanotype.zip",
+  "category": "Handwriting",
+  "files": {
+   "400i": "Cyanotype.ttf"
+  }
+ },
+ {
+  "family": "Dashley",
+  "foundry": "Brad Barnes",
+  "designers": [
+   "Brad Barnes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/dashley",
+  "zip": "https://fontlibrary.org/assets/downloads/dashley/6fcf0f56a0f8e27f1c9c4d0abbe2e456/dashley.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "Dashley.ttf"
+  }
+ },
+ {
+  "family": "Tattoo U",
+  "foundry": "Uwe Borchert",
+  "designers": [
+   "Uwe Borchert"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/tattoo-u",
+  "zip": "https://fontlibrary.org/assets/downloads/tattoo-u/b9d3a105f15c805ee4ffa7e4c33d62ca/tattoo-u.zip",
+  "category": "Display",
+  "files": {
+   "500": "tattoo_u.ttf"
+  }
+ },
+ {
+  "family": "Segment7",
+  "foundry": "Cedric Knight",
+  "designers": [
+   "Cedric Knight"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Segment7"
+  ],
+  "url": "https://fontlibrary.org/en/font/segment7",
+  "zip": "https://fontlibrary.org/assets/downloads/segment7/4cc82137fc130708919bf201c0dc9aae/segment7.zip",
+  "category": "Monospace",
+  "files": {
+   "600i": "Segment7Standard.otf"
+  }
+ },
+ {
+  "family": "Rabbid Highway Sign IV",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/rabbid-highway-sign-iv",
+  "zip": "https://fontlibrary.org/assets/downloads/rabbid-highway-sign-iv/9f4911b6c42eac33c4992837c0c6a0f7/rabbid-highway-sign-iv.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "RabbidHighwaySignIV.otf"
+  }
+ },
+ {
+  "family": "Alphabutts",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Alphabutts"
+  ],
+  "url": "https://fontlibrary.org/en/font/alphabutts-initials",
+  "zip": "https://fontlibrary.org/assets/downloads/alphabutts-initials/d3af7c1351774826fd4bbff0e50efb34/alphabutts-initials.zip",
+  "category": "Display",
+  "files": {
+   "400": "Alphabutts.ttf"
+  }
+ },
+ {
+  "family": "Aardvark Fixed",
+  "foundry": "Belleve Invis",
+  "designers": [
+   "Belleve Invis"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/aardvark-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/aardvark-sans/013820365ae0caa382ddfb51ce522e43/aardvark-sans.zip",
+  "category": "Monospace",
+  "files": {
+   "100": "aardvark-fixed-thin.ttf",
+   "200": "aardvark-fixed-extralight.ttf",
+   "300": "aardvark-fixed-light.ttf",
+   "400": "aardvark-fixed-regular.ttf",
+   "500": "aardvark-fixed-medium.ttf",
+   "700": "aardvark-fixed-bold.ttf",
+   "900": "aardvark-fixed-black.ttf",
+   "100i": "aardvark-fixed-thinitalic.ttf",
+   "200i": "aardvark-fixed-extralightitalic.ttf",
+   "300i": "aardvark-fixed-lightitalic.ttf",
+   "400i": "aardvark-fixed-italic.ttf",
+   "500i": "aardvark-fixed-mediumitalic.ttf",
+   "700i": "aardvark-fixed-bolditalic.ttf",
+   "900i": "aardvark-fixed-blackitalic.ttf"
+  }
+ },
+ {
+  "family": "Courier Prime Sans",
+  "foundry": "Quote-Unquote Apps",
+  "designers": [
+   "Alan Dague-Greene"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "CourierPrimeSans-master/LICENSE.md",
+  "rfn": [
+   "Courier Prime Sans"
+  ],
+  "url": "https://fontlibrary.org/en/font/courier-prime-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/courier-prime-sans/865df64ca03a2b3b596dd61d943cb9bf/courier-prime-sans.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "CourierPrimeSans-master/ttf/Courier Prime Sans.ttf",
+   "700": "CourierPrimeSans-master/ttf/Courier Prime Sans Bold.ttf",
+   "400i": "CourierPrimeSans-master/ttf/Courier Prime Sans Italic.ttf",
+   "700i": "CourierPrimeSans-master/ttf/Courier Prime Sans Bold Italic.ttf"
+  }
+ },
+ {
+  "family": "d puntillas E tiptoes squid",
+  "foundry": "deFharo",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/de-puntillas-e-tiptoes-squid",
+  "zip": "https://fontlibrary.org/assets/downloads/de-puntillas-e-tiptoes-squid/582ff7bc6d0a4d7ca2e64b4b21600839/de-puntillas-e-tiptoes-squid.zip",
+  "category": "Display",
+  "files": {
+   "400": "d-puntillas-E-Tiptoes-squid.ttf"
+  }
+ },
+ {
+  "family": "Strike Nest",
+  "foundry": "Loki Gwynbleidd",
+  "designers": [
+   "Loki Gwynbleidd"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/the-strike-nest",
+  "zip": "https://fontlibrary.org/assets/downloads/the-strike-nest/4a7defb15acdc3538d4a943c126d8ac3/the-strike-nest.zip",
+  "category": "Display",
+  "files": {
+   "400i": "The Strike Nest.ttf"
+  }
+ },
+ {
+  "family": "PROBE 10PX",
+  "foundry": "Andrew Sigurow",
+  "designers": [
+   "Andrew Sigurow"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "PROBE_10PX_TTF Bold/OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/probe-10px-ttf-bold",
+  "zip": "https://fontlibrary.org/assets/downloads/probe-10px-ttf-bold/76a4d78eb01e68e1676130430f5a6de2/probe-10px-ttf-bold.zip",
+  "category": "Monospace",
+  "files": {
+   "700": "PROBE_10PX_TTF Bold/FONT/PROBE_10PX_TTF Bold.ttf"
+  }
+ },
+ {
+  "family": "Comili",
+  "foundry": "Camille Bissuel",
+  "designers": [
+   "Camille Bissuel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Comili"
+  ],
+  "url": "https://fontlibrary.org/en/font/comili",
+  "zip": "https://fontlibrary.org/assets/downloads/comili/812aedb623edfb09f37b70195936518c/comili.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "Comili-Book.otf"
+  }
+ },
+ {
+  "family": "vSHexagothica-Shdw",
+  "foundry": "T.B. von Strong",
+  "designers": [
+   "T.B. von Strong"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/vshexagothica",
+  "zip": "https://fontlibrary.org/assets/downloads/vshexagothica/efab60246f2b897dc25ad99ca8625269/vshexagothica.zip",
+  "category": "Serif",
+  "files": {
+   "500": "vSHexagothica/vSHexagothica-Shdw.otf"
+  }
+ },
+ {
+  "family": "vSHexagothica",
+  "foundry": "T.B. von Strong",
+  "designers": [
+   "T.B. von Strong"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/vshexagothica",
+  "zip": "https://fontlibrary.org/assets/downloads/vshexagothica/efab60246f2b897dc25ad99ca8625269/vshexagothica.zip",
+  "category": "Serif",
+  "files": {
+   "500": "vSHexagothica/vSHexagothica.otf"
+  }
+ },
+ {
+  "family": "Ducados Ultra Condensed",
+  "foundry": "Rafael Ferran i Peralta",
+  "designers": [
+   "Rafael Ferran i Peralta"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/ducados",
+  "zip": "https://fontlibrary.org/assets/downloads/ducados/3dbf047c84f022cffc50ee64160a0c2b/ducados.zip",
+  "category": "Display",
+  "files": {
+   "400": "Ducados/Ducados.otf"
+  }
+ },
+ {
+  "family": "HiLo-Deco",
+  "foundry": "Stephen Wilson aka Narrowhouse",
+  "designers": [
+   "Stephen Wilson aka Narrowhouse"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/hilo-deco",
+  "zip": "https://fontlibrary.org/assets/downloads/hilo-deco/7df680330739e48ce90abf7a243a09bc/hilo-deco.zip",
+  "category": "Display",
+  "files": {
+   "500": "HiLo-Deco.ttf"
+  }
+ },
+ {
+  "family": "Hjet",
+  "foundry": "T. Christopher White",
+  "designers": [
+   "T. Christopher White"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/hjet",
+  "zip": "https://fontlibrary.org/assets/downloads/hjet/b90d5c0a6d5d10dcdc077d0ce457289c/hjet.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Hjet/Hjet-Regular.otf"
+  }
+ },
+ {
+  "family": "Cello Sans",
+  "foundry": "Alfredo Marco Pradil",
+  "designers": [
+   "Samuel Oakes",
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/cello-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/cello-sans/c144a063b2d56390e8463558cf7cb347/cello-sans.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "hinted-CelloSans-Light.ttf",
+   "400": "hinted-CelloSans-Regular.ttf",
+   "500": "hinted-CelloSans-Medium.ttf",
+   "700": "hinted-CelloSans-Bold.ttf",
+   "300i": "hinted-CelloSans-LightItalic.ttf",
+   "400i": "hinted-CelloSans-Italic.ttf",
+   "500i": "hinted-CelloSans-MediumItalic.ttf",
+   "700i": "hinted-CelloSans-BoldItalic.ttf"
+  }
+ },
+ {
+  "family": "Feltpen",
+  "foundry": "zezinho",
+  "designers": [
+   "zezinho"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/feltpen",
+  "zip": "https://fontlibrary.org/assets/downloads/feltpen/2cc0c7c9f1f272face1ebb5c57839d7e/feltpen.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "feltpen/Feltpen.ttf"
+  }
+ },
+ {
+  "family": "Radis Sans",
+  "foundry": "Gaël Goy",
+  "designers": [
+   "Gaël Goy"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/radis-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/radis-sans/ad8eeab1da2f5732e60e1eb82e9d5d71/radis-sans.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Radis Sans.otf"
+  }
+ },
+ {
+  "family": "Sisperdotze",
+  "foundry": "manufacturaindependente",
+  "designers": [
+   "manufacturaindependente"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/sisperdotze",
+  "zip": "https://fontlibrary.org/assets/downloads/sisperdotze/bb4961b79362ab9edfb63024443b4e66/sisperdotze.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Sisperdotze/Sisperdotze-Regular.otf"
+  }
+ },
+ {
+  "family": "Metropolitano",
+  "foundry": "Alex Slobzheninov",
+  "designers": [
+   "Alex Slobzheninov"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/metropolitano",
+  "zip": "https://fontlibrary.org/assets/downloads/metropolitano/f97fccaf3a50b6fa4e34852fe7d8a39e/metropolitano.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "Metropolitano-Thin.ttf",
+   "300": "Metropolitano-Light.ttf",
+   "400": "Metropolitano-Regular.ttf",
+   "500": "Metropolitano-Medium.ttf",
+   "700": "Metropolitano-Bold.ttf",
+   "900": "Metropolitano-Black.ttf",
+   "100i": "Metropolitano-ThinItalic.ttf",
+   "300i": "Metropolitano-LightItalic.ttf",
+   "400i": "Metropolitano-Italic.ttf",
+   "500i": "Metropolitano-MediumItalic.ttf",
+   "700i": "Metropolitano-BoldItalic.ttf",
+   "900i": "Metropolitano-BlackItalic.ttf"
+  }
+ },
+ {
+  "family": "Grobe Deutschmeister",
+  "foundry": "Peter Wiegel",
+  "designers": [
+   "Peter Wiegel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Grobe Deutschmeister"
+  ],
+  "url": "https://fontlibrary.org/en/font/grobe-deutschmeister",
+  "zip": "https://fontlibrary.org/assets/downloads/grobe-deutschmeister/748dcc62617890a56fe54fd7f872598e/grobe-deutschmeister.zip",
+  "category": "Display",
+  "files": {
+   "400": "grobe-deutschmeister.ttf"
+  }
+ },
+ {
+  "family": "Jose Carlos Latorre",
+  "foundry": "Jose Carlos Latorre",
+  "designers": [
+   "Jose Carlos Latorre"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/jose-carlos-latorre",
+  "zip": "https://fontlibrary.org/assets/downloads/jose-carlos-latorre/b975f4ccf225a7bb7b973c3627731711/jose-carlos-latorre.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "Jose.ttf"
+  }
+ },
+ {
+  "family": "Silverblade Decorative",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Silverblade"
+  ],
+  "url": "https://fontlibrary.org/en/font/silverblade",
+  "zip": "https://fontlibrary.org/assets/downloads/silverblade/9b93796f169f5c1d8dc980932d1e07a5/silverblade.zip",
+  "category": "Display",
+  "files": {
+   "400": "Silverblade Decorative.ttf"
+  }
+ },
+ {
+  "family": "Silverblade Fill",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Silverblade"
+  ],
+  "url": "https://fontlibrary.org/en/font/silverblade",
+  "zip": "https://fontlibrary.org/assets/downloads/silverblade/9b93796f169f5c1d8dc980932d1e07a5/silverblade.zip",
+  "category": "Display",
+  "files": {
+   "400": "Silverblade Fill.ttf"
+  }
+ },
+ {
+  "family": "Silverblade Outline",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Silverblade"
+  ],
+  "url": "https://fontlibrary.org/en/font/silverblade",
+  "zip": "https://fontlibrary.org/assets/downloads/silverblade/9b93796f169f5c1d8dc980932d1e07a5/silverblade.zip",
+  "category": "Display",
+  "files": {
+   "400": "Silverblade Outline.ttf"
+  }
+ },
+ {
+  "family": "Silverblade Thinline",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Silverblade"
+  ],
+  "url": "https://fontlibrary.org/en/font/silverblade",
+  "zip": "https://fontlibrary.org/assets/downloads/silverblade/9b93796f169f5c1d8dc980932d1e07a5/silverblade.zip",
+  "category": "Display",
+  "files": {
+   "400": "Silverblade Thinline.ttf"
+  }
+ },
+ {
+  "family": "Silverblade",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Silverblade"
+  ],
+  "url": "https://fontlibrary.org/en/font/silverblade",
+  "zip": "https://fontlibrary.org/assets/downloads/silverblade/9b93796f169f5c1d8dc980932d1e07a5/silverblade.zip",
+  "category": "Display",
+  "files": {
+   "400": "Silverblade.ttf"
+  }
+ },
+ {
+  "family": "Gen",
+  "foundry": "Hanken Design Co",
+  "designers": [
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/gen-light",
+  "zip": "https://fontlibrary.org/assets/downloads/gen-light/e5ec8b3b781193ca1eefdb3411a26ed4/gen-light.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "Gen-Light.otf"
+  }
+ },
+ {
+  "family": "Jellee",
+  "foundry": "Hanken Design Co",
+  "designers": [
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/jellee-typeface",
+  "zip": "https://fontlibrary.org/assets/downloads/jellee-typeface/1fbc36aef06ab2a80198ab7ca99fb208/jellee-typeface.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "Jellee_1223/OTF/Jellee-Bold.otf"
+  }
+ },
+ {
+  "family": "d puntillas D to tiptoe",
+  "foundry": "deFharo",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/de-puntillas-d-to-tiptoe-lt",
+  "zip": "https://fontlibrary.org/assets/downloads/de-puntillas-d-to-tiptoe-lt/0e83f5eddd4d4a2bb54fe525b03d005f/de-puntillas-d-to-tiptoe-lt.zip",
+  "category": "Display",
+  "files": {
+   "400": "d-puntillas-D-to-tiptoe.ttf"
+  }
+ },
+ {
+  "family": "CondenBitmap Ultra Condensed",
+  "foundry": "No-Name-mio",
+  "designers": [
+   "No-Name-mio"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "CondenBitmap"
+  ],
+  "url": "https://fontlibrary.org/en/font/condenbitmap",
+  "zip": "https://fontlibrary.org/assets/downloads/condenbitmap/0596b56012dbac0bab0701df0dfb889b/condenbitmap.zip",
+  "category": "Display",
+  "files": {
+   "500": "CondenBitmap.otf"
+  }
+ },
+ {
+  "family": "Gothica",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/gotica",
+  "zip": "https://fontlibrary.org/assets/downloads/gotica/81df6a73c12ca8fc911125977e2e47c9/gotica.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Gothica/Gothica-Book.ttf",
+   "700": "Gothica/Gothica-Bold.ttf",
+   "400i": "Gothica/Gothica-BookOblique.ttf",
+   "700i": "Gothica/Gothica-BoldOblique.ttf"
+  }
+ },
+ {
+  "family": "K.O. Activista* Condensed",
+  "foundry": "deFharo",
+  "designers": [
+   "defharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "K.O. Activista"
+  ],
+  "url": "https://fontlibrary.org/en/font/k-o-activista",
+  "zip": "https://fontlibrary.org/assets/downloads/k-o-activista/1eb4534935bce187544bd36d8e194378/k-o-activista.zip",
+  "category": "Display",
+  "files": {
+   "700": "K.O. Activista Font.ttf"
+  }
+ },
+ {
+  "family": "Mga",
+  "foundry": "Salychow",
+  "designers": [
+   "Salychow"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/mga",
+  "zip": "https://fontlibrary.org/assets/downloads/mga/7a5e6713ff66ae4008653d195094f162/mga.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Mga.ttf"
+  }
+ },
+ {
+  "family": "A Bebedera",
+  "foundry": "deFharo",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "A Bebedera"
+  ],
+  "url": "https://fontlibrary.org/en/font/a-bebedera",
+  "zip": "https://fontlibrary.org/assets/downloads/a-bebedera/fee3c61026c4f848cfd29fc6301607fd/a-bebedera.zip",
+  "category": "Display",
+  "files": {
+   "800": "A bebedera-heavy.otf"
+  }
+ },
+ {
+  "family": "Manic Monday",
+  "foundry": "Juergen Habich",
+  "designers": [
+   "Juergen Habich"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/manic-monday",
+  "zip": "https://fontlibrary.org/assets/downloads/manic-monday/652e46be2ebb3378afa4a7fe679df4fd/manic-monday.zip",
+  "category": "Handwriting",
+  "files": {
+   "700": "ManicMondayBold.otf"
+  }
+ },
+ {
+  "family": "Orthoventional",
+  "foundry": "James Kilfiger",
+  "designers": [
+   "James Kilfiger"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/orthoventional",
+  "zip": "https://fontlibrary.org/assets/downloads/orthoventional/808028d42ebc9a2201c48ec793cd7860/orthoventional.zip",
+  "category": "Serif",
+  "files": {
+   "500": "OrthoventionalUpright.otf"
+  }
+ },
+ {
+  "family": "Pugsley",
+  "foundry": "James Kilfiger",
+  "designers": [
+   "James Kilfiger"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/pugsley",
+  "zip": "https://fontlibrary.org/assets/downloads/pugsley/9352beb9fec5a385c61535e4516f4e3e/pugsley.zip",
+  "category": "Display",
+  "files": {
+   "500": "PugsleySmallCaps.otf",
+   "500i": "PugsleyOblique.otf"
+  }
+ },
+ {
+  "family": "Cursive Sans",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/cursive",
+  "zip": "https://fontlibrary.org/assets/downloads/cursive/896ce78e1181eccdc41cd83ddee5f981/cursive.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400i": "Cursive/CursiveSans-Book.ttf",
+   "700i": "Cursive/CursiveSans-Bold.ttf"
+  }
+ },
+ {
+  "family": "Cursive Serif",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/cursive",
+  "zip": "https://fontlibrary.org/assets/downloads/cursive/896ce78e1181eccdc41cd83ddee5f981/cursive.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400i": "Cursive/CursiveSerif-Book.ttf",
+   "700i": "Cursive/CursiveSerif-Bold.ttf"
+  }
+ },
+ {
+  "family": "Normung",
+  "foundry": "Andreas Larsen",
+  "designers": [
+   "Andreas Larsen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/normung",
+  "zip": "https://fontlibrary.org/assets/downloads/normung/0aabe46b0c6cefa63a8ab0a7af6f986f/normung.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "otf/Normung-Bold.otf"
+  }
+ },
+ {
+  "family": "PoorFish",
+  "foundry": "Stewart C. Russell",
+  "designers": [
+   "Stewart C. Russell"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "PoorFish/LICENCE",
+  "rfn": [
+   "PoorFish"
+  ],
+  "url": "https://fontlibrary.org/en/font/poorfish",
+  "zip": "https://fontlibrary.org/assets/downloads/poorfish/16cb9d239a862455e1fc7f64379790c5/poorfish.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "PoorFish/PoorFish-Regular.otf"
+  }
+ },
+ {
+  "family": "Ambrosia",
+  "foundry": "fontforge",
+  "designers": [
+   "fontforge"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/ambrosia",
+  "zip": "https://fontlibrary.org/assets/downloads/ambrosia/43253e4a925d55b0b8c44e539907f275/ambrosia.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "Ambrosia/Ambrosia.otf"
+  }
+ },
+ {
+  "family": "FProject",
+  "foundry": "Subhraman Sarkar",
+  "designers": [
+   "Subhraman Sarkar"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/fproject",
+  "zip": "https://fontlibrary.org/assets/downloads/fproject/9ec3ba60c7a5352262acfc4395a46b74/fproject.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "FProject-Regular.otf"
+  }
+ },
+ {
+  "family": "18th Century Kurrent Start",
+  "foundry": "fontlibrary",
+  "designers": [
+   "fontlibrary"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/18th-century",
+  "zip": "https://fontlibrary.org/assets/downloads/18th-century/7678fc8d26d109bdd558151bc182a149/18th-century.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "18thCtrKurStart.ttf"
+  }
+ },
+ {
+  "family": "18th Century Kurrent Text",
+  "foundry": "fontlibrary",
+  "designers": [
+   "fontlibrary"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/18th-century",
+  "zip": "https://fontlibrary.org/assets/downloads/18th-century/7678fc8d26d109bdd558151bc182a149/18th-century.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "18thCtrKurTxt.ttf"
+  }
+ },
+ {
+  "family": "GFS Bodoni",
+  "foundry": "Greek Font Society",
+  "designers": [
+   "Takis Katsoulidis",
+   "George D. Matthiopoulos"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "GFS_BODONI/GFS_BODONI_OT/OFL.txt",
+  "rfn": [
+   "GFS Bodoni"
+  ],
+  "url": "https://fontlibrary.org/en/font/gfs-bodoni",
+  "zip": "https://fontlibrary.org/assets/downloads/gfs-bodoni/a1bc57bb007672247d52b65e2f977e4b/gfs-bodoni.zip",
+  "category": "Serif",
+  "files": {
+   "400": "GFS_BODONI/GFS_BODONI_OT/GFSBodoni.otf",
+   "700": "GFS_BODONI/GFS_BODONI_OT/GFSBodoniBold.otf",
+   "400i": "GFS_BODONI/GFS_BODONI_OT/GFSBodoniIt.otf",
+   "700i": "GFS_BODONI/GFS_BODONI_OT/GFSBodoniBoldIt.otf"
+  }
+ },
+ {
+  "family": "ConsolaMono",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/consolamono",
+  "zip": "https://fontlibrary.org/assets/downloads/consolamono/61cc2afcc4eca96efe7c6ebf178d39df/consolamono.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "Consola Mono/ConsolaMono.ttf",
+   "700": "Consola Mono/ConsolaMono-Bold.ttf"
+  }
+ },
+ {
+  "family": "d puntillas A Lace",
+  "foundry": "deFharo.com",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/de-puntillas-a-lace-regular",
+  "zip": "https://fontlibrary.org/assets/downloads/de-puntillas-a-lace-regular/7d3849404273392bfd35cd32c396fae3/de-puntillas-a-lace-regular.zip",
+  "category": "Display",
+  "files": {
+   "400": "d-puntillas-A-Lace.ttf"
+  }
+ },
+ {
+  "family": "Hussar Ekologiczny",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/hussar-ekologiczne",
+  "zip": "https://fontlibrary.org/assets/downloads/hussar-ekologiczne/a88021b686a43633739cefd60ddb8705/hussar-ekologiczne.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "HussarEkologiczne2Obl.otf"
+  }
+ },
+ {
+  "family": "pdW",
+  "foundry": "Rafael Ferran i Peralta",
+  "designers": [
+   "Rafael Ferran i Peralta"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/pdw",
+  "zip": "https://fontlibrary.org/assets/downloads/pdw/42307bfe4dcda9faeab3ab5d8cc4f010/pdw.zip",
+  "category": "Display",
+  "files": {
+   "400": "pdW.otf"
+  }
+ },
+ {
+  "family": "Chachicle",
+  "foundry": "Alejandro Paul",
+  "designers": [
+   "Alejandro Paul"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/chachicle",
+  "zip": "https://fontlibrary.org/assets/downloads/chachicle/b58d1d4eb2453d042e1ec664d84859f5/chachicle.zip",
+  "category": "Display",
+  "files": {
+   "400": "Chachicle/ChaChicle.otf"
+  }
+ },
+ {
+  "family": "Helvetia Verbundene",
+  "foundry": "Peter Wiegel",
+  "designers": [
+   "Peter Wiegel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Helvetia Verbundene"
+  ],
+  "url": "https://fontlibrary.org/en/font/helvetia-verbundene",
+  "zip": "https://fontlibrary.org/assets/downloads/helvetia-verbundene/da04134866f4f437dbdc7883310b4b1a/helvetia-verbundene.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "helvetia-verbundene.ttf"
+  }
+ },
+ {
+  "family": "Patchwork Fly",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Patchwork"
+  ],
+  "url": "https://fontlibrary.org/en/font/patchwork",
+  "zip": "https://fontlibrary.org/assets/downloads/patchwork/a06566f489bd1a7e65e3728528d787d3/patchwork.zip",
+  "category": "Display",
+  "files": {
+   "400": "Patchwork Fly.ttf"
+  }
+ },
+ {
+  "family": "Patchwork Rough",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Patchwork"
+  ],
+  "url": "https://fontlibrary.org/en/font/patchwork",
+  "zip": "https://fontlibrary.org/assets/downloads/patchwork/a06566f489bd1a7e65e3728528d787d3/patchwork.zip",
+  "category": "Display",
+  "files": {
+   "400": "Patchwork Rough.ttf"
+  }
+ },
+ {
+  "family": "Patchwork",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Patchwork"
+  ],
+  "url": "https://fontlibrary.org/en/font/patchwork",
+  "zip": "https://fontlibrary.org/assets/downloads/patchwork/a06566f489bd1a7e65e3728528d787d3/patchwork.zip",
+  "category": "Display",
+  "files": {
+   "400": "Patchwork.ttf"
+  }
+ },
+ {
+  "family": "Segment14",
+  "foundry": "His Deeds Are Dust",
+  "designers": [
+   "Paul Flo Williams"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "hdad-segment14-1.002/OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/segment14",
+  "zip": "https://fontlibrary.org/assets/downloads/segment14/0b700e9856aeebed3939657aca144801/segment14.zip",
+  "category": "Display",
+  "files": {
+   "400": "hdad-segment14-1.002/Segment14.otf"
+  }
+ },
+ {
+  "family": "Engineer Hand",
+  "foundry": "Edward Matavka",
+  "designers": [
+   "Edward Matavka"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/engineer-hand",
+  "zip": "https://fontlibrary.org/assets/downloads/engineer-hand/b0d5145d93089c15557e05ddcd888415/engineer-hand.zip",
+  "category": "Handwriting",
+  "files": {
+   "400i": "EngineerHand.ttf"
+  }
+ },
+ {
+  "family": "Grabstein",
+  "foundry": "Uwe Borchert",
+  "designers": [
+   "Uwe Borchert"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/grabstein-grotesk",
+  "zip": "https://fontlibrary.org/assets/downloads/grabstein-grotesk/324076f81f0d4fcf07f163490698f065/grabstein-grotesk.zip",
+  "category": "Display",
+  "files": {
+   "500": "grabstein.otf"
+  }
+ },
+ {
+  "family": "UglyTypist",
+  "foundry": "malayali",
+  "designers": [
+   "malayali"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/uglytypist",
+  "zip": "https://fontlibrary.org/assets/downloads/uglytypist/7b850d253c25f1a7a40db5ae9f8e6fb7/uglytypist.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "UglyTypist.ttf"
+  }
+ },
+ {
+  "family": "Unvoll",
+  "foundry": "Friedrich Althausen",
+  "designers": [
+   "Friedrich Althausen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/unvoll",
+  "zip": "https://fontlibrary.org/assets/downloads/unvoll/fed44c6f25a683424ab13bd1c9f698e2/unvoll.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Unvoll.ttf"
+  }
+ },
+ {
+  "family": "Elemenz Initials",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Elemenz Initials"
+  ],
+  "url": "https://fontlibrary.org/en/font/elemenz-initials",
+  "zip": "https://fontlibrary.org/assets/downloads/elemenz-initials/7280e465e2ef47d48878e1ce4edd5eb1/elemenz-initials.zip",
+  "category": "Display",
+  "files": {
+   "400": "Elemenz.ttf",
+   "700": "Elemenz Bold.ttf"
+  }
+ },
+ {
+  "family": "Yantiq",
+  "foundry": "Rainkarnichi",
+  "designers": [
+   "Aydi Rainkarnichi"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "yantiq.font/OFL.txt",
+  "rfn": [
+   "Yantiq"
+  ],
+  "url": "https://fontlibrary.org/en/font/yantiq",
+  "zip": "https://fontlibrary.org/assets/downloads/yantiq/e7a4652887320000c9f5fd069c10ea9d/yantiq.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "yantiq.font/Yantiq.ttf"
+  }
+ },
+ {
+  "family": "Merom Sans",
+  "foundry": "Font Detective LLC",
+  "designers": [
+   "Thomas Phinney",
+   "Vassil Kateliev",
+   "Brandon Buerkle",
+   "Cristiano Sobral"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/merom-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/merom-sans/755c25282ff96b6da35897e97942b633/merom-sans.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "MeromSans-Thin.ttf",
+   "200": "MeromSans-ExtraLight.ttf",
+   "300": "MeromSans-Light.ttf",
+   "400": "MeromSans-Regular.ttf",
+   "500": "MeromSans-Medium.ttf",
+   "600": "MeromSans-SemiBold.ttf",
+   "700": "MeromSans-Bold.ttf",
+   "800": "MeromSans-ExtraBold.ttf",
+   "900": "MeromSans-Black.ttf",
+   "100i": "MeromSans-ThinItalic.ttf",
+   "200i": "MeromSans-ExtraLightItalic.ttf",
+   "300i": "MeromSans-LightItalic.ttf",
+   "400i": "MeromSans-Italic.ttf",
+   "500i": "MeromSans-MediumItalic.ttf",
+   "600i": "MeromSans-SemiBoldItalic.ttf",
+   "700i": "MeromSans-BoldItalic.ttf",
+   "800i": "MeromSans-ExtraBoldItalic.ttf",
+   "900i": "MeromSans-BlackItalic.ttf"
+  }
+ },
+ {
+  "family": "Nemoy",
+  "foundry": "BSozoo",
+  "designers": [
+   "BSozoo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Nemoy/OFL.txt",
+  "rfn": [
+   "Nemoy",
+   "NemoyLight",
+   "NemoyMedium",
+   "NemoyBold"
+  ],
+  "url": "https://fontlibrary.org/en/font/nemoy",
+  "zip": "https://fontlibrary.org/assets/downloads/nemoy/a3347504a711e41edd8de2d5d7312b6f/nemoy.zip",
+  "category": "Display",
+  "files": {
+   "500": "Nemoy/NemoyMedium.otf"
+  }
+ },
+ {
+  "family": "GutenTAG Engraved Regular Beta",
+  "foundry": "Kamil J. Dudek",
+  "designers": [
+   "Kamil J. Dudek"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/tag-engraved-regular-beta",
+  "zip": "https://fontlibrary.org/assets/downloads/tag-engraved-regular-beta/54a87278c5d9d00a8c5786333284dc6b/tag-engraved-regular-beta.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "TAGEngravedRegularBeta.ttf"
+  }
+ },
+ {
+  "family": "CompHand",
+  "foundry": "j4p4n",
+  "designers": [
+   "j4p4n"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/comphand",
+  "zip": "https://fontlibrary.org/assets/downloads/comphand/a047b6a3792609a7384702dbb714ece5/comphand.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "CompHand.ttf"
+  }
+ },
+ {
+  "family": "DrukaatieBurti",
+  "foundry": "Karlis Kalviskis",
+  "designers": [
+   "Karlis Kalviskis"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "DrukaatieBurti-0.14.1/COPYING",
+  "rfn": [
+   "Drukaatie burti"
+  ],
+  "url": "https://fontlibrary.org/en/font/drukaatieburti",
+  "zip": "https://fontlibrary.org/assets/downloads/drukaatieburti/b56570000148ee2069c5b75a2ad81503/drukaatieburti.zip",
+  "category": "Handwriting",
+  "files": {
+   "100": "DrukaatieBurti-0.14.1/DrukaatieBurti-Thin.ttf",
+   "300": "DrukaatieBurti-0.14.1/DrukaatieBurti-Light.ttf",
+   "400": "DrukaatieBurti-0.14.1/DrukaatieBurti-Regular.ttf",
+   "600": "DrukaatieBurti-0.14.1/DrukaatieBurti-Demi.ttf",
+   "700": "DrukaatieBurti-0.14.1/DrukaatieBurti-Bold.ttf",
+   "800": "DrukaatieBurti-0.14.1/DrukaatieBurti-Heavy.ttf"
+  }
+ },
+ {
+  "family": "Hhenum",
+  "foundry": "T. Christopher White",
+  "designers": [
+   "T. Christopher White"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/khnum",
+  "zip": "https://fontlibrary.org/assets/downloads/khnum/93a72f819207bccdbfbc404b216524bf/khnum.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Hhenum/Hhenum-Regular.otf",
+   "400i": "Hhenum/Hhenum-Italic.otf"
+  }
+ },
+ {
+  "family": "VEGESIGNES Bold",
+  "foundry": "Frandey Lavie-Hyper",
+  "designers": [
+   "Frandey Lavie-Hyper"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/vegesignes",
+  "zip": "https://fontlibrary.org/assets/downloads/vegesignes/5707981fd46102548acbc3be02ef31da/vegesignes.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "VEGESIGNES copie.ttf"
+  }
+ },
+ {
+  "family": "Amalgame",
+  "foundry": "Fe'licie Bouckaert",
+  "designers": [
+   "Fe'licie Bouckaert"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/amalgame",
+  "zip": "https://fontlibrary.org/assets/downloads/amalgame/b2b888edb8c5474228515a7c575d5517/amalgame.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Amalgame.ttf"
+  }
+ },
+ {
+  "family": "Round Style",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/roundstyle",
+  "zip": "https://fontlibrary.org/assets/downloads/roundstyle/ac464258875e4fce275ada3c7fd6a622/roundstyle.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Round Style/RoundStyle-Book.ttf",
+   "700": "Round Style/RoundStyle-Bold.ttf",
+   "400i": "Round Style/RoundStyle-BookOblique.ttf",
+   "700i": "Round Style/RoundStyle-BoldOblique.ttf"
+  }
+ },
+ {
+  "family": "Setperset",
+  "foundry": "manufacturaindependente",
+  "designers": [
+   "manufacturaindependente"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/seterset",
+  "zip": "https://fontlibrary.org/assets/downloads/seterset/c2c2a312c655225c9935bee65ed60615/seterset.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "Setperset/Setperset-Regular.otf"
+  }
+ },
+ {
+  "family": "Selawik",
+  "foundry": "Microsoft Corporation",
+  "designers": [
+   "Aaron Bell"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/selawik",
+  "zip": "https://fontlibrary.org/assets/downloads/selawik/41b0397ec935aff78c7208f351e09092/selawik.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "selawkl.ttf",
+   "400": "selawk.ttf",
+   "600": "selawksb.ttf",
+   "700": "selawkb.ttf"
+  }
+ },
+ {
+  "family": "Love Me Chain V2",
+  "foundry": "Kambel Serle",
+  "designers": [
+   "Kambel Serle"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/love-me-chain-v2",
+  "zip": "https://fontlibrary.org/assets/downloads/love-me-chain-v2/a088a2ceb8eb4f9a05420346751f90d1/love-me-chain-v2.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "LoveMeChainV2-2.1.1853(11).ttf"
+  }
+ },
+ {
+  "family": "Love Me Chain V2 Mono",
+  "foundry": "Kambel Serle",
+  "designers": [
+   "Kambel Serle"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/love-me-chain-v2",
+  "zip": "https://fontlibrary.org/assets/downloads/love-me-chain-v2/a088a2ceb8eb4f9a05420346751f90d1/love-me-chain-v2.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "LoveMeChainV2Mono-2.0.ttf"
+  }
+ },
+ {
+  "family": "Gowa",
+  "foundry": "T. Christopher White",
+  "designers": [
+   "T. Christopher White"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/gowa",
+  "zip": "https://fontlibrary.org/assets/downloads/gowa/ec0474113c230dfc58cdc43ea233f9a7/gowa.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Gowa/Gowa-Regular.otf"
+  }
+ },
+ {
+  "family": "Dotrice",
+  "foundry": "His Deeds Are Dust",
+  "designers": [
+   "Paul Flo Williams"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "hdad-dotrice-1.001/OFL.txt",
+  "rfn": [
+   "Dotrice"
+  ],
+  "url": "https://fontlibrary.org/en/font/dotrice",
+  "zip": "https://fontlibrary.org/assets/downloads/dotrice/8bbaa7a763470e5a042344fd2a6a9907/dotrice.zip",
+  "category": "Display",
+  "files": {
+   "400": "hdad-dotrice-1.001/Dotrice-Regular.otf",
+   "700": "hdad-dotrice-1.001/Dotrice-Bold.otf"
+  }
+ },
+ {
+  "family": "Dotrice Ultra Expanded",
+  "foundry": "His Deeds Are Dust",
+  "designers": [
+   "Paul Flo Williams"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "hdad-dotrice-1.001/OFL.txt",
+  "rfn": [
+   "Dotrice"
+  ],
+  "url": "https://fontlibrary.org/en/font/dotrice",
+  "zip": "https://fontlibrary.org/assets/downloads/dotrice/8bbaa7a763470e5a042344fd2a6a9907/dotrice.zip",
+  "category": "Display",
+  "files": {
+   "400": "hdad-dotrice-1.001/Dotrice-Expanded.otf",
+   "700": "hdad-dotrice-1.001/Dotrice-Bold-Expanded.otf"
+  }
+ },
+ {
+  "family": "Dotrice Extra Condensed",
+  "foundry": "His Deeds Are Dust",
+  "designers": [
+   "Paul Flo Williams"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "hdad-dotrice-1.001/OFL.txt",
+  "rfn": [
+   "Dotrice"
+  ],
+  "url": "https://fontlibrary.org/en/font/dotrice",
+  "zip": "https://fontlibrary.org/assets/downloads/dotrice/8bbaa7a763470e5a042344fd2a6a9907/dotrice.zip",
+  "category": "Display",
+  "files": {
+   "400": "hdad-dotrice-1.001/Dotrice-Condensed.otf",
+   "700": "hdad-dotrice-1.001/Dotrice-Bold-Condensed.otf"
+  }
+ },
+ {
+  "family": "Ramasuri",
+  "foundry": "Vista Ridar",
+  "designers": [
+   "Vista Ridar"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Ramasuri/OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/ramasuri",
+  "zip": "https://fontlibrary.org/assets/downloads/ramasuri/9df5e09fb8709db054560bf5fe286b7a/ramasuri.zip",
+  "category": "Display",
+  "files": {
+   "500": "Ramasuri/Ramasuri.ttf"
+  }
+ },
+ {
+  "family": "Modulo",
+  "foundry": "UnderNoControlTypofoundry",
+  "designers": [
+   "Alex Chavot"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/modulo",
+  "zip": "https://fontlibrary.org/assets/downloads/modulo/3b6ec34ffe942400e102d770824c5238/modulo.zip",
+  "category": "Display",
+  "files": {
+   "400": "Modulo.otf"
+  }
+ },
+ {
+  "family": "Babelstone Modern",
+  "foundry": "BabelStone",
+  "designers": [
+   "Andrew West"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/babelstone-modern",
+  "zip": "https://fontlibrary.org/assets/downloads/babelstone-modern/1fe2f5b6a0c5236fd1b07fc560ad6c1d/babelstone-modern.zip",
+  "category": "Display",
+  "files": {
+   "400": "BabelStoneModern.ttf"
+  }
+ },
+ {
+  "family": "Serreria Sobria",
+  "foundry": "Medialab-Prado",
+  "designers": [
+   "Participants of the \"Stone to Spaceship\" workshop"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/serreria-sobria",
+  "zip": "https://fontlibrary.org/assets/downloads/serreria-sobria/0fa0545f2a578458f054e16ebb9b7942/serreria-sobria.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "SerreriaSobria.otf"
+  }
+ },
+ {
+  "family": "Effects Eighty",
+  "foundry": "Peter Hull",
+  "designers": [
+   "Peter Hull"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "effectseighty/OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/effects-eighty",
+  "zip": "https://fontlibrary.org/assets/downloads/effects-eighty/3b1759f5caa1e5d5bb2e9cda6850f6b0/effects-eighty.zip",
+  "category": "Monospace",
+  "files": {
+   "500": "effectseighty/EffectsEighty.otf",
+   "700": "effectseighty/EffectsEightyBold.otf",
+   "400i": "effectseighty/EffectsEightyItalic.otf",
+   "700i": "effectseighty/EffectsEightyBoldItalic.otf"
+  }
+ },
+ {
+  "family": "Cholerik",
+  "foundry": "Filip Zajac",
+  "designers": [
+   "Filip Zajac"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Cholerik"
+  ],
+  "url": "https://fontlibrary.org/en/font/cholerik",
+  "zip": "https://fontlibrary.org/assets/downloads/cholerik/09ba09c02fba57b9f6c13ec11ee94436/cholerik.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "charakter-C.otf"
+  }
+ },
+ {
+  "family": "Constantine",
+  "foundry": "Dukom Design",
+  "designers": [
+   "Dukom Design"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/constantine",
+  "zip": "https://fontlibrary.org/assets/downloads/constantine/79dd14f66ac22cb0460f39679c1cfa7c/constantine.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Constantine.ttf",
+   "700": "Constantine_Bold.ttf"
+  }
+ },
+ {
+  "family": "ConstantineOL",
+  "foundry": "Dukom Design",
+  "designers": [
+   "Dukom Design"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/constantine",
+  "zip": "https://fontlibrary.org/assets/downloads/constantine/79dd14f66ac22cb0460f39679c1cfa7c/constantine.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Constantine_Outline.ttf"
+  }
+ },
+ {
+  "family": "Sturkopf Grotesk",
+  "foundry": "Uwe Borchert",
+  "designers": [
+   "Uwe Borchert"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/sturkopf-grotesk",
+  "zip": "https://fontlibrary.org/assets/downloads/sturkopf-grotesk/ed85e416ce3fd603a2fff74d8c20cb81/sturkopf-grotesk.zip",
+  "category": "Display",
+  "files": {
+   "500": "Sturkopf.otf"
+  }
+ },
+ {
+  "family": "d puntillas F Tiptoes squid",
+  "foundry": "deFharo",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/de-puntillas-f-tiptoes-squid-bd",
+  "zip": "https://fontlibrary.org/assets/downloads/de-puntillas-f-tiptoes-squid-bd/8e22d8ac5ea9d3efc6903be17346939d/de-puntillas-f-tiptoes-squid-bd.zip",
+  "category": "Display",
+  "files": {
+   "700": "d-puntillas-F-Tiptoes-squid.ttf"
+  }
+ },
+ {
+  "family": "Funtype",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Funtype"
+  ],
+  "url": "https://fontlibrary.org/en/font/funtype",
+  "zip": "https://fontlibrary.org/assets/downloads/funtype/16113a5e1658cee9422fc0034eade55a/funtype.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "Funtype.ttf"
+  }
+ },
+ {
+  "family": "Pfennig",
+  "foundry": "Daniel Johnson",
+  "designers": [
+   "Daniel Johnson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/pfennig",
+  "zip": "https://fontlibrary.org/assets/downloads/pfennig/8b5fa73ca4cf4cfa42d21b9f73f6060b/pfennig.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "Pfennig.ttf",
+   "700": "PfennigBold.ttf",
+   "500i": "PfennigItalic.ttf",
+   "700i": "PfennigBoldItalic.ttf"
+  }
+ },
+ {
+  "family": "vSHexagonica",
+  "foundry": "T.B. von Strong",
+  "designers": [
+   "T.B. von Strong"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/vshexagonica",
+  "zip": "https://fontlibrary.org/assets/downloads/vshexagonica/13254052beaa37c63c21f991464aa0e1/vshexagonica.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "vSHexagonica/vSHexagonica.otf"
+  }
+ },
+ {
+  "family": "Rabbid Highway Sign II",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/rabbid-highway-sign-ii",
+  "zip": "https://fontlibrary.org/assets/downloads/rabbid-highway-sign-ii/7433a6ad464133153f375d0238d4b30c/rabbid-highway-sign-ii.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "RabbidHighwaySignII.otf"
+  }
+ },
+ {
+  "family": "Secuela",
+  "foundry": "deFharo",
+  "designers": [
+   "Fernando Haro"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Secuela Variable Family/OFL.txt",
+  "rfn": [
+   "Secuela"
+  ],
+  "url": "https://fontlibrary.org/en/font/secuela-variable-16-styles",
+  "zip": "https://fontlibrary.org/assets/downloads/secuela-variable-16-styles/22a114a542ef5c02a03ce63d2455d62a/secuela-variable-16-styles.zip",
+  "category": "Sans Serif",
+  "files": {
+   "200": "Secuela Variable Family/Secuela-ExtraLight.otf",
+   "300": "Secuela Variable Family/Secuela-Light.otf",
+   "400": "Secuela Variable Family/Secuela-Regular.otf",
+   "500": "Secuela Variable Family/Secuela-Medium.otf",
+   "600": "Secuela Variable Family/Secuela-SemiBold.otf",
+   "700": "Secuela Variable Family/Secuela-Bold.otf",
+   "800": "Secuela Variable Family/Secuela-ExtraBold.otf",
+   "900": "Secuela Variable Family/Secuela-Black.otf",
+   "200i": "Secuela Variable Family/Secuela-ExtraLightItalic.otf",
+   "300i": "Secuela Variable Family/Secuela-LightItalic.otf",
+   "400i": "Secuela Variable Family/Secuela-Italic.otf",
+   "500i": "Secuela Variable Family/Secuela-MediumItalic.otf",
+   "600i": "Secuela Variable Family/Secuela-SemiBoldItalic.otf",
+   "700i": "Secuela Variable Family/Secuela-BoldItalic.otf",
+   "800i": "Secuela Variable Family/Secuela-ExtraBoldItalic.otf",
+   "900i": "Secuela Variable Family/Secuela-BlackItalic.otf"
+  },
+  "variable": "Secuela Variable Family/Variable Regular-TT/Secuela-Regular-VF.ttf"
+ },
+ {
+  "family": "KJV1611",
+  "foundry": "Fredrick R. Brennan",
+  "designers": [
+   "Fredrick R. Brennan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "dist/LICENSE.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/kjv-1611",
+  "zip": "https://fontlibrary.org/assets/downloads/kjv-1611/361c6269b9bad57bb03a7513af5678b1/kjv-1611.zip",
+  "category": "Display",
+  "files": {
+   "400": "dist/KJV1611.otf"
+  }
+ },
+ {
+  "family": "Metropolis",
+  "foundry": "Chris Simpson",
+  "designers": [
+   "Chris Simpson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/metropolis",
+  "zip": "https://fontlibrary.org/assets/downloads/metropolis/d283c374f95567a131de266d8eee836c/metropolis.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "Metropolis-Thin.ttf",
+   "200": "Metropolis-ExtraLight.ttf",
+   "300": "Metropolis-Light.ttf",
+   "400": "Metropolis-Regular.ttf",
+   "500": "Metropolis-Medium.ttf",
+   "600": "Metropolis-SemiBold.ttf",
+   "700": "Metropolis-Bold.ttf",
+   "800": "Metropolis-ExtraBold.ttf",
+   "900": "Metropolis-Black.ttf",
+   "100i": "Metropolis-ThinItalic.ttf",
+   "200i": "Metropolis-ExtraLightItalic.ttf",
+   "300i": "Metropolis-LightItalic.ttf",
+   "400i": "Metropolis-RegularItalic.ttf",
+   "500i": "Metropolis-MediumItalic.ttf",
+   "600i": "Metropolis-SemiBoldItalic.ttf",
+   "700i": "Metropolis-BoldItalic.ttf",
+   "800i": "Metropolis-ExtraBoldItalic.ttf",
+   "900i": "Metropolis-BlackItalic.ttf"
+  }
+ },
+ {
+  "family": "Retep Relleum",
+  "foundry": "Peter Mueller",
+  "designers": [
+   "Peter Mueller"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/retep-relleum",
+  "zip": "https://fontlibrary.org/assets/downloads/retep-relleum/84024af96194c5dd04d86e593b8aeeb8/retep-relleum.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "reteprelleum.otf"
+  }
+ },
+ {
+  "family": "Deuperset",
+  "foundry": "manufacturaindependente",
+  "designers": [
+   "manufacturaindependente"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/deuperset",
+  "zip": "https://fontlibrary.org/assets/downloads/deuperset/1ced2a4eaf39534e57a0f0f457461d83/deuperset.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "Deuperset/Deuperset-Regular.otf"
+  }
+ },
+ {
+  "family": "Abibas",
+  "foundry": "Tim Larson",
+  "designers": [
+   "Tim Larson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/abibas",
+  "zip": "https://fontlibrary.org/assets/downloads/abibas/092dc4247e773d0afefd04bf237516cb/abibas.zip",
+  "category": "Display",
+  "files": {
+   "500": "Abibas.otf"
+  }
+ },
+ {
+  "family": "Brush-Lettering-One",
+  "foundry": "Eben Sorkin",
+  "designers": [
+   "Eben Sorkin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/brush-lettering-one",
+  "zip": "https://fontlibrary.org/assets/downloads/brush-lettering-one/092357a0446ff51f49b483e66dcaeaf1/brush-lettering-one.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700i": "Brush-Lettering-One.ttf"
+  }
+ },
+ {
+  "family": "Through The Black",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/through-the-black",
+  "zip": "https://fontlibrary.org/assets/downloads/through-the-black/43e227c01cd546c09b87cd1ec5942125/through-the-black.zip",
+  "category": "Display",
+  "files": {
+   "900": "ThroughTheBlackLefta.otf",
+   "900i": "ThroughTheBlackIta.otf"
+  }
+ },
+ {
+  "family": "Superia",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Superia"
+  ],
+  "url": "https://fontlibrary.org/en/font/superia",
+  "zip": "https://fontlibrary.org/assets/downloads/superia/7d59c26beb109548b19217eb01908973/superia.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Superia.ttf",
+   "600": "Superia Demibold.ttf",
+   "700": "Superia Bold.ttf",
+   "900": "Superia Black.ttf"
+  }
+ },
+ {
+  "family": "Pierce",
+  "foundry": "James Kilfiger",
+  "designers": [
+   "James Kilfiger"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/pierce",
+  "zip": "https://fontlibrary.org/assets/downloads/pierce/2c9409aaecfcadc09f38ff3bd5d4638d/pierce.zip",
+  "category": "Serif",
+  "files": {
+   "400": "PierceRoman.otf",
+   "400i": "PierceOblique.otf"
+  }
+ },
+ {
+  "family": "Kallaikosrevve",
+  "foundry": "Idoia Luxan",
+  "designers": [
+   "Idoia Luxan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Kallaikosrevve"
+  ],
+  "url": "https://fontlibrary.org/en/font/kallaikos-revve-kallaikosrevve",
+  "zip": "https://fontlibrary.org/assets/downloads/kallaikos-revve-kallaikosrevve/2877e5e52b32622273d3749157bb96ac/kallaikos-revve-kallaikosrevve.zip",
+  "category": "Display",
+  "files": {
+   "400i": "Kallaikosrevve.ttf"
+  }
+ },
+ {
+  "family": "Glacial Indifference",
+  "foundry": "Alfredo Marco Pradil",
+  "designers": [
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "GlacialIndifference_1310/OFL.txt",
+  "rfn": [
+   "Glacial Indifference"
+  ],
+  "url": "https://fontlibrary.org/en/font/glacial-indifference",
+  "zip": "https://fontlibrary.org/assets/downloads/glacial-indifference/5f2cf277506e19ec77729122f27b1faf/glacial-indifference.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "GlacialIndifference_1310/OTF/GlacialIndifference-Regular.otf",
+   "700": "GlacialIndifference_1310/OTF/GlacialIndifference-Bold.otf"
+  }
+ },
+ {
+  "family": "Miasma Light Bold",
+  "foundry": "Kambel Serle",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/miasma",
+  "zip": "https://fontlibrary.org/assets/downloads/miasma/af5c878b9f707cbc6205d583f21a5603/miasma.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "MiasmaLightBold_v2-2.ttf"
+  }
+ },
+ {
+  "family": "Miasma",
+  "foundry": "Kambel Serle",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/miasma",
+  "zip": "https://fontlibrary.org/assets/downloads/miasma/af5c878b9f707cbc6205d583f21a5603/miasma.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "Miasma_1.1.1.ttf"
+  }
+ },
+ {
+  "family": "Miasma Condensed",
+  "foundry": "Kambel Serle",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/miasma",
+  "zip": "https://fontlibrary.org/assets/downloads/miasma/af5c878b9f707cbc6205d583f21a5603/miasma.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "MiasmaCond_1.1.3.ttf"
+  }
+ },
+ {
+  "family": "Miasma Extended",
+  "foundry": "Kambel Serle",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/miasma",
+  "zip": "https://fontlibrary.org/assets/downloads/miasma/af5c878b9f707cbc6205d583f21a5603/miasma.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "MiasmaExtend_1.1.1.ttf"
+  }
+ },
+ {
+  "family": "Miasma Italic",
+  "foundry": "Kambel Serle",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/miasma",
+  "zip": "https://fontlibrary.org/assets/downloads/miasma/af5c878b9f707cbc6205d583f21a5603/miasma.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500i": "MiasmaItal_1.1.1.ttf"
+  }
+ },
+ {
+  "family": "Miasma Light",
+  "foundry": "Kambel Serle",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/miasma",
+  "zip": "https://fontlibrary.org/assets/downloads/miasma/af5c878b9f707cbc6205d583f21a5603/miasma.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "MiasmaLight_1.1.1-2.ttf"
+  }
+ },
+ {
+  "family": "Miasma Light Bold Leftalic",
+  "foundry": "Kambel Serle",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/miasma",
+  "zip": "https://fontlibrary.org/assets/downloads/miasma/af5c878b9f707cbc6205d583f21a5603/miasma.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "MiasmaLightBoldLeftalic_v2.1-2.ttf"
+  }
+ },
+ {
+  "family": "Miasma Light Bold Oblique",
+  "foundry": "Kambel Serle",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/miasma",
+  "zip": "https://fontlibrary.org/assets/downloads/miasma/af5c878b9f707cbc6205d583f21a5603/miasma.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300i": "MiasmaLightBoldOblique_v2-1.ttf"
+  }
+ },
+ {
+  "family": "Miasma Light Italic",
+  "foundry": "Kambel Serle",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/miasma",
+  "zip": "https://fontlibrary.org/assets/downloads/miasma/af5c878b9f707cbc6205d583f21a5603/miasma.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300i": "MiasmaLightItal_1.1.2.ttf"
+  }
+ },
+ {
+  "family": "Miasma Outlined",
+  "foundry": "Kambel Serle",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/miasma",
+  "zip": "https://fontlibrary.org/assets/downloads/miasma/af5c878b9f707cbc6205d583f21a5603/miasma.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "MiasmaOutlined_1.1.1.ttf"
+  }
+ },
+ {
+  "family": "M.F. Plexus Italic",
+  "foundry": "deFharo",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "M.J. Plexus Italic"
+  ],
+  "url": "https://fontlibrary.org/en/font/m-f-plexus-italic",
+  "zip": "https://fontlibrary.org/assets/downloads/m-f-plexus-italic/908576aa4ec7274139a33b336179f4aa/m-f-plexus-italic.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400i": "M.F. Plexus Italic.ttf"
+  }
+ },
+ {
+  "family": "Remind Sans",
+  "foundry": "XMind Ltd",
+  "designers": [
+   "XMind Ltd",
+   "Cristiano Sobral"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/remind-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/remind-sans/3728a0a8115232267852b337d3971795/remind-sans.zip",
+  "category": "Sans Serif",
+  "files": {
+   "200": "RemindSans-ExtraLight.ttf",
+   "300": "RemindSans-Light.ttf",
+   "400": "RemindSans-Regular.ttf",
+   "500": "RemindSans-Medium.ttf",
+   "600": "RemindSans-SemiBold.ttf",
+   "700": "RemindSans-Bold.ttf",
+   "800": "RemindSans-ExtraBold.ttf",
+   "200i": "RemindSans-ExtraLightItalic.ttf",
+   "300i": "RemindSans-LightItalic.ttf",
+   "400i": "RemindSans-Italic.ttf",
+   "500i": "RemindSans-MediumItalic.ttf",
+   "600i": "RemindSans-SemiBoldItalic.ttf",
+   "700i": "RemindSans-BoldItalic.ttf",
+   "800i": "RemindSans-ExtraBoldItalic.ttf"
+  }
+ },
+ {
+  "family": "WireWyrm",
+  "foundry": "James Kilfiger",
+  "designers": [
+   "James Kilfiger"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/wirewyrm",
+  "zip": "https://fontlibrary.org/assets/downloads/wirewyrm/518fb61f72ec00041aefb117247406b9/wirewyrm.zip",
+  "category": "Serif",
+  "files": {
+   "300": "WireWyrm.otf",
+   "200i": "WireWyrmItalic.otf"
+  }
+ },
+ {
+  "family": "Orbit Racer",
+  "foundry": "Chris Fiedler",
+  "designers": [
+   "Chris Fiedler"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/orbit-racer",
+  "zip": "https://fontlibrary.org/assets/downloads/orbit-racer/fc6bbfeebca16a7b5b2daf39bcded140/orbit-racer.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Orbitracer.otf"
+  }
+ },
+ {
+  "family": "Orkney",
+  "foundry": "Alfredo Marco Pradil",
+  "designers": [
+   "Samuel Oakes",
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [
+   "Orkney"
+  ],
+  "url": "https://fontlibrary.org/en/font/orkney",
+  "zip": "https://fontlibrary.org/assets/downloads/orkney/99f93483b92aaa9f10d3780aba2997e7/orkney.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Orkney Regular.otf",
+   "300i": "Orkney Light Italic.otf",
+   "400i": "Orkney Regular Italic.otf",
+   "500i": "Orkney Medium Italic.otf",
+   "700i": "Orkney Bold Italic.otf"
+  }
+ },
+ {
+  "family": "Acknowledgement",
+  "foundry": "Ben Weiner",
+  "designers": [
+   "Ben Weiner"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "distribution/License",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/acknowledgement",
+  "zip": "https://fontlibrary.org/assets/downloads/acknowledgement/a5294ce75f3058111216b845e2bd2a6d/acknowledgement.zip",
+  "category": "Serif",
+  "files": {
+   "500": "distribution/rendered/Acknowledgement.otf"
+  }
+ },
+ {
+  "family": "Laverick",
+  "foundry": "Daniel Pimley",
+  "designers": [
+   "Daniel Pimley"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENCE.txt",
+  "rfn": [
+   "Laverick"
+  ],
+  "url": "https://fontlibrary.org/en/font/laverick",
+  "zip": "https://fontlibrary.org/assets/downloads/laverick/d6d7cfb025d7c0a917c97832370546b5/laverick.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Laverick-Regular.otf",
+   "700": "Laverick-Bold.otf"
+  }
+ },
+ {
+  "family": "!CRASS ROOTS Alt",
+  "foundry": "!Exclamachine Type Foundry",
+  "designers": [
+   "Choz Cunningham"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/crass-roots-alt",
+  "zip": "https://fontlibrary.org/assets/downloads/crass-roots-alt/408018eba44127b2e929d04c33360fe9/crass-roots-alt.zip",
+  "category": "Display",
+  "files": {
+   "400": "!CRASS ROOTS OFL AIt.otf"
+  }
+ },
+ {
+  "family": "Acro Script",
+  "foundry": "Muhammad Jauhar Azmi",
+  "designers": [
+   "Muhammad Jauhar Azmi"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/acro-script",
+  "zip": "https://fontlibrary.org/assets/downloads/acro-script/174d0d58832fc4e75f5752121bcc6dd7/acro-script.zip",
+  "category": "Display",
+  "files": {
+   "400": "acroscript-Regular.otf"
+  }
+ },
+ {
+  "family": "AddeX",
+  "foundry": "krzysiunet",
+  "designers": [
+   "krzysiunet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/addex",
+  "zip": "https://fontlibrary.org/assets/downloads/addex/50892eb265f70b5123cfd5c719156893/addex.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "AddeX.otf"
+  }
+ },
+ {
+  "family": "Anarchist Mustache",
+  "foundry": "Loki Gwynbleidd",
+  "designers": [
+   "Loki Gwynbleidd"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/anarchist-mustache",
+  "zip": "https://fontlibrary.org/assets/downloads/anarchist-mustache/15188609c6c567d515d2f9a84e7d5103/anarchist-mustache.zip",
+  "category": "Display",
+  "files": {
+   "400i": "Anarchist Mustache.ttf"
+  }
+ },
+ {
+  "family": "At Night",
+  "foundry": "Riley J. Shaw",
+  "designers": [
+   "Riley J. Shaw"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "At Night"
+  ],
+  "url": "https://fontlibrary.org/en/font/at-night",
+  "zip": "https://fontlibrary.org/assets/downloads/at-night/965acaa870b6dccb9826911b8dbe760f/at-night.zip",
+  "category": "Display",
+  "files": {
+   "400": "At Night.ttf"
+  }
+ },
+ {
+  "family": "Auca",
+  "foundry": "Rafael Ferran i Peralta",
+  "designers": [
+   "Rafael Ferran i Peralta"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/auca",
+  "zip": "https://fontlibrary.org/assets/downloads/auca/8f1c128cf409f7899416352d7edfca2f/auca.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Auca/Auca.otf"
+  }
+ },
+ {
+  "family": "Aurea",
+  "foundry": "Lukas Stahl",
+  "designers": [
+   "Lukas Stahl"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/aurea",
+  "zip": "https://fontlibrary.org/assets/downloads/aurea/9bf2fd1b1b61865e6622d90ad38b772b/aurea.zip",
+  "category": "Display",
+  "files": {
+   "500": "Aurea.otf"
+  }
+ },
+ {
+  "family": "Autobahn",
+  "foundry": "Peter Wiegel",
+  "designers": [
+   "Peter Wiegel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Autobahn"
+  ],
+  "url": "https://fontlibrary.org/en/font/autobahn",
+  "zip": "https://fontlibrary.org/assets/downloads/autobahn/83e17165f8b9847df13ccd57416efbcf/autobahn.zip",
+  "category": "Display",
+  "files": {
+   "400": "autobahn.ttf"
+  }
+ },
+ {
+  "family": "Baralikto",
+  "foundry": "Josef Rasmussen",
+  "designers": [
+   "Josef Rasmussen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Baralikto"
+  ],
+  "url": "https://fontlibrary.org/en/font/baralikto",
+  "zip": "https://fontlibrary.org/assets/downloads/baralikto/d0c426a42385dd08ccd9ae91af66288f/baralikto.zip",
+  "category": "Display",
+  "files": {
+   "400": "Baralikto.otf"
+  }
+ },
+ {
+  "family": "Beams",
+  "foundry": "Altay Dagistan",
+  "designers": [
+   "Altay Dagistan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License.txt",
+  "rfn": [
+   "Beams"
+  ],
+  "url": "https://fontlibrary.org/en/font/beams",
+  "zip": "https://fontlibrary.org/assets/downloads/beams/e9dbb80c1c925d7676b2032afef1c01b/beams.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Beams.ttf"
+  }
+ },
+ {
+  "family": "Beon",
+  "foundry": "BSozoo",
+  "designers": [
+   "BSozoo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Beon/OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/beon",
+  "zip": "https://fontlibrary.org/assets/downloads/beon/f723b99cf69676d0904119cea4d37ddb/beon.zip",
+  "category": "Display",
+  "files": {
+   "400": "Beon/Beon-Regular.otf"
+  }
+ },
+ {
+  "family": "Beuron Condensed",
+  "foundry": "Keno Wehr",
+  "designers": [
+   "Keno Wehr"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/beuron",
+  "zip": "https://fontlibrary.org/assets/downloads/beuron/4abb5f9f080142f06cfe47d7d1fb98c5/beuron.zip",
+  "category": "Display",
+  "files": {
+   "400": "BeuronCondensed-Regular.otf"
+  }
+ },
+ {
+  "family": "Beuron Extended",
+  "foundry": "Keno Wehr",
+  "designers": [
+   "Keno Wehr"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/beuron",
+  "zip": "https://fontlibrary.org/assets/downloads/beuron/4abb5f9f080142f06cfe47d7d1fb98c5/beuron.zip",
+  "category": "Display",
+  "files": {
+   "400": "BeuronExtended-Regular.otf"
+  }
+ },
+ {
+  "family": "Beuron",
+  "foundry": "Keno Wehr",
+  "designers": [
+   "Keno Wehr"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/beuron",
+  "zip": "https://fontlibrary.org/assets/downloads/beuron/4abb5f9f080142f06cfe47d7d1fb98c5/beuron.zip",
+  "category": "Display",
+  "files": {
+   "400": "Beuron-Regular.otf"
+  }
+ },
+ {
+  "family": "Blackletter Hand",
+  "foundry": "Nick Matavka",
+  "designers": [
+   "Nick Matavka"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/blackletter-hand",
+  "zip": "https://fontlibrary.org/assets/downloads/blackletter-hand/fd0f5d97dfa7a8630e390317f058fdf8/blackletter-hand.zip",
+  "category": "Handwriting",
+  "files": {
+   "400i": "BlackletterHand.ttf"
+  }
+ },
+ {
+  "family": "Blink",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [
+   "Mew Too"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/blink",
+  "zip": "https://fontlibrary.org/assets/downloads/blink/f15373d68e5aaabca93483b2ccdece6e/blink.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Blink.otf"
+  }
+ },
+ {
+  "family": "Bluebird",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [
+   "Jasper"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/bluebird",
+  "zip": "https://fontlibrary.org/assets/downloads/bluebird/9565f5a3a10b58f043ba5fb971f401c3/bluebird.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "BluebirdLi.otf",
+   "400": "Bluebird.otf",
+   "700": "BluebirdSfBd.otf"
+  }
+ },
+ {
+  "family": "Bolshevik",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/bolshevik",
+  "zip": "https://fontlibrary.org/assets/downloads/bolshevik/89cb7397359167e78e5ea75269fea8ef/bolshevik.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "BolshevikPL.otf",
+   "200": "BolshevikSL.otf",
+   "300": "BolshevikLgt.otf",
+   "400": "Bolshevik.otf",
+   "700": "BolshevikBd.otf",
+   "900": "BolshevikBlk.otf"
+  }
+ },
+ {
+  "family": "Bury Caps",
+  "foundry": "Peter S. Baker",
+  "designers": [
+   "Peter S. Baker"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/bury-caps",
+  "zip": "https://fontlibrary.org/assets/downloads/bury-caps/e361e1fa0004d21d9dc43784634219f9/bury-caps.zip",
+  "category": "Display",
+  "files": {
+   "500": "BuryCaps.otf"
+  }
+ },
+ {
+  "family": "C Coker Hand 1",
+  "foundry": "Cuchulain Coker",
+  "designers": [
+   "Cuchulain Coker"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "C Coker Hand 1 OpenFont/oflLICENSEccokerhand1.txt",
+  "rfn": [
+   "CCokerHand"
+  ],
+  "url": "https://fontlibrary.org/en/font/c-coker-hand-1",
+  "zip": "https://fontlibrary.org/assets/downloads/c-coker-hand-1/373bfb6869afab6c9885e7c564e68a3a/c-coker-hand-1.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "C Coker Hand 1 OpenFont/CCokerHand1.ttf"
+  }
+ },
+ {
+  "family": "Cactron",
+  "foundry": "Nacahua",
+  "designers": [
+   "Nacahua"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Cactron/OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/cactron",
+  "zip": "https://fontlibrary.org/assets/downloads/cactron/dfa53098af08a1aa257f9c72b1101b97/cactron.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Cactron/Cactron-Regular.otf",
+   "700": "Cactron/CactronBold.otf",
+   "400i": "Cactron/Cactron-Italic.otf",
+   "700i": "Cactron/Cactron-Bold-Italic.otf"
+  }
+ },
+ {
+  "family": "Caledo",
+  "foundry": "BSozoo",
+  "designers": [
+   "BSozoo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Caledo/OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/caledo",
+  "zip": "https://fontlibrary.org/assets/downloads/caledo/25e5290ead430d7407f31f7a29eab5d0/caledo.zip",
+  "category": "Display",
+  "files": {
+   "700": "Caledo/Caledo_bold.otf"
+  }
+ },
+ {
+  "family": "Celtica",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/celtica",
+  "zip": "https://fontlibrary.org/assets/downloads/celtica/374acd4301680282170f13335571ec31/celtica.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Celtica/Celtica-Book.ttf",
+   "700": "Celtica/Celtica-Bold.ttf",
+   "400i": "Celtica/Celtica-BookOblique.ttf",
+   "700i": "Celtica/Celtica-BoldOblique.ttf"
+  }
+ },
+ {
+  "family": "Charger",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [
+   "Jasper"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/charger",
+  "zip": "https://fontlibrary.org/assets/downloads/charger/3c0066ea83b6b49789fd3cfd06dbba63/charger.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Charger.otf"
+  }
+ },
+ {
+  "family": "Charger Pro",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [
+   "Jasper"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/charger-pro",
+  "zip": "https://fontlibrary.org/assets/downloads/charger-pro/271ac6d1cf8e62d462b70201cc537bd9/charger-pro.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "ChargerProLit.otf",
+   "400": "ChargerPro.otf",
+   "700": "ChargerProBd.otf",
+   "900": "ChargerProBlk.otf"
+  }
+ },
+ {
+  "family": "Charger Sport",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [
+   "Jasper"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/charger-sport",
+  "zip": "https://fontlibrary.org/assets/downloads/charger-sport/75f587e56f58e9b3567e0ad366c71a54/charger-sport.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "ChargerSportHL.otf",
+   "200": "ChargerSportExLit.otf",
+   "300": "ChargerSportLit.otf",
+   "400": "ChargerSport.otf",
+   "600": "ChargerSportSeBd.otf",
+   "700": "ChargerSportBd.otf",
+   "900": "ChargerSportBlk.otf"
+  }
+ },
+ {
+  "family": "ChocoTxt",
+  "foundry": "chococoin",
+  "designers": [
+   "chococoin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/chocotxt",
+  "zip": "https://fontlibrary.org/assets/downloads/chocotxt/8a1358737c21c46c15afefb20e7753d1/chocotxt.zip",
+  "category": "Display",
+  "files": {
+   "400": "chocotxt.ttf"
+  }
+ },
+ {
+  "family": "Chomsky",
+  "foundry": "Fredrick R. Brennan",
+  "designers": [
+   "Fredrick R. Brennan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "dist/LICENSE.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/chomsky",
+  "zip": "https://fontlibrary.org/assets/downloads/chomsky/e1c2f677c3ac28093f04c77fceafa88d/chomsky.zip",
+  "category": "Display",
+  "files": {
+   "400": "dist/Chomsky.otf"
+  }
+ },
+ {
+  "family": "Classica",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/classica",
+  "zip": "https://fontlibrary.org/assets/downloads/classica/55e030d1ac86d6c7c1dfd56e3dc6307e/classica.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Classica/Classica-Book.ttf",
+   "700": "Classica/Classica-Bold.ttf",
+   "400i": "Classica/Classica-BookOblique.ttf",
+   "700i": "Classica/Classica-BoldOblique.ttf"
+  }
+ },
+ {
+  "family": "Clayborn",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Clayborn"
+  ],
+  "url": "https://fontlibrary.org/en/font/clayborn",
+  "zip": "https://fontlibrary.org/assets/downloads/clayborn/337871a73f51fdb6ee0b5dc085bec191/clayborn.zip",
+  "category": "Display",
+  "files": {
+   "400": "Clayborn.ttf"
+  }
+ },
+ {
+  "family": "Clickuper",
+  "foundry": "Denis Ignatov",
+  "designers": [
+   "Denis Ignatov"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/clickuper",
+  "zip": "https://fontlibrary.org/assets/downloads/clickuper/06f4e70a11c0ab9a595becb98b9a7b32/clickuper.zip",
+  "category": "Display",
+  "files": {
+   "400": "Clickuper.ttf"
+  }
+ },
+ {
+  "family": "Coelacanth",
+  "foundry": "Ben Whitmore",
+  "designers": [
+   "Ben Whitmore"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/coelacanth",
+  "zip": "https://fontlibrary.org/assets/downloads/coelacanth/d40b6b08e184c21574151115a61a208d/coelacanth.zip",
+  "category": "Serif",
+  "files": {
+   "200": "CoelacanthCaptionExtraLt.otf",
+   "300": "CoelacanthCaptionLt.otf",
+   "400": "Coelacanth.otf",
+   "600": "CoelacanthCaptionSemibd.otf",
+   "700": "CoelacanthBold.otf",
+   "800": "CoelacanthCaptionHeavy.otf",
+   "500i": "CoelacanthItalic.otf"
+  }
+ },
+ {
+  "family": "Comprehension",
+  "foundry": "Alfredo Marco Pradil",
+  "designers": [
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/comprehension",
+  "zip": "https://fontlibrary.org/assets/downloads/comprehension/a111c3adba695cd592d1a4e7fde5c6d7/comprehension.zip",
+  "category": "Serif",
+  "files": {
+   "600": "Comprehension-SemiBold.otf"
+  }
+ },
+ {
+  "family": "Concrete",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Concrete"
+  ],
+  "url": "https://fontlibrary.org/en/font/concrete",
+  "zip": "https://fontlibrary.org/assets/downloads/concrete/3d68c77089fba26ef3c3a9726752f7b2/concrete.zip",
+  "category": "Display",
+  "files": {
+   "400": "Concrete.ttf"
+  }
+ },
+ {
+  "family": "CostaRica",
+  "foundry": "Rafael Ferran i Peralta",
+  "designers": [
+   "Rafael Ferran i Peralta"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/costarica",
+  "zip": "https://fontlibrary.org/assets/downloads/costarica/b8c5cead3d6dea467c59fa617d2473d6/costarica.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "CostaRica/CostaRica.otf"
+  }
+ },
+ {
+  "family": "Coval",
+  "foundry": "Context Ltd",
+  "designers": [
+   "Stefan Peev"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Coval"
+  ],
+  "url": "https://fontlibrary.org/en/font/bretan",
+  "zip": "https://fontlibrary.org/assets/downloads/bretan/4c03c53817dacd059f28f385af02c5e8/bretan.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "Coval-Thin.otf",
+   "200": "Coval-ExtraLight.otf",
+   "300": "Coval-Light.otf",
+   "400": "Coval-Book.otf",
+   "500": "Coval-Medium.otf",
+   "600": "Coval-DemiBold.otf",
+   "700": "Coval-Bold.otf",
+   "800": "Coval-ExtraBold.otf",
+   "900": "Coval-Black.otf",
+   "100i": "Coval-ThinItalic.otf",
+   "200i": "Coval-ExtraLightItalic.otf",
+   "300i": "Coval-LightItalic.otf",
+   "400i": "Coval-BookItalic.otf",
+   "500i": "Coval-MediumItalic.otf",
+   "600i": "Coval-DemiBoldItalic.otf",
+   "700i": "Coval-BoldItalic.otf",
+   "800i": "Coval-ExtraBoldItalic.otf",
+   "900i": "Coval-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Cramaten Condensed",
+  "foundry": "Denis Ignatov",
+  "designers": [
+   "Denis Ignatov"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/cramaten",
+  "zip": "https://fontlibrary.org/assets/downloads/cramaten/508f42faf37bd216410d8987b2d6c9b4/cramaten.zip",
+  "category": "Display",
+  "files": {
+   "400": "Cramaten.otf"
+  }
+ },
+ {
+  "family": "Criativa Sans",
+  "foundry": "Alfredo Marco Pradil",
+  "designers": [
+   "Alfredo Marco Pradil",
+   "Cristiano Sobral"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/criativa-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/criativa-sans/c7dcfc914eedbf8e77e4f78d167040fd/criativa-sans.zip",
+  "category": "Sans Serif",
+  "files": {
+   "200": "CriativaSans-ExtraLight.ttf",
+   "300": "CriativaSans-Light.ttf",
+   "400": "CriativaSans-Regular.ttf",
+   "500": "CriativaSans-Medium.ttf",
+   "600": "CriativaSans-SemiBold.ttf",
+   "700": "CriativaSans-Bold.ttf",
+   "800": "CriativaSans-ExtraBold.ttf",
+   "900": "CriativaSans-Black.ttf",
+   "200i": "CriativaSans-ExtraLightItalic.ttf",
+   "300i": "CriativaSans-LightItalic.ttf",
+   "400i": "CriativaSans-Italic.ttf",
+   "500i": "CriativaSans-MediumItalic.ttf",
+   "600i": "CriativaSans-SemiBoldItalic.ttf",
+   "700i": "CriativaSans-BoldItalic.ttf",
+   "800i": "CriativaSans-ExtraBoldItalic.ttf",
+   "900i": "CriativaSans-BlackItalic.ttf"
+  }
+ },
+ {
+  "family": "Crosterian",
+  "foundry": "Denis Ignatov",
+  "designers": [
+   "Denis Ignatov"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/crosterian",
+  "zip": "https://fontlibrary.org/assets/downloads/crosterian/130cb9edba0ebe449193f567332532e4/crosterian.zip",
+  "category": "Display",
+  "files": {
+   "400": "Crosterian.ttf"
+  }
+ },
+ {
+  "family": "Crusoe Text",
+  "foundry": "Daniel Pimley",
+  "designers": [
+   "Daniel Pimley"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENCE.txt",
+  "rfn": [
+   "Crusoe Text"
+  ],
+  "url": "https://fontlibrary.org/en/font/crusoe-text",
+  "zip": "https://fontlibrary.org/assets/downloads/crusoe-text/667b4901e49c1fe21e5e0046750ffb6c/crusoe-text.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "CrusoeText-Regular.otf",
+   "700": "CrusoeText-Bold.otf",
+   "400i": "CrusoeText-Italic.otf",
+   "700i": "CrusoeText-Bold-Italic.otf"
+  }
+ },
+ {
+  "family": "Cubellan",
+  "foundry": "Jyrki Ihalainen",
+  "designers": [
+   "Jyrki Ihalainen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/cubellan",
+  "zip": "https://fontlibrary.org/assets/downloads/cubellan/c53b04c012643f6c50fe215ace5efdbb/cubellan.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Cubellan_v_0_7/Cubellan.ttf",
+   "700": "Cubellan_v_0_7/Cubellan Bold.ttf",
+   "400i": "Cubellan_v_0_7/Cubellan Italic.ttf"
+  }
+ },
+ {
+  "family": "Cubellan SC",
+  "foundry": "Jyrki Ihalainen",
+  "designers": [
+   "Jyrki Ihalainen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/cubellan",
+  "zip": "https://fontlibrary.org/assets/downloads/cubellan/c53b04c012643f6c50fe215ace5efdbb/cubellan.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Cubellan_v_0_7/Cubellan_SC.ttf"
+  }
+ },
+ {
+  "family": "d puntillas B to tiptoe",
+  "foundry": "deFharo.com",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/de-puntillas-b-to-tiptoe-regular",
+  "zip": "https://fontlibrary.org/assets/downloads/de-puntillas-b-to-tiptoe-regular/227bfb785daca2360811f1345aff3ef3/de-puntillas-b-to-tiptoe-regular.zip",
+  "category": "Display",
+  "files": {
+   "400": "d-puntillas-B-to-tiptoe.ttf"
+  }
+ },
+ {
+  "family": "d puntillas C Lace",
+  "foundry": "deFharo.com",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/de-puntillas-c-lace-lt",
+  "zip": "https://fontlibrary.org/assets/downloads/de-puntillas-c-lace-lt/31a45d12acc21178e7368318dccffad7/de-puntillas-c-lace-lt.zip",
+  "category": "Display",
+  "files": {
+   "300": "d-puntillas-C-Lace.ttf"
+  }
+ },
+ {
+  "family": "Decalotype",
+  "foundry": "Alfredo Marco Pradil",
+  "designers": [
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License/OFL-FAQ.txt",
+  "rfn": [
+   "Decalotype"
+  ],
+  "url": "https://fontlibrary.org/en/font/decalotype",
+  "zip": "https://fontlibrary.org/assets/downloads/decalotype/4e2807b4b94be64092b82264c2c0c4f0/decalotype.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "OTF/Decalotype-Light.otf",
+   "400": "OTF/Decalotype-Regular.otf",
+   "500": "OTF/Decalotype-Medium.otf",
+   "600": "OTF/Decalotype-SemiBold.otf",
+   "700": "OTF/Decalotype-Bold.otf",
+   "800": "OTF/Decalotype-ExtraBold.otf",
+   "900": "OTF/Decalotype-Black.otf",
+   "300i": "OTF/Decalotype-LightItalic.otf",
+   "400i": "OTF/Decalotype-Italic.otf",
+   "500i": "OTF/Decalotype-MediumItalic.otf",
+   "600i": "OTF/Decalotype-SemiBoldItalic.otf",
+   "700i": "OTF/Decalotype-BoldItalic.otf",
+   "800i": "OTF/Decalotype-ExtraBoldItalic.otf",
+   "900i": "OTF/Decalotype-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Dehuti",
+  "foundry": "T. Christopher White",
+  "designers": [
+   "T. Christopher White"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Dehuti/OFL-FAQ.rtf",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/dehuti",
+  "zip": "https://fontlibrary.org/assets/downloads/dehuti/3516f81b97095022dfaa9aaa7e3eebd4/dehuti.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Dehuti/Dehuti-Book.otf",
+   "700": "Dehuti/Dehuti-Bold.otf",
+   "400i": "Dehuti/Dehuti-Italic.otf",
+   "700i": "Dehuti/Dehuti-Bold-Italic.otf"
+  }
+ },
+ {
+  "family": "Dehuti Alt",
+  "foundry": "T. Christopher White",
+  "designers": [
+   "T. Christopher White"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Dehuti/OFL-FAQ.rtf",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/dehuti",
+  "zip": "https://fontlibrary.org/assets/downloads/dehuti/3516f81b97095022dfaa9aaa7e3eebd4/dehuti.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Dehuti/DehutiAlt-Book.otf",
+   "700": "Dehuti/DehutiAlt-Bold.otf",
+   "400i": "Dehuti/DehutiAlt-Italic.otf",
+   "700i": "Dehuti/DehutiAlt-Bold-Italic.otf"
+  }
+ },
+ {
+  "family": "Destroya",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Destroya"
+  ],
+  "url": "https://fontlibrary.org/en/font/destroya",
+  "zip": "https://fontlibrary.org/assets/downloads/destroya/d20d63ce91790939adbf728556c38fd2/destroya.zip",
+  "category": "Display",
+  "files": {
+   "700": "Destroya Bold.ttf"
+  }
+ },
+ {
+  "family": "DN Titling",
+  "foundry": "Nick Matavka",
+  "designers": [
+   "Nick Matavka"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/dn-titling",
+  "zip": "https://fontlibrary.org/assets/downloads/dn-titling/8ca958d500df59a9aa0b11412d92fffd/dn-titling.zip",
+  "category": "Display",
+  "files": {
+   "400": "DNTitling.ttf"
+  }
+ },
+ {
+  "family": "Dodgy Ultra",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Dodgy Ultra"
+  ],
+  "url": "https://fontlibrary.org/en/font/dodgy-ultra",
+  "zip": "https://fontlibrary.org/assets/downloads/dodgy-ultra/6c44c00ce4978f46230d41d32da9fbed/dodgy-ultra.zip",
+  "category": "Display",
+  "files": {
+   "900": "Dodgy Ultra.ttf"
+  }
+ },
+ {
+  "family": "Draughtsman A",
+  "foundry": "Nick Matavka",
+  "designers": [
+   "Nick Matavka"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/draughtsman-a",
+  "zip": "https://fontlibrary.org/assets/downloads/draughtsman-a/0bce0c7d052b26ba57055a72c7ad392b/draughtsman-a.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "DraughtsmanARegular.ttf",
+   "400i": "DraughtsmanAItalic.ttf"
+  }
+ },
+ {
+  "family": "Eadui",
+  "foundry": "Peter S. Baker",
+  "designers": [
+   "Peter S. Baker"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/eadui",
+  "zip": "https://fontlibrary.org/assets/downloads/eadui/f399624f5e9bfe0f9c1265f47a6c3d8a/eadui.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "eadui/Eadui.ttf"
+  }
+ },
+ {
+  "family": "Earthbound Condensed",
+  "foundry": "Richard Alexander Hall",
+  "designers": [
+   "Richard Alexander Hall"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/earthbound",
+  "zip": "https://fontlibrary.org/assets/downloads/earthbound/10f28bae07964c08495c41d8e9c1869c/earthbound.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "Earthbound-Condensed-Bold.otf",
+   "700i": "Earthbound-Condensed-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "Earthbound",
+  "foundry": "Richard Alexander Hall",
+  "designers": [
+   "Richard Alexander Hall"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/earthbound",
+  "zip": "https://fontlibrary.org/assets/downloads/earthbound/10f28bae07964c08495c41d8e9c1869c/earthbound.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Earthbound-Regular.otf"
+  }
+ },
+ {
+  "family": "Echotopia",
+  "foundry": "Erik Kirtley",
+  "designers": [
+   "Erik Kirtley"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Echotopia/OFL.txt",
+  "rfn": [
+   "Echotopia"
+  ],
+  "url": "https://fontlibrary.org/en/font/echotopia",
+  "zip": "https://fontlibrary.org/assets/downloads/echotopia/5752082b32943ee58df10f7009a4bbcf/echotopia.zip",
+  "category": "Display",
+  "files": {
+   "400": "Echotopia/Echotopia-Regular.otf"
+  }
+ },
+ {
+  "family": "EptKazoo",
+  "foundry": "Mark V",
+  "designers": [
+   "Mark V"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "EptKazoo_1.0/LICENSE.TXT",
+  "rfn": [
+   "EptKazoo"
+  ],
+  "url": "https://fontlibrary.org/en/font/eptkazoo",
+  "zip": "https://fontlibrary.org/assets/downloads/eptkazoo/888bc46aac6130e82ee8f2501c1a8fdf/eptkazoo.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "EptKazoo_1.0/EptKazoo.ttf"
+  }
+ },
+ {
+  "family": "Fabrik",
+  "foundry": "Taniwha",
+  "designers": [
+   "Taniwha"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/fabrik",
+  "zip": "https://fontlibrary.org/assets/downloads/fabrik/efe8f937d02bd73a7966fd03cee15726/fabrik.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "otf/fabrik_n.otf",
+   "700": "otf/fabrik_b.otf",
+   "400i": "otf/fabrik_i.otf"
+  }
+ },
+ {
+  "family": "FabrikCond",
+  "foundry": "Taniwha",
+  "designers": [
+   "Taniwha"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/fabrik",
+  "zip": "https://fontlibrary.org/assets/downloads/fabrik/efe8f937d02bd73a7966fd03cee15726/fabrik.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "otf/fabrik_nc.otf",
+   "700": "otf/fabrik_bc.otf"
+  }
+ },
+ {
+  "family": "FabrikFootNote",
+  "foundry": "Taniwha",
+  "designers": [
+   "Taniwha"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/fabrik",
+  "zip": "https://fontlibrary.org/assets/downloads/fabrik/efe8f937d02bd73a7966fd03cee15726/fabrik.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "otf/fabrik_ft.otf"
+  }
+ },
+ {
+  "family": "FabrikBlack",
+  "foundry": "Taniwha",
+  "designers": [
+   "Taniwha"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/fabrik",
+  "zip": "https://fontlibrary.org/assets/downloads/fabrik/efe8f937d02bd73a7966fd03cee15726/fabrik.zip",
+  "category": "Sans Serif",
+  "files": {
+   "900": "otf/fabrik_k.otf"
+  }
+ },
+ {
+  "family": "Fairfax HD",
+  "foundry": "Kreative Software",
+  "designers": [
+   "Kreative Software"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/fairfax-hd",
+  "zip": "https://fontlibrary.org/assets/downloads/fairfax-hd/a80b2565278d840dcc4cba83659c55f3/fairfax-hd.zip",
+  "category": "Monospace",
+  "files": {
+   "500": "FairfaxHD.ttf"
+  }
+ },
+ {
+  "family": "Fairfax Hax HD",
+  "foundry": "Kreative Software",
+  "designers": [
+   "Kreative Software"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/fairfax-hd",
+  "zip": "https://fontlibrary.org/assets/downloads/fairfax-hd/a80b2565278d840dcc4cba83659c55f3/fairfax-hd.zip",
+  "category": "Monospace",
+  "files": {
+   "500": "FairfaxHaxHD.ttf"
+  }
+ },
+ {
+  "family": "Fairfax SM HD",
+  "foundry": "Kreative Software",
+  "designers": [
+   "Kreative Software"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/fairfax-hd",
+  "zip": "https://fontlibrary.org/assets/downloads/fairfax-hd/a80b2565278d840dcc4cba83659c55f3/fairfax-hd.zip",
+  "category": "Monospace",
+  "files": {
+   "500": "FairfaxSMHD.ttf"
+  }
+ },
+ {
+  "family": "Fifteen",
+  "foundry": "Zeimusu",
+  "designers": [
+   "Zeimusu"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/fifteen",
+  "zip": "https://fontlibrary.org/assets/downloads/fifteen/c1556403ec283a1b5a23ad483af659f9/fifteen.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "FifteenNarrow.ttf"
+  }
+ },
+ {
+  "family": "Quinze",
+  "foundry": "Zeimusu",
+  "designers": [
+   "Zeimusu"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/fifteen",
+  "zip": "https://fontlibrary.org/assets/downloads/fifteen/c1556403ec283a1b5a23ad483af659f9/fifteen.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "QuinzeNarrow.ttf"
+  }
+ },
+ {
+  "family": "FreeUniversal",
+  "foundry": "Stephen Wilson",
+  "designers": [
+   "Stephen Wilson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/freeuniversal",
+  "zip": "https://fontlibrary.org/assets/downloads/freeuniversal/5077bdf47767ac210dd15ea83870df66/freeuniversal.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "FreeUniversal-Regular.ttf",
+   "700": "FreeUniversal-Bold.ttf",
+   "500i": "FreeUniversal-Italic.ttf",
+   "700i": "FreeUniversal-BoldItalic.ttf"
+  }
+ },
+ {
+  "family": "Funtauna",
+  "foundry": "Linus Romer",
+  "designers": [
+   "Linus Romer"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "funtauna11/license.txt",
+  "rfn": [
+   "Funtauna"
+  ],
+  "url": "https://fontlibrary.org/en/font/funtauna",
+  "zip": "https://fontlibrary.org/assets/downloads/funtauna/1aa6e255157719c3e461d825238d5e09/funtauna.zip",
+  "category": "Serif",
+  "files": {
+   "300": "funtauna11/FuntaunaLight.otf",
+   "400": "funtauna11/FuntaunaRegular.otf",
+   "700": "funtauna11/FuntaunaBold.otf",
+   "300i": "funtauna11/FuntaunaLightOblique.otf",
+   "400i": "funtauna11/FuntaunaOblique.otf",
+   "700i": "funtauna11/FuntaunaBoldOblique.otf"
+  }
+ },
+ {
+  "family": "Funtauna Otg",
+  "foundry": "Linus Romer",
+  "designers": [
+   "Linus Romer"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "funtauna11/license.txt",
+  "rfn": [
+   "Funtauna"
+  ],
+  "url": "https://fontlibrary.org/en/font/funtauna",
+  "zip": "https://fontlibrary.org/assets/downloads/funtauna/1aa6e255157719c3e461d825238d5e09/funtauna.zip",
+  "category": "Serif",
+  "files": {
+   "400": "funtauna11/FuntaunaOtg.otf",
+   "700": "funtauna11/FuntaunaOtgBold.otf",
+   "400i": "funtauna11/FuntaunaOtgOblique.otf",
+   "700i": "funtauna11/FuntaunaOtgBoldOblique.otf"
+  }
+ },
+ {
+  "family": "Futura Renner",
+  "foundry": "BSozoo",
+  "designers": [
+   "BSozoo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "FuturaRenner-master/LICENSE.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/futura-renner",
+  "zip": "https://fontlibrary.org/assets/downloads/futura-renner/951a69f210c7e73b8d89c27bcd07320a/futura-renner.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "FuturaRenner-master/fonts/FuturaRenner-Light.otf",
+   "400": "FuturaRenner-master/fonts/FuturaRenner-Regular.otf"
+  }
+ },
+ {
+  "family": "Fyodor",
+  "foundry": "Chris Hughes",
+  "designers": [
+   "Chris Hughes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "fyodor/ofl.txt",
+  "rfn": [
+   "Fyodor"
+  ],
+  "url": "https://fontlibrary.org/en/font/fyodor",
+  "zip": "https://fontlibrary.org/assets/downloads/fyodor/7b5fa929a4b51b0ea8056386cc82e961/fyodor.zip",
+  "category": "Display",
+  "files": {
+   "700": "fyodor/truetype/Fyodor-Bold.ttf",
+   "700i": "fyodor/truetype/Fyodor-BoldOblique.ttf"
+  }
+ },
+ {
+  "family": "Fyodor Condensed",
+  "foundry": "Chris Hughes",
+  "designers": [
+   "Chris Hughes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "fyodor/ofl.txt",
+  "rfn": [
+   "Fyodor"
+  ],
+  "url": "https://fontlibrary.org/en/font/fyodor",
+  "zip": "https://fontlibrary.org/assets/downloads/fyodor/7b5fa929a4b51b0ea8056386cc82e961/fyodor.zip",
+  "category": "Display",
+  "files": {
+   "700": "fyodor/truetype/Fyodor-BoldCondensed.ttf",
+   "700i": "fyodor/truetype/Fyodor-BoldCondensedOblique.ttf"
+  }
+ },
+ {
+  "family": "Fyodor Expanded",
+  "foundry": "Chris Hughes",
+  "designers": [
+   "Chris Hughes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "fyodor/ofl.txt",
+  "rfn": [
+   "Fyodor"
+  ],
+  "url": "https://fontlibrary.org/en/font/fyodor",
+  "zip": "https://fontlibrary.org/assets/downloads/fyodor/7b5fa929a4b51b0ea8056386cc82e961/fyodor.zip",
+  "category": "Display",
+  "files": {
+   "700": "fyodor/truetype/Fyodor-BoldExpanded.ttf",
+   "700i": "fyodor/truetype/Fyodor-BoldExpandedOblique.ttf"
+  }
+ },
+ {
+  "family": "Gauge",
+  "foundry": "Daniel Pimley",
+  "designers": [
+   "Daniel Pimley"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENCE.txt",
+  "rfn": [
+   "Gauge"
+  ],
+  "url": "https://fontlibrary.org/en/font/gauge",
+  "zip": "https://fontlibrary.org/assets/downloads/gauge/f876de331c11a59d0f457e210ba68864/gauge.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Gauge-Regular.otf",
+   "800": "Gauge-Heavy.otf",
+   "400i": "Gauge-Oblique.otf"
+  }
+ },
+ {
+  "family": "gizagiza",
+  "foundry": "j4p4n",
+  "designers": [
+   "j4p4n"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/gizagiza",
+  "zip": "https://fontlibrary.org/assets/downloads/gizagiza/408bd322bb4e301f263d882a04ee3be0/gizagiza.zip",
+  "category": "Display",
+  "files": {
+   "400": "gizagiza.ttf"
+  }
+ },
+ {
+  "family": "GNUTypewriter",
+  "foundry": "Lukasz Komsta",
+  "designers": [
+   "Lukasz Komsta"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/gnutypewriter",
+  "zip": "https://fontlibrary.org/assets/downloads/gnutypewriter/8a7cb57723df9125503083ed59e7a11c/gnutypewriter.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "gtw.otf"
+  }
+ },
+ {
+  "family": "Googily",
+  "foundry": "Neil Burgin",
+  "designers": [
+   "Neil Burgin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/googily",
+  "zip": "https://fontlibrary.org/assets/downloads/googily/90d1f9a0492844b52dc3a2b813bf997f/googily.zip",
+  "category": "Display",
+  "files": {
+   "500": "Googily.otf"
+  }
+ },
+ {
+  "family": "Grana Padano",
+  "foundry": "Daniel Johnson",
+  "designers": [
+   "Daniel Johnson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/grana-padano",
+  "zip": "https://fontlibrary.org/assets/downloads/grana-padano/67c44957a5109298272b45dd1fb7c616/grana-padano.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "GranaPadano.ttf"
+  }
+ },
+ {
+  "family": "Graziano",
+  "foundry": "Graziano Capelli",
+  "designers": [
+   "Graziano Capelli"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/graziano",
+  "zip": "https://fontlibrary.org/assets/downloads/graziano/493b3e1535054a8f076d02ba9f945ad1/graziano.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "Graziano.ttf"
+  }
+ },
+ {
+  "family": "Grotesque Bourgeoisie",
+  "foundry": "Loki Gwynbleidd",
+  "designers": [
+   "Loki Gwynbleidd"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/grotesque-bourgeoisie",
+  "zip": "https://fontlibrary.org/assets/downloads/grotesque-bourgeoisie/a3546cf3c29dc012512e8724616e60de/grotesque-bourgeoisie.zip",
+  "category": "Display",
+  "files": {
+   "400": "Grotesque Bourgeoisie.ttf"
+  }
+ },
+ {
+  "family": "Grupo3",
+  "foundry": "ED DESIGN GRAPHIC + WEB",
+  "designers": [
+   "ED DESIGN GRAPHIC + WEB"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/grupo3",
+  "zip": "https://fontlibrary.org/assets/downloads/grupo3/d09efd67d5d3466d0cb080dd4ed0710f/grupo3.zip",
+  "category": "Display",
+  "files": {
+   "400": "GRUPO3-master/GRUPO3.otf"
+  }
+ },
+ {
+  "family": "H.H. Samuel Ultra Condensed",
+  "foundry": "deFharo",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "H.H. Samuel"
+  ],
+  "url": "https://fontlibrary.org/en/font/h-h-samuel",
+  "zip": "https://fontlibrary.org/assets/downloads/h-h-samuel/c2c1c23e8995352678b9177d479e3c7f/h-h-samuel.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "H.H. Samuel-font-defharo.ttf"
+  }
+ },
+ {
+  "family": "Hananiah",
+  "foundry": "Tim Larson",
+  "designers": [
+   "Tim Larson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/hananiah",
+  "zip": "https://fontlibrary.org/assets/downloads/hananiah/5b316c3d0960044bc6c85e964c1de25f/hananiah.zip",
+  "category": "Display",
+  "files": {
+   "400": "hananiah/Hananiah.otf"
+  }
+ },
+ {
+  "family": "Calligraphr",
+  "foundry": "Natasha Boehm",
+  "designers": [
+   "Natasha Boehm"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/hannibal-writing-font",
+  "zip": "https://fontlibrary.org/assets/downloads/hannibal-writing-font/529949ac716dd71ebab73fb75b4e5240/hannibal-writing-font.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "australianessay.ttf"
+  }
+ },
+ {
+  "family": "Hebert Sans",
+  "foundry": "Context Ltd",
+  "designers": [
+   "Stefan Peev"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Coval"
+  ],
+  "url": "https://fontlibrary.org/en/font/hebert-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/hebert-sans/75cf477bbc3674ae1a5432106b0c53fe/hebert-sans.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "HebertSans-Thin.ttf",
+   "200": "HebertSans-ExtraLight.ttf",
+   "300": "HebertSans-Light.ttf",
+   "400": "HebertSans-Regular.ttf",
+   "500": "HebertSans-Medium.ttf",
+   "600": "HebertSans-SemiBold.ttf",
+   "700": "HebertSans-Bold.ttf",
+   "800": "HebertSans-ExtraBold.ttf",
+   "900": "HebertSans-Black.ttf",
+   "100i": "HebertSans-ThinItalic.ttf",
+   "200i": "HebertSans-ExtraLightItalic.ttf",
+   "300i": "HebertSans-LightItalic.ttf",
+   "400i": "HebertSans-Italic.ttf",
+   "500i": "HebertSans-MediumItalic.ttf",
+   "600i": "HebertSans-SemiBoldItalic.ttf",
+   "700i": "HebertSans-BoldItalic.ttf",
+   "800i": "HebertSans-ExtraBoldItalic.ttf",
+   "900i": "HebertSans-BlackItalic.ttf"
+  }
+ },
+ {
+  "family": "HermeneusOne",
+  "foundry": "Pablo Impallari, Rodrigo Fuenzalida",
+  "designers": [
+   "Rodrigo Fuenzalida, Pablo Impallari"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "HermeneusOne-v1/OFL.txt",
+  "rfn": [
+   "Hermeneus"
+  ],
+  "url": "https://fontlibrary.org/en/font/hermeneus",
+  "zip": "https://fontlibrary.org/assets/downloads/hermeneus/b245694e76c6e9091f987d39e67ea9ea/hermeneus.zip",
+  "category": "Serif",
+  "files": {
+   "400": "HermeneusOne-v1/src/HermeneusOne-Regular.otf"
+  }
+ },
+ {
+  "family": "HK Venetian",
+  "foundry": "Hanken Design Co",
+  "designers": [
+   "Hanken Design Co"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [
+   "HK Venetian"
+  ],
+  "url": "https://fontlibrary.org/en/font/hk-venetian",
+  "zip": "https://fontlibrary.org/assets/downloads/hk-venetian/0820ebf73a39c8a19ea0547f8995b118/hk-venetian.zip",
+  "category": "Serif",
+  "files": {
+   "400": "HKVenetian-Regular.otf",
+   "400i": "HKVenetian-Italic.otf"
+  }
+ },
+ {
+  "family": "Intuitive",
+  "foundry": "Bruno de Souza Leão",
+  "designers": [
+   "Bruno de Souza Leão"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/intuitive",
+  "zip": "https://fontlibrary.org/assets/downloads/intuitive/71763f72bef454e1fc6ac6ddc2fd8e7f/intuitive.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "intuitive.ttf"
+  }
+ },
+ {
+  "family": "Isserley",
+  "foundry": "Daniel Pimley",
+  "designers": [
+   "Daniel Pimley"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Isserley"
+  ],
+  "url": "https://fontlibrary.org/en/font/isserley",
+  "zip": "https://fontlibrary.org/assets/downloads/isserley/edb47830e8649a71c42ed73780ed7286/isserley.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Isserley-Regular.otf",
+   "700": "Isserley-Bold.otf",
+   "400i": "Isserley-Oblique.otf",
+   "700i": "Isserley-Bold-Oblique.otf"
+  }
+ },
+ {
+  "family": "Joe Letter",
+  "foundry": "Sanju P Debnath",
+  "designers": [
+   "Sanju P Debnath"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "joe-letter/OFL.txt",
+  "rfn": [
+   "Joe Letter"
+  ],
+  "url": "https://fontlibrary.org/en/font/joe-letter",
+  "zip": "https://fontlibrary.org/assets/downloads/joe-letter/d83608b5f7ef669c405a86c71e8b50ab/joe-letter.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "joe-letter/Joe-Letter.ttf"
+  }
+ },
+ {
+  "family": "Journal 74",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Journal 74"
+  ],
+  "url": "https://fontlibrary.org/en/font/journal-74",
+  "zip": "https://fontlibrary.org/assets/downloads/journal-74/9c36ec85e759dce9d0a8d965daa7edf4/journal-74.zip",
+  "category": "Display",
+  "files": {
+   "400": "Journal 74.ttf",
+   "700": "Journal 74 Bold.ttf"
+  }
+ },
+ {
+  "family": "Just Letters",
+  "foundry": "Christopher Adams",
+  "designers": [
+   "Christopher Adams"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/just-letters",
+  "zip": "https://fontlibrary.org/assets/downloads/just-letters/ef358ebfb6c10d16ecbd6a0b3d5bf008/just-letters.zip",
+  "category": "Display",
+  "files": {
+   "500": "just-letters-zip/JustLetters.otf"
+  }
+ },
+ {
+  "family": "Justus",
+  "foundry": "Taniwha",
+  "designers": [
+   "Taniwha"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/justus",
+  "zip": "https://fontlibrary.org/assets/downloads/justus/479d8515478da98767e81b267bdf1caa/justus.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Justus-Versalitas.ttf",
+   "500": "Justus-Oldstyle.ttf",
+   "700": "Justus-Bold.ttf",
+   "400i": "Justus-Italic.ttf"
+  }
+ },
+ {
+  "family": "Kambel Serle",
+  "foundry": "Kambel Serle",
+  "designers": [
+   "Kambel Serle"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/kambel-serle",
+  "zip": "https://fontlibrary.org/assets/downloads/kambel-serle/9cea19044b5c9294097d068d8991dda1/kambel-serle.zip",
+  "category": "Serif",
+  "files": {
+   "500": "ksfnt-2.ttf"
+  }
+ },
+ {
+  "family": "Kambel Serle Extended Italic Expanded",
+  "foundry": "Kambel Serle",
+  "designers": [
+   "Kambel Serle"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/kambel-serle",
+  "zip": "https://fontlibrary.org/assets/downloads/kambel-serle/9cea19044b5c9294097d068d8991dda1/kambel-serle.zip",
+  "category": "Serif",
+  "files": {
+   "500": "ksfntExtItal-2.ttf"
+  }
+ },
+ {
+  "family": "Kambel Serle Condensed Extra Condensed",
+  "foundry": "Kambel Serle",
+  "designers": [
+   "Kambel Serle"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/kambel-serle",
+  "zip": "https://fontlibrary.org/assets/downloads/kambel-serle/9cea19044b5c9294097d068d8991dda1/kambel-serle.zip",
+  "category": "Serif",
+  "files": {
+   "500": "ksfntCond-2.ttf"
+  }
+ },
+ {
+  "family": "Kelvinch",
+  "foundry": "Paul James Miller",
+  "designers": [
+   "Paul James Miller"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/kelvinch",
+  "zip": "https://fontlibrary.org/assets/downloads/kelvinch/473ced3d8b644abfe9bb28963bb823d1/kelvinch.zip",
+  "category": "Serif",
+  "files": {
+   "400i": "16655.otf"
+  }
+ },
+ {
+  "family": "Keypunch029",
+  "foundry": "Stewart C. Russell",
+  "designers": [
+   "Stewart C. Russell"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Keypunch029/LICENCE",
+  "rfn": [
+   "Keypunch029"
+  ],
+  "url": "https://fontlibrary.org/en/font/keypunch029",
+  "zip": "https://fontlibrary.org/assets/downloads/keypunch029/971429ecd817a4e718a76c749d437159/keypunch029.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "Keypunch029/Keypunch029.otf",
+   "700": "Keypunch029/Keypunch029-Bold.otf",
+   "400i": "Keypunch029/Keypunch029-Italic.otf",
+   "700i": "Keypunch029/Keypunch029-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "Berenika",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/klaudia-and-berenika",
+  "zip": "https://fontlibrary.org/assets/downloads/klaudia-and-berenika/582d4c15b08348f8034c26f136fbb858/klaudia-and-berenika.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Klaudia and Berenika/Berenika/Berenika-Book.ttf",
+   "700": "Klaudia and Berenika/Berenika/Berenika-Bold.ttf",
+   "400i": "Klaudia and Berenika/Berenika/Berenika-BookOblique.ttf",
+   "700i": "Klaudia and Berenika/Berenika/Berenika-BoldOblique.ttf"
+  }
+ },
+ {
+  "family": "Klaudia",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/klaudia-and-berenika",
+  "zip": "https://fontlibrary.org/assets/downloads/klaudia-and-berenika/582d4c15b08348f8034c26f136fbb858/klaudia-and-berenika.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Klaudia and Berenika/Klaudia/Klaudia-Book.ttf",
+   "700": "Klaudia and Berenika/Klaudia/Klaudia-Bold.ttf",
+   "400i": "Klaudia and Berenika/Klaudia/Klaudia-BookOblique.ttf",
+   "700i": "Klaudia and Berenika/Klaudia/Klaudia-BoldOblique.ttf"
+  }
+ },
+ {
+  "family": "L'Internationale",
+  "foundry": "Loki Gwynbleidd",
+  "designers": [
+   "Loki Gwynbleidd"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "License.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/l-internationale",
+  "zip": "https://fontlibrary.org/assets/downloads/l-internationale/56ee74d892aa66abedf8c3f6f08653f7/l-internationale.zip",
+  "category": "Display",
+  "files": {
+   "400i": "LInternationale.ttf"
+  }
+ },
+ {
+  "family": "Lavoir",
+  "foundry": "UnderNoControlTypofoundry",
+  "designers": [
+   "Alex Chavot"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/lavoir",
+  "zip": "https://fontlibrary.org/assets/downloads/lavoir/1395beed00eb0320083e95a1db0c6043/lavoir.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Lavoir Small Caps.otf"
+  }
+ },
+ {
+  "family": "LCD",
+  "foundry": "Fredrick R. Brennan",
+  "designers": [
+   "Fredrick R. Brennan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "lcd-font/LICENSE.ttx",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/lcd",
+  "zip": "https://fontlibrary.org/assets/downloads/lcd/0bbb50971deb300331139c65b16b37c8/lcd.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "lcd-font/otf/LCD14.otf",
+   "400i": "lcd-font/otf/LCD14Italic.otf"
+  }
+ },
+ {
+  "family": "LCD Condensed",
+  "foundry": "Fredrick R. Brennan",
+  "designers": [
+   "Fredrick R. Brennan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "lcd-font/LICENSE.ttx",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/lcd",
+  "zip": "https://fontlibrary.org/assets/downloads/lcd/0bbb50971deb300331139c65b16b37c8/lcd.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "lcd-font/otf/LCD14Condensed.otf",
+   "400i": "lcd-font/otf/LCD14ItalicCondensed.otf"
+  }
+ },
+ {
+  "family": "LibHandDis",
+  "foundry": "Stewart C. Russell",
+  "designers": [
+   "Stewart C. Russell"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LibHandDis/LICENCE",
+  "rfn": [
+   "LibHandDis"
+  ],
+  "url": "https://fontlibrary.org/en/font/libhanddis",
+  "zip": "https://fontlibrary.org/assets/downloads/libhanddis/c1f6046c901317e5ddfcca596297e161/libhanddis.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "LibHandDis/LibHandDis-Regular.otf"
+  }
+ },
+ {
+  "family": "Lindbergh Baby",
+  "foundry": "jj4p4n",
+  "designers": [
+   "jj4p4n"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/lindbergh-baby",
+  "zip": "https://fontlibrary.org/assets/downloads/lindbergh-baby/739e07d7750c3b2abf39557523a06c10/lindbergh-baby.zip",
+  "category": "Display",
+  "files": {
+   "400": "Lindbergh_Baby.ttf"
+  }
+ },
+ {
+  "family": "Linear",
+  "foundry": "Braydon G. Fuller",
+  "designers": [
+   "Braydon G. Fuller"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "linear-by-braydon-fuller/LICENSE",
+  "rfn": [
+   "Linear Regular"
+  ],
+  "url": "https://fontlibrary.org/en/font/linear-regular",
+  "zip": "https://fontlibrary.org/assets/downloads/linear-regular/a45d42575811c39c4c2096bc432fd791/linear-regular.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "linear-by-braydon-fuller/linear-by-braydon-fuller.otf"
+  }
+ },
+ {
+  "family": "Lingua Franca",
+  "foundry": "Adobe Systems Incorporated",
+  "designers": [
+   "Adobe Systems Incorporated"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "lingua-franca-1.20/licenses/LICENSE",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/lingua-franca",
+  "zip": "https://fontlibrary.org/assets/downloads/lingua-franca/ff2a75752160072a357a34616da95bb2/lingua-franca.zip",
+  "category": "Serif",
+  "files": {
+   "400": "lingua-franca-1.20/otf/LinguaFranca-Regular.otf",
+   "700": "lingua-franca-1.20/otf/LinguaFranca-Bold.otf",
+   "400i": "lingua-franca-1.20/otf/LinguaFranca-Italic.otf",
+   "700i": "lingua-franca-1.20/otf/LinguaFranca-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "LittleLara",
+  "foundry": "Angel Garcia Rubio",
+  "designers": [
+   "Angel Garcia Rubio"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.rtf",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/littlelara",
+  "zip": "https://fontlibrary.org/assets/downloads/littlelara/ad404b69f5a498e42578fb6bd92cbc81/littlelara.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "LittleLara.ttf"
+  }
+ },
+ {
+  "family": "LoveMatrix",
+  "foundry": "Stewart C. Russell",
+  "designers": [
+   "Stewart C. Russell"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LoveMatrix/LICENCE",
+  "rfn": [
+   "LoveMatrix"
+  ],
+  "url": "https://fontlibrary.org/en/font/lovematrix",
+  "zip": "https://fontlibrary.org/assets/downloads/lovematrix/5c1049f33c06ae5c8b16a74b8abe2aca/lovematrix.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "LoveMatrix/LoveMatrix.otf"
+  }
+ },
+ {
+  "family": "LS",
+  "foundry": "BSozoo",
+  "designers": [
+   "BSozoo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LS/OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/ls",
+  "zip": "https://fontlibrary.org/assets/downloads/ls/b3b690ae6657e4ef2213ff1d2a1e61bf/ls.zip",
+  "category": "Display",
+  "files": {
+   "700": "LS/LS-Bold.otf"
+  }
+ },
+ {
+  "family": "Melissa",
+  "foundry": "missykir",
+  "designers": [
+   "missykir"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/melissa",
+  "zip": "https://fontlibrary.org/assets/downloads/melissa/dffd1f2a1cadf1be4d206678d37340c7/melissa.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "Melissa/Melissa.otf"
+  }
+ },
+ {
+  "family": "Miama Nueva",
+  "foundry": "Linus Romer",
+  "designers": [
+   "Linus Romer"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license.txt",
+  "rfn": [
+   "Miama Nueva"
+  ],
+  "url": "https://fontlibrary.org/en/font/miama",
+  "zip": "https://fontlibrary.org/assets/downloads/miama/02b609585a8f399047eea092f4d8257a/miama.zip",
+  "category": "Serif",
+  "files": {
+   "500i": "miamanueva.otf"
+  }
+ },
+ {
+  "family": "mnicmp",
+  "foundry": "Stewart C. Russell",
+  "designers": [
+   "Stewart C. Russell"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "mnicmp/LICENCE",
+  "rfn": [
+   "mnicmp"
+  ],
+  "url": "https://fontlibrary.org/en/font/mnicmp",
+  "zip": "https://fontlibrary.org/assets/downloads/mnicmp/ac1bea0cb9e9d60c3590bc85d0284630/mnicmp.zip",
+  "category": "Monospace",
+  "files": {
+   "300": "mnicmp/mnicmp-Light.otf",
+   "400": "mnicmp/mnicmp.otf",
+   "700": "mnicmp/mnicmp-Bold.otf",
+   "300i": "mnicmp/mnicmp-LightItalic.otf",
+   "400i": "mnicmp/mnicmp-Italic.otf",
+   "700i": "mnicmp/mnicmp-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "mnicmp Star",
+  "foundry": "Stewart C. Russell",
+  "designers": [
+   "Stewart C. Russell"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "mnicmp/LICENCE",
+  "rfn": [
+   "mnicmp"
+  ],
+  "url": "https://fontlibrary.org/en/font/mnicmp",
+  "zip": "https://fontlibrary.org/assets/downloads/mnicmp/ac1bea0cb9e9d60c3590bc85d0284630/mnicmp.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "mnicmp/mnicmpStar-Regular.otf",
+   "400i": "mnicmp/mnicmpStar-Italic.otf"
+  }
+ },
+ {
+  "family": "mnicmp Square",
+  "foundry": "Stewart C. Russell",
+  "designers": [
+   "Stewart C. Russell"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "mnicmp/LICENCE",
+  "rfn": [
+   "mnicmp"
+  ],
+  "url": "https://fontlibrary.org/en/font/mnicmp",
+  "zip": "https://fontlibrary.org/assets/downloads/mnicmp/ac1bea0cb9e9d60c3590bc85d0284630/mnicmp.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "mnicmp/mnicmpSquare-Regular.otf",
+   "400i": "mnicmp/mnicmpSquare-Italic.otf"
+  }
+ },
+ {
+  "family": "mnicmp Diamond",
+  "foundry": "Stewart C. Russell",
+  "designers": [
+   "Stewart C. Russell"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "mnicmp/LICENCE",
+  "rfn": [
+   "mnicmp"
+  ],
+  "url": "https://fontlibrary.org/en/font/mnicmp",
+  "zip": "https://fontlibrary.org/assets/downloads/mnicmp/ac1bea0cb9e9d60c3590bc85d0284630/mnicmp.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "mnicmp/mnicmpDiamond-Regular.otf",
+   "400i": "mnicmp/mnicmpDiamond-Italic.otf"
+  }
+ },
+ {
+  "family": "MonodecoBold",
+  "foundry": "Joshua Deakin",
+  "designers": [
+   "Joshua Deakin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/monodeco",
+  "zip": "https://fontlibrary.org/assets/downloads/monodeco/606169acb05b6c5d6b8bd1ff75e86672/monodeco.zip",
+  "category": "Monospace",
+  "files": {
+   "700": "Monodeco Bold (separate family).ttf"
+  }
+ },
+ {
+  "family": "Monodeco",
+  "foundry": "Joshua Deakin",
+  "designers": [
+   "Joshua Deakin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/monodeco",
+  "zip": "https://fontlibrary.org/assets/downloads/monodeco/606169acb05b6c5d6b8bd1ff75e86672/monodeco.zip",
+  "category": "Monospace",
+  "files": {
+   "300": "Monodeco Light.ttf",
+   "400": "Monodeco.ttf"
+  }
+ },
+ {
+  "family": "MonodecoLight",
+  "foundry": "Joshua Deakin",
+  "designers": [
+   "Joshua Deakin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/monodeco",
+  "zip": "https://fontlibrary.org/assets/downloads/monodeco/606169acb05b6c5d6b8bd1ff75e86672/monodeco.zip",
+  "category": "Monospace",
+  "files": {
+   "300": "Monodeco Light (separate family).ttf"
+  }
+ },
+ {
+  "family": "Monumental Fill",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Monumental"
+  ],
+  "url": "https://fontlibrary.org/en/font/monumental",
+  "zip": "https://fontlibrary.org/assets/downloads/monumental/4208c871a3a3ed59461eeb9b51285e5c/monumental.zip",
+  "category": "Display",
+  "files": {
+   "400": "Monumental Fill.ttf"
+  }
+ },
+ {
+  "family": "Monumental",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Monumental"
+  ],
+  "url": "https://fontlibrary.org/en/font/monumental",
+  "zip": "https://fontlibrary.org/assets/downloads/monumental/4208c871a3a3ed59461eeb9b51285e5c/monumental.zip",
+  "category": "Display",
+  "files": {
+   "400": "Monumental.ttf"
+  }
+ },
+ {
+  "family": "Mops",
+  "foundry": "Uwe Borchert",
+  "designers": [
+   "Uwe Borchert"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/mops-antiqua",
+  "zip": "https://fontlibrary.org/assets/downloads/mops-antiqua/bc4ae6125bfd8df03a74b7af81b51ce7/mops-antiqua.zip",
+  "category": "Display",
+  "files": {
+   "500": "Mops.otf"
+  }
+ },
+ {
+  "family": "Musical",
+  "foundry": "Frank Baranowski",
+  "designers": [
+   "Frank Baranowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license_OFL.txt",
+  "rfn": [
+   "Musical"
+  ],
+  "url": "https://fontlibrary.org/en/font/musical",
+  "zip": "https://fontlibrary.org/assets/downloads/musical/7bc7c0d2a9a8c32eec845ec922b81afc/musical.zip",
+  "category": "Display",
+  "files": {
+   "400": "Musical.ttf"
+  }
+ },
+ {
+  "family": "NoCurvesBoustrophedon",
+  "foundry": "AnonMoos",
+  "designers": [
+   "AnonMoos"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/nocurvesboustrophedon",
+  "zip": "https://fontlibrary.org/assets/downloads/nocurvesboustrophedon/1d06925436946fdcce5d9d29977d03e8/nocurvesboustrophedon.zip",
+  "category": "Display",
+  "files": {
+   "400": "NoCurvesBoustrophedon.ttf"
+  }
+ },
+ {
+  "family": "Nordica Advanced",
+  "foundry": "Cannot Into Space Fonts",
+  "designers": [
+   "Robert Jablonski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Nordica Advanced"
+  ],
+  "url": "https://fontlibrary.org/en/font/nordica-advanced",
+  "zip": "https://fontlibrary.org/assets/downloads/nordica-advanced/44f454cb1ce65eb0f17af81e30209435/nordica-advanced.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "NordicaAdvancedRegular.otf"
+  }
+ },
+ {
+  "family": "Now",
+  "foundry": "Alfredo Marco Pradil",
+  "designers": [
+   "Alfredo Marco Pradil"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Now FL/OFL-FAQ.txt",
+  "rfn": [
+   "Now"
+  ],
+  "url": "https://fontlibrary.org/en/font/now",
+  "zip": "https://fontlibrary.org/assets/downloads/now/3c10e0ecd702cb63f03deaf3e8ed2680/now.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "Now FL/Now-Thin.otf",
+   "200": "Now FL/Now-ExtraLight.otf",
+   "300": "Now FL/Now-Light.otf",
+   "400": "Now FL/Now-Regular.otf",
+   "500": "Now FL/Now-Medium.otf",
+   "600": "Now FL/Now-SemiBold.otf",
+   "700": "Now FL/Now-Bold.otf",
+   "800": "Now FL/Now-ExtraBold.otf"
+  }
+ },
+ {
+  "family": "Oaxaqueña Tall Condensed",
+  "foundry": "deFharo",
+  "designers": [
+   "Fernando Haro"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/oaxaquena-tall",
+  "zip": "https://fontlibrary.org/assets/downloads/oaxaquena-tall/e929126e62ac0f5cd97fb3d9354727db/oaxaquena-tall.zip",
+  "category": "Display",
+  "files": {
+   "400": "Oaxaquena Tall.ttf"
+  }
+ },
+ {
+  "family": "Omnibus",
+  "foundry": "Andrew Sigurow",
+  "designers": [
+   "Andrew Sigurow"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Omnibus Sans Serif/OFL-FAQ.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/omnibus-sans-serif",
+  "zip": "https://fontlibrary.org/assets/downloads/omnibus-sans-serif/a652b29a61b2d9894dc2ddfa76bc8093/omnibus-sans-serif.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Omnibus Sans Serif/FONT/Omnibus Sans Serif.otf"
+  }
+ },
+ {
+  "family": "Perun",
+  "foundry": "Context Ltd",
+  "designers": [
+   "Stefan Peev"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "Perun",
+   "FreeUniversal",
+   "SIL Sophia"
+  ],
+  "url": "https://fontlibrary.org/en/font/perun",
+  "zip": "https://fontlibrary.org/assets/downloads/perun/f599d235c8bd2e58a318a840d0a4b43d/perun.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Perun.otf",
+   "700": "Perun-Bold.otf",
+   "400i": "Perun-Italic.otf",
+   "700i": "Perun-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "PiratePower",
+  "foundry": "j4p4n",
+  "designers": [
+   "j4p4n"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "PiratePower"
+  ],
+  "url": "https://fontlibrary.org/en/font/piratepower",
+  "zip": "https://fontlibrary.org/assets/downloads/piratepower/8845670393e705c86d35fbe578b361d6/piratepower.zip",
+  "category": "Display",
+  "files": {
+   "500": "PiratePower.ttf"
+  }
+ },
+ {
+  "family": "polyont",
+  "foundry": "frankiezafe",
+  "designers": [
+   "frankiezafe"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/polyont",
+  "zip": "https://fontlibrary.org/assets/downloads/polyont/b9850e9d294bfd122d185c8803d06c0d/polyont.zip",
+  "category": "Display",
+  "files": {
+   "100": "polyontThin.otf",
+   "500": "polyontMedium.otf"
+  }
+ },
+ {
+  "family": "PreCursive OFL",
+  "foundry": "Matthew Napolitano",
+  "designers": [
+   "Matthew Napolitano"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/precursive",
+  "zip": "https://fontlibrary.org/assets/downloads/precursive/53a3b1edb4c49834f7ff820181bc4f85/precursive.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "PreCursive_OFL_Dist/PreCursive_OFL_OTF/Precursive_Bold_OFL.otf"
+  }
+ },
+ {
+  "family": "Redkost Comic",
+  "foundry": "bagmehnot",
+  "designers": [
+   "bagmehnot"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/redkost-comic",
+  "zip": "https://fontlibrary.org/assets/downloads/redkost-comic/e63019caad2f0c7d713ec00bad948045/redkost-comic.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "Redkost Comic.otf"
+  }
+ },
+ {
+  "family": "Repo",
+  "foundry": "Context Ltd",
+  "designers": [
+   "Stefan Peev"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Repo"
+  ],
+  "url": "https://fontlibrary.org/en/font/repo",
+  "zip": "https://fontlibrary.org/assets/downloads/repo/79e09122296134459d9d2e07e87526e4/repo.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "Repo-Light.otf",
+   "400": "Repo.otf",
+   "500": "Repo-Medium.otf",
+   "600": "Repo-DemiBold.otf",
+   "700": "Repo-Bold.otf",
+   "800": "Repo-ExtraBold.otf",
+   "900": "Repo-Black.otf"
+  }
+ },
+ {
+  "family": "Retro-Edge",
+  "foundry": "mathNinja08",
+  "designers": [
+   "mathNinja08"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "license.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/retro-edge",
+  "zip": "https://fontlibrary.org/assets/downloads/retro-edge/a93caddfc94b70a320b85b5279a71e47/retro-edge.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "retro-edge.ttf"
+  }
+ },
+ {
+  "family": "Ricasso",
+  "foundry": "Daniel Pimley",
+  "designers": [
+   "Daniel Pimley"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENCE.txt",
+  "rfn": [
+   "Ricasso"
+  ],
+  "url": "https://fontlibrary.org/en/font/ricasso",
+  "zip": "https://fontlibrary.org/assets/downloads/ricasso/7259da5f3b5dd9ac22c85cb3fe0247e0/ricasso.zip",
+  "category": "Display",
+  "files": {
+   "400": "Ricasso-Regular.otf"
+  }
+ },
+ {
+  "family": "RiseStarHand",
+  "foundry": "Tharique Azeez",
+  "designers": [
+   "Tharique Azeez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/risestarhand",
+  "zip": "https://fontlibrary.org/assets/downloads/risestarhand/f37124fe6bc8a82334bceced8a86e962/risestarhand.zip",
+  "category": "Handwriting",
+  "files": {
+   "300": "RiseStarHand-updated/RiseStarHandLight.otf",
+   "400": "RiseStarHand-updated/RiseStarHandRegular.otf",
+   "600": "RiseStarHand-updated/RiseStarHandSemiBold.otf"
+  }
+ },
+ {
+  "family": "Ron's Font",
+  "foundry": "Nick Matavka",
+  "designers": [
+   "Nick Matavka"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/ron-s-font",
+  "zip": "https://fontlibrary.org/assets/downloads/ron-s-font/fa0b6fcc398bf034360a9c6b20c2e5ef/ron-s-font.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "RonsFont.ttf"
+  }
+ },
+ {
+  "family": "Rozel",
+  "foundry": "Juan Pablo del Peral",
+  "designers": [
+   "Juan Pablo del Peral"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/rozel-cut-cut",
+  "zip": "https://fontlibrary.org/assets/downloads/rozel-cut-cut/74c481bf809a8c29cb3c9710ac9ba998/rozel-cut-cut.zip",
+  "category": "Serif",
+  "files": {
+   "900": "Cut-cut.otf"
+  }
+ },
+ {
+  "family": "Ruji's Handwriting Font v.2.0",
+  "foundry": "Ruji Chapnik",
+  "designers": [
+   "Ruji Chapnik"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/ruji-s-handwriting-font-v-2-0",
+  "zip": "https://fontlibrary.org/assets/downloads/ruji-s-handwriting-font-v-2-0/eaa679db860781d33d21e780a25e0860/ruji-s-handwriting-font-v-2-0.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "RujisHandwritingFontv2.0/RujisHandwritingFontv.2.0.otf"
+  }
+ },
+ {
+  "family": "Saarland",
+  "foundry": "Uwe Borchert",
+  "designers": [
+   "Uwe Borchert"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/saarland",
+  "zip": "https://fontlibrary.org/assets/downloads/saarland/3e8fe9551866c9152dea6b56ef9cd842/saarland.zip",
+  "category": "Display",
+  "files": {
+   "500": "saarland.otf"
+  }
+ },
+ {
+  "family": "Sabatica",
+  "foundry": "deFharo",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Marck Script"
+  ],
+  "url": "https://fontlibrary.org/en/font/sabatica",
+  "zip": "https://fontlibrary.org/assets/downloads/sabatica/37397f5aa588fb0e54c89c3251e83dcf/sabatica.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Sabatica-regular.otf"
+  }
+ },
+ {
+  "family": "Sacco Condensed",
+  "foundry": "Chris M. Hughes",
+  "designers": [
+   "Chris M. Hughes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "sacco/ofl.txt",
+  "rfn": [
+   "Sacco"
+  ],
+  "url": "https://fontlibrary.org/en/font/sacco",
+  "zip": "https://fontlibrary.org/assets/downloads/sacco/3a24c2c2025aaee4efe1a03ca91ec306/sacco.zip",
+  "category": "Display",
+  "files": {
+   "600": "sacco/truetype/Sacco-SemiBoldCondensed.ttf",
+   "600i": "sacco/truetype/Sacco-SemBdCondObliq.ttf"
+  }
+ },
+ {
+  "family": "Sacco Extra Condensed",
+  "foundry": "Chris M. Hughes",
+  "designers": [
+   "Chris M. Hughes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "sacco/ofl.txt",
+  "rfn": [
+   "Sacco"
+  ],
+  "url": "https://fontlibrary.org/en/font/sacco",
+  "zip": "https://fontlibrary.org/assets/downloads/sacco/3a24c2c2025aaee4efe1a03ca91ec306/sacco.zip",
+  "category": "Display",
+  "files": {
+   "600": "sacco/truetype/Sacco-SemiBoldExtraCondensed.ttf",
+   "600i": "sacco/truetype/Sacco-SemBdExtCondObliq.ttf"
+  }
+ },
+ {
+  "family": "Sacco Ultra Condensed",
+  "foundry": "Chris M. Hughes",
+  "designers": [
+   "Chris M. Hughes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "sacco/ofl.txt",
+  "rfn": [
+   "Sacco"
+  ],
+  "url": "https://fontlibrary.org/en/font/sacco",
+  "zip": "https://fontlibrary.org/assets/downloads/sacco/3a24c2c2025aaee4efe1a03ca91ec306/sacco.zip",
+  "category": "Display",
+  "files": {
+   "600": "sacco/truetype/Sacco-SemiBoldUltraCondensed.ttf",
+   "600i": "sacco/truetype/Sacco-SemBdUltCondObliq.ttf"
+  }
+ },
+ {
+  "family": "Santa Barbara Streets",
+  "foundry": "George Williams",
+  "designers": [
+   "George Williams"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/santa-barbara-streets",
+  "zip": "https://fontlibrary.org/assets/downloads/santa-barbara-streets/08c52f9e937181ef28c47dfaf457718e/santa-barbara-streets.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "SantaBarbaraStreets/SantaBarbaraStreets.otf"
+  }
+ },
+ {
+  "family": "ScrambleFont",
+  "foundry": "Sanju P Debnath",
+  "designers": [
+   "Sanju P Debnath"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "ScrambleFont/OFL.txt",
+  "rfn": [
+   "ScrambleFont"
+  ],
+  "url": "https://fontlibrary.org/en/font/scramblefont",
+  "zip": "https://fontlibrary.org/assets/downloads/scramblefont/9c579d5924cd21a03f03ce430b92339a/scramblefont.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "ScrambleFont/ScrambleFont.ttf"
+  }
+ },
+ {
+  "family": "Selena",
+  "foundry": "Context Ltd",
+  "designers": [
+   "Stefan Peev"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Selena"
+  ],
+  "url": "https://fontlibrary.org/en/font/selena",
+  "zip": "https://fontlibrary.org/assets/downloads/selena/2408edf9dff3fa57b6c457b5380986b6/selena.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Selena.otf",
+   "400i": "Selena-Italic.otf"
+  }
+ },
+ {
+  "family": "Serreria Extravagante",
+  "foundry": "Medialab-Prado",
+  "designers": [
+   "Participants of the \"Stone to Spaceship\" workshop"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/serreria-extravagante",
+  "zip": "https://fontlibrary.org/assets/downloads/serreria-extravagante/df170769ea0b76fbb06a55d97e7971e6/serreria-extravagante.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "SerreriaExtravagante.otf"
+  }
+ },
+ {
+  "family": "Sibila",
+  "foundry": "Context Ltd",
+  "designers": [
+   "Stefan Peev"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Sibila"
+  ],
+  "url": "https://fontlibrary.org/en/font/sibila",
+  "zip": "https://fontlibrary.org/assets/downloads/sibila/8a89a44e0e9bb20a3a99560d1832f0cd/sibila.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Sibila.otf"
+  }
+ },
+ {
+  "family": "Simple Print",
+  "foundry": "Peter Wiegel",
+  "designers": [
+   "Peter Wiegel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/simple-print",
+  "zip": "https://fontlibrary.org/assets/downloads/simple-print/a68e00bce020a3fc0ef45b75789cb48b/simple-print.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "simple-print_regular.ttf",
+   "700": "simple-print_bold.ttf"
+  }
+ },
+ {
+  "family": "Simply Sans",
+  "foundry": "Wojciech Kalinowski",
+  "designers": [
+   "Wojciech Kalinowski"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/simply-sans",
+  "zip": "https://fontlibrary.org/assets/downloads/simply-sans/062a08eb7bdb74b8c3159d57e591df8c/simply-sans.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Simply Sans/SimplySans-Book.ttf",
+   "700": "Simply Sans/SimplySans-Bold.ttf",
+   "400i": "Simply Sans/SimplySans-BookItalic.ttf",
+   "700i": "Simply Sans/SimplySans-BoldItalic.ttf"
+  }
+ },
+ {
+  "family": "Slapa",
+  "foundry": "Diego Lara",
+  "designers": [
+   "Diego Lara"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Slapa/OFL.txt",
+  "rfn": [
+   "Slapa"
+  ],
+  "url": "https://fontlibrary.org/en/font/slapa",
+  "zip": "https://fontlibrary.org/assets/downloads/slapa/a2bcfbbe5b4da71f7894f677975acdc1/slapa.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Slapa/Slapa.otf"
+  }
+ },
+ {
+  "family": "Some Time Later",
+  "foundry": "Fredrick R. Brennan",
+  "designers": [
+   "Fredrick R. Brennan"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "some-time-later-3.2/LICENSE.TXT",
+  "rfn": [
+   "SOME TIME LATER"
+  ],
+  "url": "https://fontlibrary.org/en/font/some-time-later",
+  "zip": "https://fontlibrary.org/assets/downloads/some-time-later/ee696d9813303a9709f0b8a00671d884/some-time-later.zip",
+  "category": "Display",
+  "files": {
+   "400": "some-time-later-3.2/Some Time Later.otf"
+  }
+ },
+ {
+  "family": "Sovjet Box",
+  "foundry": "Jyrki Ihalainen",
+  "designers": [
+   "Jyrki Ihalainen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Sovjet Box"
+  ],
+  "url": "https://fontlibrary.org/en/font/soviet-box-bold-v-0-6",
+  "zip": "https://fontlibrary.org/assets/downloads/soviet-box-bold-v-0-6/ef1a9ddd3b4e20245a8ac9bd638bd88b/soviet-box-bold-v-0-6.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "SovjetBoxBd_v0_9.otf"
+  }
+ },
+ {
+  "family": "Sovjet Box SC",
+  "foundry": "Jyrki Ihalainen",
+  "designers": [
+   "Jyrki Ihalainen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Sovjet Box"
+  ],
+  "url": "https://fontlibrary.org/en/font/soviet-box-bold-v-0-6",
+  "zip": "https://fontlibrary.org/assets/downloads/soviet-box-bold-v-0-6/ef1a9ddd3b4e20245a8ac9bd638bd88b/soviet-box-bold-v-0-6.zip",
+  "category": "Sans Serif",
+  "files": {
+   "700": "SovjetBoxSC_v0_9.otf"
+  }
+ },
+ {
+  "family": "Standard Graf",
+  "foundry": "Peter Wiegel",
+  "designers": [
+   "Peter Wiegel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Standard Graf"
+  ],
+  "url": "https://fontlibrary.org/en/font/standard-graf",
+  "zip": "https://fontlibrary.org/assets/downloads/standard-graf/6675e7edb6c6d1c09332ddbf10e7cc4d/standard-graf.zip",
+  "category": "Display",
+  "files": {
+   "400": "standard-graf_regular.ttf"
+  }
+ },
+ {
+  "family": "Station",
+  "foundry": "Nick Matavka",
+  "designers": [
+   "Nick Matavka"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/station",
+  "zip": "https://fontlibrary.org/assets/downloads/station/e7016aafeaac66b42d2ff44b03c31060/station.zip",
+  "category": "Display",
+  "files": {
+   "500": "station.ttf"
+  }
+ },
+ {
+  "family": "Subotype",
+  "foundry": "Thomas Villain",
+  "designers": [
+   "Thomas Villain"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/subotype",
+  "zip": "https://fontlibrary.org/assets/downloads/subotype/d87345db2a2f8c9323e6c8742d5856fb/subotype.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "Subotype Steady.otf"
+  }
+ },
+ {
+  "family": "SymLogiDINs Condensed",
+  "foundry": "Walter van Rijn",
+  "designers": [
+   "Walter van Rijn"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/symlogidins",
+  "zip": "https://fontlibrary.org/assets/downloads/symlogidins/353f7367cff014e6e7344abc6fcf7558/symlogidins.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "Upload to OpenFontLibrary/SymLogiDIN_T_611_03.ttf"
+  }
+ },
+ {
+  "family": "ThreeFourTwoTwo",
+  "foundry": "Stewart C. Russell",
+  "designers": [
+   "Stewart C. Russell"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "licence.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/threefourtwotwo",
+  "zip": "https://fontlibrary.org/assets/downloads/threefourtwotwo/ed8185b8d744b3c5c58a4f0807c9e74c/threefourtwotwo.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "ThreeFourTwoTwo.ttf"
+  }
+ },
+ {
+  "family": "Tipotype",
+  "foundry": "Context Ltd",
+  "designers": [
+   "Stefan Peev"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Tipotype"
+  ],
+  "url": "https://fontlibrary.org/en/font/tipotype",
+  "zip": "https://fontlibrary.org/assets/downloads/tipotype/f878a50ead6d3196d62cd1959b5ad96e/tipotype.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Tipotype.otf",
+   "400i": "Tipotype-Italic.otf"
+  }
+ },
+ {
+  "family": "Uacari Legacy",
+  "foundry": "Alfredo Marco Pradil",
+  "designers": [
+   "Alfredo Marco Pradil",
+   "Cristiano Sobral"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/uacari-legacy",
+  "zip": "https://fontlibrary.org/assets/downloads/uacari-legacy/b00bbb78f2c01c4b413a07ac3e67a40c/uacari-legacy.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "UacariLegacy-Thin.ttf",
+   "300": "UacariLegacy-Light.ttf",
+   "400": "UacariLegacy-Regular.ttf",
+   "500": "UacariLegacy-Medium.ttf",
+   "600": "UacariLegacy-SemiBold.ttf",
+   "700": "UacariLegacy-Bold.ttf",
+   "800": "UacariLegacy-ExtraBold.ttf",
+   "100i": "UacariLegacy-ThinItalic.ttf",
+   "200i": "UacariLegacy-ExtraLightItalic.ttf",
+   "300i": "UacariLegacy-LightItalic.ttf",
+   "400i": "UacariLegacy-Italic.ttf",
+   "500i": "UacariLegacy-MediumItalic.ttf",
+   "600i": "UacariLegacy-SemiBoldItalic.ttf",
+   "700i": "UacariLegacy-BoldItalic.ttf",
+   "800i": "UacariLegacy-ExtraBoldItalic.ttf"
+  }
+ },
+ {
+  "family": "UNIQUE",
+  "foundry": "Anna Pocius",
+  "designers": [
+   "Anna Pocius"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/unique",
+  "zip": "https://fontlibrary.org/assets/downloads/unique/1539764ecc445a7321c68badd777ccaa/unique.zip",
+  "category": "Display",
+  "files": {
+   "400": "Unique.ttf"
+  }
+ },
+ {
+  "family": "UniWide",
+  "foundry": "Matthew (Raseone) Napolitano",
+  "designers": [
+   "Matthew (Raseone) Napolitano"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/uniwide",
+  "zip": "https://fontlibrary.org/assets/downloads/uniwide/0418259740c43e780b873cb144ee59ff/uniwide.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "UniWide/UniWide.otf"
+  }
+ },
+ {
+  "family": "vSGeometrica",
+  "foundry": "T.B. von Strong",
+  "designers": [
+   "T.B. von Strong"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/vsgeometrica",
+  "zip": "https://fontlibrary.org/assets/downloads/vsgeometrica/d1606a0d7a699835b4f7c0e7e9779da9/vsgeometrica.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "vSGeometrica/vSGeometrica.otf"
+  }
+ },
+ {
+  "family": "vSHandprinted",
+  "foundry": "T.B. von Strong",
+  "designers": [
+   "T.B. von Strong"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/vshandprinted",
+  "zip": "https://fontlibrary.org/assets/downloads/vshandprinted/21b50e4412a77ceb46f9327fb079d30f/vshandprinted.zip",
+  "category": "Handwriting",
+  "files": {
+   "500": "vSHandprinted/vSHandprinted.otf"
+  }
+ },
+ {
+  "family": "vSHexagonica-V1-0-1",
+  "foundry": "vonStrong",
+  "designers": [
+   "vonStrong"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/vshexagonica-v1-0-1",
+  "zip": "https://fontlibrary.org/assets/downloads/vshexagonica-v1-0-1/4941f82d739fd402eec6533e23e30891/vshexagonica-v1-0-1.zip",
+  "category": "Sans Serif",
+  "files": {
+   "500": "vSHexagonica-V1-0-1/vSHexagonica-v1-0-1.otf"
+  }
+ },
+ {
+  "family": "Wachinanga",
+  "foundry": "deFharo",
+  "designers": [
+   "deFharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/wachinanga",
+  "zip": "https://fontlibrary.org/assets/downloads/wachinanga/74298e7575e3c81e7b914f4afaa6ebff/wachinanga.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Wachinanga-font.otf"
+  }
+ },
+ {
+  "family": "Yacimiento Semi Expanded",
+  "foundry": "deFharo",
+  "designers": [
+   "defharo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [
+   "Yacimiento"
+  ],
+  "url": "https://fontlibrary.org/en/font/yacimiento",
+  "zip": "https://fontlibrary.org/assets/downloads/yacimiento/6a9d3d3cf52d404dd254f8e77d6bc4e5/yacimiento.zip",
+  "category": "Serif",
+  "files": {
+   "800": "Yacimiento ExtraBold Ex.ttf"
+  }
+ },
+ {
+  "family": "Yahfie",
+  "foundry": "jozolo LLC",
+  "designers": [
+   "Joe Palazzolo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Yahfie/OFL.txt",
+  "rfn": [
+   "Yahfie"
+  ],
+  "url": "https://fontlibrary.org/en/font/yahfie",
+  "zip": "https://fontlibrary.org/assets/downloads/yahfie/894ac04b068a8c38af7779a00fcba2f5/yahfie.zip",
+  "category": "Handwriting",
+  "files": {
+   "300": "Yahfie/Yahfie-Light.ttf",
+   "400": "Yahfie/Yahfie-Normal.ttf",
+   "800": "Yahfie/Yahfie-Heavy.ttf"
+  }
+ },
+ {
+  "family": "Zabatana Poster Extra Condensed",
+  "foundry": "Fernando Haro [deFharo]",
+  "designers": [
+   "Fernando Haro"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://fontlibrary.org/en/font/zabatana",
+  "zip": "https://fontlibrary.org/assets/downloads/zabatana/912ec0ff724f8c06b2ad0d25646e7d7b/zabatana.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Zabatana-Poster.otf"
+  }
+ }
+]

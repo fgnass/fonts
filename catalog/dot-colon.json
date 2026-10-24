@@ -1,0 +1,155 @@
+[
+ {
+  "family": "FA-1",
+  "foundry": "Dot Colon",
+  "designers": [
+   "Sora Sagano"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://dotcolon.net/fonts/fa_1/",
+  "zip": "https://dotcolon.net/files/fonts/fa_1_0100.zip",
+  "category": "Display",
+  "files": {
+   "400": "FA-1-Regular.otf"
+  }
+ },
+ {
+  "family": "Melete",
+  "foundry": "Dot Colon",
+  "designers": [
+   "Sora Sagano"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "SIL Open Font License.txt",
+  "rfn": [],
+  "url": "https://dotcolon.net/fonts/melete/",
+  "zip": "https://dotcolon.net/files/fonts/melete_0200.zip",
+  "category": "Display",
+  "files": {
+   "200": "Melete-UltraLight.otf",
+   "300": "Melete-Light.otf",
+   "400": "Melete-Regular.otf",
+   "500": "Melete-Medium.otf",
+   "700": "Melete-Bold.otf"
+  }
+ },
+ {
+  "family": "Mioya",
+  "foundry": "Dot Colon",
+  "designers": [
+   "Sora Sagano"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://dotcolon.net/fonts/mioya/",
+  "zip": "https://dotcolon.net/files/fonts/mioya_100.zip",
+  "category": "Serif",
+  "files": {
+   "300": "Mioya-Light.otf",
+   "400": "Mioya-Regular.otf",
+   "700": "Mioya-Bold.otf",
+   "900": "Mioya-Black.otf"
+  },
+  "variable": "MioyaVF.ttf"
+ },
+ {
+  "family": "Nacelle",
+  "foundry": "Dot Colon",
+  "designers": [
+   "Sora Sagano"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "SIL Open Font License.txt",
+  "rfn": [],
+  "url": "https://dotcolon.net/fonts/nacelle/",
+  "zip": "https://dotcolon.net/files/fonts/nacelle_100.zip",
+  "category": "Sans Serif",
+  "files": {
+   "100": "Nacelle-Thin.otf",
+   "200": "Nacelle-UltraLight.otf",
+   "300": "Nacelle-Light.otf",
+   "400": "Nacelle-Regular.otf",
+   "600": "Nacelle-SemiBold.otf",
+   "700": "Nacelle-Bold.otf",
+   "800": "Nacelle-Heavy.otf",
+   "900": "Nacelle-Black.otf",
+   "100i": "Nacelle-ThinItalic.otf",
+   "200i": "Nacelle-UltraLightItalic.otf",
+   "300i": "Nacelle-LightItalic.otf",
+   "400i": "Nacelle-Italic.otf",
+   "600i": "Nacelle-SemiBoldItalic.otf",
+   "700i": "Nacelle-BoldItalic.otf",
+   "800i": "Nacelle-HeavyItalic.otf",
+   "900i": "Nacelle-BlackItalic.otf"
+  }
+ },
+ {
+  "family": "Oreichalkon",
+  "foundry": "Dot Colon",
+  "designers": [
+   "Sora Sagano"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://dotcolon.net/fonts/oreichalkon/",
+  "zip": "https://dotcolon.net/files/fonts/oreichalkon_100.zip",
+  "category": "Display",
+  "files": {
+   "100": "Oreichalkon-Thin.otf",
+   "200": "Oreichalkon-ExtraLight.otf",
+   "300": "Oreichalkon-Light.otf",
+   "400": "Oreichalkon-Regular.otf",
+   "500": "Oreichalkon-Medium.otf",
+   "600": "Oreichalkon-SemiBold.otf",
+   "700": "Oreichalkon-Bold.otf"
+  },
+  "variable": "OreichalkonVF.ttf"
+ },
+ {
+  "family": "Route 159",
+  "foundry": "Dot Colon",
+  "designers": [
+   "Sora Sagano"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://dotcolon.net/fonts/route159/",
+  "zip": "https://dotcolon.net/files/fonts/route159_110.zip",
+  "category": "Sans Serif",
+  "files": {
+   "200": "Route159-UltraLight.otf",
+   "300": "Route159-Light.otf",
+   "400": "Route159-Regular.otf",
+   "600": "Route159-SemiBold.otf",
+   "700": "Route159-Bold.otf",
+   "800": "Route159-Heavy.otf",
+   "200i": "Route159-UltraLightItalic.otf",
+   "300i": "Route159-LightItalic.otf",
+   "400i": "Route159-Italic.otf",
+   "600i": "Route159-SemiBoldItalic.otf",
+   "700i": "Route159-BoldItalic.otf",
+   "800i": "Route159-HeavyItalic.otf"
+  }
+ },
+ {
+  "family": "Tenderness",
+  "foundry": "Dot Colon",
+  "designers": [
+   "Sora Sagano"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://dotcolon.net/fonts/tenderness/",
+  "zip": "https://dotcolon.net/files/fonts/tenderness_0601.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Tenderness-Regular.otf"
+  }
+ }
+]

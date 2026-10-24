@@ -23,11 +23,12 @@ const RASTER = 128;
 const MARGIN = 4;
 const OUT = 'public/data';
 
-const BATCH = 8; // characters per round of workers (all at once runs out of memory)
+const BATCH = 4; // characters per round of workers (8 with ~2,700 fonts gets the process killed)
 
 if (isMainThread) {
   const manifest = JSON.parse(fs.readFileSync('data/manifest.json', 'utf8'));
-  const n = os.cpus().length;
+  // A worker needs about 3 GB with ~2,700 fonts; more workers than memory allows are killed.
+  const n = Math.max(1, Math.min(os.cpus().length, Math.floor(os.totalmem() / 3e9)));
   const t0 = Date.now();
   fs.mkdirSync(`${OUT}/g`, { recursive: true });
   for (let at = 0; at < CHARS.length; at += BATCH) {
@@ -53,7 +54,7 @@ if (isMainThread) {
   }
   fs.writeFileSync(
     `${OUT}/fonts.json`,
-    JSON.stringify(manifest.map(({ family, category, weight, italic, variants, axes }) => ({ family, category, weight, italic, variants, ...(axes && { axes }) })))
+    JSON.stringify(manifest.map(({ family, category, weight, italic, variants, axes, pinned, libre }) => ({ family, category, weight, italic, variants, ...(axes && { axes }), ...(pinned && { pinned }), ...(libre && { libre }) })))
   );
   console.log(`${manifest.length} fonts x ${CHARS.length} chars in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
 } else {

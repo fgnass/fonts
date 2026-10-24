@@ -1,0 +1,291 @@
+[
+ {
+  "family": "Chaumont Script",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexandre Bassi"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Chaumont_Script/LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/chaumont-script",
+  "zip": "https://anrt-nancy.fr/media/pages/fonts/chaumont-script/5ea56e3ba8-1678381500/chaumont_script.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "Chaumont_Script/ChaumontScript-Regular.otf"
+  }
+ },
+ {
+  "family": "Erdmann Schrift",
+  "foundry": "ANRT",
+  "designers": [
+   "Juliette Ogier"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/erdmann-schrift",
+  "zip": "https://anrt-nancy.fr/media/pages/fonts/erdmann-schrift/1774143d2a-1789918114/erdmann-schrift-anrt.zip",
+  "category": "Serif",
+  "files": {
+   "100": "Erdmann-Schrift-ANRT/OTF/ErdmannSchrift-Hairline.otf",
+   "200": "Erdmann-Schrift-ANRT/OTF/ErdmannSchrift-ExtraLight.otf",
+   "300": "Erdmann-Schrift-ANRT/OTF/ErdmannSchrift-Light.otf",
+   "400": "Erdmann-Schrift-ANRT/OTF/ErdmannSchrift-Regular.otf",
+   "500": "Erdmann-Schrift-ANRT/OTF/ErdmannSchrift-Medium.otf",
+   "700": "Erdmann-Schrift-ANRT/OTF/ErdmannSchrift-Bold.otf"
+  }
+ },
+ {
+  "family": "Fust & Schoeffer Durandus Gotico-Antiqua 118G",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Fust&Schoeffer-Durandus-GoticoAntiqua118G.otf"
+  }
+ },
+ {
+  "family": "Hamlet Cicero 12",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Hamlet-Cicero12.otf"
+  }
+ },
+ {
+  "family": "Hamlet Tertia 18",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Hamlet-Tertia18.otf"
+  }
+ },
+ {
+  "family": "Jessen Cicero 12",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Jessen-Cicero12.otf"
+  }
+ },
+ {
+  "family": "Jessen Mittel 14",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Jessen-Mittel14.otf"
+  }
+ },
+ {
+  "family": "Parix Hybrid 111R",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Parix-Hybrid111R.otf"
+  }
+ },
+ {
+  "family": "Ptolemy Great-Primer 18",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Ptolemy-GreatPrimer18.otf"
+  }
+ },
+ {
+  "family": "Rot Proto-Roman 102R",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Rot-ProtoRoman102R.otf"
+  }
+ },
+ {
+  "family": "Rusch R-Bizarre Proto-Roman 103R",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Rusch-R-Bizarre-ProtoRoman103R.otf"
+  }
+ },
+ {
+  "family": "Soufflet Vert Hybrid 106R",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/SouffletVert-Hybrid106R.otf"
+  }
+ },
+ {
+  "family": "Spira Proto-Roman 110R",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Spira-ProtoRoman110R.otf"
+  }
+ },
+ {
+  "family": "Sweynheim & Pannartz Proto-Roman 115R",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Sweynheim&Pannartz-ProtoRoman115R.otf"
+  }
+ },
+ {
+  "family": "Sweynheim & Pannartz Subiaco Proto-Roman 120R",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Sweynheim&Pannartz-Subiaco-ProtoRoman120R.otf"
+  }
+ },
+ {
+  "family": "Zainer Gotico-Antiqua 96G",
+  "foundry": "ANRT",
+  "designers": [
+   "Alexis Faudot",
+   "Rafael Ribas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://anrt-nancy.fr/en/fonts/gotico-antiqua",
+  "repo": "https://github.com/anrt-type/GoticoAntiqua",
+  "rev": "e13b3f5a59f8bcccd743190da50838b55352f479",
+  "category": "Serif",
+  "files": {
+   "400": "fonts/Zainer-GoticoAntiqua96G.otf"
+  }
+ }
+]

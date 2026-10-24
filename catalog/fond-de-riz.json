@@ -1,0 +1,189 @@
+[
+ {
+  "family": "Destra",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Cédric Rossignol-Brunet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://fonderiz.fr/destra/",
+  "zip": "http://fonderiz.fr/site/assets/files/1020/destra.zip",
+  "category": "Serif",
+  "files": {
+   "300": "destra/GPDestra-Light.otf",
+   "700": "destra/destra.otf"
+  }
+ },
+ {
+  "family": "Gensco",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Cédric Rossignol-Brunet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://fonderiz.fr/gensco/",
+  "zip": "http://fonderiz.fr/site/assets/files/1022/gensco.zip",
+  "category": "Serif",
+  "files": {
+   "400": "GENSCO.otf"
+  }
+ },
+ {
+  "family": "Hershey Peignot",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Cédric Rossignol-Brunet",
+   "Luuse"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://fonderiz.fr/hershey/",
+  "zip": "http://fonderiz.fr/site/assets/files/1019/hershey-peignot.zip",
+  "category": "Display",
+  "files": {
+   "300": "hershey-peignot/Hershey-Peignot-Light.otf",
+   "700": "hershey-peignot/Hershey-Peignot-Bold.otf"
+  }
+ },
+ {
+  "family": "Marc",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Justine Gagnaire"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://fonderiz.fr/marc/",
+  "zip": "http://fonderiz.fr/site/assets/files/1024/marc.zip",
+  "category": "Sans Serif",
+  "files": {
+   "300": "marc/Marc-Light.otf",
+   "400": "marc/Marc-Regular.otf",
+   "700": "marc/Marc-Bold.otf",
+   "300i": "marc/Marc-LightItalic.otf",
+   "400i": "marc/Marc-Italic.otf",
+   "700i": "marc/Marc-BoldItalic.otf"
+  }
+ },
+ {
+  "family": "Meteor",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Marie Deloffre"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://fonderiz.fr/meteor/",
+  "zip": "http://fonderiz.fr/site/assets/files/1026/meteor-regular.zip",
+  "category": "Serif",
+  "files": {
+   "400": "METEOR-Regular.otf"
+  }
+ },
+ {
+  "family": "Monor",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Cédric Rossignol-Brunet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://fonderiz.fr/monor/",
+  "zip": "http://fonderiz.fr/site/assets/files/1017/monor.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "Monor_Regular.otf",
+   "700": "monor-bold.otf"
+  }
+ },
+ {
+  "family": "P-acr-agon",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Cédric Rossignol-Brunet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://fonderiz.fr/paragon/",
+  "zip": "http://fonderiz.fr/site/assets/files/1021/paragon.zip",
+  "category": "Display",
+  "files": {
+   "400": "paragon/P-ACR-AGON-Regular.otf"
+  }
+ },
+ {
+  "family": "Paragon",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Cédric Rossignol-Brunet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://fonderiz.fr/paragon/",
+  "zip": "http://fonderiz.fr/site/assets/files/1021/paragon.zip",
+  "category": "Serif",
+  "files": {
+   "400": "paragon/Paragon-Regular.otf",
+   "400i": "paragon/Paragonitalic-Regular.otf"
+  }
+ },
+ {
+  "family": "Regular Durandus",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Cédric Rossignol-Brunet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://fonderiz.fr/regularfont/",
+  "zip": "http://fonderiz.fr/site/assets/files/1031/regularfonts.zip",
+  "category": "Display",
+  "files": {
+   "400": "RegDurandus.otf"
+  }
+ },
+ {
+  "family": "Regular Standard",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Cédric Rossignol-Brunet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://fonderiz.fr/regularfont/",
+  "zip": "http://fonderiz.fr/site/assets/files/1031/regularfonts.zip",
+  "category": "Display",
+  "files": {
+   "400": "RegStandard.otf"
+  }
+ },
+ {
+  "family": "Regular Times",
+  "foundry": "Fond de riz",
+  "designers": [
+   "Cédric Rossignol-Brunet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://fonderiz.fr/regularfont/",
+  "zip": "http://fonderiz.fr/site/assets/files/1031/regularfonts.zip",
+  "category": "Display",
+  "files": {
+   "400": "RegTimes.otf",
+   "400i": "RegItalicTimes.otf"
+  }
+ }
+]

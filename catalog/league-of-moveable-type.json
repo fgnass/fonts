@@ -1,0 +1,199 @@
+[
+ {
+  "family": "Blackout Midnight",
+  "foundry": "The League of Moveable Type",
+  "designers": [
+   "Tyler Finck"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.markdown",
+  "rfn": [
+   "Blackout"
+  ],
+  "url": "https://www.theleagueofmoveabletype.com/blackout",
+  "repo": "https://github.com/theleagueof/blackout",
+  "rev": "4864cfc1749590e9f78549c6e57116fe98480c0f",
+  "category": "Display",
+  "files": {
+   "400": "Blackout Midnight.ttf"
+  }
+ },
+ {
+  "family": "Blackout Sunrise",
+  "foundry": "The League of Moveable Type",
+  "designers": [
+   "Tyler Finck"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.markdown",
+  "rfn": [
+   "Blackout"
+  ],
+  "url": "https://www.theleagueofmoveabletype.com/blackout",
+  "repo": "https://github.com/theleagueof/blackout",
+  "rev": "4864cfc1749590e9f78549c6e57116fe98480c0f",
+  "category": "Display",
+  "files": {
+   "400": "Blackout Sunrise.ttf"
+  }
+ },
+ {
+  "family": "Blackout Two AM",
+  "foundry": "The League of Moveable Type",
+  "designers": [
+   "Tyler Finck"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.markdown",
+  "rfn": [
+   "Blackout"
+  ],
+  "url": "https://www.theleagueofmoveabletype.com/blackout",
+  "repo": "https://github.com/theleagueof/blackout",
+  "rev": "4864cfc1749590e9f78549c6e57116fe98480c0f",
+  "category": "Display",
+  "files": {
+   "400": "Blackout Two AM.ttf"
+  }
+ },
+ {
+  "family": "ChunkFive",
+  "foundry": "The League of Moveable Type",
+  "designers": [
+   "Meredith Mandel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.markdown",
+  "rfn": [
+   "Chunk"
+  ],
+  "url": "https://www.theleagueofmoveabletype.com/chunk",
+  "repo": "https://github.com/theleagueof/chunk",
+  "rev": "12a243f3fb7c7a68844901023f7d95d6eaf14104",
+  "category": "Serif",
+  "files": {
+   "400": "ChunkFive-Regular.otf"
+  }
+ },
+ {
+  "family": "ChunkFive Print",
+  "foundry": "The League of Moveable Type",
+  "designers": [
+   "Meredith Mandel"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.markdown",
+  "rfn": [
+   "Chunk"
+  ],
+  "url": "https://www.theleagueofmoveabletype.com/chunk",
+  "repo": "https://github.com/theleagueof/chunk",
+  "rev": "12a243f3fb7c7a68844901023f7d95d6eaf14104",
+  "category": "Display",
+  "files": {
+   "400": "Chunk Five Print.otf"
+  }
+ },
+ {
+  "family": "Junction",
+  "foundry": "The League of Moveable Type",
+  "designers": [
+   "Caroline Hadilaksono"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.markdown",
+  "rfn": [
+   "Junction"
+  ],
+  "url": "https://www.theleagueofmoveabletype.com/junction",
+  "repo": "https://github.com/theleagueof/junction",
+  "rev": "fb73260e86dd301b383cf6cc9ca8e726ef806535",
+  "category": "Sans Serif",
+  "files": {
+   "300": "Junction-light.otf",
+   "400": "Junction-regular.otf",
+   "700": "Junction-bold.otf"
+  }
+ },
+ {
+  "family": "Ostrich Sans",
+  "foundry": "The League of Moveable Type",
+  "designers": [
+   "Tyler Finck"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.markdown",
+  "rfn": [
+   "Ostrich Sans"
+  ],
+  "url": "https://www.theleagueofmoveabletype.com/ostrich-sans",
+  "repo": "https://github.com/theleagueof/ostrich-sans",
+  "rev": "a949d40d0576d12ba26e2a45e19c91fd0228c964",
+  "category": "Sans Serif",
+  "files": {
+   "300": "OstrichSans-Light.otf",
+   "500": "OstrichSans-Medium.otf",
+   "700": "OstrichSans-Bold.otf",
+   "800": "OstrichSans-Heavy.otf",
+   "900": "OstrichSans-Black.otf"
+  }
+ },
+ {
+  "family": "Ostrich Sans Dashed",
+  "foundry": "The League of Moveable Type",
+  "designers": [
+   "Tyler Finck"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.markdown",
+  "rfn": [
+   "Ostrich Sans"
+  ],
+  "url": "https://www.theleagueofmoveabletype.com/ostrich-sans",
+  "repo": "https://github.com/theleagueof/ostrich-sans",
+  "rev": "a949d40d0576d12ba26e2a45e19c91fd0228c964",
+  "category": "Display",
+  "files": {
+   "500": "OstrichSansDashed-Medium.otf"
+  }
+ },
+ {
+  "family": "Ostrich Sans Inline",
+  "foundry": "The League of Moveable Type",
+  "designers": [
+   "Tyler Finck"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.markdown",
+  "rfn": [
+   "Ostrich Sans"
+  ],
+  "url": "https://www.theleagueofmoveabletype.com/ostrich-sans",
+  "repo": "https://github.com/theleagueof/ostrich-sans",
+  "rev": "a949d40d0576d12ba26e2a45e19c91fd0228c964",
+  "category": "Display",
+  "files": {
+   "400": "OstrichSansInline-Regular.otf",
+   "400i": "OstrichSansInline-Italic.otf"
+  }
+ },
+ {
+  "family": "Ostrich Sans Rounded",
+  "foundry": "The League of Moveable Type",
+  "designers": [
+   "Tyler Finck"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Open Font License.markdown",
+  "rfn": [
+   "Ostrich Sans"
+  ],
+  "url": "https://www.theleagueofmoveabletype.com/ostrich-sans",
+  "repo": "https://github.com/theleagueof/ostrich-sans",
+  "rev": "a949d40d0576d12ba26e2a45e19c91fd0228c964",
+  "category": "Display",
+  "files": {
+   "500": "OstrichSansRounded-Medium.otf"
+  }
+ }
+]

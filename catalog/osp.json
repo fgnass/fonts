@@ -1,0 +1,319 @@
+[
+ {
+  "family": "Alfphabet",
+  "foundry": "OSP",
+  "designers": [
+   "Pierre Huyghebaert",
+   "Ludi Loiseau"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "https://gitlab.constantvzw.org/osp/foundry.alfphabet/-/raw/156e99b08b43b9971a49482d4a3a67260623c1fd/LICENSE.txt",
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/alfphabet/",
+  "category": "Sans Serif",
+  "files": {
+   "400": "https://gitlab.constantvzw.org/osp/foundry.alfphabet/-/raw/156e99b08b43b9971a49482d4a3a67260623c1fd/fonts/Alfphabet-I.otf"
+  }
+ },
+ {
+  "family": "Alfphabet Condensed",
+  "foundry": "OSP",
+  "designers": [
+   "Pierre Huyghebaert",
+   "Ludi Loiseau"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "https://gitlab.constantvzw.org/osp/foundry.alfphabet/-/raw/156e99b08b43b9971a49482d4a3a67260623c1fd/LICENSE.txt",
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/alfphabet/",
+  "category": "Sans Serif",
+  "files": {
+   "400": "https://gitlab.constantvzw.org/osp/foundry.alfphabet/-/raw/156e99b08b43b9971a49482d4a3a67260623c1fd/fonts/Alfphabet-III.otf"
+  }
+ },
+ {
+  "family": "Alfphabet Extended",
+  "foundry": "OSP",
+  "designers": [
+   "Pierre Huyghebaert",
+   "Ludi Loiseau"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "https://gitlab.constantvzw.org/osp/foundry.alfphabet/-/raw/156e99b08b43b9971a49482d4a3a67260623c1fd/LICENSE.txt",
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/alfphabet/",
+  "category": "Display",
+  "files": {
+   "400": "https://gitlab.constantvzw.org/osp/foundry.alfphabet/-/raw/156e99b08b43b9971a49482d4a3a67260623c1fd/fonts/Alfphabet-IV.otf"
+  }
+ },
+ {
+  "family": "AX28Script Stroke",
+  "foundry": "OSP",
+  "designers": [
+   "Stéphanie Vilayphiou"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "AX28ScriptStroke"
+  ],
+  "url": "https://osp.kitchen/foundry/ax-28-script/",
+  "category": "Handwriting",
+  "files": {
+   "400": "https://gitlab.constantvzw.org/osp/foundry.ax-28-script/-/raw/1cc7177ac598c5394bbe9b14ebe65c93583fbe14/fonts/Ax28Script.otf"
+  }
+ },
+ {
+  "family": "Belgika",
+  "foundry": "OSP",
+  "designers": [
+   "Pierre Huyghebaert"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "https://gitlab.constantvzw.org/osp/foundry.belgica-belgika/-/raw/b0ee5d3ba45fdce3917f0328c3a493bcbad3335e/LICENSE.txt",
+  "rfn": [
+   "Balgica",
+   "Balgika"
+  ],
+  "url": "https://osp.kitchen/foundry/belgica-belgika/",
+  "category": "Display",
+  "files": {
+   "300": "https://gitlab.constantvzw.org/osp/foundry.belgica-belgika/-/raw/b0ee5d3ba45fdce3917f0328c3a493bcbad3335e/fonts/webfonts/belgika-40th-webfont.ttf",
+   "400": "https://gitlab.constantvzw.org/osp/foundry.belgica-belgika/-/raw/b0ee5d3ba45fdce3917f0328c3a493bcbad3335e/fonts/webfonts/belgika-16th-webfont.ttf",
+   "600": "https://gitlab.constantvzw.org/osp/foundry.belgica-belgika/-/raw/b0ee5d3ba45fdce3917f0328c3a493bcbad3335e/fonts/webfonts/belgika-8th-webfont.ttf",
+   "700": "https://gitlab.constantvzw.org/osp/foundry.belgica-belgika/-/raw/b0ee5d3ba45fdce3917f0328c3a493bcbad3335e/fonts/webfonts/belgika-5th-webfont.ttf"
+  }
+ },
+ {
+  "family": "Certegeska",
+  "foundry": "OSP",
+  "designers": [
+   "Ludi Loiseau",
+   "Sergey Slyusarev"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "Certege"
+  ],
+  "url": "https://osp.kitchen/foundry/certegeska/",
+  "category": "Sans Serif",
+  "files": {
+   "400": "https://gitlab.constantvzw.org/osp/foundry.certegeska/-/raw/6a9dc6b7b2759e1c81defb47a1e0a73295dfdade/fonts/CertegeskaStraight.ttf",
+   "400i": "https://gitlab.constantvzw.org/osp/foundry.certegeska/-/raw/6a9dc6b7b2759e1c81defb47a1e0a73295dfdade/fonts/CertegeskaBase.ttf",
+   "600i": "https://gitlab.constantvzw.org/osp/foundry.certegeska/-/raw/6a9dc6b7b2759e1c81defb47a1e0a73295dfdade/fonts/CertegeskaDemi.ttf"
+  }
+ },
+ {
+  "family": "DIN Eden",
+  "foundry": "OSP",
+  "designers": [
+   "Harrisson",
+   "Simon Gastout",
+   "Ludi Loiseau"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "https://gitlab.constantvzw.org/osp/foundry.osp-din/-/raw/dc97c1ed86860351ae52a5636fa9c9a42ff93a8f/OFL-1.1.txt",
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/osp-din/",
+  "category": "Sans Serif",
+  "files": {
+   "500": "https://gitlab.constantvzw.org/osp/foundry.osp-din/-/raw/dc97c1ed86860351ae52a5636fa9c9a42ff93a8f/fonts/DIN-Eden.otf"
+  }
+ },
+ {
+  "family": "Erbarre",
+  "foundry": "OSP",
+  "designers": [
+   "Stéphanie Vilayphiou",
+   "Gabriel Vaury",
+   "Alexandre Leray",
+   "Ludi Loiseau",
+   "Antoine Gelgon"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/erbarre/",
+  "category": "Sans Serif",
+  "files": {
+   "400": "https://gitlab.constantvzw.org/osp/foundry.erbarre/-/raw/0fddbd69120c511d0da9fdc101dd04d3ad29b881/fonts/Erbarre.otf",
+   "700": "https://gitlab.constantvzw.org/osp/foundry.erbarre/-/raw/0fddbd69120c511d0da9fdc101dd04d3ad29b881/fonts/Erbarre-Bold.otf",
+   "400i": "https://gitlab.constantvzw.org/osp/foundry.erbarre/-/raw/0fddbd69120c511d0da9fdc101dd04d3ad29b881/fonts/Erbarre-Oblique.otf",
+   "700i": "https://gitlab.constantvzw.org/osp/foundry.erbarre/-/raw/0fddbd69120c511d0da9fdc101dd04d3ad29b881/fonts/Erbarre-BoldOblique.otf"
+  }
+ },
+ {
+  "family": "Fluxisch Else",
+  "foundry": "OSP",
+  "designers": [
+   "Pierre Huyghebaert",
+   "Grégoire Vigneron",
+   "Pierre Marchand",
+   "Delphine Platteeuw",
+   "Gabriel Vaury"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "https://gitlab.constantvzw.org/osp/foundry.fluxisch-else/-/raw/75abcc332cdf9083c6d50adaaf3e53725453d152/LICENSE.txt",
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/fluxisch-else/",
+  "category": "Sans Serif",
+  "files": {
+   "300": "https://gitlab.constantvzw.org/osp/foundry.fluxisch-else/-/raw/75abcc332cdf9083c6d50adaaf3e53725453d152/fonts/FluxischElse-Light.otf",
+   "400": "https://gitlab.constantvzw.org/osp/foundry.fluxisch-else/-/raw/75abcc332cdf9083c6d50adaaf3e53725453d152/fonts/FluxischElse-Regular.otf",
+   "700": "https://gitlab.constantvzw.org/osp/foundry.fluxisch-else/-/raw/75abcc332cdf9083c6d50adaaf3e53725453d152/fonts/FluxischElse-Bold.otf"
+  }
+ },
+ {
+  "family": "Libertinage",
+  "foundry": "OSP",
+  "designers": [
+   "Harrisson",
+   "Ludi Loiseau"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "https://gitlab.constantvzw.org/osp/foundry.libertinage/-/raw/16a2be056daa9e6d07182d16d72e63c26d5e97a4/OFL-1.1.txt",
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/libertinage/",
+  "category": "Serif",
+  "files": {
+   "400": "https://gitlab.constantvzw.org/osp/foundry.libertinage/-/raw/16a2be056daa9e6d07182d16d72e63c26d5e97a4/fonts/Libertinage.ttf"
+  }
+ },
+ {
+  "family": "Mill",
+  "foundry": "OSP",
+  "designers": [
+   "Mathieu"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-1-1.txt",
+  "rfn": [
+   "Stroke"
+  ],
+  "url": "https://osp.kitchen/foundry/mill/",
+  "repo": "https://github.com/osp/osp.foundry.mill",
+  "rev": "117bf289158e83685b55d720d1de7d7fe5656214",
+  "category": "Display",
+  "files": {
+   "100": "Mill.otf"
+  }
+ },
+ {
+  "family": "OSP-DIN",
+  "foundry": "OSP",
+  "designers": [
+   "Harrisson",
+   "Ludi Loiseau",
+   "Antoine Begon",
+   "Théo Boissonade"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "https://gitlab.constantvzw.org/osp/foundry.osp-din/-/raw/dc97c1ed86860351ae52a5636fa9c9a42ff93a8f/OFL-1.1.txt",
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/osp-din/",
+  "category": "Sans Serif",
+  "files": {
+   "500": "https://gitlab.constantvzw.org/osp/foundry.osp-din/-/raw/dc97c1ed86860351ae52a5636fa9c9a42ff93a8f/fonts/OSP-DIN.otf"
+  }
+ },
+ {
+  "family": "Philibert",
+  "foundry": "OSP",
+  "designers": [
+   "Pierre Huyghebaert"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/philibert/",
+  "category": "Serif",
+  "files": {
+   "400i": "https://gitlab.constantvzw.org/osp/foundry.philibert/-/raw/597acc719c2bcb1337a83f6408ecf4d169684144/fonts/PhiliItaRus.ttf"
+  }
+ },
+ {
+  "family": "Polsku",
+  "foundry": "OSP",
+  "designers": [
+   "Sébastien Sanfilippo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [
+   "Polsku"
+  ],
+  "url": "https://osp.kitchen/foundry/polsku/",
+  "category": "Display",
+  "files": {
+   "400": "https://gitlab.constantvzw.org/osp/foundry.polsku/-/raw/8a80f6786d6edceefbbee7adf8afc3264168ee66/fonts/Polsku.ttf"
+  }
+ },
+ {
+  "family": "Reglo",
+  "foundry": "OSP",
+  "designers": [
+   "Sébastien Sanfilippo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/reglo/",
+  "category": "Display",
+  "files": {
+   "700": "https://gitlab.constantvzw.org/osp/foundry.reglo/-/raw/803694439ca14a3f2806c7347d198ed6201e8c4b/fonts/Reglo-Bold.ttf"
+  }
+ },
+ {
+  "family": "Sans Guilt DB",
+  "foundry": "OSP",
+  "designers": [
+   "OSP"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-1.1.txt",
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/sans-guilt/",
+  "repo": "https://github.com/osp/osp.foundry.sans-guilt",
+  "rev": "738f04f611b13a7e1f1833c1b29c17307530de5d",
+  "category": "Sans Serif",
+  "files": {
+   "500": "Original Drawings Based/SansGuiltDB.otf"
+  }
+ },
+ {
+  "family": "Sans Guilt LB",
+  "foundry": "OSP",
+  "designers": [
+   "OSP"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-1.1.txt",
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/sans-guilt/",
+  "repo": "https://github.com/osp/osp.foundry.sans-guilt",
+  "rev": "738f04f611b13a7e1f1833c1b29c17307530de5d",
+  "category": "Sans Serif",
+  "files": {
+   "500": "Lead Based/SansGuiltLB.otf"
+  }
+ },
+ {
+  "family": "Sans Guilt MB",
+  "foundry": "OSP",
+  "designers": [
+   "OSP"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL-1.1.txt",
+  "rfn": [],
+  "url": "https://osp.kitchen/foundry/sans-guilt/",
+  "repo": "https://github.com/osp/osp.foundry.sans-guilt",
+  "rev": "738f04f611b13a7e1f1833c1b29c17307530de5d",
+  "category": "Sans Serif",
+  "files": {
+   "500": "System Gill Sans Based/SansGuiltMB.otf"
+  }
+ }
+]

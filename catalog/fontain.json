@@ -1,0 +1,45 @@
+[
+ {
+  "family": "Neo Euler",
+  "foundry": "American Mathematical Society",
+  "designers": [
+   "Hermann Zapf",
+   "Khaled Hosny"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "EUEX10",
+   "EUEX7",
+   "EUEX8",
+   "EUEX9",
+   "EUFB10",
+   "EUFB5",
+   "EUFB7",
+   "EUFM10",
+   "EUFM5",
+   "EUFM7",
+   "EURB10",
+   "EURB5",
+   "EURB7",
+   "EURM10",
+   "EURM5",
+   "EURM7",
+   "EUSB10",
+   "EUSB5",
+   "EUSB7",
+   "EUSM10",
+   "EUSM5",
+   "EUSM7",
+   "CMEX10",
+   "CMSY5",
+   "CMSY7"
+  ],
+  "url": "https://fontain.org/ams-euler/index.html",
+  "zip": "https://fontain.org/ams-euler/export/otf/neo-euler.otf.zip",
+  "category": "Serif",
+  "files": {
+   "500": "ams-euler.otf"
+  }
+ }
+]

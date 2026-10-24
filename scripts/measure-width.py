@@ -45,13 +45,31 @@ def get(url):
     return urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA})).read()
 
 
+# The optical size of the subsets, as in scripts/download.mjs.
+DISPLAY_OPSZ = 72
+
+
+def opsz_of(m):
+    axis = m.get('axes', {}).get('opsz')
+    return min(axis[1], max(axis[0], DISPLAY_OPSZ)) if axis else None
+
+
 def download(m):
     lo, hi, _ = m['axes']['wdth']
     file = f"{OUT}/{m['file'].replace('.ttf', '.woff2')}"
     if not os.path.exists(file):
-        spec = f"{m['family']}:ital,wdth,wght@{int(m['italic'])},{lo:g}..{hi:g},{m['weight']}"
-        css = get('https://fonts.googleapis.com/css2?family=' + urllib.parse.quote(spec) + '&text=' + LOWER + CAPS + 'x').decode()
-        src = re.search(r'src:\s*url\(([^)]+)\)', css)
+        opsz = opsz_of(m)
+        # Pinned custom axes (see scripts/download.mjs) come after the registered ones.
+        pins = sorted(m.get('pinned', {}).items())
+        tags, values = ''.join(f',{t}' for t, _ in pins), ''.join(f',{v:g}' for _, v in pins)
+        plain = f"{m['family']}:ital,wdth,wght{tags}@{int(m['italic'])},{lo:g}..{hi:g},{m['weight']}{values}"
+        # Some families refuse a single opsz value: they keep their default optical size (see scripts/download.mjs).
+        specs = [f"{m['family']}:ital,opsz,wdth,wght{tags}@{int(m['italic'])},{opsz:g},{lo:g}..{hi:g},{m['weight']}{values}", plain] if opsz is not None else [plain]
+        for spec in specs:
+            css = get('https://fonts.googleapis.com/css2?family=' + urllib.parse.quote(spec) + '&text=' + LOWER + CAPS + 'x').decode()
+            src = re.search(r'src:\s*url\(([^)]+)\)', css)
+            if src:
+                break
         if not src:
             raise RuntimeError('no src in css')
         open(file, 'wb').write(get(src.group(1)))

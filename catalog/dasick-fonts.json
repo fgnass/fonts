@@ -1,0 +1,421 @@
+[
+ {
+  "family": "Artist Font",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Artist-Font",
+  "repo": "https://github.com/nervousattack/Artist-Font",
+  "rev": "676ed96920980ca44f227bad80ec4aa360798139",
+  "category": "Display",
+  "files": {
+   "400": "Artist-Font.otf"
+  }
+ },
+ {
+  "family": "Beetletree",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Lingjiu Tong"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Beetletree",
+  "repo": "https://github.com/nervousattack/Beetletree",
+  "rev": "da1e91337d8e893cd5f44057a8c534b151211c6e",
+  "category": "Display",
+  "files": {
+   "400": "Beetletree-Regular.otf",
+   "700": "Beetletree-Bold.otf"
+  }
+ },
+ {
+  "family": "Blocks on Blocks",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/BLOCKS-ON-BLOCKS",
+  "repo": "https://github.com/nervousattack/BLOCKS-ON-BLOCKS",
+  "rev": "bfd04046b7294490500f794bd8c7697cab849798",
+  "category": "Display",
+  "files": {
+   "400": "BLOCKS-ONBLOCKS.otf"
+  }
+ },
+ {
+  "family": "BOLd GOd dISPLAY",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/BOLd-GOd-dISPLAY",
+  "repo": "https://github.com/nervousattack/BOLd-GOd-dISPLAY",
+  "rev": "bd00ca45737927d55a596eff71486f2e483a05c5",
+  "category": "Display",
+  "files": {
+   "400": "BOLdGOd-dISPLAY.otf"
+  }
+ },
+ {
+  "family": "Branch Out",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Srishti Bhawal"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Branchout",
+  "repo": "https://github.com/nervousattack/Branchout",
+  "rev": "77495c97317cf73b33c2d314c460f7da9977405a",
+  "category": "Display",
+  "files": {
+   "400": "Branchout-Regular.otf"
+  }
+ },
+ {
+  "family": "Breeze",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Sarah Schneider"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Breeze",
+  "repo": "https://github.com/nervousattack/Breeze",
+  "rev": "d8e5aafb093753fc68d944931598ed0e60dced8d",
+  "category": "Display",
+  "files": {
+   "400": "Breeze-Regular.otf"
+  }
+ },
+ {
+  "family": "Cold Ice Plant Mono",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/ColdIcePlant",
+  "repo": "https://github.com/nervousattack/ColdIcePlant",
+  "rev": "afd03a8f546badbe9f61bc21d1953ba4d25b7d81",
+  "category": "Display",
+  "files": {
+   "400": "ColdIcePlant-Mono.otf"
+  }
+ },
+ {
+  "family": "Crossed",
+  "foundry": "Dasick Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Needle_Crossed",
+  "repo": "https://github.com/nervousattack/Needle_Crossed",
+  "rev": "51cd696e59d6fde5d4e721e91085313ecacc3133",
+  "category": "Display",
+  "files": {
+   "400": "Crossed.otf"
+  }
+ },
+ {
+  "family": "GUY1976",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/GUY1976",
+  "repo": "https://github.com/nervousattack/GUY1976",
+  "rev": "b2e2ebf6d47f565504d370a402106860da0971aa",
+  "category": "Display",
+  "files": {
+   "400": "GUY1976-ONE.otf"
+  }
+ },
+ {
+  "family": "Homesick",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Atara Celia"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Homesick",
+  "repo": "https://github.com/nervousattack/Homesick",
+  "rev": "b5d1c0df872b95e97c58d9ca36a6ad11d04e3449",
+  "category": "Display",
+  "files": {
+   "400": "HomeSick-Regular.otf"
+  }
+ },
+ {
+  "family": "Horizon",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Yujin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Horizon",
+  "repo": "https://github.com/nervousattack/Horizon",
+  "rev": "dbe402034225e677c39a5b1e12c2920621e94148",
+  "category": "Display",
+  "files": {
+   "400": "Horizon-Regular.otf"
+  }
+ },
+ {
+  "family": "Immortalist",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Immortalist",
+  "repo": "https://github.com/nervousattack/Immortalist",
+  "rev": "9ef78144504e4efc470b9374a689779969e43740",
+  "category": "Display",
+  "files": {
+   "300": "Immortalist-Light.otf"
+  }
+ },
+ {
+  "family": "Melted Potato",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Jennifer Kim"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Melted_Potato",
+  "repo": "https://github.com/nervousattack/Melted_Potato",
+  "rev": "74f0f999b2519dea32bea407cb3d432a1a7857e3",
+  "category": "Display",
+  "files": {
+   "400": "MeltedPotato-Regular.otf"
+  }
+ },
+ {
+  "family": "Mud Club",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Mud-Club",
+  "repo": "https://github.com/nervousattack/Mud-Club",
+  "rev": "35e165fe85f56c6596d5a273c11d525582a29452",
+  "category": "Display",
+  "files": {
+   "400": "MudClub-FranklintheGoth.otf"
+  }
+ },
+ {
+  "family": "Needle",
+  "foundry": "Dasick Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Needle_Crossed",
+  "repo": "https://github.com/nervousattack/Needle_Crossed",
+  "rev": "51cd696e59d6fde5d4e721e91085313ecacc3133",
+  "category": "Display",
+  "files": {
+   "400": "Needle-Regular.otf"
+  }
+ },
+ {
+  "family": "Peristalsis Display",
+  "foundry": "Dasick Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Peristalsis",
+  "repo": "https://github.com/nervousattack/Peristalsis",
+  "rev": "8ff28a994ad7e609b0ebe7b089fca28461e8ae67",
+  "category": "Display",
+  "files": {
+   "400": "Peristalsis.otf"
+  }
+ },
+ {
+  "family": "Pringip Signage",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Pringip-Signage",
+  "repo": "https://github.com/nervousattack/Pringip-Signage",
+  "rev": "69ddbe41f90917dc96c76eb678e50cef519ce712",
+  "category": "Display",
+  "files": {
+   "400": "Pringip-Signage.otf"
+  }
+ },
+ {
+  "family": "Scribble Fill",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Scribble-Fill",
+  "repo": "https://github.com/nervousattack/Scribble-Fill",
+  "rev": "080bece2bfcbb49364793281225f12c58140fdce",
+  "category": "Display",
+  "files": {
+   "400": "Scribble-Fill.otf"
+  }
+ },
+ {
+  "family": "Slash Standard",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Slash-Standard",
+  "repo": "https://github.com/nervousattack/Slash-Standard",
+  "rev": "848b1e3947b609ace1c312c28a453b9078ea7953",
+  "category": "Display",
+  "files": {
+   "400": "Slash-Standard.otf"
+  }
+ },
+ {
+  "family": "Slow Script",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Slow-Script",
+  "repo": "https://github.com/nervousattack/Slow-Script",
+  "rev": "f9ba81cf48c589f85db082af2f452c972e4df06b",
+  "category": "Handwriting",
+  "files": {
+   "400": "SlowScript-One.otf"
+  }
+ },
+ {
+  "family": "Squarevetica",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Squarevetica",
+  "repo": "https://github.com/nervousattack/Squarevetica",
+  "rev": "84f102ce0e16476ca0173c4c6c629e209a57b12f",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Squarevetica-Regular.otf"
+  }
+ },
+ {
+  "family": "Tabivetica",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Jacklyn Wang"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Tabivetica",
+  "repo": "https://github.com/nervousattack/Tabivetica",
+  "rev": "98f3201d10db1df0a9a66253e003d2efe770cde0",
+  "category": "Display",
+  "files": {
+   "400": "Tabivetica-Regular.otf"
+  }
+ },
+ {
+  "family": "Tengram",
+  "foundry": "Dasick Fonts",
+  "designers": [],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Tengram",
+  "repo": "https://github.com/nervousattack/Tengram",
+  "rev": "4e74534663a8ef07773ab8c39de5019a57cc70a7",
+  "category": "Display",
+  "files": {
+   "400": "Tengram-Regular.ttf",
+   "700": "Tengram-Bold.otf"
+  }
+ },
+ {
+  "family": "Time Stamp",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Time-Stamp",
+  "repo": "https://github.com/nervousattack/Time-Stamp",
+  "rev": "1c95d2b140d73b7cdd2cf49ca25dc716f7d81e0f",
+  "category": "Sans Serif",
+  "files": {
+   "400": "TimeStamp-Standard.otf"
+  }
+ },
+ {
+  "family": "Womb Script",
+  "foundry": "Dasick Fonts",
+  "designers": [
+   "Rory King"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://github.com/nervousattack/Womb-Script",
+  "repo": "https://github.com/nervousattack/Womb-Script",
+  "rev": "182847208509384edb59bdcebd23844e0b1498df",
+  "category": "Handwriting",
+  "files": {
+   "400": "WombScript-Regular.otf"
+  }
+ }
+]

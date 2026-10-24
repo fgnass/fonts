@@ -17,7 +17,7 @@ Each measuring script writes its own part `data/metrics/<part>.json` (one object
 
 | Step | Script | Output | Time |
 |---|---|---|---|
-| Download | `scripts/download.mjs` (`make download`) | `data/fonts/`, `data/manifest.json` | |
+| Download | `scripts/libre.py download`, `scripts/download.mjs` (`make download`) | `data/fonts/`, `data/manifest.json`, `public/libre/` | |
 | Skeletons | `scripts/build-index.mjs` (`make index`), uses `scripts/medial.mjs` | `public/data/g/` | ~6 min |
 | Stroke ends | `scripts/build-topology.mjs` (part of `make index`) | `public/data/t/` | |
 | Skeleton features | `scripts/embed.mjs --skeleton`, `scripts/pack-embeddings.py` (`make embeddings`) | `data/emb-skel/`, `public/data/e/` | ~3 min per character on a CPU |
@@ -36,7 +36,10 @@ Each measuring script writes its own part `data/metrics/<part>.json` (one object
 
 Notes on single steps:
 
-- **Download.** A subset of every Latin Google Fonts family at weight 400: a–z, A–Z, 0–9, `ä ö ü ß Ä Ö Ü` and `& @ ? ! # $ % + * { } § " €` (see `src/chars.js`). `make refresh` downloads the files of the families in the manifest again and keeps the manifest.
+- **Download.** A subset of every Latin Google Fonts family at weight 400: a–z, A–Z, 0–9, `ä ö ü ß Ä Ö Ü` and `& @ ? ! # $ % + * { } § " €` (see `src/chars.js`). Families with an optical size axis are downloaded (and so measured) at opsz 72, within their range: the app is for headlines and logos, where the display forms show. The app itself loads the whole opsz range, and the browser sets the optical size for the font size. Custom axes that Google pins to another value than the designers' default (Fraunces: WONK 1) load and are measured at the designers' default (`PINNED` in `scripts/download.mjs`). `make refresh` downloads the files of the families in the manifest again and keeps the manifest.
+- **Libre families.** `catalog/*.json` lists libre families from independent foundries, one file per source, with their repo (at a pinned revision) or archive and a file per style (see [LIBRE-FONTS.md](LIBRE-FONTS.md) and [catalog/README.md](../catalog/README.md)). `uv run scripts/libre.py download` downloads them into `data/libre/`, writes the same subsets as for Google families (`data/fonts/`, `data/fonts-v/`) and the web files for the app (`public/libre/`), and writes `data/libre.json`. `scripts/download.mjs` adds these families after the Google families. `uv run scripts/libre.py discover <url>` proposes catalog entries for a repo or ZIP archive, `uv run scripts/libre.py check` checks the catalog.
+- **New families.** New families go to the end of the manifest, so the existing rows stay valid. The skeleton features of only the new families: `node scripts/embed.mjs --skeleton --only=Family,Family`, then `touch data/.stamps/emb-skel` and `make`.
+- **Removed families.** When families leave the manifest, the rows of the skeleton features after them would belong to the wrong families. `node scripts/remap-embeddings.mjs <old-manifest.json>` puts the rows into the new order and prints the `embed.mjs --only` command for the new families.
 - **New characters.** Run only the character steps: `node scripts/build-index.mjs '<chars>'`, `node scripts/build-topology.mjs '<chars>'`, `node scripts/embed.mjs '<chars>' --skeleton` and `uv run scripts/pack-embeddings.py '<chars>'`.
 - **Skeletons.** Each character is shaped with HarfBuzz, so default OpenType features apply as in the browser (for example the small caps of "Anton SC"). A glyph whose medial axis fails falls back to raster thinning.
 - **Skeleton features.** `node scripts/embed.mjs --skeleton --only=Family,Family` computes only these families and writes their rows into the existing files.

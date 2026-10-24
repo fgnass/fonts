@@ -1,0 +1,519 @@
+[
+ {
+  "family": "Acte",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Sandrine Embreckx"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1028/acte.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "acte.otf"
+  }
+ },
+ {
+  "family": "Barlowfold",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Andrea Bonetto",
+   "Victor Dubien"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1053/barlowfold.zip",
+  "category": "Display",
+  "files": {
+   "700": "barlowfold.otf"
+  }
+ },
+ {
+  "family": "Brutuswriter",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Alexandra Lambert"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1062/brutuswriter.zip",
+  "category": "Display",
+  "files": {
+   "400": "brutuswriter.otf"
+  }
+ },
+ {
+  "family": "Ding Dong",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Victor Dubien"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1068/ding-dong.zip",
+  "category": "Display",
+  "files": {
+   "400": "dingdongirregular.otf"
+  }
+ },
+ {
+  "family": "Elemental",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Ana Bogos"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1072/elemental.zip",
+  "category": "Display",
+  "files": {
+   "400": "elemental.otf"
+  }
+ },
+ {
+  "family": "Ellipse",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Julia Snarska"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1074/ellipse.zip",
+  "category": "Display",
+  "files": {
+   "400": "ellipse.otf"
+  }
+ },
+ {
+  "family": "Fourmi",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Ewa Puchalska",
+   "Mathieu Knoockaert",
+   "Nissrine El Moussaoui"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1076/fourmi.zip",
+  "category": "Display",
+  "files": {
+   "300": "fourmi-light.otf"
+  }
+ },
+ {
+  "family": "Frame",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Laura Cisinski",
+   "Maxime Verkest"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1080/frame.zip",
+  "category": "Display",
+  "files": {
+   "400": "frame.otf"
+  }
+ },
+ {
+  "family": "Goozee",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Alexandra Lambert",
+   "Madeleine Barbaroux"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1083/goozee.zip",
+  "category": "Display",
+  "files": {
+   "400": "goozeeoutline.otf"
+  }
+ },
+ {
+  "family": "Infini",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "André Ferreira"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1029/infini.zip",
+  "category": "Display",
+  "files": {
+   "700": "infini.otf"
+  }
+ },
+ {
+  "family": "Labeur",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Termet ML"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1169/labeur.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "labeur-labeur.otf"
+  }
+ },
+ {
+  "family": "La Collective",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Alicia Fernandes Barbosa",
+   "Felicie Malu Mulluilay",
+   "Inès Tazi",
+   "Lea Bassem",
+   "Lea Da Costa Brito Fontes",
+   "Marion Van Ootenghem",
+   "Roksana Duchnowska",
+   "Romane Pondant"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1092/lacollective.zip",
+  "category": "Display",
+  "files": {
+   "400": "lacollective.otf"
+  }
+ },
+ {
+  "family": "Linea",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Marie Lescalier",
+   "Marine Sanchez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1101/linea.zip",
+  "category": "Display",
+  "files": {
+   "400": "linea.otf"
+  }
+ },
+ {
+  "family": "Marion",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Marion Bouveret"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1104/marion.zip",
+  "category": "Display",
+  "files": {
+   "400": "marion.otf"
+  }
+ },
+ {
+  "family": "Metro Zine",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Arthur Longree"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1106/metro-zine.zip",
+  "category": "Display",
+  "files": {
+   "400": "metro-zine.otf"
+  }
+ },
+ {
+  "family": "Noloice",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Alice Polo",
+   "Lois Bonus Plumridge",
+   "Noah Rodriguez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1108/noloice.zip",
+  "category": "Handwriting",
+  "files": {
+   "400": "noloice.otf"
+  }
+ },
+ {
+  "family": "Outata",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Sébastien Hiernaux"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1112/outata.zip",
+  "category": "Display",
+  "files": {
+   "400": "outata.otf"
+  }
+ },
+ {
+  "family": "Parasitype",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Hannah Loose",
+   "Justyna Zukovska",
+   "Muskan Jaffer",
+   "Nelle Picard"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1126/parasitype.zip",
+  "category": "Display",
+  "files": {
+   "200": "parasitype-extralight.otf",
+   "300": "parasitype-light.otf",
+   "400": "parasitype-regular.otf",
+   "500": "parasitype-medium.otf",
+   "600": "parasitype-semibold.otf",
+   "700": "parasitype-bold.otf"
+  }
+ },
+ {
+  "family": "Punctata",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Adrien Frère",
+   "Charel Lepage",
+   "Chloé Gobin",
+   "Sébastien Hiernaux"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1131/punctata.zip",
+  "category": "Display",
+  "files": {
+   "400": "punctata-regular.otf"
+  }
+ },
+ {
+  "family": "Revival",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Lucie Danloy"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1134/revival.zip",
+  "category": "Display",
+  "files": {
+   "400": "revival.otf"
+  }
+ },
+ {
+  "family": "Scorpius",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Eva De Luca",
+   "Muskan Jaffer",
+   "Sangye Bay Santos"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1136/scorpius.zip",
+  "category": "Display",
+  "files": {
+   "400": "scorpius.otf"
+  }
+ },
+ {
+  "family": "Simple",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Camille Balseau"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1139/simple.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "simple.otf"
+  }
+ },
+ {
+  "family": "Space Notorious Rounded",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Michaël Dewilder",
+   "Structure Baton"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1146/spacenotoriousrounded.zip",
+  "category": "Display",
+  "files": {
+   "700": "spacenotoriousrounded.otf"
+  }
+ },
+ {
+  "family": "Stairs",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Elodie Goldberg"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1141/stairs.zip",
+  "category": "Display",
+  "files": {
+   "400": "stairs.otf"
+  }
+ },
+ {
+  "family": "Super Clip",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Marine Sanchez"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1143/super-clip.zip",
+  "category": "Display",
+  "files": {
+   "400": "super-clip.otf"
+  }
+ },
+ {
+  "family": "Super Notorious Dot",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Victor de Ladonchamps"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1144/supernotoriousdot.zip",
+  "category": "Display",
+  "files": {
+   "700": "supernotoriousdot.otf"
+  }
+ },
+ {
+  "family": "Super Notorious Tordue",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Structure Baton",
+   "Clementine Remy"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1149/supernotorioustordue.zip",
+  "category": "Display",
+  "files": {
+   "300": "supernotorioustordue.otf"
+  }
+ },
+ {
+  "family": "Thalsa",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Theo Delissen",
+   "Alaya Benitez Alberdi",
+   "Samuel Van Loo"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1151/thalsa.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "thalsabook.otf"
+  }
+ },
+ {
+  "family": "Touillette",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Victor Slachmulder",
+   "Lois Bonus Plumridge",
+   "Carlos Lins Santos"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1152/touillette.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "touillette-regular.otf"
+  }
+ },
+ {
+  "family": "Yunik",
+  "foundry": "Typothèque ESA Le 75",
+  "designers": [
+   "Hugo Depris",
+   "Nathan Gillet",
+   "Luna Mazzarella",
+   "Léa Hoolans"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "http://typotheque.le75.be/",
+  "zip": "http://typotheque.le75.be/site/assets/files/1157/yunik.zip",
+  "category": "Display",
+  "files": {
+   "400": "yunik.otf"
+  }
+ }
+]

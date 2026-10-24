@@ -2,6 +2,7 @@
 # requires-python = ">=3.11"
 # dependencies = [
 #     "fonttools>=4.60",
+#     "brotli",
 # ]
 # ///
 """Technical statistics of every family, from the full font files.
@@ -129,7 +130,8 @@ def measure(i):
                 result['c'] = int(bool(COLOR_TABLES & set(font.keys())))
             json.dump(result, open(cache, 'w'))
             return i, result
-    result = stats(read_tables(font_url(m)))
+    # Libre families (scripts/libre.py) have their full files on disk.
+    result = stats(TTFont(m['full']) if m.get('libre') else read_tables(font_url(m)))
     json.dump(result, open(cache, 'w'))
     return i, result
 

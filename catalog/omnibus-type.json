@@ -1,0 +1,22 @@
+[
+ {
+  "family": "Leluja Original",
+  "foundry": "Omnibus-Type",
+  "designers": [
+   "Andrea Kulpas"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "Leluja-Original/OFL.txt",
+  "rfn": [],
+  "url": "https://www.omnibus-type.com/fonts/leluja-original/",
+  "repo": "https://github.com/Omnibus-Type/Leluja",
+  "rev": "e1b8c6649c7d3a92dc8d90899038b77882e98d47",
+  "category": "Serif",
+  "files": {
+   "400": "Leluja-Original/otf/LelujaOriginal-Regular.otf",
+   "700": "Leluja-Original/otf/LelujaOriginal-Bold.otf",
+   "400i": "Leluja-Original/otf/LelujaOriginal-Italic.otf",
+   "700i": "Leluja-Original/otf/LelujaOriginal-BoldItalic.otf"
+  }
+ }
+]

@@ -1,0 +1,297 @@
+[
+ {
+  "family": "Affigere",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Alexandre d’Hubert",
+   "Romain Laurent",
+   "Daphné Lejeune"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/affigere/",
+  "zip": "https://xcicero.esad-gv.net/page/affigere/XCicero_Affigere.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Affigere-Regular.otf"
+  }
+ },
+ {
+  "family": "Americaine",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Alan Madić"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/americaine/",
+  "zip": "https://xcicero.esad-gv.net/page/americaine/XCicero_Americaine.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Americaine-Condensed.otf"
+  }
+ },
+ {
+  "family": "Antique Serie",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Coline Houot",
+   "Romain Laurent"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/antiqueserie/",
+  "zip": "https://xcicero.esad-gv.net/page/antiqueserie/XCicero_AntiqueSerie.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "AntiqueSerie-Regular.otf"
+  }
+ },
+ {
+  "family": "Betwixt",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Héra Mahseredjian"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/betwixt/",
+  "zip": "https://xcicero.esad-gv.net/page/betwixt/XCicero_Betwixt.zip",
+  "category": "Display",
+  "files": {
+   "400": "Betwixt-Condensed.otf"
+  }
+ },
+ {
+  "family": "Biondeggiare",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Léa Ochoa"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/biondeggiare/",
+  "zip": "https://xcicero.esad-gv.net/page/biondeggiare/XCicero_Biondeggiare.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Biondeggiare-Regular.otf"
+  }
+ },
+ {
+  "family": "Bocalupo",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Ambre Ruggeri"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/bocalupo/",
+  "zip": "https://xcicero.esad-gv.net/page/bocalupo/XCicero_Bocalupo.zip",
+  "category": "Display",
+  "files": {
+   "400": "Bocalupo-Regular.otf"
+  }
+ },
+ {
+  "family": "Bonbance",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Louna Bourdon"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/bonbance/",
+  "zip": "https://xcicero.esad-gv.net/page/bonbance/XCicero_Bonbance.zip",
+  "category": "Serif",
+  "files": {
+   "700": "Bonbance-BoldCondensed.otf"
+  }
+ },
+ {
+  "family": "Cesare",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Alan Madić"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/cesare/",
+  "zip": "https://xcicero.esad-gv.net/page/cesare/XCicero_Cesare.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Cesare-Regular.otf"
+  }
+ },
+ {
+  "family": "Egyptienne E",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Cédric Rossignol-Brunet"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/egyptiennee/",
+  "zip": "https://xcicero.esad-gv.net/page/egyptiennee/XCicero_EgyptienneE.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Egyptienne-E.otf"
+  }
+ },
+ {
+  "family": "Egyptienne Large",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Manon Hourdou",
+   "Léana Orsoni",
+   "Lorene Tissier"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/egyptiennelarge/",
+  "zip": "https://xcicero.esad-gv.net/page/egyptiennelarge/XCicero_EgyptienneLarge.zip",
+  "category": "Serif",
+  "files": {
+   "400": "EgyptienneLarge-Regular.otf"
+  }
+ },
+ {
+  "family": "Excessive",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Clara Dousson"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/excessive/",
+  "zip": "https://xcicero.esad-gv.net/page/excessive/XCicero_Excessive.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Excessive-ExtraCondensed.otf"
+  }
+ },
+ {
+  "family": "Grave Presse",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Loris Espitalier"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/grave/",
+  "zip": "https://xcicero.esad-gv.net/page/grave/XCicero_GravePresse.zip",
+  "category": "Sans Serif",
+  "files": {
+   "800": "GravePresse-ExtraBold.otf"
+  }
+ },
+ {
+  "family": "Jakob",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Alan Madić"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/jakob/",
+  "zip": "https://xcicero.esad-gv.net/page/jakob/XCicero_Jakob.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Jakob-Semi-Condensed.otf"
+  }
+ },
+ {
+  "family": "Menil",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Louna Bourdon"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/menil/",
+  "zip": "https://xcicero.esad-gv.net/page/menil/XCicero_Menil.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Menil-Etroit.otf"
+  }
+ },
+ {
+  "family": "Nouvelle Grotesquerie",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Guillaume Lelong"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/nouvellegrotesquerie/",
+  "zip": "https://xcicero.esad-gv.net/page/nouvellegrotesquerie/XCicero_NouvelleGrotesquerie.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "NouvelleGrotesquerie-Regular.otf"
+  }
+ },
+ {
+  "family": "Rosette",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Agathe Masa"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/rosette/",
+  "zip": "https://xcicero.esad-gv.net/page/rosette/XCicero_Rosette.zip",
+  "category": "Serif",
+  "files": {
+   "400": "Rosette-Regular.otf"
+  }
+ },
+ {
+  "family": "Squatina",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Louise Sansoldi",
+   "Anaëlle Turc",
+   "Julia Veljkovic"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/squatina/",
+  "zip": "https://xcicero.esad-gv.net/page/squatina/XCicero_Squatina.zip",
+  "category": "Sans Serif",
+  "files": {
+   "400": "Squatina-Regular.otf"
+  }
+ },
+ {
+  "family": "Thestral Neue",
+  "foundry": "X Cicéro (ESAD Valence)",
+  "designers": [
+   "Pauline Maréchal"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": null,
+  "rfn": [],
+  "url": "https://xcicero.esad-gv.net/page/thestral/",
+  "zip": "https://xcicero.esad-gv.net/page/thestral/XCicero_ThestralNeue.zip",
+  "category": "Serif",
+  "files": {
+   "700": "ThestralNeue-Bold.otf"
+  }
+ }
+]

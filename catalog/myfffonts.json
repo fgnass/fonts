@@ -1,0 +1,126 @@
+[
+ {
+  "family": "Departure Mono",
+  "foundry": "Helena Zhang",
+  "designers": [
+   "Helena Zhang",
+   "Tobias Fried"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "DepartureMono-1.500/LICENSE",
+  "rfn": [],
+  "url": "https://departuremono.com/",
+  "zip": "https://github.com/rektdeckard/departure-mono/releases/download/v1.500/DepartureMono-1.500.zip",
+  "category": "Monospace",
+  "files": {
+   "400": "DepartureMono-1.500/DepartureMono-Regular.otf"
+  }
+ },
+ {
+  "family": "Haskoy",
+  "foundry": "Ertekin Erdin",
+  "designers": [
+   "Ertekin Erdin"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "OFL.txt",
+  "rfn": [],
+  "url": "https://haskoy.ertekinn.com/",
+  "repo": "https://github.com/ertekinno/haskoy",
+  "rev": "51e575511be4ec16ec933d811721f89d1029db07",
+  "category": "Sans Serif",
+  "files": {
+   "100": "fonts/otf/Haskoy-Thin.otf",
+   "200": "fonts/otf/Haskoy-ExtraLight.otf",
+   "300": "fonts/otf/Haskoy-Light.otf",
+   "400": "fonts/otf/Haskoy-Regular.otf",
+   "500": "fonts/otf/Haskoy-Medium.otf",
+   "600": "fonts/otf/Haskoy-SemiBold.otf",
+   "700": "fonts/otf/Haskoy-Bold.otf",
+   "800": "fonts/otf/Haskoy-ExtraBold.otf",
+   "100i": "fonts/otf/Haskoy-ThinItalic.otf",
+   "200i": "fonts/otf/Haskoy-ExtraLightItalic.otf",
+   "300i": "fonts/otf/Haskoy-LightItalic.otf",
+   "400i": "fonts/otf/Haskoy-Italic.otf",
+   "500i": "fonts/otf/Haskoy-MediumItalic.otf",
+   "600i": "fonts/otf/Haskoy-SemiBoldItalic.otf",
+   "700i": "fonts/otf/Haskoy-BoldItalic.otf",
+   "800i": "fonts/otf/Haskoy-ExtraBoldItalic.otf"
+  },
+  "variable": "fonts/ttf/Haskoy-variable.ttf"
+ },
+ {
+  "family": "Nudles",
+  "foundry": "Anne-Dauphine Borione",
+  "designers": [
+   "Anne-Dauphine Borione"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [
+   "Nudles"
+  ],
+  "url": "https://daytonamess.com/",
+  "repo": "https://github.com/daytonamess/Nudles",
+  "rev": "21258d65bbfb57182e8233ae19f66827562bfe26",
+  "category": "Display",
+  "files": {
+   "100": "fonts/Nudles-Hairline.otf",
+   "200": "fonts/Nudles-Thin.otf",
+   "400": "fonts/Nudles-Regular.otf",
+   "700": "fonts/Nudles-Bold.otf",
+   "900": "fonts/Nudles-Fat.otf"
+  }
+ },
+ {
+  "family": "Overused Grotesk",
+  "foundry": "Bao Nguyen",
+  "designers": [
+   "Bao Nguyen"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE.txt",
+  "rfn": [],
+  "url": "https://github.com/RandomMaerks/Overused-Grotesk",
+  "repo": "https://github.com/RandomMaerks/Overused-Grotesk",
+  "rev": "73d02b98d4d9c3cb0532fb0c72f5e1597a46f106",
+  "category": "Sans Serif",
+  "files": {
+   "300": "fonts/otf/OverusedGrotesk-Light.otf",
+   "400": "fonts/otf/OverusedGrotesk-Roman.otf",
+   "500": "fonts/otf/OverusedGrotesk-Medium.otf",
+   "600": "fonts/otf/OverusedGrotesk-SemiBold.otf",
+   "700": "fonts/otf/OverusedGrotesk-Bold.otf",
+   "800": "fonts/otf/OverusedGrotesk-ExtraBold.otf",
+   "900": "fonts/otf/OverusedGrotesk-Black.otf",
+   "300i": "fonts/otf/OverusedGrotesk-LightItalic.otf",
+   "400i": "fonts/otf/OverusedGrotesk-Italic.otf",
+   "500i": "fonts/otf/OverusedGrotesk-MediumItalic.otf",
+   "600i": "fonts/otf/OverusedGrotesk-SemiBoldItalic.otf",
+   "700i": "fonts/otf/OverusedGrotesk-BoldItalic.otf",
+   "800i": "fonts/otf/OverusedGrotesk-ExtraBoldItalic.otf",
+   "900i": "fonts/otf/OverusedGrotesk-BlackItalic.otf"
+  },
+  "variable": "fonts/variable/OverusedGrotesk-VF.ttf"
+ },
+ {
+  "family": "Octagon",
+  "foundry": "HAW Hamburg",
+  "designers": [
+   "Pierre Pané-Farré",
+   "Simon Thiefes"
+  ],
+  "license": "OFL-1.1",
+  "licenseFile": "LICENSE",
+  "rfn": [
+   "Octagon Variable"
+  ],
+  "url": "https://haw-type-design.github.io/octagon-variable/",
+  "repo": "https://github.com/haw-type-design/octagon-variable",
+  "rev": "8fcaad61a92465a2223430f1307203295fbd807e",
+  "category": "Display",
+  "files": {
+   "400": "export/static/otf/OctagonVariable-NORMAL.otf"
+  }
+ }
+]

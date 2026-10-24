@@ -1,6 +1,6 @@
 # fonts.gnass.buzz
 
-Find the right Google Font by how it looks, not by its name or category.
+Find the right open-source font by how it looks, not by its name or category: all Google Fonts, plus hundreds of libre fonts from other foundries, collectives and design schools (see [docs/LIBRE-FONTS.md](docs/LIBRE-FONTS.md)).
 
 ## What you can do
 
@@ -29,4 +29,4 @@ The idea of searching by drawing comes from [Shapecatcher](https://shapecatcher.
 
 ## License
 
-MIT, see [LICENSE](LICENSE). The fonts are not part of this project; each Google Font has its own license.
+MIT, see [LICENSE](LICENSE). The fonts are not part of this project; each font has its own license. The libre fonts in `public/libre/` are published with their licenses (SIL Open Font License).
