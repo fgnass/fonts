@@ -170,7 +170,7 @@ const PREVIEWS = {
   og: ({ ogShape, ogExplore }) => `
     <div class="side">
       <h1>fonts</h1>
-      <p>Find your type among all Google Fonts, by how it looks.</p>
+      <p>Find your type among thousands of open-source fonts, by how it looks.</p>
     </div>
     ${phone(ogShape, { x: 530, y: 50, width: 273 })}
     ${phone(ogExplore, { x: 837, y: 50, width: 273 })}`,
