@@ -1,19 +1,19 @@
-import type { ComponentChildren } from 'preact';
 import type { Font } from '../data';
 
 export const linkClass = 'text-[13px] font-normal text-soft hover:text-fg';
 
 interface Props {
-  font: Pick<Font, 'family'>;
+  font: Pick<Font, 'family' | 'libre'>;
   class?: string;
-  children?: ComponentChildren;
 }
 
-/** Opens the family on Google Fonts. */
-export function GoogleFontsLink({ font, class: className = linkClass, children = 'View on Google Fonts' }: Props) {
+/** Opens the family where it comes from: on Google Fonts, or on the page of its foundry. */
+export function SourceLink({ font, class: className = linkClass }: Props) {
+  const source = font.libre?.foundry ?? 'Google Fonts';
+  const href = font.libre?.url ?? `https://fonts.google.com/specimen/${encodeURIComponent(font.family)}`;
   return (
-    <a class={className} href={`https://fonts.google.com/specimen/${encodeURIComponent(font.family)}`} target="_blank" rel="noreferrer" title={`Open ${font.family} on Google Fonts`}>
-      {children} <span aria-hidden="true">↗</span>
+    <a class={className} href={href} target="_blank" rel="noreferrer" title={`Open ${font.family} on ${font.libre ? `the site of ${source}` : source}`}>
+      {source} <span aria-hidden="true">↗</span>
     </a>
   );
 }

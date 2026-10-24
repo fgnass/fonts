@@ -1,7 +1,7 @@
 import { Pencil } from 'lucide-preact';
 import type { Font } from '../../data';
 import { variationSettings } from '../../fontload';
-import { body, bodyLeading, bodySize, heading, headingLeading, headingSize, primary, type Role, secondary, shortlistView, styleFor } from '../../shortlist-state';
+import { body, bodyLeading, bodySize, heading, headingLeading, headingSize, primary, type Role, secondary, fontView, styleFor } from '../../shortlist-state';
 import { selectWorkspace, showShortlist } from '../../state';
 import { useLoadedFont } from '../useLoadedFont';
 import { Editable } from './Editable';
@@ -11,7 +11,7 @@ import { TypeControls } from './TypeControls';
 /** The font of a role in the specimen, loaded only while the shortlist shows. */
 function useSpecimenFont(role: Role, font: Font | undefined, text: string) {
   const style = font ? styleFor(role, font) : undefined;
-  const alias = useLoadedFont(font, style, text, { delay: 180, enabled: showShortlist.value && shortlistView.value === 'pairing' });
+  const alias = useLoadedFont(font, style, text, { delay: 180, enabled: showShortlist.value && fontView.value === 'pairing' });
   return { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: style ? variationSettings(style) : undefined };
 }
 
@@ -28,7 +28,7 @@ export function ShortlistPreview() {
       <button type="button" class="mt-3 cursor-pointer rounded-lg border border-line2 bg-panel px-3.5 py-2.25 text-fg hover:border-accent" onClick={() => selectWorkspace(false)}>Explore fonts</button>
     </div>
   );
-  if (shortlistView.value === 'specimen') return <Specimen font={font} />;
+  if (fontView.value === 'specimen') return <Specimen font={font} />;
   return (
     <>
       <TypeControls font={font} paired={paired} />

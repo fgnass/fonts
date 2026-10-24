@@ -22,8 +22,9 @@ export function Glyph({ item, lines, hidden }: { item: Item; lines: string[]; hi
   const style = displayedStyle(item);
   const { alias, covers } = useCardFont(item, style, lines.join(''), useNearViewport(el));
   const [shrink, setShrink] = useState(1);
-  // Scale each font so that all cards show the same cap height (0.7 em at --size).
-  const scale = 0.7 / Math.min(1, Math.max(0.5, metrics[item.index].h ?? 0.7));
+  // Scale each font so that all cards show the same cap height (0.7 em at --size). Some fonts have capitals
+  // taller than the em (up to about 2 em); the lower limit keeps fonts with tiny capitals from growing huge.
+  const scale = 0.7 / Math.min(2.5, Math.max(0.5, metrics[item.index].h ?? 0.7));
 
   // Shrink wide fonts so that the text fits into the card. Before paint, so that no overflow shows.
   useLayoutEffect(() => {

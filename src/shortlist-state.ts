@@ -1,15 +1,21 @@
-// Shortlist selection and specimen settings, kept while switching workspaces.
+// The font view: the shortlist and the opened font, the selected font, and the
+// specimen and pairing settings, kept while switching workspaces.
 import { computed, signal } from '@preact/signals';
 import { type Font, type Style, textFonts } from './data';
-import { shortlist, toggleShortlist } from './state';
+import { fontView, selection, shortlist, toggleShortlist, viewedFont } from './state';
+
+export { fontView, selection };
 
 export const savedFonts = computed(() => [...shortlist.value].map((name) => textFonts.find((f) => f.family === name)).filter((f): f is Font => !!f));
-export const selection = signal('');
-export const primary = computed(() => savedFonts.value.find((f) => f.family === selection.value) ?? savedFonts.value[0]);
+/** The fonts of the list: the opened font first while it is not saved, then the saved fonts. */
+export const listedFonts = computed(() => {
+  const font = viewedFont.value, saved = savedFonts.value;
+  return font && !saved.some((f) => f.family === font.family) ? [font, ...saved] : saved;
+});
+export const primary = computed(() => listedFonts.value.find((f) => f.family === selection.value) ?? listedFonts.value[0]);
 export const pairing = signal('');
 export const secondary = computed(() => savedFonts.value.find((f) => f.family === pairing.value && f.family !== primary.value?.family));
-/** The view of the specimen pane: the selected font on its own, or a heading and body text pairing. */
-export const shortlistView = signal<'specimen' | 'pairing'>('specimen');
+
 /** The style the sizes of the specimen are set in, per family. */
 export const specimenStyles = signal<Record<string, Style>>({});
 /** The type settings above the pairing are open; on narrow screens, they start closed to leave room for the text. */
@@ -44,12 +50,50 @@ const nearest = (list: number[], w: number) => list.reduce((a, b) => (Math.abs(b
 export const stylesOf = (font: Font): Style[] =>
   [false, true].flatMap((italic) => weightsOf(font, italic).map((weight) => ({ weight, italic })));
 
+/** The values of the axis sliders of the specimen, per family: tag -> value. A missing tag has its default; a missing opsz follows the font size. */
+export const specimenAxes = signal<Record<string, Record<string, number>>>({});
+
+/** Sets an axis of the specimen of a family; undefined goes back to the default. */
+export function setSpecimenAxis(font: Font, tag: string, value: number | undefined) {
+  const { [tag]: _, ...rest } = specimenAxes.value[font.family] ?? {};
+  specimenAxes.value = { ...specimenAxes.value, [font.family]: value == null ? rest : { ...rest, [tag]: value } };
+}
+
+/** The axes of the specimen sliders: those of a Google family, or of the variable font of a libre family. */
+export const axesOf = (font: Font) => font.libre?.variable?.axes ?? font.axes ?? {};
+
+/**
+ * Whether the weight slider sets the weight of the selected style: for Google
+ * families. The variable font of a libre family may have its own weight scale
+ * (Sprat: 10–200), so there it is an axis like the others.
+ */
+export const weightIsStyle = (font: Font) => !font.libre;
+
+/**
+ * The font-variation-settings of the specimen for a style: the weight of the
+ * style, the values of the sliders, else the axis defaults (pinned ones as
+ * pinned). opsz only when set: else the browser picks it for the font size.
+ */
+export function axisSettings(font: Font, style: Style) {
+  const values = specimenAxes.value[font.family] ?? {};
+  const styled: Record<string, number | undefined> = weightIsStyle(font) ? { wght: style.weight, wdth: style.wdth, slnt: style.slnt } : {};
+  return Object.entries(axesOf(font))
+    .map(([tag, axis]): [string, number | undefined] => [tag, tag === 'wght' && weightIsStyle(font) ? style.weight : tag === 'opsz' ? values.opsz : values[tag] ?? styled[tag] ?? font.pinned?.[tag] ?? axis?.[2]])
+    .filter(([, v]) => v != null)
+    .map(([tag, v]) => `'${tag}' ${v}`)
+    .join(', ');
+}
+
 /** The style of the specimen sizes: the one chosen for the family, or its default style. */
 export const specimenStyle = (font: Font): Style => specimenStyles.value[font.family] ?? { weight: font.weight, italic: font.italic };
 
-/** Removes a font from the shortlist; when it was selected, the font after it (or else before it) takes its place. */
+/**
+ * Removes a font from the shortlist; when it was selected, the font after it
+ * (or else before it) takes its place. The opened font stays in the list, unsaved.
+ */
 export function removeFromShortlist(font: Font) {
   const list = savedFonts.value, i = list.findIndex((f) => f.family === font.family);
-  if (primary.value?.family === font.family) selection.value = (list[i + 1] ?? list[i - 1])?.family ?? '';
+  const opened = viewedFont.value?.family === font.family;
+  if (!opened && primary.value?.family === font.family) selection.value = (list[i + 1] ?? list[i - 1])?.family ?? '';
   toggleShortlist(font.family);
 }

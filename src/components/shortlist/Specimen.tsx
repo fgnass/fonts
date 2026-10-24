@@ -2,11 +2,13 @@ import type { ComponentChildren, RefObject } from 'preact';
 import { useLayoutEffect, useRef, useState } from 'preact/hooks';
 import { styled } from 'classname-variants/preact';
 import { type Font, metrics, type Style, tech } from '../../data';
-import { variationSettings } from '../../fontload';
-import { shortlistView, specimenStyle, specimenStyles, stylesOf } from '../../shortlist-state';
+import { axisName } from '../../axis-names';
+import { axesOf, axisSettings, fontView, setSpecimenAxis, specimenAxes, specimenStyle, specimenStyles, stylesOf, weightIsStyle } from '../../shortlist-state';
 import { previewLines, showShortlist } from '../../state';
 import { PreviewTextField } from '../PreviewText';
+import { Slider } from '../Slider';
 import { useLoadedFont } from '../useLoadedFont';
+import { RotateCcw } from 'lucide-preact';
 import { Eyebrow } from '../ui';
 
 /** The sizes of the preview text, in px. */
@@ -22,10 +24,19 @@ type FontStyle = Record<string, string | number | undefined>;
 
 const Section = styled('section', 'flex flex-col gap-4 border-b border-line px-6 pt-5 pb-7 narrow:px-3');
 
-/** The font in a style, loaded only while the specimen shows. */
-function useStyleFont(font: Font, style: Style, text: string) {
-  const alias = useLoadedFont(font, style, text, { delay: 120, enabled: showShortlist.value && shortlistView.value === 'specimen' });
-  return { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: variationSettings(style) };
+// Text that does not fit is clipped, but only beyond the padding of the section: glyphs that reach left of
+// their origin or beyond their advance (swashes, brush strokes) still show. (overflow-clip-margin would be
+// simpler, but Chrome ignores it when only one axis clips.)
+const clipBeyondEdge = 'overflow-x-clip -mx-6 px-6 narrow:-mx-3 narrow:px-3';
+
+/**
+ * The font in a style, loaded only while the specimen shows. With `axes`, with
+ * the whole range of every axis (for a libre family: its variable font) and
+ * the values of the axis sliders.
+ */
+function useStyleFont(font: Font, style: Style, text: string, axes = true) {
+  const alias = useLoadedFont(font, style, text, { delay: 120, enabled: showShortlist.value && fontView.value === 'specimen', allAxes: axes });
+  return { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: axes ? axisSettings(font, style) : undefined };
 }
 
 const styleLabel = (style: Style) => `${style.weight}${style.italic ? ' italic' : ''}`;
@@ -42,7 +53,10 @@ function useFitSize() {
   useLayoutEffect(() => {
     const update = () => {
       const width = probe.current?.offsetWidth;
-      if (box.current && width) setFit(Math.floor((box.current.clientWidth / width) * MEASURE_SIZE));
+      if (!box.current || !width) return;
+      const { paddingLeft, paddingRight } = getComputedStyle(box.current);
+      const inner = box.current.clientWidth - parseFloat(paddingLeft) - parseFloat(paddingRight);
+      setFit(Math.floor((inner / width) * MEASURE_SIZE));
     };
     const observer = new ResizeObserver(update);
     if (box.current) observer.observe(box.current);
@@ -75,7 +89,7 @@ function Sizes({ font, lines }: { font: Font; lines: string[] }) {
   return (
     <Section aria-label="Sizes">
       <Eyebrow>Sizes · {styleLabel(style)}</Eyebrow>
-      <div ref={box} class="relative flex flex-col gap-4 overflow-x-clip">
+      <div ref={box} class={'relative flex flex-col gap-4 ' + clipBeyondEdge}>
         <Probe lines={lines} style={fontStyle} probe={probe} />
         {sizes.map((size) => (
           <div key={size} class="flex flex-col gap-1">
@@ -90,7 +104,8 @@ function Sizes({ font, lines }: { font: Font; lines: string[] }) {
 
 /** One style of the family; a click sets the sizes in it. */
 function StyleRow({ font, style, lines, selected }: { font: Font; style: Style; lines: string[]; selected: boolean }) {
-  const fontStyle = useStyleFont(font, style, lines.join(''));
+  // The styles of a libre family are its static files, without the axis sliders of its variable font.
+  const fontStyle = useStyleFont(font, style, lines.join(''), !font.libre);
   // Each style at the same size, unless the text would not fit.
   const { box, probe, fit } = useFitSize();
   return (
@@ -102,7 +117,7 @@ function StyleRow({ font, style, lines, selected }: { font: Font; style: Style; 
       onClick={() => { specimenStyles.value = { ...specimenStyles.value, [font.family]: style }; }}
     >
       <span class="font-mono text-[11px] text-muted">{styleLabel(style)}</span>
-      <div ref={box} class="relative min-w-0 overflow-x-clip">
+      <div ref={box} class={'relative min-w-0 ' + clipBeyondEdge}>
         <Probe lines={lines} style={fontStyle} probe={probe} />
         <Lines lines={lines} style={{ ...fontStyle, fontSize: `${Math.min(STYLE_SIZE, fit)}px` }} />
       </div>
@@ -135,15 +150,78 @@ function Detail({ label, children }: { label: string; children: ComponentChildre
   );
 }
 
-/** Facts about the family: its category, styles, variable axes and technical statistics. */
+const REGISTERED = ['wght', 'wdth', 'slnt', 'opsz'];
+
+/** A step for an axis slider: fine for small ranges (WONK 0–1), whole units for large ones. */
+const axisStep = (min: number, max: number) => (max - min <= 2 ? 0.01 : max - min <= 20 ? 0.1 : 1);
+
+/**
+ * A slider for each variable axis of the family. The weight is that of the
+ * selected style; the optical size follows the font size until it is set.
+ */
+function Axes({ font }: { font: Font }) {
+  // The registered axes first, in this order, then the custom ones.
+  const order = (tag: string) => { const i = REGISTERED.indexOf(tag); return i < 0 ? REGISTERED.length : i; };
+  const axes = Object.entries(axesOf(font))
+    .filter((e): e is [string, [number, number, number]] => !!e[1])
+    .sort(([a], [b]) => order(a) - order(b) || a.localeCompare(b));
+  if (!axes.length) return null;
+  const style = specimenStyle(font);
+  const values = specimenAxes.value[font.family] ?? {};
+  const set = (tag: string, v: number) => {
+    if (tag === 'wght' && weightIsStyle(font)) specimenStyles.value = { ...specimenStyles.value, [font.family]: { ...style, weight: v } };
+    else setSpecimenAxis(font, tag, v);
+  };
+  const reset = () => {
+    specimenAxes.value = { ...specimenAxes.value, [font.family]: {} };
+    specimenStyles.value = { ...specimenStyles.value, [font.family]: { weight: font.weight, italic: style.italic } };
+  };
+  const changed = Object.keys(values).length > 0 || style.weight !== font.weight;
+  return (
+    <Section aria-label="Variable axes">
+      <div class="flex h-4 items-center justify-between">
+        <Eyebrow>Variable axes</Eyebrow>
+        {changed && (
+          <button type="button" class="inline-flex cursor-pointer items-center gap-1.25 text-[11px] font-medium text-muted hover:text-fg" title="Set all axes back to the defaults of the family" onClick={reset}>
+            <RotateCcw size={12} aria-hidden="true" /> Reset
+          </button>
+        )}
+      </div>
+      <div class="grid grid-cols-[minmax(110px,auto)_minmax(0,1fr)_72px] items-center gap-x-4 gap-y-3 narrow:grid-cols-[96px_minmax(0,1fr)_64px]">
+        {axes.map(([tag, [min, max, def]]) => {
+          const auto = tag === 'opsz' && values.opsz == null;
+          const value = tag === 'wght' && weightIsStyle(font) ? style.weight : (values[tag] ?? font.pinned?.[tag] ?? def);
+          return (
+            <div key={tag} class="contents">
+              <span class="truncate text-[13px] text-soft" title={tag}>{axisName(tag)}</span>
+              <Slider label={axisName(tag)} min={min} max={max} step={axisStep(min, max)} value={value} onChange={(v) => set(tag, v)} />
+              {auto ? (
+                <span class="font-mono text-[11px] text-muted" title="The optical size follows the font size">Auto</span>
+              ) : tag === 'opsz' ? (
+                <button type="button" class="cursor-pointer text-left font-mono text-[11px] text-fg tabular-nums hover:text-accent" title="Let the optical size follow the font size again" onClick={() => setSpecimenAxis(font, 'opsz', undefined)}>{+value.toFixed(2)} ×</button>
+              ) : (
+                <span class="font-mono text-[11px] text-fg tabular-nums">{+value.toFixed(2)}</span>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </Section>
+  );
+}
+
+/** Facts about the family: its foundry (for libre families), category, styles, variable axes and technical statistics. */
 function Details({ font, class: className }: { font: Font; class?: string }) {
   const t = tech[font.index], m = metrics[font.index];
-  const axes = Object.entries(font.axes ?? {}).map(([tag, [min, max]]) => `${tag} ${min}–${max}`);
-  // Axes that the CSS API does not load (e.g. opsz) are still part of the font file.
+  const axes = Object.keys(axesOf(font)).map(axisName);
+  // Axes that the metadata does not list are still part of the font file.
   const otherAxes = (t?.a ?? []).filter((tag) => !(tag in (font.axes ?? {})));
   return (
     <Section aria-label="Details" class={className}>
       <dl class="grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-x-8 gap-y-4">
+        {font.libre && <Detail label="Foundry">{font.libre.foundry}</Detail>}
+        {font.libre && <Detail label={font.libre.designers.length > 1 ? 'Designers' : 'Designer'}>{font.libre.designers.join(', ')}</Detail>}
+        {font.libre && <Detail label="License">{font.libre.license}</Detail>}
         <Detail label="Category">{font.category}</Detail>
         <Detail label="Styles">{font.variants.length}{m?.lc === 0 && ' · capitals only'}</Detail>
         <Detail label="Variable axes">{axes.length || otherAxes.length ? [...axes, ...otherAxes].join(', ') : 'None'}</Detail>
@@ -169,6 +247,7 @@ export function Specimen({ font }: { font: Font }) {
       </div>
       {/* On narrow screens, the text comes first and the facts last. */}
       <Details font={font} class="narrow:order-last" />
+      <Axes font={font} />
       <Sizes font={font} lines={lines} />
       <Styles font={font} lines={lines} />
     </div>

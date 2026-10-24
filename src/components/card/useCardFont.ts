@@ -10,7 +10,8 @@ import type { Item } from '../../state';
  * (another style or text) has loaded, so that nothing flickers. The old font
  * is a subset with just its own characters, so it only covers the text while
  * it has every character of the new text (otherwise the missing ones would
- * show in the fallback font).
+ * show in the fallback font). A libre family has one alias for all texts that
+ * covers every character (see loadLibre).
  */
 export function useCardFont(item: Item, style: Style, text: string, near: boolean) {
   const want = fontAlias(item, style, text);
@@ -41,5 +42,5 @@ export function useCardFont(item: Item, style: Style, text: string, near: boolea
   // Keep the shown font loaded while the card shows it.
   useEffect(() => (shown ? retain(shown.alias) : undefined), [shown?.alias]);
 
-  return { alias: shown?.alias, covers: shown != null && [...text].every((c) => shown.chars.includes(c)) };
+  return { alias: shown?.alias, covers: shown != null && (!!item.libre || [...text].every((c) => shown.chars.includes(c))) };
 }

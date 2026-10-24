@@ -7,9 +7,31 @@ export interface Font {
   weight: number;
   italic: boolean;
   variants: string[];
-  /** Variable axes: tag -> [min, max, default]. */
-  axes?: Partial<Record<'wght' | 'wdth' | 'slnt', [number, number, number]>>;
+  /** Variable axes: tag -> [min, max, default]. The filters use wght, wdth and slnt; with opsz, the browser picks the optical size; the specimen has a slider for each. */
+  axes?: Partial<Record<string, [number, number, number]>>;
+  /** Custom axes that load at the designers' default instead of Google's (see PINNED in scripts/download.mjs). */
+  pinned?: Record<string, number>;
+  /** For libre families that are not on Google Fonts (catalog/*.json); Google families have none. */
+  libre?: Libre;
   index: number;
+}
+
+/** Where a libre family comes from (see scripts/libre.py). */
+export interface Libre {
+  foundry: string;
+  designers: string[];
+  /** SPDX identifier, e.g. "OFL-1.1". */
+  license: string;
+  /** The page of the family at the foundry. */
+  url: string;
+  /** The directory of its web files in public/libre/. */
+  dir: string;
+  /** Whether there are subsets: a small file with the common characters and one with other Latin, Greek and Cyrillic characters (not allowed under a Reserved Font Name). */
+  subset: boolean;
+  /** The format of the unchanged files of the foundry when it is not woff2 (families without subsets). */
+  format?: string;
+  /** A variable font of the family, for the axis sliders of the specimen (filters and measurements use the static files). */
+  variable?: { format: string; axes: Partial<Record<string, [number, number, number]>> };
 }
 
 /** Measured values of a family (see scripts/measure.mjs and the other scripts for the keys). */
@@ -76,6 +98,8 @@ const NO_LETTERFORMS = 0.2, NO_RECOGNITION = 0.2, NO_SKELETON = 0.5;
 const FILLED_BOX_HEIGHT = 0.95, FILLED_BOX_DISTINCT = 0.4;
 export const hasLetterforms = (index: number) => {
   const m = metrics[index], dx = m?.dx ?? 1;
+  // A cap height of null means the font was measured but has no H: its "latin" subset has no Latin letters (Ponnala).
+  if (m?.h === null) return false;
   return dx >= NO_LETTERFORMS && (m?.lr ?? 1) >= NO_RECOGNITION && !((m?.h ?? 0) >= FILLED_BOX_HEIGHT && dx < FILLED_BOX_DISTINCT);
 };
 export const hasSkeleton = (index: number) => hasLetterforms(index) && (metrics[index]?.dx ?? 1) >= NO_SKELETON;
@@ -91,6 +115,7 @@ export const tech = fonts.map((f) => techList[f.index] ?? null);
 fonts.forEach((f) => {
   const m = metrics[f.index], t = tech[f.index];
   m.styles = f.variants.length;
+  m.elsewhere = f.libre ? 1 : 0;
   if (!t) return;
   m.glyphs = t.g;
   m.features = t.f.length;

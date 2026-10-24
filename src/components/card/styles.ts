@@ -7,7 +7,7 @@ export const dimOnHover = 'group-hover/card:opacity-15 group-focus-within/card:o
 /** Shows on hover or focus, and at all times on devices without hover. */
 export const showOnHover = 'transition-opacity duration-100 group-hover/card:opacity-100 group-focus-within/card:opacity-100 touch:opacity-100';
 
-/** The small buttons on a card; the link to Google Fonts looks like one too. */
+/** The small buttons on a card; the link to the source of the font looks like one too. */
 const chipConfig = {
   base: 'h-6 flex-none cursor-pointer rounded-md border border-line2 bg-panel px-2 leading-[22px] text-soft hover:border-accent hover:text-accent',
   variants: {
