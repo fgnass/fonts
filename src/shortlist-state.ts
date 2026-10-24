@@ -87,6 +87,12 @@ export function axisSettings(font: Font, style: Style) {
 /** The style of the specimen sizes: the one chosen for the family, or its default style. */
 export const specimenStyle = (font: Font): Style => specimenStyles.value[font.family] ?? { weight: font.weight, italic: font.italic };
 
+/** Removes all fonts from the shortlist; the opened font stays in the list, unsaved. */
+export function clearShortlist() {
+  shortlist.value = new Set();
+  selection.value = viewedFont.value?.family ?? '';
+}
+
 /**
  * Removes a font from the shortlist; when it was selected, the font after it
  * (or else before it) takes its place. The opened font stays in the list, unsaved.

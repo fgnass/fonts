@@ -1,7 +1,7 @@
-import { ArrowLeft, ChevronLeft, ChevronRight, Star } from 'lucide-preact';
+import { ArrowLeft, ChevronLeft, ChevronRight, Star, X } from 'lucide-preact';
 import { styled } from 'classname-variants/preact';
 import { displayedStyle, type Font } from '../../data';
-import { fontView, listedFonts, primary, removeFromShortlist, secondary, selection } from '../../shortlist-state';
+import { clearShortlist, fontView, listedFonts, primary, removeFromShortlist, savedFonts, secondary, selection } from '../../shortlist-state';
 import { selectWorkspace, shortlist, toggleShortlist } from '../../state';
 import { useEffect, useRef } from 'preact/hooks';
 import { useLoadedFont } from '../useLoadedFont';
@@ -45,8 +45,22 @@ function roleLabel(font: Font) {
 
 /** The opened font and the saved fonts; a click selects the font of the specimen (the heading of the pairing). */
 export function ShortlistSidebar() {
+  const saved = savedFonts.value.length;
   return (
     <div class="flex min-h-full flex-col gap-3.5">
+      {saved > 0 && (
+        <div class="-mb-1.5 flex justify-end">
+          <button
+            type="button"
+            class="inline-flex h-6 cursor-pointer items-center gap-1.25 rounded-md px-1.75 text-[11px] font-medium text-muted hover:bg-line hover:text-fg"
+            title={`Remove all ${saved} ${plural(saved, 'font')} from the shortlist`}
+            onClick={clearShortlist}
+          >
+            <X size={12} aria-hidden="true" />
+            Clear
+          </button>
+        </div>
+      )}
       <div class="grid gap-1.5">
         {listedFonts.value.map((font) => {
           const selected = primary.value?.family === font.family;
