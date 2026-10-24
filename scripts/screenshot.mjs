@@ -44,6 +44,13 @@ const promoDir = resolve(root, 'promo');
 const VIEWPORT = { width: 390, height: 844 };
 const SCALE = 2;
 
+// The phone shots show the app as a rounded panel with a margin around it, so
+// that a rounded phone frame (like on gnass.buzz/projects) never cuts into it.
+const MARGIN = 14;
+const PANEL_RADIUS = 26;
+const SURROUND = '#050505';
+const PANEL_LINE = '#2e2e2e';
+
 const PORT = 5173;
 const BASE = `http://127.0.0.1:${PORT}/`;
 
@@ -205,6 +212,26 @@ ${body}`;
   }
 }
 
+/** A phone shot as a rounded panel on a dark surround: the app is captured smaller and put in the middle. */
+async function inset(browser, name, shot) {
+  const png = await capture(browser, name, shot, { width: VIEWPORT.width - 2 * MARGIN, height: VIEWPORT.height - 2 * MARGIN });
+  const html = `<!doctype html>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { width: ${VIEWPORT.width}px; height: ${VIEWPORT.height}px; background: ${SURROUND}; padding: ${MARGIN}px; }
+  img { display: block; width: 100%; height: 100%; border-radius: ${PANEL_RADIUS}px; outline: 1px solid ${PANEL_LINE}; outline-offset: -1px; }
+</style>
+<img src="data:image/png;base64,${png.toString('base64')}" />`;
+  const context = await browser.newContext({ viewport: VIEWPORT, deviceScaleFactor: SCALE });
+  try {
+    const page = await context.newPage();
+    await page.setContent(html, { waitUntil: 'load' });
+    return await page.screenshot();
+  } finally {
+    await context.close();
+  }
+}
+
 /** The viewport of the desktop shot: the window content, scaled to a desktop width. */
 function postViewport() {
   const width = POST_WINDOW.width - 2 * BORDER, height = POST_WINDOW.height - BAR - 2 * BORDER;
@@ -297,7 +324,7 @@ async function screenshots(browser) {
   // One after the other: in parallel, the shape searches compete for the CPU.
   for (const [name, shot] of Object.entries(SHOTS)) {
     const out = resolve(outDir, `${name}.png`);
-    await writeFile(out, await capture(browser, name, shot));
+    await writeFile(out, await inset(browser, name, shot));
     console.log(`Saved ${out} (${VIEWPORT.width * SCALE} × ${VIEWPORT.height * SCALE})`);
   }
   // For the link preview: shorter phones, so two of them fit completely.
