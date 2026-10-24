@@ -10,13 +10,14 @@ const mocks = {
   './chars.js': url('export const CHARS = "Abc";'),
   './data': url(`export const fonts = ${JSON.stringify(fonts)}, textFonts = fonts, metrics = []; export const hasStyles = false, hasSkeleton = () => true, ligaturesIn = () => [];`),
   './filter': url('export const activeRanges = () => new Map(), compromises = () => null, exclusionSuggestions = () => [], filterFonts = () => ({ list: [] });'),
-  './groups': url('export const groupFonts = (list) => list;'),
+  './groups': url('export const groupFonts = (list) => list, browseOrder = { value: { rank: [], groupRank: new Map() } };'),
+  './similar': url('export const bySimilarity = (list) => list;'),
   './shape-search': url('export const createShapeSearch = () => ({ value: { items: [], status: "" } });'),
   './shape.js': url('export const sketchPoints = () => [];'),
   './sliders': url('export const SLIDERS = [], isAny = () => true;'),
 };
 
-test('Back exits a new similarity chain and still traverses steps within it', async () => {
+test('Back leaves a new chain of opened fonts and still traverses the fonts within it', async () => {
   const entries = [null];
   let position = 0;
   let onPopState;
@@ -38,22 +39,25 @@ test('Back exits a new similarity chain and still traverses steps within it', as
     const state = await import(url(source));
     const back = () => onPopState({ state: entries[--position] });
 
-    state.showSimilar(fonts[0]);
+    state.openFont(fonts[0]);
     state.openWorkspace('explore');
-    state.showSimilar(fonts[1]);
+    state.openFont(fonts[1]);
     assert.equal(state.chainDepth.value, 1);
-    state.showSimilar(fonts[2]);
+    assert.equal(state.fontView.value, 'specimen');
+    state.fontView.value = 'pairing';
+    state.openFont(fonts[2]);
     assert.equal(state.chainDepth.value, 2);
+    // Within the font view, the view stays.
+    assert.equal(state.fontView.value, 'pairing');
     back();
-    assert.equal(state.workspace.value, 'shape');
-    assert.equal(state.likeFont.value.index, 1);
+    assert.equal(state.viewedFont.value.index, 1);
     assert.equal(state.chainDepth.value, 1);
     back();
     assert.equal(state.workspace.value, 'explore');
     assert.equal(state.chainDepth.value, 0);
     onPopState({ state: entries[++position] });
-    assert.equal(state.workspace.value, 'shape');
-    assert.equal(state.likeFont.value.index, 1);
+    assert.equal(state.workspace.value, 'shortlist');
+    assert.equal(state.viewedFont.value.index, 1);
   } finally {
     for (const [key, descriptor] of previous) {
       if (descriptor) Object.defineProperty(globalThis, key, descriptor);

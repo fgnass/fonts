@@ -135,14 +135,30 @@ export function SliderRow({ slider }: { slider: Slider }) {
   );
 }
 
-/** A slider with a bimodal value, shown as a checkbox that sets its corridor. */
-export function ToggleRow({ slider }: { slider: Slider }) {
-  const on = !isAny(corridors.value[slider.key]);
+/** A slider with a few distinct states, shown as buttons that each set a corridor; compact without its label (in the toolbar). */
+export function ChoiceRow({ slider, compact }: { slider: Slider; compact?: boolean }) {
+  const [lo, hi] = corridors.value[slider.key];
   return (
-    <label class="flex cursor-pointer items-center gap-2 font-mono text-[11px]/[1.4]" title={slider.tip}>
-      <input type="checkbox" class="m-0 size-3.5 accent-accent" checked={on} onChange={(e) => setCorridor(slider.key, e.currentTarget.checked ? slider.toggle! : [0, 1])} />
-      {slider.label}
-    </label>
+    <div class="flex flex-col gap-2" title={slider.tip}>
+      {!compact && <span class="font-mono text-[11px]/[1.4]">{slider.label}</span>}
+      <div class="flex gap-0.5 rounded-lg border border-line p-0.5" role="radiogroup" aria-label={slider.label}>
+        {slider.choices!.map(([label, corridor]) => {
+          const on = corridor[0] === lo && corridor[1] === hi;
+          return (
+            <button
+              key={label}
+              type="button"
+              role="radio"
+              aria-checked={on}
+              class={'flex-1 cursor-pointer rounded-md px-2 py-1 text-[12px] whitespace-nowrap ' + (on ? 'bg-line2 text-fg' : 'text-muted hover:text-fg')}
+              onClick={() => setCorridor(slider.key, corridor)}
+            >
+              {label}
+            </button>
+          );
+        })}
+      </div>
+    </div>
   );
 }
 
@@ -153,7 +169,7 @@ export function SliderList({ id, keys }: { id: string; keys: string[] }) {
       {keys.map((key) => {
         const s = byKey.get(key)!;
         if (s.requires && corridors.value[s.requires][0] <= 0) return null;
-        return s.toggle ? <ToggleRow key={key} slider={s} /> : <SliderRow key={key} slider={s} />;
+        return s.choices ? <ChoiceRow key={key} slider={s} /> : <SliderRow key={key} slider={s} />;
       })}
     </div>
   );

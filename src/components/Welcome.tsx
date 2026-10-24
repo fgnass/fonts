@@ -1,7 +1,9 @@
 import { styled } from 'classname-variants/preact';
 import { useEffect } from 'preact/hooks';
 import { welcome } from '../state';
+import { TOOLBAR_SLIDERS } from '../sliders';
 import { PreviewTextField } from './PreviewText';
+import { ChoiceRow } from './SliderList';
 import { Eyebrow } from './ui';
 
 const FooterLink = styled('a', { base: 'text-muted hover:text-fg', defaultProps: { target: '_blank', rel: 'noreferrer' } });
@@ -9,7 +11,7 @@ const FooterLink = styled('a', { base: 'text-muted hover:text-fg', defaultProps:
 const GITHUB = 'https://github.com/fgnass/fonts';
 const PRIVACY = 'https://gnass.buzz/privacy';
 
-/** The start page: what the app does, the preview text and the small print. The app renders hidden behind it, so its data and first fonts load meanwhile. */
+/** The start page: what the app does, the preview text, where the fonts come from and the small print. The app renders hidden behind it, so its data and first fonts load meanwhile. */
 export function Welcome() {
   const close = () => {
     welcome.value = false;
@@ -27,13 +29,21 @@ export function Welcome() {
         <Eyebrow>fonts.gnass.buzz</Eyebrow>
       </header>
       <main class="flex flex-1 flex-col justify-center gap-6 py-12">
-        <h1 class="max-w-[14ch] text-[clamp(40px,7vw,84px)]/[1.02] font-semibold tracking-[-0.02em] text-bright">Find your type among all Google Fonts.</h1>
+        <h1 class="max-w-[14ch] text-[clamp(40px,7vw,84px)]/[1.02] font-semibold tracking-[-0.02em] text-bright">Find your type among thousands of open-source fonts.</h1>
         <p class="max-w-[560px] text-[17px]/[1.6] text-soft max-[600px]:text-[15px]">
-          Narrow down the fonts by how they look: weight, width, contrast, serifs and more. Draw a letter to find fonts with a similar shape, or start from a
+          Every font here is free to use, also commercially: all of Google Fonts, plus hundreds of fonts from{' '}
+          <a class="text-accent underline decoration-accent/40 underline-offset-3 hover:decoration-accent" href={`${GITHUB}/blob/main/docs/LIBRE-FONTS.md`} target="_blank" rel="noreferrer">
+            independent foundries, type collectives and design schools
+          </a>. Narrow them down by how they look: weight, width, contrast, serifs and more. Draw a letter to find fonts with a similar shape, or start from a
           font you like. Star your favourites and pair a heading with a body text.
         </p>
-        <div class="mt-4 flex max-w-[560px] flex-col gap-2">
-          <label class="text-[12px] font-medium text-fg" for="welcome-text">Your preview text</label>
+        <div class="mt-4 flex max-w-[560px] flex-col gap-4">
+          {TOOLBAR_SLIDERS.map((s) => (
+            <div key={s.key} class="flex flex-col gap-2">
+              <span class="text-[12px] font-medium text-fg">Show fonts from</span>
+              <div class="w-fit min-w-[320px] max-[600px]:w-full max-[600px]:min-w-0"><ChoiceRow slider={s} compact /></div>
+            </div>
+          ))}
           <div class="flex flex-wrap items-start gap-3">
             <PreviewTextField id="welcome-text" class="min-w-[260px] flex-1" autofocus />
             <button
@@ -44,7 +54,6 @@ export function Welcome() {
               Start exploring
             </button>
           </div>
-          <small class="text-[11px] text-muted">Up to three lines, one per line on each card. You can change it anytime.</small>
         </div>
       </main>
       <footer class="flex flex-wrap gap-2.5 border-t border-line py-5 text-[12px] text-dim">

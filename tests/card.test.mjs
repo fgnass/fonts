@@ -8,7 +8,7 @@ const url = (source) => `data:text/javascript;base64,${Buffer.from(source).toStr
 const mocks = {
   '../../data': 'export const displayedStyle = (f) => f.pick ?? { weight: f.weight, italic: f.italic }; export const fonts = [], hasStyle = [];',
   '../../fontload': 'export const styleName = () => "";',
-  '../../state': 'export const activeShapeQuery = {value: false}, likeFont = {}, pendingExclusion = {}, showShortlist = {value: false}; export const showSimilar = () => {};',
+  '../../state': 'export const activeShapeQuery = {value: false}, likeFont = {}, pendingExclusion = {}, showShortlist = {value: false}, similarTo = {value: null}; export const openFont = () => {};',
   './CardActions': 'export const CardActions = () => null;',
   './Glyph': 'export const Glyph = () => null;',
   './ShortlistStar': 'export const ShortlistStar = () => null;',

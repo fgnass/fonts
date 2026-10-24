@@ -1,8 +1,8 @@
 import type { RefObject } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
-import { displayedStyle } from '../data';
+import { displayedStyle, hasStyles } from '../data';
 import { loadFont } from '../fontload';
-import { type Item, parts, previewLines, previewSize, showSkeletons, view } from '../state';
+import { activeShapeQuery, DEFAULT_GROUP_COUNT, groupCount, type Item, parts, previewLines, previewSize, showSkeletons, similarTo, view } from '../state';
 import { Card } from './card/Card';
 import { useCardAnimations } from '../useCardAnimations';
 
@@ -52,6 +52,34 @@ function useRevealedCount(total: number, sentinel: RefObject<HTMLElement>) {
   return count;
 }
 
+const Link = ({ onClick, children }: { onClick: () => void; children: string }) => (
+  <button type="button" class="cursor-pointer text-accent hover:text-bright" onClick={onClick}>{children}</button>
+);
+
+/**
+ * At the end of the results: that fonts which look almost the same are grouped
+ * and only one of each group shows, with a link to show them all (or to group them again).
+ */
+function GroupNote({ items }: { items: Item[] }) {
+  // The similar fonts are a ranking without groups.
+  if (!hasStyles || !items.length || (similarTo.value && !activeShapeQuery.value)) return null;
+  if (!groupCount.value) {
+    return (
+      <p class="col-span-full py-6 text-center text-[13px]/[1.6] text-muted">
+        All fonts are shown, also those that look almost the same. <Link onClick={() => (groupCount.value = DEFAULT_GROUP_COUNT)}>Show one per group</Link>
+      </p>
+    );
+  }
+  const total = items.reduce((n, item) => n + (item.group?.length ?? 1), 0);
+  if (total <= items.length) return null;
+  return (
+    <p class="col-span-full mx-auto max-w-[560px] py-6 text-center text-[13px]/[1.6] text-muted">
+      Not all fonts are shown: fonts that look almost the same are grouped, and each group shows one of them ({total - items.length} more fonts).
+      Narrow the filters to see others, or <Link onClick={() => (groupCount.value = 0)}>show all fonts</Link>.
+    </p>
+  );
+}
+
 /** The result cards, rendered in chunks while scrolling. */
 export function Results() {
   const grid = useRef<HTMLDivElement>(null);
@@ -78,6 +106,7 @@ export function Results() {
       {items.slice(0, count).map((item) => (
         <Card key={item.index} item={item} lines={lines} skeletons={skeletons} />
       ))}
+      {count >= items.length && <GroupNote items={items} />}
       <div class="col-span-full h-px" ref={sentinel} />
       <div class="pointer-events-none absolute inset-0 z-0 overflow-clip" ref={exits} aria-hidden="true" />
     </div>

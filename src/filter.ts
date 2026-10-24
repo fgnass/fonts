@@ -359,7 +359,7 @@ export function exclusionSuggestions(font: Font, corridors: Record<string, Corri
   if (!baseline.some((f) => f.index === font.index) || baseline.length < 2) return [];
   const plans: ExclusionPlan[] = [];
   for (const slider of SLIDERS) {
-    if (slider.technical || slider.toggle || !EXCLUSION_LABELS[slider.key] || (slider.requires && corridors[slider.requires][0] <= 0)) continue;
+    if (slider.technical || slider.choices || !EXCLUSION_LABELS[slider.key] || (slider.requires && corridors[slider.requires][0] <= 0)) continue;
     // Small incidental gaps in script loops do not justify calling a family outline-like.
     if (slider.key === 'hf' && (metricValue(font.index, 'hf') ?? 0) < 0.55) continue;
     const [lo, hi] = corridors[slider.key];
@@ -435,8 +435,8 @@ export function compromises({ list, ranges, misses }: FilterResult): Compromise[
   for (const [key, r] of ranges) {
     const offsets = [...misses.get(key)!].sort((a, b) => Math.abs(a) - Math.abs(b));
     if (!offsets.length) continue;
-    // A toggle is on or off: the only compromise is to turn it off.
-    if (r.slider.toggle) {
+    // A choice has no values in between: the only compromise is to allow all.
+    if (r.slider.choices) {
       options.push({ slider: r.slider, lo: 0, hi: 1, gain: offsets.length, cost: 1 + 1 - (r.hi - r.lo) });
       continue;
     }

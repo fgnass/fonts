@@ -1,7 +1,7 @@
 import { styled } from 'classname-variants/preact';
-import { displayedStyle, fonts, hasStyle } from '../../data';
+import { displayedStyle, fonts } from '../../data';
 import { styleName } from '../../fontload';
-import { activeShapeQuery, type Item, likeFont, pendingExclusion, showShortlist, showSimilar } from '../../state';
+import { activeShapeQuery, type Item, likeFont, openFont, pendingExclusion, similarTo } from '../../state';
 import { CardActions } from './CardActions';
 import { Glyph } from './Glyph';
 import { ShortlistStar } from './ShortlistStar';
@@ -23,7 +23,7 @@ const Overlay = styled('div', 'pointer-events-none absolute inset-0 flex flex-co
 
 /**
  * A result: the preview in the font, with its name, a star and actions. A tap
- * on the card (or on the name, for the keyboard) shows similar fonts.
+ * on the card (or on the name, for the keyboard) opens the font.
  * While skeletons show, a shape search result shows its skeletons instead of its text.
  */
 export function Card({ item, lines: text, skeletons }: { item: Item; lines: string[]; skeletons?: boolean }) {
@@ -31,28 +31,24 @@ export function Card({ item, lines: text, skeletons }: { item: Item; lines: stri
   const lines = item.ch ? [item.ch] : text;
   const inspection = useInspection(item);
   const details = styleName(displayedStyle(item), item).trim();
-  const similar = hasStyle[item.index] && !showShortlist.value ? () => showSimilar(fonts[item.index]) : undefined;
+  const open = () => openFont(fonts[item.index]);
   return (
     <CardBox
-      // The example font of the shape query, and the card whose exclusion suggestions are open, show framed.
-      query={(!!activeShapeQuery.value && item.index === likeFont.value?.index) || pendingExclusion.value?.family === item.family}
-      class={similar && 'cursor-pointer'}
+      // The example font of the shape query or of the similar fonts, and the card whose exclusion suggestions are open, show framed.
+      query={(activeShapeQuery.value ? item.index === likeFont.value?.index : item.index === similarTo.value?.index) || pendingExclusion.value?.family === item.family}
+      class="cursor-pointer"
       data-font-index={item.index}
       {...inspection}
-      onClick={similar && ((e: MouseEvent) => { if (!(e.target as Element).closest('button, a, input')) similar(); })}
+      onClick={(e: MouseEvent) => { if (!(e.target as Element).closest('button, a, input')) open(); }}
     >
       <Glyph item={item} lines={lines} hidden={skeletons && !!item.skeletons} />
       {item.skeletons && <Skeletons skeletons={item.skeletons} shown={skeletons} />}
       <ShortlistStar family={item.family} />
       <Overlay>
         <div class="pr-9.5">
-          {similar ? (
-            <button type="button" class={"pointer-events-auto block cursor-pointer text-left leading-[1.5] font-medium wrap-anywhere text-fg hover:text-accent " + touchName} title="Show fonts that look like this" onClick={similar}>
-              {item.family}
-            </button>
-          ) : (
-            <span class={"block leading-[1.5] font-medium wrap-anywhere text-fg " + touchName}>{item.family}</span>
-          )}
+          <button type="button" class={"pointer-events-auto block cursor-pointer text-left leading-[1.5] font-medium wrap-anywhere text-fg hover:text-accent " + touchName} title="Open this font" onClick={open}>
+            {item.family}
+          </button>
           {details && <span class="mt-0.5 block text-[11px] text-muted touch:hidden">{details}</span>}
         </div>
         <CardActions item={item} />

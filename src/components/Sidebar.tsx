@@ -4,6 +4,7 @@ import type { ComponentChildren } from 'preact';
 import { clearPad, clearQuery, corridors, excluded, exclusionPreview, extra, focused, isShapeQuery, lastExclusion, letters, likeFont, parts, pickLetter, resetCorridors, sketches, undoStroke, workspace } from '../state';
 import { isAny, LOOK_KEYS, SLIDERS, TECHNICAL_KEYS } from '../sliders';
 import { ChevronDown, Eraser, Trash2, Undo2 } from 'lucide-preact';
+import { FontSearch } from './FontSearch';
 import { SliderList } from './SliderList';
 import { SketchPad } from './SketchPad';
 import { plural, ResetButton } from './ui';
@@ -125,7 +126,6 @@ function ShapeHelp() {
     <div class="flex flex-col gap-2 border-t border-line pt-4 text-[12px]/[1.5] text-muted">
       <p>Draw a letter as a simple line, the way you would write it. Thickness and serifs do not matter, only the shape.</p>
       <p>The letters on the left come from your preview text. Click one to draw it; each letter you draw narrows the search. With <span class="font-mono text-[11px] text-soft">any</span>, your drawing is compared with every character.</p>
-      <p>Click a font card to find fonts with letters like it.</p>
     </div>
   );
 }
@@ -182,7 +182,7 @@ function Section({ id, label, open, highlight, badge, onToggle, onReset, childre
 
 /**
  * The tools of the sidebar: in Shape, the pad and the letters; in Filters,
- * the sliders, with one accordion section open at a time. The filters apply in both.
+ * the search by name and the sliders, with one accordion section open at a time. The filters apply in both.
  */
 export function Sidebar() {
   const current = exclusionPreview.value ? 'look' : section.value;
@@ -203,6 +203,7 @@ export function Sidebar() {
   }
   return (
     <div>
+      <div class="pt-1 pb-2"><FontSearch /></div>
       {SECTIONS.map(({ key, label, keys }) => {
         const open = current === key;
         const active = keys.filter((k) => !isAny(corridors.value[k])).length;

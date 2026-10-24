@@ -3,7 +3,8 @@ import { batch, computed, effect, type Signal, signal } from '@preact/signals';
 import { CHARS } from './chars.js';
 import { type Font, fonts, hasSkeleton, hasStyles, ligaturesIn, metrics, type Style, textFonts } from './data';
 import { activeRanges, compromises, exclusionSuggestions, filterFonts, type ExclusionPlan } from './filter';
-import { groupFonts } from './groups';
+import { browseOrder, groupFonts } from './groups';
+import { bySimilarity } from './similar';
 import type { SearchPart } from './search-types';
 import { createShapeSearch } from './shape-search';
 import { sketchPoints } from './shape.js';
@@ -264,11 +265,24 @@ export interface View {
 
 const fontCount = (n: number) => `${n} font${n === 1 ? '' : 's'}`;
 
-/** Browsing: all fonts that pass the filters, in popularity order, with stable group positions when grouping. */
+/** The font that the overview ranks the fonts by ("Find similar"), or null for the browse order. */
+export const similarTo = signal<Font | null>(null);
+
+/**
+ * Browsing: all fonts that pass the filters, in the browse order (see
+ * browseOrder), with stable group positions when grouping; or the fonts that
+ * look most like `similarTo` first.
+ */
 const browseView = computed((): View => {
   const t = previewText.value;
+  const target = similarTo.value;
+  if (target) {
+    const list = bySimilarity(filtered.value.list, target);
+    return { items: list.map((f) => ({ ...f, ligs: ligaturesIn(f, t) })), status: `${fontCount(list.length)}, most like ${target.family} first` };
+  }
   const k = groupCount.value;
-  let list: (Font & { pick?: Style; group?: Font[] })[] = filtered.value.list;
+  const { rank } = browseOrder.value;
+  let list: (Font & { pick?: Style; group?: Font[] })[] = [...filtered.value.list].sort((a, b) => rank[a.index] - rank[b.index]);
   let status = fontCount(list.length);
   if (k) {
     list = groupFonts(list, k);
@@ -357,51 +371,84 @@ export function setLikeFont(font: Font | null) {
   });
 }
 
+/** The font opened by a tap on a card, shown in the font view; it need not be on the shortlist. */
+export const viewedFont = signal<Font | null>(null);
+/** The family shown in the font view: a saved font or the opened one. */
+export const selection = signal('');
+
+/** The view of the font view: the font on its own, or a heading and body text pairing. */
+export const fontView = signal<'specimen' | 'pairing'>('specimen');
+
 /**
- * A tap on a card: the fonts whose letters look like those of `font`. Opens
- * the Shape tab with the font as the example. Each step is a history entry,
- * so that "back" returns to the font before; a tap outside the Shape tab
- * starts a new chain.
+ * A tap on a card: opens the font in the font view, in the specimen unless
+ * the font view is open already. Opened fonts and the fonts like them (see
+ * findSimilar) form a chain of history entries, so that "back" returns to the
+ * step before; a tap in the plain overview starts a new chain.
  */
-export function showSimilar(font: Font) {
-  const inShape = tab.value === 'shape' && !showShortlist.value;
-  if (inShape && likeFont.value?.index === font.index) return;
-  const depth = inShape ? chainDepth.value + 1 : 1;
-  // The current entry may still describe an older Shape chain after returning
-  // to Explore. Make it the boundary so Back from this new chain exits Shape.
-  if (!inShape) history.replaceState(null, '');
-  history.pushState({ similar: font.index, depth, session } satisfies SimilarEntry, '');
-  chainDepth.value = depth;
-  openSimilar(font);
+export function openFont(font: Font) {
+  if (showShortlist.value && chainDepth.value > 0 && viewedFont.value?.index === font.index && selection.value === font.family) return;
+  const keepView = showShortlist.value;
+  pushStep({ font: font.index });
+  showFont(font, keepView);
 }
 
-/** The history entry of a "similar" step: the example font, how many steps the chain has up to it, and the page load that made it. */
-type SimilarEntry = { similar: number; depth: number; session: number };
-// Entries outlive a reload, but the query of that page is gone: entries of other loads only lead out of the Shape tab.
+/** "Find similar": the overview with the fonts that look most like `font` first, as the next step of the chain. */
+export function findSimilar(font: Font) {
+  pushStep({ similar: font.index });
+  rankBy(font);
+}
+
+/** A history entry of the chain: an opened font or the fonts like it, how many steps lead to it, and the page load that made it. */
+type Step = ({ font: number } | { similar: number }) & { depth: number; session: number };
+// Entries outlive a reload, but the chain of that page is gone: entries of other loads only lead out of the chain.
 const session = Math.random();
-const similarEntry = (state: unknown) => ((state as SimilarEntry | null)?.session === session ? (state as SimilarEntry) : null);
-/** How many "similar" steps lead to the current example font: above 1, "back" has a font to return to. */
+const step = (state: unknown) => ((state as Step | null)?.session === session ? (state as Step) : null);
+/** How many steps of the chain lead to the current one: above 1, "back" has a step to return to. */
 export const chainDepth = signal(0);
 
-/** A new query from the font: its letters only, without the sketches and left-out letters of the query before. */
-function openSimilar(font: Font) {
+/** Adds a step to the chain, or starts a new chain outside the font view and the similar fonts. */
+function pushStep(target: { font: number } | { similar: number }) {
+  const inChain = chainDepth.value > 0 && (showShortlist.value || !!similarTo.value);
+  const depth = inChain ? chainDepth.value + 1 : 1;
+  // The current entry may still describe an older chain after returning to
+  // Explore. Make it the boundary so Back from this new chain leads out of it.
+  if (!inChain) history.replaceState(null, '');
+  history.pushState({ ...target, depth, session } satisfies Step, '');
+  chainDepth.value = depth;
+}
+
+/** Shows the font in the font view; outside the font view, in its specimen. */
+function showFont(font: Font, keepView: boolean) {
   batch(() => {
-    showShortlist.value = false;
-    sketches.value = {};
-    excluded.value = [];
-    setLikeFont(font);
-    tab.value = 'shape';
-    if (focus.value === '') focus.value = null;
+    viewedFont.value = font;
+    selection.value = font.family;
+    if (!keepView) fontView.value = 'specimen';
+    selectWorkspace(true);
   });
   window.scrollTo(0, 0);
 }
 
-// "Back" goes to the font before in the chain; before the first step, out of the Shape tab (the query stays for later).
+/** Shows the overview with the fonts that look most like `font` first. */
+function rankBy(font: Font) {
+  batch(() => {
+    similarTo.value = font;
+    selectWorkspace(false);
+    if (tab.value === 'shape') tab.value = 'look';
+  });
+  window.scrollTo(0, 0);
+}
+
+// "Back" goes to the step before in the chain; before the first one, out of the font view and the similar fonts.
 addEventListener('popstate', (e: PopStateEvent) => {
-  const entry = similarEntry(e.state);
+  const entry = step(e.state);
+  const wasChain = chainDepth.value > 0;
   chainDepth.value = entry?.depth ?? 0;
-  if (entry && fonts[entry.similar]) openSimilar(fonts[entry.similar]);
-  else if (tab.value === 'shape') tab.value = 'look';
+  if (entry && 'font' in entry && fonts[entry.font]) showFont(fonts[entry.font], true);
+  else if (entry && 'similar' in entry && fonts[entry.similar]) rankBy(fonts[entry.similar]);
+  else if (wasChain) {
+    similarTo.value = null;
+    selectWorkspace(false);
+  }
 });
 
 /** Shows `ch` on the pad; a left-out letter comes back into the query. */

@@ -8,7 +8,7 @@ import { activeRanges } from '../filter';
 import { canUndo, corridors, exclusionMessage, filtered, isShapeQuery, lastExclusion, likeFont, openWorkspace, parts, setCorridor, shortlist, tab, undoFilters, workspace } from '../state';
 import { querySummary, Shape } from './Sidebar';
 import { useFresh } from './ui';
-import { byKey, samples, SampleText, SliderRow, ToggleRow } from './SliderList';
+import { byKey, ChoiceRow, samples, SampleText, SliderRow } from './SliderList';
 
 const query = matchMedia('(max-width: 760px)');
 /** Whether the screen is narrow: the console is a rail of slider buttons instead of a sidebar. */
@@ -102,7 +102,7 @@ function SliderPanel({ slider, anchor }: { slider: Slider; anchor: HTMLElement }
           <X size={16} aria-hidden="true" />
         </button>
       </div>
-      {slider.toggle ? <ToggleRow slider={slider} /> : <SliderRow slider={slider} />}
+      {slider.choices ? <ChoiceRow slider={slider} /> : <SliderRow slider={slider} />}
     </div>
   );
 }

@@ -20,8 +20,10 @@ export interface Slider {
   style?: boolean;
   /** Shown only while the corridor of this slider excludes its left end (e.g. the serif type needs serifs). */
   requires?: string;
-  /** Shown as a checkbox that sets this corridor instead of a range (for bimodal values like fixed width). */
-  toggle?: Corridor;
+  /** Shown as buttons that each set a corridor instead of a range (for values with a few distinct states). */
+  choices?: [label: string, corridor: Corridor][];
+  /** Shown in the toolbar above the results instead of a section of the sidebar. */
+  toolbar?: boolean;
   pos: (value: number) => number;
   value: (pos: number) => number;
   format: (value: number) => string;
@@ -180,6 +182,18 @@ export const SLIDERS: Slider[] = [
     format: names([[0.08, 'Solid'], [0.35, 'Partly hollow'], [0.65, 'Hollow'], [Infinity, 'Outline']]),
   },
   {
+    key: 'elsewhere',
+    label: 'Source',
+    ends: ['Google Fonts', 'Elsewhere'],
+    tip: 'Where the font is published: on Google Fonts, or elsewhere (libre fonts of other foundries and collections).',
+    technical: true,
+    choices: [['Everywhere', [0, 1]], ['Google Fonts', [0, 0.5]], ['Elsewhere', [0.5, 1]]],
+    toolbar: true,
+    pos: (n) => n,
+    value: (p) => p,
+    format: (n) => (n >= 0.5 ? 'Elsewhere' : 'Google Fonts'),
+  },
+  {
     key: 'glyphs',
     label: 'Glyphs',
     ends: ['Few glyphs', 'Many glyphs'],
@@ -223,7 +237,7 @@ export const SLIDERS: Slider[] = [
     key: 'styles',
     label: 'Styles',
     ends: ['One style', 'Many styles'],
-    tip: 'Number of styles of the family: weights and italics, as listed by Google Fonts.',
+    tip: 'Number of styles of the family: weights and italics.',
     technical: true,
     pos: (n) => clamp((n - 1) / 19),
     value: (p) => 1 + p * 19,
@@ -246,7 +260,10 @@ export const SLIDERS: Slider[] = [
 export const LOOK_KEYS = ['weight', 'width', 'slant', 's', 'sb', 'c', 'e', 'r', 'o', 'cn', 'hf', 'x', 'ge', 'ap', 'mo'];
 
 /** The technical sliders (what a font contains). */
-export const TECHNICAL_KEYS = SLIDERS.filter((s) => s.technical).map((s) => s.key);
+export const TECHNICAL_KEYS = SLIDERS.filter((s) => s.technical && !s.toolbar).map((s) => s.key);
+
+/** The sliders shown in the toolbar. */
+export const TOOLBAR_SLIDERS = SLIDERS.filter((s) => s.toolbar);
 
 export const STYLE = Object.fromEntries(SLIDERS.filter((s) => s.style).map((s) => [s.key, s])) as Record<'weight' | 'width' | 'slant', Slider>;
 
