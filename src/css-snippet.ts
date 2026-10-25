@@ -3,7 +3,10 @@
 // a libre family) and a rule per role. No dependencies, so that it can be tested.
 import type { Font, Style } from './data';
 
-type FontInfo = Pick<Font, 'family' | 'category' | 'axes' | 'pinned' | 'libre'>;
+type FontInfo = Pick<Font, 'family' | 'category' | 'axes' | 'pinned' | 'libre' | 'variants'>;
+
+/** Where the fonts of a website come from: files of its own, or the Google Fonts API. */
+export type Hosting = 'self' | 'google';
 
 /** A font in use: the selector of its rule, its style, and (for a text role) its size and line height. */
 export interface Usage {
@@ -88,22 +91,80 @@ function rule(u: Usage): string {
   return `${u.selector} {\n  ${lines.join('\n  ')}\n}`;
 }
 
-/** The snippet: how to load the fonts, then a rule per usage. */
-export function cssSnippet(usages: Usage[]): string {
+/** The rules of the usages. */
+export const cssRules = (usages: Usage[]) => usages.map(rule).join('\n\n');
+
+/**
+ * The snippet: how to load the fonts, then a rule per usage. Self-hosted,
+ * the Google families come from fonts.css of the download (see localFontFaces);
+ * libre families get @font-face blocks either way.
+ */
+export function cssSnippet(usages: Usage[], hosting: Hosting = 'google'): string {
   const families = usagesByFamily(usages);
   const google = families.filter((f) => !f[0].font.libre), libre = families.filter((f) => f[0].font.libre);
   const parts: string[] = [];
-  if (google.length) {
+  if (google.length && hosting === 'google') {
     const href = `https://fonts.googleapis.com/css2?${google.map((f) => `family=${familySpec(f)}`).join('&')}&display=swap`;
     parts.push(`<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="stylesheet" href="${href}">`);
   }
+  if (google.length && hosting === 'self') parts.push('<!-- fonts.css and the fonts/ folder are in the download -->\n<link rel="stylesheet" href="fonts.css">');
   parts.push(...libre.map(fontFaces));
-  parts.push(usages.map(rule).join('\n\n'));
+  parts.push(cssRules(usages));
   return parts.join('\n\n');
+}
+
+/**
+ * The family spec of the CSS2 API for the files to self-host: a variable
+ * family with the whole range of every axis (italic too, when the family has
+ * it), so that one file per subset serves every style; a static family with
+ * the styles in use.
+ */
+export function selfHostSpec(font: FontInfo, styles: Style[]): string {
+  const name = encodeURIComponent(font.family).replace(/%20/g, '+');
+  const axes = font.axes ?? {};
+  if (axes.wght) {
+    const italics = font.variants.some((v) => v.endsWith('i')) ? [0, 1] : [];
+    const tags = Object.keys(axes).sort((a, b) => (a === a.toLowerCase()) === (b === b.toLowerCase()) ? a.localeCompare(b) : a === a.toLowerCase() ? -1 : 1);
+    const ranges = tags.map((t) => `${axes[t]![0]}..${axes[t]![1]}`);
+    const tuples = italics.length ? italics.map((i) => [i, ...ranges].join(',')) : [ranges.join(',')];
+    return `${name}:${[...(italics.length ? ['ital'] : []), ...tags].join(',')}@${tuples.join(';')}`;
+  }
+  const tuples = [...new Set(styles.map((s) => `${s.italic ? 1 : 0},${s.weight}`))].sort();
+  if (tuples.length === 1 && tuples[0] === '0,400') return name;
+  return `${name}:ital,wght@${tuples.join(';')}`;
+}
+
+/** A file of the download: where Google has it, and its path in the ZIP. */
+export interface KitFile {
+  url: string;
+  path: string;
+}
+
+/**
+ * The @font-face blocks of a CSS2 response with the files of the ZIP as
+ * their sources, and the files to fetch: one per subset (and style, for a
+ * static family), named after family, subset, weight and style.
+ */
+export function localFontFaces(css: string, family: string): { css: string; files: KitFile[] } {
+  const slug = family.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const files: KitFile[] = [];
+  const blocks: string[] = [];
+  for (const m of css.matchAll(/\/\*\s*([\w-]+)\s*\*\/\s*@font-face\s*\{([\s\S]*?)\}/g)) {
+    const [, subset, body] = m;
+    const url = body.match(/src:\s*url\(([^)]+)\)/)?.[1];
+    if (!url) continue;
+    const weight = body.match(/font-weight:\s*([\d ]+)/)?.[1].trim().replace(' ', '-') ?? '400';
+    const italic = /font-style:\s*italic/.test(body);
+    const path = `fonts/${slug}-${subset}-${weight}${italic ? '-italic' : ''}.woff2`;
+    files.push({ url, path });
+    const lines = body.trim().split('\n').map((l) => l.trim()).filter(Boolean).map((l) => (l.startsWith('src:') ? `src: url('${path}') format('woff2');` : l));
+    blocks.push(`/* ${subset} */\n@font-face {\n  ${lines.join('\n  ')}\n}`);
+  }
+  return { css: blocks.join('\n'), files };
 }
 
 /** Where to get the files of a family: the ZIP of Google Fonts, or the page of the foundry. */
 export function downloadLink(font: FontInfo): { href: string; label: string; title: string } {
   if (font.libre) return { href: font.libre.url, label: `Get ${font.family} at ${font.libre.foundry}`, title: `The page of ${font.family} at ${font.libre.foundry}, with the files and the license (${font.libre.license})` };
-  return { href: `https://fonts.google.com/download?family=${encodeURIComponent(font.family)}`, label: `Download ${font.family}`, title: `The files of ${font.family} as a ZIP from Google Fonts` };
+  return { href: `https://fonts.google.com/download?family=${encodeURIComponent(font.family)}`, label: `TTFs of ${font.family}`, title: `The desktop files of ${font.family} as a ZIP from Google Fonts` };
 }

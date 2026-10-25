@@ -231,9 +231,6 @@ function Axes({ font }: { font: Font }) {
 /** Facts about the family: its foundry (for libre families), category, styles, variable axes and technical statistics. */
 function Details({ font, class: className }: { font: Font; class?: string }) {
   const t = tech[font.index], m = metrics[font.index];
-  const axes = Object.keys(axesOf(font)).map(axisName);
-  // Axes that the metadata does not list are still part of the font file.
-  const otherAxes = (t?.a ?? []).filter((tag) => !(tag in (font.axes ?? {})));
   return (
     <Section aria-label="Details" class={className}>
       <dl class="grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-x-8 gap-y-4">
@@ -242,7 +239,6 @@ function Details({ font, class: className }: { font: Font; class?: string }) {
         {font.libre && <Detail label="License">{font.libre.license}</Detail>}
         <Detail label="Category">{font.category}</Detail>
         <Detail label="Styles">{font.variants.length}{m?.lc === 0 && ' · capitals only'}</Detail>
-        <Detail label="Variable axes">{axes.length || otherAxes.length ? [...axes, ...otherAxes].join(', ') : 'None'}</Detail>
         {t && <Detail label="Glyphs">{t.g}</Detail>}
         {t && <Detail label="Ligatures">{t.l}</Detail>}
       </dl>

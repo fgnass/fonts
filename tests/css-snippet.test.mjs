@@ -4,12 +4,13 @@ import { readFile } from 'node:fs/promises';
 import { stripTypeScriptTypes } from 'node:module';
 
 const source = stripTypeScriptTypes(await readFile(new URL('../src/css-snippet.ts', import.meta.url), 'utf8'));
-const { cssSnippet, downloadLink } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
+const { cssSnippet, downloadLink, selfHostSpec, localFontFaces } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
 
-const fraunces = { family: 'Fraunces', category: 'Serif', axes: { opsz: [9, 144, 14], wght: [100, 900, 400], SOFT: [0, 100, 0], WONK: [0, 1, 0] } };
-const inter = { family: 'Inter', category: 'Sans Serif', axes: { wght: [100, 900, 400] } };
-const lora = { family: 'Lora', category: 'Serif', axes: { wght: [400, 700, 400] } };
-const bebas = { family: 'Bebas Neue', category: 'Display' };
+const fraunces = { family: 'Fraunces', category: 'Serif', variants: ['400', '400i'], axes: { opsz: [9, 144, 14], wght: [100, 900, 400], SOFT: [0, 100, 0], WONK: [0, 1, 0] } };
+const inter = { family: 'Inter', category: 'Sans Serif', variants: ['400'], axes: { wght: [100, 900, 400] } };
+const lora = { family: 'Lora', category: 'Serif', variants: ['400', '700', '400i', '700i'], axes: { wght: [400, 700, 400] } };
+const bebas = { family: 'Bebas Neue', category: 'Display', variants: ['400'] };
+const openSans = { family: 'Open Sans', category: 'Sans Serif', variants: ['400', '700', '400i'] };
 const absans = { family: 'Absans', category: 'Sans Serif', libre: { url: 'https://www.collletttivo.it/typefaces/absans', foundry: 'Collletttivo', license: 'OFL-1.1' } };
 
 test('a pairing of two Google families: one link with both, the weights in use, a rule per role', () => {
@@ -53,4 +54,45 @@ test('the download link: the ZIP of Google Fonts, or the page of the foundry', (
   assert.equal(downloadLink(bebas).href, 'https://fonts.google.com/download?family=Bebas%20Neue');
   assert.equal(downloadLink(absans).href, 'https://www.collletttivo.it/typefaces/absans');
   assert.equal(downloadLink(absans).label, 'Get Absans at Collletttivo');
+});
+
+test('self-hosted: the snippet links fonts.css instead of Google', () => {
+  const css = cssSnippet([{ selector: '.heading', font: fraunces, style: { weight: 700, italic: false } }], 'self');
+  assert.doesNotMatch(css, /googleapis/);
+  assert.match(css, /^<!-- fonts\.css and the fonts\/ folder are in the download -->\n<link rel="stylesheet" href="fonts\.css">\n\n\.heading \{/);
+});
+
+test('the spec of the files to self-host: every axis of a variable family, the styles in use of a static one', () => {
+  assert.equal(selfHostSpec(fraunces, [{ weight: 700, italic: false }]), 'Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1');
+  assert.equal(selfHostSpec(inter, [{ weight: 400, italic: false }]), 'Inter:wght@100..900');
+  assert.equal(selfHostSpec(bebas, [{ weight: 400, italic: false }]), 'Bebas+Neue');
+  assert.equal(selfHostSpec(openSans, [{ weight: 700, italic: false }, { weight: 400, italic: true }]), 'Open+Sans:ital,wght@0,700;1,400');
+});
+
+test('the @font-face blocks of Google with local files', () => {
+  const google = `/* latin-ext */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bebasneue/v16/a.woff2) format('woff2');
+  unicode-range: U+0100-02BA;
+}
+/* latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fraunces/v38/b.woff2) format('woff2');
+  unicode-range: U+0000-00FF;
+}
+`;
+  const { css, files } = localFontFaces(google, 'Bebas Neue');
+  assert.deepEqual(files, [
+    { url: 'https://fonts.gstatic.com/s/bebasneue/v16/a.woff2', path: 'fonts/bebas-neue-latin-ext-400.woff2' },
+    { url: 'https://fonts.gstatic.com/s/fraunces/v38/b.woff2', path: 'fonts/bebas-neue-latin-100-900-italic.woff2' },
+  ]);
+  assert.match(css, /\/\* latin-ext \*\/\n@font-face \{\n  font-family: 'Bebas Neue';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url\('fonts\/bebas-neue-latin-ext-400\.woff2'\) format\('woff2'\);\n  unicode-range: U\+0100-02BA;\n\}/);
 });

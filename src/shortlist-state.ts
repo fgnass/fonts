@@ -16,6 +16,8 @@ export const primary = computed(() => listedFonts.value.find((f) => f.family ===
 export const pairing = signal('');
 export const secondary = computed(() => savedFonts.value.find((f) => f.family === pairing.value && f.family !== primary.value?.family));
 
+/** How the fonts are to be used on a website: with files of its own, or from the Google Fonts API (see cssSnippet). */
+export const hosting = signal<'self' | 'google'>('self');
 /** The list of all styles of the specimen is open; it starts closed, as it is long for a big family. */
 export const stylesOpen = signal(false);
 /** The style the sizes of the specimen are set in, per family. */

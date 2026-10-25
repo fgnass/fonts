@@ -27,6 +27,7 @@
     "@preact/signals": "^2.11.3",
     "classname-variants": "^1.7.1",
     "delaunator": "^5.1.0",
+    "fflate": "^0.8.3",
     "harfbuzzjs": "^1.6.4",
     "lucide-preact": "^1.60.0",
     "preact": "^10.29.8",
