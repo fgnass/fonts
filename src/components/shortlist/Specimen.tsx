@@ -156,7 +156,7 @@ function FeatureList({ features }: { features: { tag: string; name: string }[] }
   const range = (n: number[]) => (n.length > 2 && n[n.length - 1] - n[0] === n.length - 1 ? `${n[0]}–${n[n.length - 1]}` : n.join(', '));
   const items = [
     ...single.map((f) => <span key={f.tag}>{f.name} <span class="font-mono text-[11px]">{f.tag}</span></span>),
-    ...Object.entries(numbered).map(([kind, n]) => <span key={kind}>{kind === 'ss' ? 'Stylistic set' : 'Character variant'}{n.length > 1 ? 's' : ''} {range(n)} <span class="font-mono text-[11px]">{kind}</span></span>),
+    ...Object.entries(numbered).map(([kind, n]) => <span key={kind}>{kind === 'ss' ? 'Stylistic set' : 'Character variant'}{n.length > 1 ? 's' : ''} {range(n)} <span class="font-mono text-[11px]">{n.length > 1 ? kind : kind + String(n[0]).padStart(2, '0')}</span></span>),
   ];
   return <>{items.map((item, i) => <span key={i}>{i > 0 && ', '}{item}</span>)}</>;
 }
