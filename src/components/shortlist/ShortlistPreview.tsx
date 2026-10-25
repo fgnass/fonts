@@ -16,7 +16,7 @@ function useSpecimenFont(role: Role, font: Font | undefined, text: string) {
   return { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: style ? variationSettings(style) : undefined };
 }
 
-/** The selected font on its own, all saved fonts in a grid, or the pairing: type controls above an editable heading and body text. */
+/** All saved fonts in a grid, the selected font on its own, or the pairing: type controls above an editable heading and body text. */
 export function ShortlistPreview() {
   const font = primary.value, paired = secondary.value;
   const text = heading.value + '\n' + body.value;
@@ -29,8 +29,8 @@ export function ShortlistPreview() {
       <button type="button" class="mt-3 cursor-pointer rounded-lg border border-line2 bg-panel px-3.5 py-2.25 text-fg hover:border-accent" onClick={() => selectWorkspace(false)}>Explore fonts</button>
     </div>
   );
-  if (fontView.value === 'specimen') return <Specimen font={font} />;
   if (fontView.value === 'grid') return <Grid />;
+  if (fontView.value === 'specimen') return <Specimen font={font} />;
   return (
     <>
       <TypeControls font={font} paired={paired} />

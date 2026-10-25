@@ -1,14 +1,16 @@
-import { ArrowLeft, ChevronLeft, ChevronRight, Star, X } from 'lucide-preact';
+import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-preact';
 import { styled } from 'classname-variants/preact';
 import { displayedStyle, type Font } from '../../data';
-import { clearShortlist, fontView, listedFonts, primary, removeFromShortlist, savedFonts, secondary, selection } from '../../shortlist-state';
-import { selectWorkspace, shortlist, toggleShortlist } from '../../state';
+import { fontView, listedFonts, primary, secondary, selection } from '../../shortlist-state';
+import { selectWorkspace } from '../../state';
 import { useEffect, useRef } from 'preact/hooks';
 import { useLoadedFont } from '../useLoadedFont';
 import { plural } from '../ui';
+import { GridControls } from './Grid';
+import { ShortlistButton } from './ShortlistButton';
 
 const Row = styled('div', {
-  base: 'flex items-center rounded-lg border',
+  base: 'group flex items-center rounded-lg border',
   variants: { selected: { true: 'border-accent bg-tile', false: 'border-line' } },
 });
 
@@ -19,23 +21,6 @@ function FamilyName({ font, class: className = 'block text-[18px]/[1.3]' }: { fo
   return <span class={className + ' text-bright transition-opacity'} style={alias ? { fontFamily: `'${alias}'` } : undefined}>{font.family}</span>;
 }
 
-/** The star that saves a font to the shortlist (the opened font) or removes it. */
-export function StarButton({ font, size, class: className }: { font: Font; size: number; class: string }) {
-  const saved = shortlist.value.has(font.family);
-  return (
-    <button
-      type="button"
-      class={'cursor-pointer ' + (saved ? 'text-accent ' : 'text-muted hover:text-fg ') + className}
-      aria-label={`${saved ? 'Remove' : 'Add'} ${font.family} ${saved ? 'from' : 'to'} shortlist`}
-      aria-pressed={saved}
-      title={saved ? 'Remove from shortlist' : 'Add to shortlist'}
-      onClick={() => (saved ? removeFromShortlist(font) : toggleShortlist(font.family))}
-    >
-      <Star size={size} fill={saved ? 'currentColor' : 'none'} aria-hidden="true" />
-    </button>
-  );
-}
-
 /** What the font is used for in the pairing, or else how many styles it has. */
 function roleLabel(font: Font) {
   if (fontView.value === 'pairing' && primary.value?.family === font.family) return 'Heading';
@@ -43,25 +28,15 @@ function roleLabel(font: Font) {
   return `${font.variants.length} ${plural(font.variants.length, 'style')}`;
 }
 
-/** The opened font and the saved fonts; a click selects the font of the specimen (the heading of the pairing). */
+/**
+ * The sidebar of the shortlist: in the grid, the text and size of the
+ * preview; else the opened font and the saved fonts, where a click selects
+ * the font of the specimen (the heading of the pairing).
+ */
 export function ShortlistSidebar() {
-  const saved = savedFonts.value.length;
   return (
     <div class="flex min-h-full flex-col gap-3.5">
-      {saved > 0 && (
-        <div class="-mb-1.5 flex justify-end">
-          <button
-            type="button"
-            class="inline-flex h-6 cursor-pointer items-center gap-1.25 rounded-md px-1.75 text-[11px] font-medium text-muted hover:bg-line hover:text-fg"
-            title={`Remove all ${saved} ${plural(saved, 'font')} from the shortlist`}
-            onClick={clearShortlist}
-          >
-            <X size={12} aria-hidden="true" />
-            Clear
-          </button>
-        </div>
-      )}
-      <div class="grid gap-1.5">
+      {fontView.value === 'grid' ? <GridControls /> : <div class="grid gap-1.5">
         {listedFonts.value.map((font) => {
           const selected = primary.value?.family === font.family;
           return (
@@ -70,11 +45,11 @@ export function ShortlistSidebar() {
                 <FamilyName font={font} />
                 <small class="mt-1 block text-[11px] text-muted">{roleLabel(font)}</small>
               </button>
-              <StarButton font={font} size={18} class="p-2.5" />
+              <ShortlistButton font={font} size={16} class="p-2.5" reveal />
             </Row>
           );
         })}
-      </div>
+      </div>}
       {!listedFonts.value.length && <p class="text-[12px] text-muted">Star fonts to collect them here.</p>}
       <button type="button" class="mt-auto inline-flex cursor-pointer items-center gap-1.5 pt-3 text-left text-soft narrow:hidden" onClick={() => selectWorkspace(false)}><ArrowLeft size={14} aria-hidden="true" /> Explore fonts</button>
     </div>
