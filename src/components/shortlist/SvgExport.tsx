@@ -67,7 +67,7 @@ export function SvgExport({ font, lines, size }: { font: Font; lines: string[]; 
         <Copy size={12} aria-hidden="true" /> Copy SVG
       </button>
       <button type="button" class={buttonClass} disabled={busy} title={`Download the text as an SVG file with paths in this font, e.g. for a logo. ${license}`} onClick={download}>
-        <Download size={12} aria-hidden="true" /> Download
+        <Download size={12} aria-hidden="true" /> Download SVG
       </button>
     </div>
   );
