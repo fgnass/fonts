@@ -2,12 +2,12 @@ import type { ComponentChildren, RefObject } from 'preact';
 import { useLayoutEffect, useRef, useState } from 'preact/hooks';
 import { type Font, metrics, type Style, tech } from '../../data';
 import { axisName } from '../../axis-names';
-import { axesOf, axisSettings, axisValues, fontView, setSpecimenAxis, specimenAxes, specimenStyle, specimenStyles, stylesOf, weightIsStyle } from '../../shortlist-state';
+import { axesOf, axisSettings, axisValues, fontView, setSpecimenAxis, specimenAxes, specimenStyle, specimenStyles, stylesOf, stylesOpen, weightIsStyle } from '../../shortlist-state';
 import { previewLines, showShortlist } from '../../state';
 import { PreviewTextField } from '../PreviewText';
 import { Slider } from '../Slider';
 import { useLoadedFont } from '../useLoadedFont';
-import { RotateCcw } from 'lucide-preact';
+import { ChevronDown, RotateCcw } from 'lucide-preact';
 import { Eyebrow } from '../ui';
 import { Section } from './Section';
 import { SvgExport } from './SvgExport';
@@ -129,18 +129,32 @@ function StyleRow({ font, style, lines, selected }: { font: Font; style: Style; 
   );
 }
 
-/** All styles of the family, each with the preview text. */
+/** All styles of the family, each with the preview text; a bar opens and closes the list, which starts closed. */
 function Styles({ font, lines }: { font: Font; lines: string[] }) {
   const current = specimenStyle(font);
   const list = stylesOf(font);
+  const open = stylesOpen.value;
   return (
-    <Section aria-label="Styles">
-      <Eyebrow>{list.length} {list.length === 1 ? 'style' : 'styles'}</Eyebrow>
-      <div class="-mx-3 grid gap-1 narrow:mx-0">
-        {list.map((style) => (
-          <StyleRow key={styleLabel(style)} font={font} style={style} lines={lines} selected={style.weight === current.weight && style.italic === current.italic} />
-        ))}
-      </div>
+    <Section aria-label="Styles" class={open ? '' : 'pb-5'}>
+      <button
+        type="button"
+        class="group -my-2 flex cursor-pointer items-center justify-between gap-3 py-2 text-left"
+        aria-expanded={open}
+        aria-controls="specimen-styles"
+        title={open ? 'Hide the styles' : 'Show each style with the preview text'}
+        onClick={() => { stylesOpen.value = !open; }}
+      >
+        <Eyebrow class="group-hover:text-fg">{list.length} {list.length === 1 ? 'style' : 'styles'} · {styleLabel(current)}</Eyebrow>
+        <ChevronDown size={16} class={'flex-none text-muted transition-transform group-hover:text-fg ' + (open ? 'rotate-180' : '')} aria-hidden="true" />
+      </button>
+      {/* The rows load their fonts, so they are not rendered while the list is closed. */}
+      {open && (
+        <div id="specimen-styles" class="-mx-3 grid gap-1 narrow:mx-0">
+          {list.map((style) => (
+            <StyleRow key={styleLabel(style)} font={font} style={style} lines={lines} selected={style.weight === current.weight && style.italic === current.italic} />
+          ))}
+        </div>
+      )}
     </Section>
   );
 }
