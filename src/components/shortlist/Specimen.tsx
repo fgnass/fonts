@@ -10,6 +10,7 @@ import { Slider } from '../Slider';
 import { useLoadedFont } from '../useLoadedFont';
 import { RotateCcw } from 'lucide-preact';
 import { Eyebrow } from '../ui';
+import { SvgExport } from './SvgExport';
 
 /** The sizes of the preview text, in px. */
 const SIZES = [120, 80, 56, 36, 24, 16];
@@ -88,7 +89,11 @@ function Sizes({ font, lines }: { font: Font; lines: string[] }) {
   const sizes = fit >= SIZES[0] ? SIZES : [fit, ...SIZES.filter((s) => s < fit * NEAR_FIT)];
   return (
     <Section aria-label="Sizes">
-      <Eyebrow>Sizes · {styleLabel(style)}</Eyebrow>
+      <div class="flex min-h-4 flex-wrap items-center justify-between gap-x-6 gap-y-2">
+        <Eyebrow>Sizes · {styleLabel(style)}</Eyebrow>
+        {/* The SVG has the text at the largest size shown, so that an optical size axis matches it. */}
+        <SvgExport font={font} lines={lines} size={sizes[0]} />
+      </div>
       <div ref={box} class={'relative flex flex-col gap-4 ' + clipBeyondEdge}>
         <Probe lines={lines} style={fontStyle} probe={probe} />
         {sizes.map((size) => (

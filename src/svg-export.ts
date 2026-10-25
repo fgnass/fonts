@@ -1,0 +1,102 @@
+// The preview text as SVG paths, shaped as the browser shows it: the font
+// file is fetched and (for WOFF2) unpacked, HarfBuzz applies ligatures, kerning
+// and the variable axes and returns the outlines. Loaded on demand: the two
+// WASM modules weigh about 1 MB.
+import * as hb from 'harfbuzzjs';
+import type { Font, Style } from './data';
+import { googleCssUrl, libreFileUrls } from './fontload';
+import { type PlacedGlyph, svgFromLines } from './svg-text';
+import { decompressWoff2 } from './woff2';
+
+export interface ExportOptions {
+  /** The font size in px: the size of an em in the SVG. */
+  size: number;
+  /** The line height as a factor of the size. */
+  lineHeight: number;
+  /** The values of the variable axes, tag -> value (see axisValues). */
+  axes: Record<string, number>;
+}
+
+const files = new Map<string, Promise<Uint8Array>>();
+
+/** The bytes of a font file, unpacked when it is WOFF2; fetched once per URL. */
+function fontFile(url: string) {
+  let file = files.get(url);
+  if (!file) {
+    file = fetch(url)
+      .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(`HTTP ${r.status} for ${url}`))))
+      .then((buffer) => {
+        const bytes = new Uint8Array(buffer);
+        const magic = String.fromCharCode(...bytes.subarray(0, 4));
+        if (magic === 'wOF2') return decompressWoff2(bytes);
+        if (magic === 'wOFF') throw new Error('WOFF is not supported');
+        return bytes;
+      });
+    file.catch(() => files.delete(url));
+    files.set(url, file);
+  }
+  return file;
+}
+
+/** The URLs of the font files for a font, style and text: a Google family has one file per request, a libre family its own files. */
+async function fileUrls(font: Font, style: Style, text: string) {
+  if (font.libre) return libreFileUrls(font as Font & { libre: NonNullable<Font['libre']> }, style, { allAxes: true });
+  const css = await fetch(googleCssUrl(font, style, text, { allAxes: true })).then((r) => (r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`))));
+  const url = css.match(/src:\s*url\(([^)]+)\)/)?.[1];
+  if (!url) throw new Error('no font source in CSS');
+  return [url];
+}
+
+/** A font ready for shaping, and the code points it has, so that a text can be split between the files of a family. */
+interface Shaper {
+  font: hb.Font;
+  covers: Set<number>;
+}
+
+/** The runs of a line, each with the index of the first shaper that has its characters (the first shaper for characters no file has). */
+function runs(line: string, shapers: Shaper[]) {
+  const out: { text: string; shaper: number }[] = [];
+  for (const ch of line) {
+    const i = Math.max(0, shapers.findIndex((s) => s.covers.has(ch.codePointAt(0)!)));
+    const last = out[out.length - 1];
+    if (last && last.shaper === i) last.text += ch;
+    else out.push({ text: ch, shaper: i });
+  }
+  return out;
+}
+
+/**
+ * The lines of text in the font and style as an SVG with one path, or null
+ * when nothing is left to draw. The axes are applied as given; an optical
+ * size axis without a value follows the font size, as in the browser.
+ */
+export async function textToSvg(font: Font, style: Style, lines: string[], { size, lineHeight, axes }: ExportOptions): Promise<string | null> {
+  const urls = await fileUrls(font, style, lines.join(''));
+  const faces = (await Promise.all(urls.map(fontFile))).map((bytes) => new hb.Face(new hb.Blob(bytes)));
+  const variations = { ...axes };
+  const opsz = faces[0].getAxisInfos().opsz;
+  if (opsz && variations.opsz == null) variations.opsz = Math.min(opsz.max, Math.max(opsz.min, size));
+  const shapers: Shaper[] = faces.map((face) => {
+    const hbFont = new hb.Font(face);
+    hbFont.setVariations(Object.entries(variations).map(([tag, value]) => new hb.Variation(tag, value)));
+    return { font: hbFont, covers: new Set(face.collectUnicodes()) };
+  });
+  const placed = lines.map((line) => {
+    const glyphs: PlacedGlyph[] = [];
+    let x = 0;
+    for (const run of runs(line, shapers)) {
+      const { font: hbFont } = shapers[run.shaper];
+      const buffer = new hb.Buffer();
+      buffer.addText(run.text);
+      buffer.guessSegmentProperties();
+      hb.shape(hbFont, buffer);
+      for (const g of buffer.getGlyphInfosAndPositions()) {
+        glyphs.push({ path: hbFont.glyphToJson(g.codepoint), x: x + (g.xOffset ?? 0), y: g.yOffset ?? 0 });
+        x += g.xAdvance ?? 0;
+      }
+    }
+    return glyphs;
+  });
+  const { upem } = faces[0];
+  return svgFromLines(placed, { upem, size, lineHeight, ascender: shapers[0].font.hExtents().ascender });
+}

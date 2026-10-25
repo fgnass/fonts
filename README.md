@@ -9,6 +9,7 @@ Find the right open-source font by how it looks, not by its name or category: al
 - **Filter by features:** find fonts with the glyphs, OpenType features, ligatures, variable axes or styles you need.
 - **Hide look-alikes:** see only one font from each group of fonts that look almost the same.
 - **Compare a shortlist:** star fonts and compare them with your own text: one font at a time in different sizes and styles, all of them side by side in a grid, or in heading/body pairs.
+- **Export as SVG:** copy or download your text as SVG paths in a font, shaped as the browser shows it (ligatures, kerning, variable axes), e.g. for a logo.
 
 ## Quick start
 

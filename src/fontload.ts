@@ -68,6 +68,24 @@ function request(font: Pick<Font, 'family' | 'axes' | 'pinned'>, { weight, itali
   return { alias, chars, spec: `${font.family}:${list.map(([t]) => t).join(',')}@${list.map(([, v]) => v).join(',')}` };
 }
 
+/** The URL of the CSS of the Google Fonts API for a font, style and text; its @font-face has the URL of the font file. */
+export const googleCssUrl = (font: FontRef, style: Style, text: string, options?: LoadOptions) => {
+  const { chars, spec } = request(font, style, text, options);
+  return `https://fonts.googleapis.com/css2?family=${encodeURIComponent(spec)}&text=${encodeURIComponent(chars)}`;
+};
+
+/**
+ * The files of a libre family for a style: its variable font when `allAxes`
+ * asks for the axes and there is one, else the static variant closest to the
+ * style (with subsets: the common characters and the other ones, see loadLibre).
+ */
+export function libreFileUrls(font: FontRef & { libre: NonNullable<FontRef['libre']> }, style: Style, { allAxes }: LoadOptions = {}) {
+  if (allAxes && font.libre.variable) return [`/libre/${font.libre.dir}/variable.${font.libre.variable.format}`];
+  const { variant } = libreStyle(font as LibreFont, style);
+  const url = (part: string, format = 'woff2') => `/libre/${font.libre.dir}/${variant}-${part}.${format}`;
+  return font.libre.subset ? [url('base'), url('ext')] : [url('full', font.libre.format)];
+}
+
 /** The alias loadFont uses for a font, style and text (without loading anything). */
 export const fontAlias = (font: FontRef, style: Style, text: string, options?: LoadOptions) =>
   font.libre ? (options?.allAxes && font.libre.variable ? libreVariableAlias(font) : libreStyle(font as LibreFont, style).alias) : request(font, style, text, options).alias;
@@ -84,9 +102,9 @@ export const fontAlias = (font: FontRef, style: Style, text: string, options?: L
 export function loadFont(font: FontRef, style: Style, text: string, options?: LoadOptions) {
   if (font.libre && options?.allAxes && font.libre.variable) return loadLibreVariable(font as LibreFont);
   if (font.libre) return loadLibre(font as LibreFont, style, text);
-  const { alias, chars, spec } = request(font, style, text, options);
+  const { alias } = request(font, style, text, options);
   return cached(alias, () =>
-    fetch(`https://fonts.googleapis.com/css2?family=${encodeURIComponent(spec)}&text=${encodeURIComponent(chars)}`)
+    fetch(googleCssUrl(font, style, text, options))
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`))))
       .then((css) => {
         const url = css.match(/src:\s*url\(([^)]+)\)/)?.[1];
@@ -129,16 +147,16 @@ const libreVariableAlias = (font: Pick<Font, 'family'>) => `fs-${font.family.rep
 /** Loads the variable font of a libre family, one file for all styles and texts (see Libre.variable). */
 function loadLibreVariable(font: LibreFont) {
   const alias = libreVariableAlias(font);
-  return cached(alias, () => new FontFace(alias, `url(/libre/${font.libre.dir}/variable.${font.libre.variable!.format})`).load().then((face) => [face]));
+  return cached(alias, () => new FontFace(alias, `url(${libreFileUrls(font, { weight: 400, italic: false }, { allAxes: true })[0]})`).load().then((face) => [face]));
 }
 
 function loadLibre(font: LibreFont, style: Style, text: string) {
-  const { variant, alias } = libreStyle(font, style);
+  const { alias } = libreStyle(font, style);
   return cached(alias, () => {
-    const url = (part: string, format = 'woff2') => `url(/libre/${font.libre.dir}/${variant}-${part}.${format})`;
+    const urls = libreFileUrls(font, style).map((u) => `url(${u})`);
     const faces = font.libre.subset
-      ? [new FontFace(alias, url('base'), { unicodeRange: BASE_RANGE }), new FontFace(alias, url('ext'), { unicodeRange: OTHER_RANGE })]
-      : [new FontFace(alias, url('full', font.libre.format))];
+      ? [new FontFace(alias, urls[0], { unicodeRange: BASE_RANGE }), new FontFace(alias, urls[1], { unicodeRange: OTHER_RANGE })]
+      : [new FontFace(alias, urls[0])];
     // document.fonts.load loads only faces that are in the set, and only those the text needs.
     faces.forEach((face) => document.fonts.add(face));
     return document.fonts.load(`16px "${alias}"`, textChars(text) || 'a').then((loaded) => {

@@ -70,19 +70,23 @@ export const axesOf = (font: Font) => font.libre?.variable?.axes ?? font.axes ??
 export const weightIsStyle = (font: Font) => !font.libre;
 
 /**
- * The font-variation-settings of the specimen for a style: the weight of the
- * style, the values of the sliders, else the axis defaults (pinned ones as
- * pinned). opsz only when set: else the browser picks it for the font size.
+ * The axis values of the specimen for a style, tag -> value: the weight of
+ * the style, the values of the sliders, else the axis defaults (pinned ones
+ * as pinned). opsz only when set: else the browser picks it for the font size.
  */
-export function axisSettings(font: Font, style: Style) {
+export function axisValues(font: Font, style: Style): Record<string, number> {
   const values = specimenAxes.value[font.family] ?? {};
   const styled: Record<string, number | undefined> = weightIsStyle(font) ? { wght: style.weight, wdth: style.wdth, slnt: style.slnt } : {};
-  return Object.entries(axesOf(font))
-    .map(([tag, axis]): [string, number | undefined] => [tag, tag === 'wght' && weightIsStyle(font) ? style.weight : tag === 'opsz' ? values.opsz : values[tag] ?? styled[tag] ?? font.pinned?.[tag] ?? axis?.[2]])
-    .filter(([, v]) => v != null)
-    .map(([tag, v]) => `'${tag}' ${v}`)
-    .join(', ');
+  return Object.fromEntries(
+    Object.entries(axesOf(font))
+      .map(([tag, axis]): [string, number | undefined] => [tag, tag === 'wght' && weightIsStyle(font) ? style.weight : tag === 'opsz' ? values.opsz : values[tag] ?? styled[tag] ?? font.pinned?.[tag] ?? axis?.[2]])
+      .filter((e): e is [string, number] => e[1] != null),
+  );
 }
+
+/** The font-variation-settings of the specimen for a style (see axisValues). */
+export const axisSettings = (font: Font, style: Style) =>
+  Object.entries(axisValues(font, style)).map(([tag, v]) => `'${tag}' ${v}`).join(', ');
 
 /** The style of the specimen sizes: the one chosen for the family, or its default style. */
 export const specimenStyle = (font: Font): Style => specimenStyles.value[font.family] ?? { weight: font.weight, italic: font.italic };
