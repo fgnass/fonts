@@ -7,7 +7,8 @@ import { plural } from '../ui';
 import { ShortlistButton } from './ShortlistButton';
 
 /** The header of the right pane in the shortlist view, on the line of the tabs. */
-const PaneTitle = styled('div', 'flex min-h-[65px] items-stretch gap-x-6 border-b border-line px-6 text-[13px] font-medium narrow:min-h-0 narrow:gap-x-5 narrow:px-3');
+// On narrow screens, the row is tight: the labels of the links give way, and nothing may push the page wider.
+const PaneTitle = styled('div', 'flex min-h-[65px] min-w-0 items-stretch gap-x-6 overflow-x-clip border-b border-line px-6 text-[13px] font-medium narrow:min-h-0 narrow:gap-x-4 narrow:px-3');
 
 const VIEWS = [
   { id: 'specimen', label: 'Specimen' },
@@ -96,12 +97,13 @@ export function ShortlistHeader() {
         title="Show the fonts whose measurements are closest to this font first"
         onClick={() => findSimilar(font)}
       >
-        <Search size={14} aria-hidden="true" /> Find similar
+        <Search size={14} aria-hidden="true" />
+        <span class="narrow:sr-only">Find similar</span>
       </button>
       <div class="ml-auto flex min-w-0 items-center gap-4">
         {/* On narrow screens, the strip of saved fonts above shows the selected font. */}
         <h1 class="truncate text-[15px] font-medium narrow:sr-only">{font.family}{paired && <span class="font-normal text-muted"> + {paired.family}</span>}</h1>
-        <SourceLink font={font} class={'flex-none ' + linkClass} />
+        <SourceLink font={font} class={'min-w-0 truncate ' + linkClass} />
         {/* On wide screens, the stars of the list save and remove fonts. */}
         <ShortlistButton font={font} size={16} class="-ml-3 -mr-2 hidden flex-none p-2 narrow:block" />
       </div>
