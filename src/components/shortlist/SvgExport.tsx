@@ -1,7 +1,7 @@
 import { Copy, Download } from 'lucide-preact';
-import { useEffect, useState } from 'preact/hooks';
 import type { Font } from '../../data';
 import { axisValues, specimenStyle } from '../../shortlist-state';
+import { useFlash } from '../useFlash';
 
 /** The line height of the exported text, as in the Sizes section. */
 const LINE_HEIGHT = 1.15;
@@ -21,13 +21,7 @@ const fileName = (font: Font, lines: string[]) => `${font.family} ${lines.join('
  * file. The code that shapes the text loads on the first click.
  */
 export function SvgExport({ font, lines, size }: { font: Font; lines: string[]; size: number }) {
-  const [state, setState] = useState<State>('idle');
-  // The result shows for a moment, then the buttons are back.
-  useEffect(() => {
-    if (state === 'idle' || state === 'busy') return;
-    const timer = setTimeout(() => setState('idle'), 2000);
-    return () => clearTimeout(timer);
-  }, [state]);
+  const [state, setState] = useFlash<'copied' | 'saved' | 'failed'>();
 
   const make = async () => {
     const { textToSvg } = await import('../../svg-export');

@@ -8,6 +8,7 @@ import { Editable } from './Editable';
 import { Grid } from './Grid';
 import { Specimen } from './Specimen';
 import { TypeControls } from './TypeControls';
+import { UseFont } from './UseFont';
 
 /** The font of a role in the specimen, loaded only while the shortlist shows. */
 function useSpecimenFont(role: Role, font: Font | undefined, text: string) {
@@ -55,6 +56,14 @@ export function ShortlistPreview() {
           style={{ ...bodyStyle, fontSize: `${bodySize.value}px`, lineHeight: `${bodyLeading.value}` }}
         />
       </article>
+      <UseFont
+        title="Use this pairing"
+        class="border-t"
+        usages={[
+          { selector: '.heading', font, style: styleFor('heading', font), size: headingSize.value, lineHeight: headingLeading.value },
+          { selector: '.body', font: paired ?? font, style: styleFor('body', paired ?? font), size: bodySize.value, lineHeight: bodyLeading.value },
+        ]}
+      />
     </>
   );
 }

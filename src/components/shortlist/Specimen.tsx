@@ -1,16 +1,17 @@
 import type { ComponentChildren, RefObject } from 'preact';
 import { useLayoutEffect, useRef, useState } from 'preact/hooks';
-import { styled } from 'classname-variants/preact';
 import { type Font, metrics, type Style, tech } from '../../data';
 import { axisName } from '../../axis-names';
-import { axesOf, axisSettings, fontView, setSpecimenAxis, specimenAxes, specimenStyle, specimenStyles, stylesOf, weightIsStyle } from '../../shortlist-state';
+import { axesOf, axisSettings, axisValues, fontView, setSpecimenAxis, specimenAxes, specimenStyle, specimenStyles, stylesOf, weightIsStyle } from '../../shortlist-state';
 import { previewLines, showShortlist } from '../../state';
 import { PreviewTextField } from '../PreviewText';
 import { Slider } from '../Slider';
 import { useLoadedFont } from '../useLoadedFont';
 import { RotateCcw } from 'lucide-preact';
 import { Eyebrow } from '../ui';
+import { Section } from './Section';
 import { SvgExport } from './SvgExport';
+import { UseFont } from './UseFont';
 
 /** The sizes of the preview text, in px. */
 const SIZES = [120, 80, 56, 36, 24, 16];
@@ -22,8 +23,6 @@ const NEAR_FIT = 0.85;
 const MEASURE_SIZE = 100;
 
 type FontStyle = Record<string, string | number | undefined>;
-
-const Section = styled('section', 'flex flex-col gap-4 border-b border-line px-6 pt-5 pb-7 narrow:px-3');
 
 // Text that does not fit is clipped, but only beyond the padding of the section: glyphs that reach left of
 // their origin or beyond their advance (swashes, brush strokes) still show. (overflow-clip-margin would be
@@ -255,6 +254,7 @@ export function Specimen({ font }: { font: Font }) {
       <Axes font={font} />
       <Sizes font={font} lines={lines} />
       <Styles font={font} lines={lines} />
+      <UseFont title="Use this font" usages={[{ selector: '.text', font, style: specimenStyle(font), axes: axisValues(font, specimenStyle(font)) }]} />
     </div>
   );
 }
