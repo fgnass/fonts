@@ -1,6 +1,6 @@
 import { Copy, Download } from 'lucide-preact';
 import type { Font } from '../../data';
-import { axisValues, specimenStyle } from '../../shortlist-state';
+import { axisValues, featureValues, specimenStyle } from '../../shortlist-state';
 import { useFlash } from '../useFlash';
 
 /** The line height of the exported text, as in the Sizes section. */
@@ -26,7 +26,7 @@ export function SvgExport({ font, lines, size }: { font: Font; lines: string[]; 
   const make = async () => {
     const { textToSvg } = await import('../../svg-export');
     const style = specimenStyle(font);
-    const svg = await textToSvg(font, style, lines, { size, lineHeight: LINE_HEIGHT, axes: axisValues(font, style) });
+    const svg = await textToSvg(font, style, lines, { size, lineHeight: LINE_HEIGHT, axes: axisValues(font, style), features: featureValues(font) });
     if (!svg) throw new Error('nothing to draw');
     return svg;
   };

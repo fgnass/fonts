@@ -1,5 +1,5 @@
 import type { Font } from '../../data';
-import { axisSettings, fontView, gridSize, listedFonts, selection, specimenStyle } from '../../shortlist-state';
+import { axisSettings, featureSettings, fontView, gridSize, listedFonts, selection, specimenStyle } from '../../shortlist-state';
 import { previewLines, showShortlist } from '../../state';
 import { PreviewTextField } from '../PreviewText';
 import { Slider } from '../Slider';
@@ -55,7 +55,7 @@ function Tile({ font, lines }: { font: Font; lines: string[] }) {
         <span class="mr-8 truncate font-mono text-[11px] text-muted">{font.family} · {style.weight}{style.italic ? ' italic' : ''}</span>
         <div
           class="leading-[1.15] whitespace-pre text-bright"
-          style={{ fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: axisSettings(font, style), fontSize: `${gridSize.value}px` }}
+          style={{ fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: axisSettings(font, style), fontFeatureSettings: featureSettings(font), fontSize: `${gridSize.value}px` }}
         >
           {lines.join('\n')}
         </div>

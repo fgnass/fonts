@@ -2,6 +2,7 @@
 // specimen and pairing settings, kept while switching workspaces.
 import { computed, signal } from '@preact/signals';
 import { type Font, type Style, textFonts } from './data';
+import { featureInfo } from './features';
 import { fontView, selection, shortlist, toggleShortlist, viewedFont } from './state';
 
 export { fontView, selection };
@@ -18,6 +19,24 @@ export const secondary = computed(() => savedFonts.value.find((f) => f.family ==
 
 /** How the fonts are to be used on a website: with files of its own, or from the Google Fonts API (see cssSnippet). */
 export const hosting = signal<'self' | 'google'>('self');
+/** OpenType features switched on or off in the specimen, per family: tag -> on. Only those that differ from what browsers do by default. */
+export const specimenFeatures = signal<Record<string, Record<string, boolean>>>({});
+
+/** Switches a feature of a family on or off; back at the default of browsers, the entry goes. */
+export function setSpecimenFeature(font: Pick<Font, 'family'>, tag: string, on: boolean) {
+  const { [tag]: _, ...rest } = specimenFeatures.value[font.family] ?? {};
+  specimenFeatures.value = { ...specimenFeatures.value, [font.family]: on === !!featureInfo(tag).default ? rest : { ...rest, [tag]: on } };
+}
+
+/** The features of a family that differ from the defaults of browsers, tag -> on. */
+export const featureValues = (font: Pick<Font, 'family'>): Record<string, boolean> => specimenFeatures.value[font.family] ?? {};
+
+/** The font-feature-settings of a family as switched in the specimen (see featureValues). */
+export function featureSettings(font: Pick<Font, 'family'>) {
+  const entries = Object.entries(featureValues(font));
+  return entries.length ? entries.map(([tag, on]) => `'${tag}' ${on ? 1 : 0}`).join(', ') : 'normal';
+}
+
 /** The OpenType features of the specimen are open, each with a sample; they start closed. */
 export const featuresOpen = signal(false);
 /** The list of all styles of the specimen is open; it starts closed, as it is long for a big family. */

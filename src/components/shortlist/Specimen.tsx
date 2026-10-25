@@ -2,15 +2,15 @@ import type { ComponentChildren, RefObject } from 'preact';
 import { useEffect, useLayoutEffect, useRef, useState } from 'preact/hooks';
 import { type Font, metrics, type Style, tech } from '../../data';
 import { axisName } from '../../axis-names';
-import { axesOf, axisSettings, axisValues, featuresOpen, fontView, setSpecimenAxis, specimenAxes, specimenStyle, specimenStyles, stylesOf, stylesOpen, weightIsStyle } from '../../shortlist-state';
+import { axesOf, axisSettings, axisValues, featureSettings, featureValues, featuresOpen, fontView, setSpecimenAxis, setSpecimenFeature, specimenAxes, specimenFeatures, specimenStyle, specimenStyles, stylesOf, stylesOpen, weightIsStyle } from '../../shortlist-state';
 import { featureInfo } from '../../features';
 import type { ProbeResult } from '../../font-probe';
 import { previewLines, showShortlist } from '../../state';
 import { PreviewTextField } from '../PreviewText';
 import { Slider } from '../Slider';
 import { useLoadedFont } from '../useLoadedFont';
-import { ArrowRight, ChevronDown, RotateCcw } from 'lucide-preact';
-import { Eyebrow } from '../ui';
+import { ChevronDown, RotateCcw } from 'lucide-preact';
+import { Eyebrow, Switch } from '../ui';
 import { Section } from './Section';
 import { SvgExport } from './SvgExport';
 import { UseFont } from './UseFont';
@@ -38,7 +38,7 @@ const clipBeyondEdge = 'overflow-x-clip -mx-6 px-6 narrow:-mx-3 narrow:px-3';
  */
 function useStyleFont(font: Font, style: Style, text: string, axes = true) {
   const alias = useLoadedFont(font, style, text, { delay: 120, enabled: showShortlist.value && fontView.value === 'specimen', allAxes: axes });
-  return { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: axes ? axisSettings(font, style) : undefined };
+  return { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: axes ? axisSettings(font, style) : undefined, fontFeatureSettings: featureSettings(font) };
 }
 
 const styleLabel = (style: Style) => `${style.weight}${style.italic ? ' italic' : ''}`;
@@ -132,9 +132,9 @@ function StyleRow({ font, style, lines, selected }: { font: Font; style: Style; 
 }
 
 /** The bar that opens and closes a section: its label and a chevron. */
-function FoldBar({ label, open, controls, title, onToggle }: { label: string; open: boolean; controls: string; title: string; onToggle: () => void }) {
+function FoldBar({ label, open, controls, title, onToggle, class: className = '' }: { label: string; open: boolean; controls: string; title: string; onToggle: () => void; class?: string }) {
   return (
-    <button type="button" class="group -my-2 flex cursor-pointer items-center justify-between gap-3 py-2 text-left" aria-expanded={open} aria-controls={controls} title={title} onClick={onToggle}>
+    <button type="button" class={'group -my-2 flex cursor-pointer items-center justify-between gap-3 py-2 text-left ' + className} aria-expanded={open} aria-controls={controls} title={title} onClick={onToggle}>
       <Eyebrow class="group-hover:text-fg">{label}</Eyebrow>
       <ChevronDown size={16} class={'flex-none text-muted transition-transform group-hover:text-fg ' + (open ? 'rotate-180' : '')} aria-hidden="true" />
     </button>
@@ -162,10 +162,10 @@ function FeatureList({ features }: { features: { tag: string; name: string }[] }
 }
 
 /**
- * The OpenType features of the font, each with its name and a sample as
- * plain text and with the feature (for features browsers apply by default,
- * the other way round, so the plain text is always on the left). Features
- * without a sample work behind the scenes and are listed below.
+ * The OpenType features of the font, each with a switch and a sample that
+ * follows it. The switches set the features of the family everywhere: in the
+ * sizes and styles here, in the grid and the pairing, in the CSS and in the
+ * SVG. Features without a sample work behind the scenes and are listed below.
  */
 function Features({ font }: { font: Font }) {
   const tags = tech[font.index]?.f ?? [];
@@ -193,26 +193,37 @@ function Features({ font }: { font: Font }) {
   const unchanged = shown.filter((f) => results && f.present && !f.sample);
   // The whole family, not a subset for the samples: the subsets of Google leave features out (see LoadOptions).
   const alias = useLoadedFont(font, style, open ? withSample.map((f) => f.sample ?? '').join('') || 'a' : '', { delay: 120, enabled: showShortlist.value && fontView.value === 'specimen', allAxes: true, allChars: true });
-  const fontStyle: FontStyle = { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: axisSettings(font, style) };
+  const fontStyle: FontStyle = { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: axisSettings(font, style), fontFeatureSettings: featureSettings(font) };
+  const values = featureValues(font);
+  const changed = Object.keys(values).length;
   if (!tags.length) return null;
   return (
     <Section aria-label="OpenType features" class={open ? '' : 'pb-5'}>
-      <FoldBar label={`${tags.length} OpenType ${tags.length === 1 ? 'feature' : 'features'}`} open={open} controls="specimen-features" title={open ? 'Hide the features' : 'Show what each feature does'} onToggle={() => { featuresOpen.value = !open; }} />
+      <div class="flex items-center justify-between gap-4">
+        <FoldBar label={`${tags.length} OpenType ${tags.length === 1 ? 'feature' : 'features'}${changed ? ` · ${changed} switched` : ''}`} open={open} controls="specimen-features" title={open ? 'Hide the features' : 'Show what each feature does, and switch it'} onToggle={() => { featuresOpen.value = !open; }} class="flex-1" />
+        {changed > 0 && (
+          <button type="button" class="inline-flex flex-none cursor-pointer items-center gap-1.25 text-[11px] font-medium text-muted hover:text-fg" title="Set all features back to what browsers do by default" onClick={() => { specimenFeatures.value = { ...specimenFeatures.value, [font.family]: {} }; }}>
+            <RotateCcw size={12} aria-hidden="true" /> Reset
+          </button>
+        )}
+      </div>
       {open && (
         <div id="specimen-features" class="flex flex-col gap-5">
           {withSample.length > 0 && (
             <div class="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-6 gap-y-3 narrow:grid-cols-1 narrow:gap-y-4">
-              {withSample.map((f) => (
-                <div key={f.tag} class="contents">
-                  <div class="flex items-baseline gap-2 narrow:flex-row-reverse narrow:justify-end"><span class="text-[13px] text-soft">{f.name}</span><span class="font-mono text-[11px] text-muted">{f.tag}</span></div>
-                  <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 whitespace-pre text-bright" style={{ ...fontStyle, fontSize: `${FEATURE_SIZE}px` }}>
-                    {/* Plain text on the left: with the feature off when browsers apply it by default. */}
-                    <span style={{ fontFeatureSettings: f.default ? `'${f.tag}' 0` : 'normal' }}>{f.sample}</span>
-                    <ArrowRight size={14} class="self-center text-muted" aria-hidden="true" />
-                    <span style={{ fontFeatureSettings: f.default ? 'normal' : `'${f.tag}' 1` }}>{f.sample}</span>
+              {withSample.map((f) => {
+                const on = values[f.tag] ?? !!f.default;
+                return (
+                  <div key={f.tag} class="contents">
+                    <Switch checked={on} title={on ? `Switch ${f.name.toLowerCase()} off` : `Switch ${f.name.toLowerCase()} on`} onChange={(v) => setSpecimenFeature(font, f.tag, v)}>
+                      <span class="text-[13px]">{f.name}</span>
+                      <span class="font-mono text-[11px] text-muted">{f.tag}</span>
+                    </Switch>
+                    {/* The sample in the current state of all switches, so that it shows what the text gets. */}
+                    <div class="whitespace-pre text-bright" style={{ ...fontStyle, fontSize: `${FEATURE_SIZE}px` }}>{f.sample}</div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
           {!results && visible.length > 0 && <p class="text-[12px] text-muted">Looking at the features…</p>}
@@ -359,7 +370,7 @@ export function Specimen({ font }: { font: Font }) {
       <Sizes font={font} lines={lines} />
       <Styles font={font} lines={lines} />
       <Features font={font} />
-      <UseFont title="Use this font" usages={[{ selector: '.text', font, style: specimenStyle(font), axes: axisValues(font, specimenStyle(font)) }]} />
+      <UseFont title="Use this font" usages={[{ selector: '.text', font, style: specimenStyle(font), axes: axisValues(font, specimenStyle(font)), features: featureValues(font) }]} />
     </div>
   );
 }

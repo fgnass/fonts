@@ -96,3 +96,8 @@ test('the @font-face blocks of Google with local files', () => {
   ]);
   assert.match(css, /\/\* latin-ext \*\/\n@font-face \{\n  font-family: 'Bebas Neue';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url\('fonts\/bebas-neue-latin-ext-400\.woff2'\) format\('woff2'\);\n  unicode-range: U\+0100-02BA;\n\}/);
 });
+
+test('features switched on or off go into font-feature-settings', () => {
+  const css = cssSnippet([{ selector: '.text', font: inter, style: { weight: 400, italic: false }, features: { tnum: true, calt: false } }]);
+  assert.match(css, /font-feature-settings: 'tnum' 1, 'calt' 0;/);
+});

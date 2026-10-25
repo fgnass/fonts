@@ -1,7 +1,7 @@
 import { Pencil } from 'lucide-preact';
 import type { Font } from '../../data';
 import { variationSettings } from '../../fontload';
-import { body, bodyLeading, bodySize, heading, headingLeading, headingSize, primary, type Role, secondary, fontView, styleFor } from '../../shortlist-state';
+import { body, bodyLeading, bodySize, featureSettings, featureValues, heading, headingLeading, headingSize, primary, type Role, secondary, fontView, styleFor } from '../../shortlist-state';
 import { selectWorkspace, showShortlist } from '../../state';
 import { useLoadedFont } from '../useLoadedFont';
 import { Editable } from './Editable';
@@ -14,7 +14,7 @@ import { UseFont } from './UseFont';
 function useSpecimenFont(role: Role, font: Font | undefined, text: string) {
   const style = font ? styleFor(role, font) : undefined;
   const alias = useLoadedFont(font, style, text, { delay: 180, enabled: showShortlist.value && fontView.value === 'pairing' });
-  return { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: style ? variationSettings(style) : undefined };
+  return { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: style ? variationSettings(style) : undefined, fontFeatureSettings: font ? featureSettings(font) : undefined };
 }
 
 /** All saved fonts in a grid, the selected font on its own, or the pairing: type controls above an editable heading and body text. */
@@ -60,8 +60,8 @@ export function ShortlistPreview() {
         title="Use this pairing"
         class="border-t"
         usages={[
-          { selector: '.heading', font, style: styleFor('heading', font), size: headingSize.value, lineHeight: headingLeading.value },
-          { selector: '.body', font: paired ?? font, style: styleFor('body', paired ?? font), size: bodySize.value, lineHeight: bodyLeading.value },
+          { selector: '.heading', font, style: styleFor('heading', font), size: headingSize.value, lineHeight: headingLeading.value, features: featureValues(font) },
+          { selector: '.body', font: paired ?? font, style: styleFor('body', paired ?? font), size: bodySize.value, lineHeight: bodyLeading.value, features: featureValues(paired ?? font) },
         ]}
       />
     </>

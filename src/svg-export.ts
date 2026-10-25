@@ -14,6 +14,8 @@ export interface ExportOptions {
   lineHeight: number;
   /** The values of the variable axes, tag -> value (see axisValues). */
   axes: Record<string, number>;
+  /** OpenType features switched on or off, tag -> on (see featureValues). */
+  features?: Record<string, boolean>;
 }
 
 /** A font ready for shaping, and the code points it has, so that a text can be split between the files of a family. */
@@ -39,7 +41,8 @@ function runs(line: string, shapers: Shaper[]) {
  * when nothing is left to draw. The axes are applied as given; an optical
  * size axis without a value follows the font size, as in the browser.
  */
-export async function textToSvg(font: Font, style: Style, lines: string[], { size, lineHeight, axes }: ExportOptions): Promise<string | null> {
+export async function textToSvg(font: Font, style: Style, lines: string[], { size, lineHeight, axes, features = {} }: ExportOptions): Promise<string | null> {
+  const hbFeatures = Object.entries(features).map(([tag, on]) => new hb.Feature(tag, on ? 1 : 0));
   const urls = await fontFileUrls(font, style, lines.join(''));
   const faces = (await Promise.all(urls.map(fontFile))).map((bytes) => new hb.Face(new hb.Blob(bytes)));
   const variations = { ...axes };
@@ -58,7 +61,7 @@ export async function textToSvg(font: Font, style: Style, lines: string[], { siz
       const buffer = new hb.Buffer();
       buffer.addText(run.text);
       buffer.guessSegmentProperties();
-      hb.shape(hbFont, buffer);
+      hb.shape(hbFont, buffer, hbFeatures);
       for (const g of buffer.getGlyphInfosAndPositions()) {
         glyphs.push({ path: hbFont.glyphToJson(g.codepoint), x: x + (g.xOffset ?? 0), y: g.yOffset ?? 0 });
         x += g.xAdvance ?? 0;

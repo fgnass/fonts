@@ -19,6 +19,8 @@ export interface Usage {
   lineHeight?: number;
   /** The values of the variable axes, tag -> value (see axisValues); those at the default of the family are left out. */
   axes?: Record<string, number>;
+  /** OpenType features switched on or off, tag -> on (see featureValues). */
+  features?: Record<string, boolean>;
 }
 
 /** The generic family that stands in until the font has loaded. */
@@ -88,6 +90,8 @@ function rule(u: Usage): string {
   if (u.lineHeight != null) lines.push(`line-height: ${u.lineHeight};`);
   const custom = customAxes(u);
   if (custom.length) lines.push(`font-variation-settings: ${custom.map(([t, v]) => `'${t}' ${+v.toFixed(2)}`).join(', ')};`);
+  const features = Object.entries(u.features ?? {});
+  if (features.length) lines.push(`font-feature-settings: ${features.map(([t, on]) => `'${t}' ${on ? 1 : 0}`).join(', ')};`);
   return `${u.selector} {\n  ${lines.join('\n  ')}\n}`;
 }
 
