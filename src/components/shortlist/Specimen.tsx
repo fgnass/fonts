@@ -132,9 +132,9 @@ function StyleRow({ font, style, lines, selected }: { font: Font; style: Style; 
 }
 
 /** The bar that opens and closes a section: its label and a chevron. */
-function FoldBar({ label, open, controls, title, onToggle, class: className = '' }: { label: string; open: boolean; controls: string; title: string; onToggle: () => void; class?: string }) {
+function FoldBar({ label, open, controls, title, onToggle }: { label: string; open: boolean; controls: string; title: string; onToggle: () => void }) {
   return (
-    <button type="button" class={'group -my-2 flex cursor-pointer items-center justify-between gap-3 py-2 text-left ' + className} aria-expanded={open} aria-controls={controls} title={title} onClick={onToggle}>
+    <button type="button" class="group -my-2 flex w-full cursor-pointer items-center justify-between gap-3 py-2 text-left" aria-expanded={open} aria-controls={controls} title={title} onClick={onToggle}>
       <Eyebrow class="group-hover:text-fg">{label}</Eyebrow>
       <ChevronDown size={16} class={'flex-none text-muted transition-transform group-hover:text-fg ' + (open ? 'rotate-180' : '')} aria-hidden="true" />
     </button>
@@ -199,10 +199,11 @@ function Features({ font }: { font: Font }) {
   if (!tags.length) return null;
   return (
     <Section aria-label="OpenType features" class={open ? '' : 'pb-5'}>
-      <div class="flex items-center justify-between gap-4">
-        <FoldBar label={`${tags.length} OpenType ${tags.length === 1 ? 'feature' : 'features'}${changed ? ` · ${changed} switched` : ''}`} open={open} controls="specimen-features" title={open ? 'Hide the features' : 'Show what each feature does, and switch it'} onToggle={() => { featuresOpen.value = !open; }} class="flex-1" />
+      {/* The chevron stays at the right edge, as in the other bars: the reset sits left of it, beside the bar. */}
+      <div class="relative">
+        <FoldBar label={`${tags.length} OpenType ${tags.length === 1 ? 'feature' : 'features'}${changed ? ` · ${changed} switched` : ''}`} open={open} controls="specimen-features" title={open ? 'Hide the features' : 'Show what each feature does, and switch it'} onToggle={() => { featuresOpen.value = !open; }} />
         {changed > 0 && (
-          <button type="button" class="inline-flex flex-none cursor-pointer items-center gap-1.25 text-[11px] font-medium text-muted hover:text-fg" title="Set all features back to what browsers do by default" onClick={() => { specimenFeatures.value = { ...specimenFeatures.value, [font.family]: {} }; }}>
+          <button type="button" class="absolute top-1/2 right-8 inline-flex -translate-y-1/2 cursor-pointer items-center gap-1.25 text-[11px] font-medium text-muted hover:text-fg" title="Set all features back to what browsers do by default" onClick={() => { specimenFeatures.value = { ...specimenFeatures.value, [font.family]: {} }; }}>
             <RotateCcw size={12} aria-hidden="true" /> Reset
           </button>
         )}
