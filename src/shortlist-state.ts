@@ -103,3 +103,6 @@ export function removeFromShortlist(font: Font) {
   if (!opened && primary.value?.family === font.family) selection.value = (list[i + 1] ?? list[i - 1])?.family ?? '';
   toggleShortlist(font.family);
 }
+
+/** The size of the preview text in the grid of saved fonts, in px. */
+export const gridSize = signal(40);

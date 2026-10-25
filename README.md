@@ -8,7 +8,7 @@ Find the right open-source font by how it looks, not by its name or category: al
 - **Filter by look:** set ranges on sliders for weight, width, contrast, serifs, x-height, ornament and more. Every slider is based on values measured from the fonts themselves.
 - **Filter by features:** find fonts with the glyphs, OpenType features, ligatures, variable axes or styles you need.
 - **Hide look-alikes:** see only one font from each group of fonts that look almost the same.
-- **Compare a shortlist:** star fonts and compare them side by side with your own text, in different sizes and in heading/body pairs.
+- **Compare a shortlist:** star fonts and compare them with your own text: one font at a time in different sizes and styles, all of them side by side in a grid, or in heading/body pairs.
 
 ## Quick start
 

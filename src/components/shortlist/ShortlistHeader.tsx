@@ -11,6 +11,7 @@ const PaneTitle = styled('div', 'flex min-h-[65px] items-stretch gap-x-6 border-
 const VIEWS = [
   { id: 'specimen', label: 'Specimen' },
   { id: 'pairing', label: 'Pairing' },
+  { id: 'grid', label: 'Grid' },
 ] as const;
 
 /** Selects and focuses the view reached by an arrow key. */
@@ -23,7 +24,7 @@ function onTabKeyDown(event: KeyboardEvent) {
   document.getElementById(`${next}-view-tab`)?.focus({ preventScroll: true });
 }
 
-/** The tabs between the font on its own and the pairing, in the look of the workspace tabs. */
+/** The tabs between the font on its own, the pairing and the grid, in the look of the workspace tabs. */
 function ViewTabs() {
   return (
     <div class="flex gap-6 narrow:gap-5" role="tablist" aria-label="Shortlist view">
@@ -49,10 +50,15 @@ function ViewTabs() {
   );
 }
 
-/** The header of the specimen pane: the views, the link to similar fonts, the font in use (and its pairing) and the page of its source. */
+/**
+ * The header of the specimen pane: the views, the link to similar fonts, the
+ * font in use (and its pairing) and the page of its source. The grid shows
+ * all fonts, so there the header has the views only.
+ */
 export function ShortlistHeader() {
   const font = primary.value, paired = fontView.value === 'pairing' ? secondary.value : undefined;
   if (!font) return <PaneTitle as="h1" class="items-center">Shortlist</PaneTitle>;
+  if (fontView.value === 'grid') return <PaneTitle><ViewTabs /></PaneTitle>;
   return (
     <PaneTitle>
       {/* The tabs come first, so that they keep their place when the selected font changes. */}

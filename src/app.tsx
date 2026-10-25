@@ -1,6 +1,6 @@
 import { styled } from 'classname-variants/preact';
 import { describe, isAny } from './sliders';
-import { activeShapeQuery, filtered, setCorridor, showShortlist, suggestions, welcome, workspace } from './state';
+import { activeShapeQuery, filtered, fontView, setCorridor, showShortlist, suggestions, welcome, workspace } from './state';
 import { Results } from './components/Results';
 import { Sidebar } from './components/Sidebar';
 import { Toolbar } from './components/Toolbar';
@@ -61,8 +61,8 @@ export function App() {
             <header class="sticky top-0 z-1 bg-base">
               <div hidden={showShortlist.value}><Toolbar /></div>
               <div hidden={!showShortlist.value}>
-                {/* On narrow screens, the saved fonts come first and the views of the selected font below them. */}
-                {isNarrow.value && <ShortlistStrip />}
+                {/* On narrow screens, the saved fonts come first and the views of the selected font below them; the grid shows them all already. */}
+                {isNarrow.value && fontView.value !== 'grid' && <ShortlistStrip />}
                 <ShortlistHeader />
               </div>
             </header>

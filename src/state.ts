@@ -376,8 +376,8 @@ export const viewedFont = signal<Font | null>(null);
 /** The family shown in the font view: a saved font or the opened one. */
 export const selection = signal('');
 
-/** The view of the font view: the font on its own, or a heading and body text pairing. */
-export const fontView = signal<'specimen' | 'pairing'>('specimen');
+/** The view of the font view: the font on its own, a heading and body text pairing, or all saved fonts in a grid. */
+export const fontView = signal<'specimen' | 'pairing' | 'grid'>('specimen');
 
 /**
  * A tap on a card: opens the font in the font view, in the specimen unless
