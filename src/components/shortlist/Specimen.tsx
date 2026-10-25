@@ -1,9 +1,10 @@
 import type { ComponentChildren, RefObject } from 'preact';
-import { useLayoutEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useLayoutEffect, useRef, useState } from 'preact/hooks';
 import { type Font, metrics, type Style, tech } from '../../data';
 import { axisName } from '../../axis-names';
 import { axesOf, axisSettings, axisValues, featuresOpen, fontView, setSpecimenAxis, specimenAxes, specimenStyle, specimenStyles, stylesOf, stylesOpen, weightIsStyle } from '../../shortlist-state';
 import { featureInfo } from '../../features';
+import type { ProbeResult } from '../../font-probe';
 import { previewLines, showShortlist } from '../../state';
 import { PreviewTextField } from '../PreviewText';
 import { Slider } from '../Slider';
@@ -143,6 +144,23 @@ function FoldBar({ label, open, controls, title, onToggle }: { label: string; op
 /** The size of the feature samples, in px. */
 const FEATURE_SIZE = 26;
 
+/** A list of features as text: numbered sets and variants as one entry with their numbers, e.g. "Stylistic sets 1–8". */
+function FeatureList({ features }: { features: { tag: string; name: string }[] }) {
+  const numbered: Record<string, number[]> = {};
+  const single: { tag: string; name: string }[] = [];
+  for (const f of features) {
+    const m = f.tag.match(/^(ss|cv)(\d\d)$/);
+    if (m) (numbered[m[1]] ??= []).push(+m[2]);
+    else single.push(f);
+  }
+  const range = (n: number[]) => (n.length > 2 && n[n.length - 1] - n[0] === n.length - 1 ? `${n[0]}–${n[n.length - 1]}` : n.join(', '));
+  const items = [
+    ...single.map((f) => <span key={f.tag}>{f.name} <span class="font-mono text-[11px]">{f.tag}</span></span>),
+    ...Object.entries(numbered).map(([kind, n]) => <span key={kind}>{kind === 'ss' ? 'Stylistic set' : 'Character variant'}{n.length > 1 ? 's' : ''} {range(n)} <span class="font-mono text-[11px]">{kind}</span></span>),
+  ];
+  return <>{items.map((item, i) => <span key={i}>{i > 0 && ', '}{item}</span>)}</>;
+}
+
 /**
  * The OpenType features of the font, each with its name and a sample as
  * plain text and with the feature (for features browsers apply by default,
@@ -152,11 +170,29 @@ const FEATURE_SIZE = 26;
 function Features({ font }: { font: Font }) {
   const tags = tech[font.index]?.f ?? [];
   const open = featuresOpen.value;
-  const shown = tags.map((tag) => ({ tag, ...featureInfo(tag) }));
-  const withSample = shown.filter((f) => f.sample), silent = shown.filter((f) => !f.sample);
   const style = specimenStyle(font);
-  // The whole family, not a subset for the samples: the subsets of Google bake the ligatures in (see LoadOptions).
-  const alias = useLoadedFont(font, style, open ? withSample.map((f) => f.sample).join('') : '', { delay: 120, enabled: showShortlist.value && fontView.value === 'specimen', allAxes: true, allChars: true });
+  const infos = tags.map((tag) => ({ tag, ...featureInfo(tag) }));
+  const visible = infos.filter((f) => f.sample || f.probe), silent = infos.filter((f) => !f.sample && !f.probe);
+  // What each feature does in the web file, found by shaping once the section opens (see font-probe.ts).
+  const [probed, setProbed] = useState<{ family: string; results: Record<string, ProbeResult> }>();
+  useEffect(() => {
+    if (!open || !visible.length || probed?.family === font.family) return;
+    let live = true;
+    import('../../font-probe')
+      .then((m) => m.probeFeatures(font, style, visible.map((f) => ({ tag: f.tag, sample: f.sample }))))
+      .then(
+        (results) => { if (live) setProbed({ family: font.family, results }); },
+        (e) => { console.error('Probing the features failed', e); if (live) setProbed({ family: font.family, results: Object.fromEntries(visible.map((f) => [f.tag, { present: true, sample: f.sample ?? '' }])) }); },
+      );
+    return () => { live = false; };
+  }, [open, font.family]);
+  const results = probed?.family === font.family ? probed.results : undefined;
+  const shown = visible.map((f) => ({ ...f, ...results?.[f.tag] }));
+  const withSample = shown.filter((f) => results && f.sample);
+  const absent = shown.filter((f) => results && !f.present);
+  const unchanged = shown.filter((f) => results && f.present && !f.sample);
+  // The whole family, not a subset for the samples: the subsets of Google leave features out (see LoadOptions).
+  const alias = useLoadedFont(font, style, open ? withSample.map((f) => f.sample ?? '').join('') || 'a' : '', { delay: 120, enabled: showShortlist.value && fontView.value === 'specimen', allAxes: true, allChars: true });
   const fontStyle: FontStyle = { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: axisSettings(font, style) };
   if (!tags.length) return null;
   return (
@@ -179,10 +215,21 @@ function Features({ font }: { font: Font }) {
               ))}
             </div>
           )}
+          {!results && visible.length > 0 && <p class="text-[12px] text-muted">Looking at the features…</p>}
+          {absent.length > 0 && (
+            <p class="text-[12px] text-muted">
+              {font.libre ? 'In the family, but not in its web files: ' : 'In the TTFs, but not in the web fonts that Google serves: '}
+              <FeatureList features={absent} />
+            </p>
+          )}
+          {unchanged.length > 0 && (
+            <p class="text-[12px] text-muted">
+              Without a visible change in Latin letters, figures and common signs: <FeatureList features={unchanged} />
+            </p>
+          )}
           {silent.length > 0 && (
             <p class="text-[12px] text-muted">
-              {withSample.length ? 'Also, at work behind the scenes: ' : 'At work behind the scenes: '}
-              {silent.map((f, i) => <span key={f.tag}>{i > 0 && ', '}{f.name} <span class="font-mono text-[11px]">{f.tag}</span></span>)}
+              At work behind the scenes: <FeatureList features={silent} />
             </p>
           )}
         </div>

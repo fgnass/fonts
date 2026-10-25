@@ -4,9 +4,8 @@
 // WASM modules weigh about 1 MB.
 import * as hb from 'harfbuzzjs';
 import type { Font, Style } from './data';
-import { googleCssUrl, libreFileUrls } from './fontload';
+import { fontFile, fontFileUrls } from './font-bytes';
 import { type PlacedGlyph, svgFromLines } from './svg-text';
-import { decompressWoff2 } from './woff2';
 
 export interface ExportOptions {
   /** The font size in px: the size of an em in the SVG. */
@@ -15,36 +14,6 @@ export interface ExportOptions {
   lineHeight: number;
   /** The values of the variable axes, tag -> value (see axisValues). */
   axes: Record<string, number>;
-}
-
-const files = new Map<string, Promise<Uint8Array>>();
-
-/** The bytes of a font file, unpacked when it is WOFF2; fetched once per URL. */
-function fontFile(url: string) {
-  let file = files.get(url);
-  if (!file) {
-    file = fetch(url)
-      .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(`HTTP ${r.status} for ${url}`))))
-      .then((buffer) => {
-        const bytes = new Uint8Array(buffer);
-        const magic = String.fromCharCode(...bytes.subarray(0, 4));
-        if (magic === 'wOF2') return decompressWoff2(bytes);
-        if (magic === 'wOFF') throw new Error('WOFF is not supported');
-        return bytes;
-      });
-    file.catch(() => files.delete(url));
-    files.set(url, file);
-  }
-  return file;
-}
-
-/** The URLs of the font files for a font, style and text: a Google family has one file per request, a libre family its own files. */
-async function fileUrls(font: Font, style: Style, text: string) {
-  if (font.libre) return libreFileUrls(font as Font & { libre: NonNullable<Font['libre']> }, style, { allAxes: true });
-  const css = await fetch(googleCssUrl(font, style, text, { allAxes: true })).then((r) => (r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`))));
-  const url = css.match(/src:\s*url\(([^)]+)\)/)?.[1];
-  if (!url) throw new Error('no font source in CSS');
-  return [url];
 }
 
 /** A font ready for shaping, and the code points it has, so that a text can be split between the files of a family. */
@@ -71,7 +40,7 @@ function runs(line: string, shapers: Shaper[]) {
  * size axis without a value follows the font size, as in the browser.
  */
 export async function textToSvg(font: Font, style: Style, lines: string[], { size, lineHeight, axes }: ExportOptions): Promise<string | null> {
-  const urls = await fileUrls(font, style, lines.join(''));
+  const urls = await fontFileUrls(font, style, lines.join(''));
   const faces = (await Promise.all(urls.map(fontFile))).map((bytes) => new hb.Face(new hb.Blob(bytes)));
   const variations = { ...axes };
   const opsz = faces[0].getAxisInfos().opsz;

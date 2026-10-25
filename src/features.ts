@@ -8,6 +8,8 @@ export interface FeatureInfo {
   sample?: string;
   /** Browsers apply the feature unless it is turned off. */
   default?: boolean;
+  /** The sample is found by trying the feature on each character (see font-probe.ts): alternates differ from font to font. */
+  probe?: boolean;
 }
 
 const FIGURES = '0123456789';
@@ -41,13 +43,13 @@ const FEATURES: Record<string, FeatureInfo> = {
   sinf: { name: 'Scientific inferiors', sample: 'H2O CO2' },
   numr: { name: 'Numerators', sample: '12 34' },
   dnom: { name: 'Denominators', sample: '12 34' },
-  swsh: { name: 'Swashes', sample: 'Aa Qq Rr Kk' },
+  swsh: { name: 'Swashes', probe: true },
   cswh: { name: 'Contextual swashes', sample: 'Aa Qq Rr Kk' },
-  salt: { name: 'Stylistic alternates', sample: 'a g y Q R & @' },
-  hist: { name: 'Historical forms', sample: 'Historical forms' },
+  salt: { name: 'Stylistic alternates', probe: true },
+  hist: { name: 'Historical forms', probe: true },
   ital: { name: 'Italics', sample: 'Italic forms' },
-  nalt: { name: 'Alternate annotation forms', sample: '1 2 3 A B C' },
-  ornm: { name: 'Ornaments', sample: 'a b c d e' },
+  nalt: { name: 'Alternate annotation forms', probe: true },
+  ornm: { name: 'Ornaments', probe: true },
   locl: { name: 'Localized forms', default: true },
   ccmp: { name: 'Glyph composition', default: true },
   mark: { name: 'Mark positioning', default: true },
@@ -66,13 +68,10 @@ const FEATURES: Record<string, FeatureInfo> = {
   isol: { name: 'Isolated forms', default: true },
 };
 
-/** The sample of a stylistic set or character variant: letters and figures that designers often give alternates. */
-const SET_SAMPLE = 'Aa Gg Qq Rr Yy & @ 0 1 7';
-
 /** What a feature tag means; stylistic sets and character variants by their number, unknown tags by the tag alone. */
 export function featureInfo(tag: string): FeatureInfo {
   const set = tag.match(/^ss(\d\d)$/), cv = tag.match(/^cv(\d\d)$/);
-  if (set) return { name: `Stylistic set ${+set[1]}`, sample: SET_SAMPLE };
-  if (cv) return { name: `Character variant ${+cv[1]}`, sample: SET_SAMPLE };
+  if (set) return { name: `Stylistic set ${+set[1]}`, probe: true };
+  if (cv) return { name: `Character variant ${+cv[1]}`, probe: true };
   return FEATURES[tag] ?? { name: tag };
 }
