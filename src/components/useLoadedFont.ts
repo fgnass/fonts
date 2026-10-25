@@ -8,6 +8,8 @@ interface Options {
   enabled?: boolean;
   /** Loads the whole range of every variable axis (see LoadOptions). */
   allAxes?: boolean;
+  /** Loads the family for any text, not a subset (see LoadOptions). */
+  allChars?: boolean;
 }
 
 /**
@@ -18,15 +20,15 @@ export function useLoadedFont(
   font: FontRef | undefined,
   style: Style | undefined,
   text: string,
-  { delay = 0, enabled = true, allAxes = false }: Options = {},
+  { delay = 0, enabled = true, allAxes = false, allChars = false }: Options = {},
 ) {
   const [alias, setAlias] = useState<string>();
-  const want = font && style && text && enabled ? fontAlias(font, style, text, { allAxes }) : undefined;
+  const want = font && style && text && enabled ? fontAlias(font, style, text, { allAxes, allChars }) : undefined;
   useEffect(() => {
     if (!want) return;
     let live = true;
     const load = () => {
-      const loaded = loadFont(font!, style!, text, { allAxes });
+      const loaded = loadFont(font!, style!, text, { allAxes, allChars });
       loaded.ready.then((ok) => { if (live && ok) setAlias(loaded.alias); });
     };
     let timer: ReturnType<typeof setTimeout> | undefined;

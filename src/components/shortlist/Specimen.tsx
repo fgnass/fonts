@@ -2,12 +2,13 @@ import type { ComponentChildren, RefObject } from 'preact';
 import { useLayoutEffect, useRef, useState } from 'preact/hooks';
 import { type Font, metrics, type Style, tech } from '../../data';
 import { axisName } from '../../axis-names';
-import { axesOf, axisSettings, axisValues, fontView, setSpecimenAxis, specimenAxes, specimenStyle, specimenStyles, stylesOf, stylesOpen, weightIsStyle } from '../../shortlist-state';
+import { axesOf, axisSettings, axisValues, featuresOpen, fontView, setSpecimenAxis, specimenAxes, specimenStyle, specimenStyles, stylesOf, stylesOpen, weightIsStyle } from '../../shortlist-state';
+import { featureInfo } from '../../features';
 import { previewLines, showShortlist } from '../../state';
 import { PreviewTextField } from '../PreviewText';
 import { Slider } from '../Slider';
 import { useLoadedFont } from '../useLoadedFont';
-import { ChevronDown, RotateCcw } from 'lucide-preact';
+import { ArrowRight, ChevronDown, RotateCcw } from 'lucide-preact';
 import { Eyebrow } from '../ui';
 import { Section } from './Section';
 import { SvgExport } from './SvgExport';
@@ -129,6 +130,67 @@ function StyleRow({ font, style, lines, selected }: { font: Font; style: Style; 
   );
 }
 
+/** The bar that opens and closes a section: its label and a chevron. */
+function FoldBar({ label, open, controls, title, onToggle }: { label: string; open: boolean; controls: string; title: string; onToggle: () => void }) {
+  return (
+    <button type="button" class="group -my-2 flex cursor-pointer items-center justify-between gap-3 py-2 text-left" aria-expanded={open} aria-controls={controls} title={title} onClick={onToggle}>
+      <Eyebrow class="group-hover:text-fg">{label}</Eyebrow>
+      <ChevronDown size={16} class={'flex-none text-muted transition-transform group-hover:text-fg ' + (open ? 'rotate-180' : '')} aria-hidden="true" />
+    </button>
+  );
+}
+
+/** The size of the feature samples, in px. */
+const FEATURE_SIZE = 26;
+
+/**
+ * The OpenType features of the font, each with its name and a sample as
+ * plain text and with the feature (for features browsers apply by default,
+ * the other way round, so the plain text is always on the left). Features
+ * without a sample work behind the scenes and are listed below.
+ */
+function Features({ font }: { font: Font }) {
+  const tags = tech[font.index]?.f ?? [];
+  const open = featuresOpen.value;
+  const shown = tags.map((tag) => ({ tag, ...featureInfo(tag) }));
+  const withSample = shown.filter((f) => f.sample), silent = shown.filter((f) => !f.sample);
+  const style = specimenStyle(font);
+  // The whole family, not a subset for the samples: the subsets of Google bake the ligatures in (see LoadOptions).
+  const alias = useLoadedFont(font, style, open ? withSample.map((f) => f.sample).join('') : '', { delay: 120, enabled: showShortlist.value && fontView.value === 'specimen', allAxes: true, allChars: true });
+  const fontStyle: FontStyle = { fontFamily: alias ? `'${alias}'` : undefined, fontVariationSettings: axisSettings(font, style) };
+  if (!tags.length) return null;
+  return (
+    <Section aria-label="OpenType features" class={open ? '' : 'pb-5'}>
+      <FoldBar label={`${tags.length} OpenType ${tags.length === 1 ? 'feature' : 'features'}`} open={open} controls="specimen-features" title={open ? 'Hide the features' : 'Show what each feature does'} onToggle={() => { featuresOpen.value = !open; }} />
+      {open && (
+        <div id="specimen-features" class="flex flex-col gap-5">
+          {withSample.length > 0 && (
+            <div class="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-6 gap-y-3 narrow:grid-cols-1 narrow:gap-y-4">
+              {withSample.map((f) => (
+                <div key={f.tag} class="contents">
+                  <div class="flex items-baseline gap-2 narrow:flex-row-reverse narrow:justify-end"><span class="text-[13px] text-soft">{f.name}</span><span class="font-mono text-[11px] text-muted">{f.tag}</span></div>
+                  <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 whitespace-pre text-bright" style={{ ...fontStyle, fontSize: `${FEATURE_SIZE}px` }}>
+                    {/* Plain text on the left: with the feature off when browsers apply it by default. */}
+                    <span style={{ fontFeatureSettings: f.default ? `'${f.tag}' 0` : 'normal' }}>{f.sample}</span>
+                    <ArrowRight size={14} class="self-center text-muted" aria-hidden="true" />
+                    <span style={{ fontFeatureSettings: f.default ? 'normal' : `'${f.tag}' 1` }}>{f.sample}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+          {silent.length > 0 && (
+            <p class="text-[12px] text-muted">
+              {withSample.length ? 'Also, at work behind the scenes: ' : 'At work behind the scenes: '}
+              {silent.map((f, i) => <span key={f.tag}>{i > 0 && ', '}{f.name} <span class="font-mono text-[11px]">{f.tag}</span></span>)}
+            </p>
+          )}
+        </div>
+      )}
+    </Section>
+  );
+}
+
 /** All styles of the family, each with the preview text; a bar opens and closes the list, which starts closed. */
 function Styles({ font, lines }: { font: Font; lines: string[] }) {
   const current = specimenStyle(font);
@@ -136,17 +198,7 @@ function Styles({ font, lines }: { font: Font; lines: string[] }) {
   const open = stylesOpen.value;
   return (
     <Section aria-label="Styles" class={open ? '' : 'pb-5'}>
-      <button
-        type="button"
-        class="group -my-2 flex cursor-pointer items-center justify-between gap-3 py-2 text-left"
-        aria-expanded={open}
-        aria-controls="specimen-styles"
-        title={open ? 'Hide the styles' : 'Show each style with the preview text'}
-        onClick={() => { stylesOpen.value = !open; }}
-      >
-        <Eyebrow class="group-hover:text-fg">{list.length} {list.length === 1 ? 'style' : 'styles'} · {styleLabel(current)}</Eyebrow>
-        <ChevronDown size={16} class={'flex-none text-muted transition-transform group-hover:text-fg ' + (open ? 'rotate-180' : '')} aria-hidden="true" />
-      </button>
+      <FoldBar label={`${list.length} ${list.length === 1 ? 'style' : 'styles'} · ${styleLabel(current)}`} open={open} controls="specimen-styles" title={open ? 'Hide the styles' : 'Show each style with the preview text'} onToggle={() => { stylesOpen.value = !open; }} />
       {/* The rows load their fonts, so they are not rendered while the list is closed. */}
       {open && (
         <div id="specimen-styles" class="-mx-3 grid gap-1 narrow:mx-0">
@@ -242,11 +294,6 @@ function Details({ font, class: className }: { font: Font; class?: string }) {
         {t && <Detail label="Glyphs">{t.g}</Detail>}
         {t && <Detail label="Ligatures">{t.l}</Detail>}
       </dl>
-      {t && t.f.length > 0 && (
-        <Detail label={`OpenType features (${t.f.length})`}>
-          <span class="font-mono text-[11px]/[1.7] text-soft">{t.f.join(' ')}</span>
-        </Detail>
-      )}
     </Section>
   );
 }
@@ -264,6 +311,7 @@ export function Specimen({ font }: { font: Font }) {
       <Axes font={font} />
       <Sizes font={font} lines={lines} />
       <Styles font={font} lines={lines} />
+      <Features font={font} />
       <UseFont title="Use this font" usages={[{ selector: '.text', font, style: specimenStyle(font), axes: axisValues(font, specimenStyle(font)) }]} />
     </div>
   );

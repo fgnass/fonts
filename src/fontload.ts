@@ -39,11 +39,18 @@ export const textChars = (text: string) => [...new Set(text)].sort().join('');
 export interface LoadOptions {
   /** Loads the whole range of every variable axis (custom ones too), for the axis sliders of the specimen; for a libre family, its variable font. */
   allAxes?: boolean;
+  /**
+   * Loads the family for any text, not a subset for the text: the subsets of
+   * Google bake ligatures in, so the OpenType features cannot be shown with
+   * them. The API then has a file per script (unicode-range), and only those
+   * the text needs load.
+   */
+  allChars?: boolean;
 }
 
 /** The alias, characters and CSS2 family spec for a font, style and text. */
-function request(font: Pick<Font, 'family' | 'axes' | 'pinned'>, { weight, italic, slnt, wdth }: Style, text: string, { allAxes }: LoadOptions = {}) {
-  const chars = textChars(text);
+function request(font: Pick<Font, 'family' | 'axes' | 'pinned'>, { weight, italic, slnt, wdth }: Style, text: string, { allAxes, allChars }: LoadOptions = {}) {
+  const chars = allChars ? '' : textChars(text);
   let hash = 0;
   for (const c of chars) hash = (hash * 31 + c.codePointAt(0)!) >>> 0;
   const axes = font.axes ?? {};
@@ -64,14 +71,14 @@ function request(font: Pick<Font, 'family' | 'axes' | 'pinned'>, { weight, itali
       ...custom,
     ] as [string, number | string | undefined][]
   ).filter(([, v]) => v != null);
-  const alias = `fs-${font.family.replace(/\W/g, '')}-${list.map(([t, v]) => t + v).join('-').replace(/\W/g, '_')}-${hash.toString(36)}`;
+  const alias = `fs-${font.family.replace(/\W/g, '')}-${list.map(([t, v]) => t + v).join('-').replace(/\W/g, '_')}-${allChars ? 'all' : hash.toString(36)}`;
   return { alias, chars, spec: `${font.family}:${list.map(([t]) => t).join(',')}@${list.map(([, v]) => v).join(',')}` };
 }
 
 /** The URL of the CSS of the Google Fonts API for a font, style and text; its @font-face has the URL of the font file. */
 export const googleCssUrl = (font: FontRef, style: Style, text: string, options?: LoadOptions) => {
   const { chars, spec } = request(font, style, text, options);
-  return `https://fonts.googleapis.com/css2?family=${encodeURIComponent(spec)}&text=${encodeURIComponent(chars)}`;
+  return `https://fonts.googleapis.com/css2?family=${encodeURIComponent(spec)}${options?.allChars ? '' : `&text=${encodeURIComponent(chars)}`}`;
 };
 
 /**
@@ -107,11 +114,18 @@ export function loadFont(font: FontRef, style: Style, text: string, options?: Lo
     fetch(googleCssUrl(font, style, text, options))
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`))))
       .then((css) => {
-        const url = css.match(/src:\s*url\(([^)]+)\)/)?.[1];
-        if (!url) throw new Error('no font source in CSS');
-        return new FontFace(alias, `url(${url})`).load();
-      })
-      .then((face) => [face]),
+        // One face for the text, or (without text) a face per script with its unicode-range: then only those the text needs load.
+        const blocks = [...css.matchAll(/@font-face\s*\{([\s\S]*?)\}/g)].map((m) => ({ url: m[1].match(/src:\s*url\(([^)]+)\)/)?.[1], range: m[1].match(/unicode-range:\s*([^;]+)/)?.[1] }));
+        if (!blocks.length || blocks.some((b) => !b.url)) throw new Error('no font source in CSS');
+        if (blocks.length === 1 && !blocks[0].range) return new FontFace(alias, `url(${blocks[0].url})`).load().then((face) => [face]);
+        const faces = blocks.map((b) => new FontFace(alias, `url(${b.url})`, b.range ? { unicodeRange: b.range } : {}));
+        faces.forEach((face) => document.fonts.add(face));
+        return document.fonts.load(`16px "${alias}"`, textChars(text) || 'a').then((loaded) => {
+          if (loaded.length) return faces;
+          faces.forEach((face) => document.fonts.delete(face));
+          throw new Error('no face loaded');
+        });
+      }),
   );
 }
 
