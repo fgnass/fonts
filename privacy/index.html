@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2b2d42" />
+    <title>Privacy · fonts.gnass.buzz</title>
+    <meta
+      name="description"
+      content="Privacy notice for fonts.gnass.buzz: a private, non-commercial hobby project without cookies or tracking, which loads fonts from Google Fonts."
+    />
+    <link rel="canonical" href="https://fonts.gnass.buzz/privacy/" />
+    <link rel="stylesheet" href="./privacy.css" />
+  </head>
+  <body>
+    <header>
+      <a class="kicker" href="/">fonts.gnass.buzz</a>
+      <a class="back" href="/">← Fonts</a>
+    </header>
+    <main>
+      <h1>Privacy</h1>
+      <p class="lead">
+        fonts.gnass.buzz is a private, non-commercial hobby project. There are
+        no ads, nothing is for sale, and there is no business behind it.
+      </p>
+
+      <h2>Who is responsible</h2>
+      <p>Felix Gnass · <a id="email" href="#">E-Mail</a></p>
+
+      <h2>What this site does not do</h2>
+      <ul>
+        <li>No cookies.</li>
+        <li>No analytics, no tracking, no ads.</li>
+        <li>No accounts and no forms.</li>
+        <li>
+          No scripts or other content from third-party servers. The only
+          exception is Google Fonts, see below. Links to other
+          sites (for example GitHub) load nothing until you click them.
+        </li>
+      </ul>
+
+      <h2>Hosting</h2>
+      <p>
+        The site is hosted on GitHub Pages, a service of GitHub, Inc., USA.
+        When you open a page, your browser sends the usual request data to
+        GitHub's servers, including your IP address. GitHub keeps this data in
+        server logs to run and protect the service. I have no access to these
+        logs. The legal basis is my legitimate interest in delivering the site
+        reliably (Art. 6 (1) (f) GDPR). For details, see
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.
+      </p>
+
+      <h2 id="google-fonts">Google Fonts</h2>
+      <p>
+        This site is a browser for open-source fonts, most of them from Google
+        Fonts. To show you these fonts, the app loads them from Google Fonts, a
+        service of Google Ireland Limited, Gordon House, Barrow Street,
+        Dublin 4, Ireland. The app does this only after you click “Start
+        exploring” on its start page, which tells you about it. Before that
+        click, no request goes to Google. The app's own interface fonts and the
+        fonts of the independent foundries come from GitHub Pages, like the rest
+        of the site.
+      </p>
+      <p>
+        When the app loads a font from Google, your browser connects to
+        fonts.googleapis.com and fonts.gstatic.com. Google then receives your IP
+        address, your browser's user agent, the address of the app (as
+        referrer), and the font families and characters that the app asks for.
+        Google does not set cookies for these requests. Google can process this
+        data in the USA; Google LLC is certified under the EU-U.S. Data Privacy
+        Framework.
+      </p>
+      <p>
+        The legal basis is your consent when you start the app
+        (Art. 6 (1) (a) GDPR) and my legitimate interest in showing you the
+        fonts that you look for, which the app cannot do without loading them
+        (Art. 6 (1) (f) GDPR). You can withdraw your consent at any time: close
+        the app and do not start it again. For details, see the
+        <a href="https://developers.google.com/fonts/faq/privacy">Google Fonts privacy FAQ</a>
+        and <a href="https://policies.google.com/privacy">Google's privacy policy</a>.
+      </p>
+
+      <h2>The app</h2>
+      <p>
+        The app runs in your browser. The letters that you draw and the text
+        that you type are processed on your device. They are never uploaded to
+        me or to any server; only the characters of your preview text go to
+        Google as part of the font requests (see above). The app keeps your
+        shortlist of fonts in your browser's local storage; this data stays on
+        your device, and you can delete it in your browser settings.
+      </p>
+
+      <h2>Your rights</h2>
+      <p>
+        Under the GDPR you have the right to access, rectification, erasure,
+        restriction of processing, data portability and to object. Write me an
+        e-mail for this. You can also complain to a data protection supervisory
+        authority, for example the Hamburg Commissioner for Data Protection and
+        Freedom of Information.
+      </p>
+
+      <p class="note">Last updated: November 2026</p>
+    </main>
+    <script>
+      // The address never appears as user@domain in the HTML source.
+      const mail = document.getElementById('email');
+      mail.href = 'mailto:' + 'felix' + String.fromCharCode(64) + ['gnass', 'buzz'].join('.');
+      mail.textContent = 'felix' + String.fromCharCode(64) + ['gnass', 'buzz'].join('.');
+    </script>
+  </body>
+</html>

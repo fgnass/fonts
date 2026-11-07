@@ -1,0 +1,108 @@
+/* Privacy page styles: a copy of the privacy page of gnass.buzz, in its theme. */
+
+/* Locally hosted Roboto Flex variable font (latin subset). */
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('./roboto-flex.woff2') format('woff2');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  font-style: oblique 0deg 10deg;
+  font-display: swap;
+}
+:root {
+  --bg: #181c22;
+  --ink: #dfe3ea;
+  --muted: #9aa1ad;
+  --accent: #ef8354; /* the coral of the header */
+  --theme: #2b2d42;
+  --pad: clamp(1.5rem, 4vw, 3rem);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Roboto Flex', system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+/* Same colours as the intro panel of /projects. */
+header {
+  --ink: var(--accent);
+  background: var(--theme);
+  color: var(--ink);
+  padding: var(--pad);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.kicker {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  color: var(--ink);
+  text-decoration: none;
+}
+.back {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  opacity: 0.6;
+}
+.kicker:hover,
+.back:hover {
+  opacity: 1;
+}
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 7vw, 5rem) var(--pad) 5rem;
+}
+h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 800;
+  font-stretch: 125%;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 2.5rem 0 0.6rem;
+}
+p,
+ul {
+  margin-bottom: 1rem;
+}
+ul {
+  padding-left: 1.25rem;
+}
+li {
+  margin-bottom: 0.4rem;
+}
+main a {
+  color: var(--accent);
+  text-underline-offset: 0.18em;
+}
+.lead {
+  font-size: 1.25rem;
+  color: var(--ink);
+}
+.note {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 3rem;
+}

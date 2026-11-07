@@ -10,7 +10,7 @@ import { Eyebrow } from './ui';
 const FooterLink = styled('a', { base: 'text-muted hover:text-fg', defaultProps: { target: '_blank', rel: 'noreferrer' } });
 
 const GITHUB = 'https://github.com/fgnass/fonts';
-const PRIVACY = 'https://gnass.buzz/privacy/#fonts';
+const PRIVACY = '/privacy/';
 
 /** The start page: what the app does, the preview text, where the fonts come from and the small print. The app renders hidden behind it, so its data and the libre fonts load meanwhile; the fonts of Google load only after the start (see consent.ts). */
 export function Welcome() {
@@ -58,7 +58,7 @@ export function Welcome() {
           </div>
           <p class="text-[12px]/[1.5] text-dim">
             The previews of Google Fonts load from Google's servers, which see your IP address.{' '}
-            <a class="underline decoration-dim/40 underline-offset-2 hover:text-fg" href={PRIVACY} target="_blank" rel="noreferrer">Details</a>
+            <a class="underline decoration-dim/40 underline-offset-2 hover:text-fg" href={`${PRIVACY}#google-fonts`} target="_blank" rel="noreferrer">Details</a>
           </p>
         </div>
       </main>
