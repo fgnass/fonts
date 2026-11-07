@@ -1,0 +1,5 @@
+Copyright (c) 2016, Stewart C. Russell (Toronto, Canada) 
+<http://scruss.com>
+Twitter: @scruss
+
+Based on the character matrix of the Litronix DL-3422 *22 segment* LED alphanumeric display. This Font Software is licensed under the SIL Open Font License, Version 1.1.This license is available with a FAQ at:\nhttp://scripts.sil.org/OFL

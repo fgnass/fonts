@@ -1,0 +1,1 @@
+var e,t=new Promise(t=>{e=t}),n=()=>e(),r=e=>t.then(()=>fetch(e));export{r as n,t as r,n as t};
