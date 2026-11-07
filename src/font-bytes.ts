@@ -1,5 +1,6 @@
 // The bytes of a font file, for HarfBuzz in the browser (the SVG export, the
 // feature samples): fetched from Google or from /libre, unpacked when WOFF2.
+import { fetchGoogle, googleAllowed } from './consent';
 import type { Font, Style } from './data';
 import { googleCssUrl, libreFileUrls } from './fontload';
 import { decompressWoff2 } from './woff2';
@@ -10,7 +11,8 @@ const files = new Map<string, Promise<Uint8Array>>();
 export function fontFile(url: string) {
   let file = files.get(url);
   if (!file) {
-    file = fetch(url)
+    // Font files of Google come from fonts.gstatic.com, those of the libre families from this site.
+    file = (url.startsWith('/') ? fetch(url) : googleAllowed.then(() => fetch(url)))
       .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(`HTTP ${r.status} for ${url}`))))
       .then((buffer) => {
         const bytes = new Uint8Array(buffer);
@@ -32,7 +34,7 @@ export function fontFile(url: string) {
  */
 export async function fontFileUrls(font: Font, style: Style, text: string, allChars = false) {
   if (font.libre) return libreFileUrls(font as Font & { libre: NonNullable<Font['libre']> }, style, { allAxes: true });
-  const css = await fetch(googleCssUrl(font, style, text, { allAxes: true, allChars })).then((r) => (r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`))));
+  const css = await fetchGoogle(googleCssUrl(font, style, text, { allAxes: true, allChars })).then((r) => (r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`))));
   const blocks = [...css.matchAll(/(?:\/\*\s*([\w-]+)\s*\*\/\s*)?@font-face\s*\{([\s\S]*?)\}/g)].map((m) => ({ subset: m[1], url: m[2].match(/src:\s*url\(([^)]+)\)/)?.[1] }));
   const block = blocks.find((b) => b.subset === 'latin') ?? blocks[0];
   if (!block?.url) throw new Error('no font source in CSS');

@@ -2,6 +2,7 @@
 // Fonts API serves, a subset each, and fonts.css with their @font-face blocks
 // and the rules of the usages. Loaded on demand, with the ZIP writer.
 import { strToU8, zipSync } from 'fflate';
+import { fetchGoogle } from './consent';
 import { cssRules, type KitFile, localFontFaces, selfHostSpec, type Usage } from './css-snippet';
 
 export interface WebfontKit {
@@ -12,13 +13,13 @@ export interface WebfontKit {
 }
 
 async function text(url: string) {
-  const r = await fetch(url);
+  const r = await fetchGoogle(url);
   if (!r.ok) throw new Error(`HTTP ${r.status} for ${url}`);
   return r.text();
 }
 
 async function bytes(url: string) {
-  const r = await fetch(url);
+  const r = await fetchGoogle(url);
   if (!r.ok) throw new Error(`HTTP ${r.status} for ${url}`);
   return new Uint8Array(await r.arrayBuffer());
 }

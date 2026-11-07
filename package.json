@@ -24,6 +24,9 @@
     "vite": "^8.3.4"
   },
   "dependencies": {
+    "@fontsource/dm-mono": "^5.3.0",
+    "@fontsource/roboto-condensed": "^5.3.0",
+    "@fontsource/schibsted-grotesk": "^5.3.0",
     "@preact/signals": "^2.11.3",
     "classname-variants": "^1.7.1",
     "delaunator": "^5.1.0",

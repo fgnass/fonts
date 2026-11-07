@@ -1,5 +1,6 @@
 // Loading fonts on demand: small subsets of Google Fonts for the text, or the
 // files of the libre families (scripts/libre.py).
+import { fetchGoogle } from './consent';
 import type { Font, Style } from './data';
 
 interface Entry {
@@ -111,7 +112,7 @@ export function loadFont(font: FontRef, style: Style, text: string, options?: Lo
   if (font.libre) return loadLibre(font as LibreFont, style, text);
   const { alias } = request(font, style, text, options);
   return cached(alias, () =>
-    fetch(googleCssUrl(font, style, text, options))
+    fetchGoogle(googleCssUrl(font, style, text, options))
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`))))
       .then((css) => {
         // One face for the text, or (without text) a face per script with its unicode-range: then only those the text needs load.
